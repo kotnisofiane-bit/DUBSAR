@@ -1,237 +1,332 @@
 # FAQ
 
-## Is DUBSAR another coding agent?
+## What is DUBSAR?
+
+DUBSAR is a governance system for AI automations and agents.
+
+It is designed to connect actions to evidence, expose contradictions and
+missing information, keep deterministic controls separate from model
+explanations, and preserve explicit human authority over sensitive decisions.
+
+The current product direction starts with an automation audit in the portal,
+then extends toward continuous governance and orchestration through an installed
+DUBSAR Node.
+
+---
+
+## Is DUBSAR another AI or coding agent?
+
+No. DUBSAR is not another general-purpose model and does not replace the tools
+that perform the work.
+
+It can coordinate specialized agent roles, but an agent does not govern itself.
+The private DUBSAR Core owns canonical state and deterministic policy; agents
+may analyze, explain and propose; humans retain protected decisions.
+
+---
+
+## What problem does DUBSAR address first?
+
+Automation behavior is often spread across workflow tools, CRM records,
+messages, business state and human approvals. A single system may show that an
+action ran without establishing whether it was duplicated, compatible with the
+current business state or properly validated.
+
+DUBSAR begins by freezing a bounded evidence scope and testing specific
+cross-system coherence questions without inventing causality.
+
+---
+
+## What is the first product surface?
+
+The first product surface is the DUBSAR audit portal.
+
+Its initial target journey is:
+
+1. provide explicitly authorized, bounded sources;
+2. freeze the evidence snapshot and coverage;
+3. run deterministic controls;
+4. display every candidate finding with its evidence and limitations;
+5. let a human mark it true, false or uncertain;
+6. generate an evidence-linked report.
+
+This is the target journey. It is not yet a claim of general availability.
+
+---
+
+## What is the first Rule Pack?
+
+The first Rule Pack is **automation coherence**. Its initial working profile
+uses bounded n8n and HubSpot exports to look for:
+
+- duplicate consequences without an attributable idempotency boundary;
+- actions incompatible with the available business state;
+- missing traceability or expected human validation for a sensitive action.
+
+A missing record is reported as “no proof found in the connected sources.” It
+is not turned into a claim that the record or event never existed.
+
+---
+
+## Must a customer use n8n and HubSpot?
+
+They are the first bounded evidence profile, not the permanent product limit.
+
+Other systems will require explicit source contracts, normalization,
+completeness semantics and test fixtures before support is claimed. A logo or a
+generic connector is not enough to establish a reliable audit.
+
+---
+
+## Does DUBSAR prove causality?
 
 No.
 
-DUBSAR does not replace coding agents or developers. It is a governance layer around long-running AI coding projects.
-
-Coding agents build. DUBSAR preserves Mission, decisions, boundaries and evidence. Humans decide protected movement.
-
----
-
-## What problem does DUBSAR address?
-
-AI coding agents can move quickly, but a project that continues across many sessions can lose:
-
-- prior decisions and their reasons;
-- active constraints;
-- the scope of current work;
-- the relationship between sessions, processes and worktrees;
-- required evidence;
-- the difference between a declaration and a verification;
-- pending Human Gates;
-- the path needed to resume later.
-
-DUBSAR gives that project state a durable governed structure.
-
----
-
-## Is DUBSAR only for Claude Code?
-
-No.
-
-DUBSAR is designed around host adapters. The private Core, Mission, decision memory, evidence model and Human Gates are intended to remain independent of any single coding agent.
-
-Claude Code is the first supported integration.
-
-Codex, Cursor and other coding-agent adapters are future product direction. They are not currently available integrations.
-
----
-
-## What is the first product?
-
-The first product journey combines:
-
-- the DUBSAR Claude Code plugin;
-- a local Bridge;
-- DUBSAR Desktop and local runtime;
-- a private Backend;
-- a private Core;
-- a human-facing cockpit and Human Gate surface.
-
-The user experiences one product called DUBSAR. These are technical surfaces, not separate offers.
-
----
-
-## What happened to Scribe Builder, Scribe Launcher and Eyes of SCRIBE?
-
-They belong to earlier stages of the project and are no longer public product brands.
-
-The public product is DUBSAR.
-
-Some internal repository, command, route, MCP, environment or storage identifiers may retain `scribe` temporarily to preserve compatibility. They should not be interpreted as separate products.
-
----
-
-## Does DUBSAR replace native worktrees, tools or sub-agents?
-
-No.
-
-The coding-agent host keeps its native execution capabilities. For Claude Code, that includes planning, editing, tools, tests, sub-agents and worktrees.
-
-DUBSAR governs the project state around those capabilities. It should not rebuild the host without a specific governance reason.
-
----
-
-## Does DUBSAR support multiple sessions?
-
-The architecture and internal Windows technical proofs support governed one-session and two-session execution linked to the same canonical Mission.
-
-The proof covered distinct identities, processes and worktrees, separated evidence, explicit conflict handling, Human Gates and restart reconciliation.
-
-This is internal technical validation. It does not mean the public beta or external installation journey is available yet.
-
----
-
-## What is the cockpit?
-
-The cockpit is DUBSAR's human-facing view.
-
-It is intended to show:
-
-- the active Mission;
-- sessions, lots, contracts and worktrees;
-- decisions and constraints;
-- evidence status;
-- conflicts and stale state;
-- availability and process state;
-- pending Human Gates.
-
-It displays governed state and sends bounded actions through the product boundary. It does not approve its own state.
-
----
-
-## Why not just let agents collaborate directly?
-
-Agents can collaborate, but agent-to-agent conversation does not automatically create durable project memory, canonical identity, evidence, authority boundaries or replay.
-
-Whether a project uses one agent or many, it still needs to know:
-
-- which Mission is active;
-- which decisions apply;
-- which constraints are active;
-- what each session is allowed to do;
-- what evidence is expected;
-- what has actually been verified;
-- which movement requires a human decision.
-
-DUBSAR focuses on that project layer.
-
----
-
-## What is decision memory?
-
-Decision memory preserves what became meaningful for the project:
-
-- the decision;
-- its reason;
-- applicable constraints;
-- supporting evidence;
-- what replaced it later;
-- the human decision when protected movement occurred.
-
-It is different from storing every conversation.
-
----
-
-## Does DUBSAR verify everything an agent says?
-
-No.
-
-An agent report is a declaration. DUBSAR distinguishes declarations from evidence checked by an identified deterministic verifier. Missing and invalid evidence must remain visible.
-
-DUBSAR does not turn persuasive wording into proof.
-
----
-
-## What is a Human Gate?
-
-A Human Gate is an explicit authenticated human decision before protected movement such as merge, release, deployment, sensitive scope or another irreversible action.
-
-No agent can create a Human GO by claiming approval. DUBSAR can prepare and display the relevant dossier; the decision remains human.
-
----
-
-## Which operating systems are supported?
-
-### Windows
-
-Windows is the first target for the controlled private beta. The product journey is still being finalized and validated.
-
-### Linux
-
-Linux validation is planned after the Windows path is stable. No Linux beta is currently announced.
-
-### macOS
-
-macOS support is not currently announced. Packaging, signing, permissions and runtime behavior must be evaluated before any support claim.
-
----
-
-## Is DUBSAR open source?
-
-The public repository and thin distributable host-adapter code are publicly viewable under the applicable beta licence.
-
-The proprietary Core, private Backend implementation, internal policies, sealed journals and confidential proof artifacts are not open source and are not distributed here.
-
-Publicly visible source is not automatically an open-source licence grant.
-
----
-
-## Is the Marketplace live?
-
-No.
-
-The repository contains Marketplace staging material, but the DUBSAR Marketplace is not activated or announced. No installation command should be treated as active until publication is explicitly authorized.
-
----
-
-## What is DUBSAR Audit?
-
-DUBSAR Audit is a bounded professional service operated by Sofiane with DUBSAR.
-
-It currently supports two types of mandate:
-
-- launch readiness;
-- agent governance.
-
-The audit examines only authorized sources, preserves the provenance and limitations of findings, and produces a human-reviewed professional report. It is remote and read-only by default.
-
-See [DUBSAR Audit](AUDIT.md).
-
----
-
-## Must a client already use the DUBSAR plugin to request an audit?
-
-No.
-
-An audit may use existing authorized sources such as GitHub, Jira, Confluence, Linear, Notion, Slack or Google Drive. When the project was not already governed by DUBSAR, the report must state that it is retrospective and limited by the evidence that exists and is accessible.
+DUBSAR can establish bounded observations and deterministic relationships in
+the evidence it received. It must keep observed, derived, inferred,
+not-captured and unavailable information distinct.
+
+Temporal proximity or a plausible model explanation does not become proof of
+causality.
 
 ---
 
 ## Is the audit fully automated?
 
+The target workflow automates collection, normalization, deterministic checks
+and report preparation where the evidence contract allows it.
+
+It does not automate away responsibility:
+
+- deterministic evaluators produce bounded results;
+- agents may explain and structure candidate findings;
+- a human reviews each proposed finding;
+- incomplete evidence remains incomplete;
+- no agent-generated statement becomes final by itself.
+
+---
+
+## What is a Human Gate?
+
+A Human Gate is an explicit, attributable decision at a protected point in the
+workflow.
+
+For the first portal audit, the human reviews the evidence shown for a candidate
+finding and records a disposition such as true, false or uncertain. A model
+cannot create that decision by claiming that approval occurred.
+
+Future continuous-governance paths may also use Human Gates before a sensitive
+business action is released.
+
+---
+
+## What is currently proved?
+
+The automation-coherence evaluator has been exercised on synthetic fixtures. A
+controlled deployment also recorded an API-level audit path.
+
+That does **not** yet prove the complete portal journey as a normal user. The
+browser flow from sign-in and source upload through review, reload and report
+export still requires a full user-interface E2E proof.
+
+A reachable page, successful account creation or working API route is not, by
+itself, proof that the product journey works.
+
+See [Current status](STATUS.md).
+
+---
+
+## Is the portal publicly available?
+
+Not as a generally available, production-ready product.
+
+The portal remains under internal, access-controlled validation until its
+security boundary and complete user journey are proved. Public documentation
+must not turn a reachable deployment or an API test into an availability claim.
+
+---
+
+## What does a zero-finding result mean?
+
+It means that no candidate finding was detected by the selected controls in the
+bounded evidence scope.
+
+It does not mean that the automation is complete, defect-free, secure or
+compliant. A missing source may make a control not evaluable rather than
+successful.
+
+---
+
+## What happens after the audit?
+
+The intended next step is continuous governance when a customer chooses to
+instrument selected automation or agent paths.
+
+A future installed **DUBSAR Node**, administered through the desktop, is
+intended to connect those paths to the private Core through a controlled HTTP
+gateway, API or host adapter. It may prepare sensitive actions for human
+approval and later apply bounded policy decisions.
+
+This is future product work, not a production-ready deployment claim.
+
+---
+
+## What is the difference between the portal, Node and desktop?
+
+- **Portal:** the user-facing audit journey, evidence review and reports.
+- **DUBSAR Node:** the future installed boundary between selected customer
+  systems and DUBSAR governance.
+- **Desktop:** the future administrative cockpit for technical operators to
+  configure, observe and maintain that installed boundary.
+- **Private Core:** the canonical authority for governed state, evidence
+  relationships, policy and Human Gates.
+
+They are product surfaces with different responsibilities, not separate
+governance brains.
+
+---
+
+## Does DUBSAR replace n8n, Make or other automation tools?
+
+Replacement is not the first product claim.
+
+The first audit is designed to work from bounded evidence produced by existing
+systems. Future governance and orchestration may coordinate DUBSAR-managed
+agents or sit on selected action paths, but support must be proved integration
+by integration.
+
+DUBSAR should not depend on undocumented behavior or pretend that a connector
+removes the need for a stable contract.
+
+---
+
+## Where do Claude Code, Codex and Cursor fit?
+
+Developer-host adapters are a secondary Developer Labs direction.
+
+They explore how the same Core principles—canonical state, evidence, explicit
+authority and replay—can govern agent-assisted development. They are not
+prerequisites for the portal audit and are not the primary commercial entry
+point.
+
+No generally available Claude Code, Codex or Cursor integration is claimed
+today.
+
+---
+
+## Is the Claude Code Marketplace live?
+
 No.
 
-Software and agents can collect, compare and structure evidence. DUBSAR preserves the mandate, provenance, contradictions, limitations and Human Gates. Sofiane reviews and validates the final classification and conclusion.
+This repository may contain historical or staging Marketplace material. It is
+not a supported public installation path, and no visible command or source tree
+should be treated as an active release until publication is explicitly
+authorized.
 
-No agent-generated statement becomes the final professional verdict by itself.
+---
+
+## Which operating systems are supported?
+
+There is no generally available Node or desktop distribution today.
+
+Historical Windows engineering work established packaging and installation
+building blocks, but it did not prove the current portal-to-Node product
+journey. Linux and macOS support must not be claimed before their real package,
+permissions, storage, update and removal paths are validated.
+
+---
+
+## Does DUBSAR certify AI Act compliance?
+
+No.
+
+DUBSAR is being designed to support evidence traceability, system inventory,
+documented limitations and explicit human oversight. These capabilities may
+help an organization prepare documentation and controls relevant to the EU AI
+Act.
+
+DUBSAR does not provide legal advice, determine legal applicability, assign an
+authoritative risk classification or certify compliance. The provider,
+deployer and relevant professional or public authorities retain their own
+responsibilities.
+
+---
+
+## Is DUBSAR read-only?
+
+The audit starts read-only by default: no ticket, message, correction or
+external mutation is created merely because an audit ran.
+
+Future continuous governance may deliberately mediate selected actions. Such a
+path will require an explicit policy, narrow credentials, attributable Human
+Gates, fail-closed behavior and separate validation. It must not be implied by
+the current audit.
+
+---
+
+## What data does the public website collect?
+
+The public marketing website must not request connector credentials, tokens or
+source archives.
+
+The portal has a different data boundary. Its authentication, source imports,
+retention, deletion, logs, subprocessors and model-provider flows must be
+documented and validated before general availability. See [Privacy](PRIVACY.md)
+and [Security](SECURITY.md) for the published boundary.
+
+---
+
+## Is DUBSAR open source?
+
+The whole DUBSAR product is not open source.
+
+The private Core and private Backend implementation are not distributed here.
+Public documentation, staging adapter material and third-party components are
+governed by their respective licences and notices. Public visibility does not
+create an open-source licence grant.
+
+Distribution remains subject to component provenance, dependency and licence
+review.
+
+---
+
+## What happened to the SCRIBE name?
+
+DUBSAR is the public product.
+
+Some historical repository, command, schema, MCP, environment or local-storage
+identifiers may still contain `scribe` while compatibility work continues.
+They are implementation identifiers, not a second current product and not an
+availability claim.
+
+---
+
+## Is professional support required?
+
+No. The product target is a self-service first audit through the portal.
+
+An optional guided service may be offered later for scoping, interpretation,
+remediation planning or installation. It is separate from normal portal
+operation and must not be described as currently available until it is
+explicitly announced.
 
 ---
 
 ## Is DUBSAR beta-ready or production-ready?
 
-The installable product is not generally available or production-ready.
+No generally available or production-ready product is claimed today.
 
-DUBSAR is preparing a controlled private beta beginning with Windows and Claude Code. Internal technical proofs are complete for key one-session and multi-session governance paths, but the external installation and usability journey is still pending.
+The deterministic automation controls and parts of the API path have evidence.
+The complete portal UI journey, installed Node, administrative desktop and
+continuous-governance path still require their own end-to-end proofs.
 
-The separately scoped DUBSAR Audit professional service is available on request. That availability does not imply that the product or Marketplace is generally available.
+“Implemented,” “API-tested,” “interface demonstrated,” “user E2E proved” and
+“production-ready” are different statuses and must remain different.
 
 ---
 
-## Why is the GitHub repository still named Scribe-builder-public?
+## Where can I follow the project?
 
-The repository name is a legacy identifier. Renaming a public repository is a separate human action and has not been performed inside this documentation work.
-
-The product described here is DUBSAR.
+Start with [dubsar.ai](https://dubsar.ai/) and the
+[DUBSAR audit method](AUDIT.md). Public access or support options will be
+announced only when their corresponding product boundaries have been validated.

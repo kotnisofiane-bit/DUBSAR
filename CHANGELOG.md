@@ -2,14 +2,27 @@
 
 All notable public repository and Marketplace changes will be recorded here.
 
-### Current positioning refresh
+## Unreleased — DUBSAR public realignment R3
 
-- aligned the repository with the current `dubsar.ai` website;
-- presented two distinct entry paths: the DUBSAR private-beta product and DUBSAR Audit professional service;
-- separated product-readiness labels from professional-service availability;
-- documented launch-readiness and agent-governance audit mandates;
-- added English and French public entry-point documentation;
-- clarified that audits are remote, bounded, read-only by default and human-validated.
+### Changed
+
+- repositioned the first customer-facing product around a portal audit for business automations and AI agents;
+- replaced the Claude Code private beta as the primary public story;
+- documented the path from bounded evidence to deterministic controls, bounded Hermes roles, human review and a traceable report;
+- separated internally validated deterministic fixtures and recorded API evidence from the still-unproved complete browser journey;
+- classified live connectors, continuous policy enforcement and the local Node/administration desktop as roadmap capabilities;
+- kept developer adapters as secondary experiments rather than the primary product;
+- introduced the Automation Coherence Rule Pack boundary without claiming production readiness;
+- updated AI Act wording to governance support only, with no certification or legal-advice claim;
+- rewrote access, security, privacy and integrity documentation around the portal-first product direction.
+
+### Distribution boundary
+
+- Marketplace staging remains unsupported and unannounced;
+- the visible Claude adapter remains historical staging pending licence and compatibility review;
+- no supported public installation command has been added;
+- no private technical repository, Backend or Core has been published;
+- no external-agency pilot or production availability is claimed.
 
 ## Unreleased — DUBSAR public realignment R2
 

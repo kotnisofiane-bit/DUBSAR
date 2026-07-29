@@ -1,225 +1,271 @@
 # Product and Surfaces
 
-DUBSAR is one product with several technical surfaces. It is also used by Sofiane as the governed operator system behind a bounded professional audit service.
+DUBSAR is one product with two successive operating modes:
 
-The user should not have to understand a collection of brands, launchers or private repositories. The public product is **DUBSAR**.
+1. **Audit** — understand a bounded automation perimeter, connect findings to evidence and obtain an explicit human decision.
+2. **Governance** — when the audit proves the need, control sensitive agent or automation actions before execution.
+
+The public product is **DUBSAR**. Users should not need to understand the historical SCRIBE names, internal repositories or individual infrastructure components.
 
 ---
 
 ## Product definition
 
-DUBSAR is a governance layer for long-running, multi-session AI coding projects.
+DUBSAR is an evidence and authority layer for AI agents and business automations.
 
-It adds a persistent project layer around coding agents without rebuilding their native capabilities.
+It is designed to work across tools rather than becoming dependent on a single workflow engine or coding-agent host.
 
 ```text
-Coding agents build
-DUBSAR preserves Mission, decisions, boundaries and evidence
-Humans decide protected movement
+Authorized sources
+  -> bounded evidence snapshot
+  -> deterministic controls
+  -> role-based analysis and explanation
+  -> visible findings and limitations
+  -> designated human decision
+  -> report
+  -> optional governed execution
 ```
 
-Claude Code is the first supported host. Codex, Cursor and other adapters are future product direction, not currently available integrations.
+The deterministic system and the agent system have different responsibilities. Agents can explore, correlate and explain. They cannot promote their own conclusion to canonical truth or approve their own action.
 
 ---
 
-## 1. Host adapter
+## 1. Public website
 
-A host adapter connects a coding-agent environment to DUBSAR.
-
-For Claude Code, the adapter is the DUBSAR plugin.
+The website at `dubsar.ai` is the discovery and orientation surface.
 
 Its role is to:
 
-- propagate the native host session identity;
-- expose bounded DUBSAR commands and tools;
-- recognize or resume governed workspace context;
-- display bounded canonical project state;
-- connect the host to the local DUBSAR runtime;
-- surface the next action and Human Gate status.
+- explain the audit-first product;
+- help a visitor understand whether the problem is relevant;
+- show the method, trust boundaries and current limitations;
+- direct the visitor to the controlled portal when access is available;
+- offer optional human assistance after an initial result, not require it before every audit.
 
-The adapter remains thin. It does not contain the proprietary decision engine and does not make canonical business decisions locally.
-
-Some command, MCP and environment identifiers may temporarily retain an internal `scribe` prefix for compatibility. Public labels and documentation use DUBSAR.
+The website is not the audit engine and must not imply that a visual demonstration proves a working product.
 
 ---
 
-## 2. Local Bridge
+## 2. DUBSAR Portal
 
-The Bridge provides bounded local transport between the host adapter and the local product runtime.
+The controlled DUBSAR Portal is the intended primary user workspace. Its public
+hostname must not be advertised until the access, privacy and isolation
+boundaries have passed review.
 
-It may support:
+It is designed for business owners, automation leads, reviewers and other authorized users to:
 
-- local continuity references;
-- closed request and response transport;
-- start and status orchestration;
-- session-to-runtime connectivity.
+- define the audit perimeter and authorized sources;
+- start and follow a bounded audit;
+- inspect findings, supporting evidence and limitations;
+- classify a finding as confirmed, rejected, uncertain or accepted risk;
+- identify the person responsible for the decision;
+- obtain a stable report and evidence register;
+- later view governed agents and automation activity when continuous governance is deployed.
 
-The Bridge is not the source of truth for Mission, decisions, contracts, evidence or Human Gates.
+The Portal is based on LibreChat as an interaction surface, but LibreChat is not the DUBSAR authority layer. Its own agents, conversations or interface state cannot replace Core decisions.
+
+Current status: authentication has been observed and an API-level audit path has been exercised. The complete browser journey remains an internal acceptance target.
 
 ---
 
-## 3. DUBSAR Desktop and local runtime
+## 3. Evidence intake and connectors
 
-DUBSAR Desktop supplies the local runtime required by the current Claude Code integration.
+An audit begins from an explicitly authorized and bounded evidence perimeter.
+
+The first automation-coherence path uses n8n-style workflow and execution evidence together with a business source such as a CRM. Initial validation may use controlled exports or synthetic fixtures before live connectors are enabled.
+
+Connector responsibilities include:
+
+- declaring the source, account or workspace in scope;
+- collecting only the fields required by the active audit;
+- recording time window, version, truncation and availability;
+- producing stable evidence references and digests;
+- making partial, missing or unavailable coverage visible;
+- remaining read-only by default.
+
+A connector is replaceable infrastructure. It does not own DUBSAR rules, findings, Human Gates or canonical decisions.
+
+HTTP or API integrations may be added progressively. A third-party product update must degrade into an explicit connector limitation, not an invented clean result.
+
+---
+
+## 4. Hermes orchestration and agent roles
+
+Hermes provides the role-based agent runtime used by DUBSAR.
+
+Depending on the audit, roles may help:
+
+- inspect a bounded evidence set;
+- identify candidate contradictions;
+- cross-check observations;
+- explain a deterministic control result;
+- prepare a review packet or report section.
+
+Agent roles remain non-authoritative:
+
+- they cannot declare their own output verified;
+- they cannot conceal missing evidence;
+- they cannot turn an inference into an observed fact;
+- they cannot approve a sensitive action;
+- they cannot replace the deterministic evaluator.
+
+The orchestration layer should keep role identity, inputs, outputs and evidence snapshot identity attributable.
+
+---
+
+## 5. Protected Backend
+
+The Backend is the private service boundary between public or local surfaces and canonical DUBSAR state.
 
 Its responsibilities include:
 
-- bounded local process startup;
-- process identity and lifecycle control;
-- worktree provisioning through governed references;
-- restart observations and reconciliation requests;
-- secure local configuration and access state;
-- navigation to the cockpit and Human Gate surfaces.
+- authentication and authorization checks;
+- request validation and rate boundaries;
+- stable audit and run identity;
+- evidence freezing and digest verification;
+- controlled orchestration calls;
+- rejection of stale, duplicate or incomplete protected mutations;
+- explicit unavailable or partial states;
+- bounded report and Human Gate APIs.
 
-Desktop is not marketed as a separate product and is not the proprietary Core.
-
-The legacy term “Launcher” no longer describes a public product. Internal launcher components may remain where changing them would break compatibility.
-
----
-
-## 4. Private Backend
-
-The Backend is the protected service boundary and the only supported product writer to canonical Core state.
-
-It validates and limits requests, verifies runtime bindings, rejects stale mutations and protects private implementation details.
-
-The Backend is not distributed through this repository.
+The Backend is not distributed through this public repository.
 
 ---
 
-## 5. Private DUBSAR Core
+## 6. Private deterministic Core
 
-The Core is the source of truth for governed project state, including:
+The private Core is the authority and policy engine of DUBSAR.
 
-- Mission;
-- decisions and constraints;
-- lots and execution contracts;
-- canonical DUBSAR sessions;
-- runtime allocations and process state;
-- evidence relationships and verification tiers;
-- audit state;
-- Human Gates and authorizations;
-- replay and reconciliation decisions.
+It is intended to own canonical state for:
 
-The Core remains private.
+- audit scope and evidence snapshot identity;
+- deterministic rule packs and their versions;
+- findings, contradictions and evidence relationships;
+- verification tiers and missing-evidence state;
+- designated human decisions;
+- Human Gates and single-use authorizations;
+- policy decisions for future governed execution;
+- replay, audit trail and reconciliation.
 
----
+The Core remains proprietary and is not distributed here.
 
-## 6. Runner
-
-The Runner produces bounded mechanical evidence such as:
-
-- snapshots;
-- diffs;
-- test results;
-- hashes;
-- execution artefact references.
-
-It does not own Mission state and cannot create a Human GO.
+The Core does not make every business judgment automatically. It preserves deterministic boundaries, records what is known and routes protected judgment to the designated human authority.
 
 ---
 
-## 7. DUBSAR cockpit
+## 7. Human Gate
 
-The cockpit makes governed state readable to the human.
+The Human Gate is a product boundary, not a decorative confirmation button.
 
-It is intended to show:
+Before a protected conclusion or action:
 
-- the recognized project and active Mission;
-- active sessions and their state;
-- lots, contracts and worktrees;
-- relevant decisions and constraints;
-- declared and verified evidence without conflating them;
-- conflicts and stale state;
-- pending Human Gates;
-- bounded diagnostics and availability state.
+- the reviewer must see the relevant findings, evidence and limitations;
+- the displayed review state must have a stable identity;
+- the decision must be attributable to an authorized person;
+- the recorded decision must remain bound to that exact review state;
+- technical or agent credentials must not impersonate the human decision;
+- retry must not create multiple decisions or actions.
 
-The cockpit displays and controls through governed boundaries. It does not become the authority that approves its own state.
-
-The former public label “Eyes of SCRIBE” is historical and should not remain a separate product brand.
+Human validation can confirm, correct, reject or accept a bounded risk. It cannot make missing evidence become verified evidence.
 
 ---
 
-## 8. Professional audit surface
+## 8. Report and evidence register
 
-DUBSAR Audit is a professional service, not a second autonomous software platform.
+The audit output is a decision-ready report, not a generic agent conversation.
 
-For an audit engagement, the operating surface combines:
+It should distinguish:
 
-- an agreed mandate and authorized sources;
-- bounded collection through approved client tools;
-- DUBSAR Mission, evidence, contradiction and decision records;
-- human classification and validation;
-- a professional report and evidence register.
+- observed facts;
+- deterministic results;
+- agent inferences or explanations;
+- confirmed contradictions;
+- missing or unavailable evidence;
+- human decisions;
+- residual risks and recommended next actions.
 
-The service may examine a project that was not already using the Claude Code plugin. In that case, the audit is retrospective and its conclusions are limited by the sources that exist and were authorized.
-
-The audit does not expose the private Core, grant autonomous authority to an agent or imply that the client has deployed the private-beta product.
-
----
-
-## 9. Multi-session surface
-
-DUBSAR relates several active sessions to one Mission while preserving isolation.
-
-```text
-Mission
-  ├── Session A → Worktree A → Process A → Evidence A
-  └── Session B → Worktree B → Process B → Evidence B
-                 ↓
-          Conflict / Human Gate when required
-```
-
-Internal technical proofs have validated this model on Windows. The public product journey remains under validation.
+Every material finding should remain connected to stable evidence references and the rule-pack version used for the run.
 
 ---
 
-## Public distribution
+## 9. DUBSAR Node and technical desktop
 
-This repository is intended to become both:
+After an audit, some organizations may choose continuous governance.
 
-- the public product and doctrine repository;
-- the Claude Code Marketplace repository for the thin first host adapter.
+The intended technical surface is a **DUBSAR Node** installed in or near the customer environment and managed through an administrator-facing desktop or dashboard.
 
-The Marketplace is not activated or announced. No installation command should be treated as active until the package, supported platform, licence, security contacts and beta access flow are validated.
+Its later responsibilities may include:
+
+- connecting approved local agents and automation systems;
+- holding bounded runtime and connector configuration;
+- requesting policy decisions before sensitive execution;
+- enforcing `ALLOW`, `DENY`, `REQUIRE_HUMAN_APPROVAL` or bounded conditions;
+- recording action, policy and decision evidence;
+- exposing health, connector and queue state to the technical administrator.
+
+This surface is not required for the first portal audit. Installation work and desktop prototypes exist, but no supported customer governance deployment is currently claimed.
+
+The Node applies decisions. It does not become a second Core.
 
 ---
 
-## Platform boundary
+## 10. Developer-tool adapters
 
-- **Windows:** first controlled private-beta target, still in preparation.
-- **Linux:** planned for later validation; not announced.
-- **macOS:** not announced; feasibility and packaging remain to be evaluated.
+Claude Code, Codex and Cursor remain relevant integration environments.
+
+They may later use thin adapters to:
+
+- attach a development workspace to DUBSAR;
+- preserve decisions and evidence across agent sessions;
+- submit bounded actions for governance;
+- display Human Gate state;
+- support audits of agent-assisted development.
+
+These adapters are experimental and are not the primary commercial entry point. DUBSAR should also be usable without requiring a customer to adopt a particular coding agent.
 
 ---
 
-## Current beta boundary
+## 11. Optional accompanied audit
 
-The current private-beta preparation covers:
+The portal journey is intended to remain useful without requiring Sofiane to manually conduct every initial audit.
 
-- Claude Code as the first host;
-- the DUBSAR plugin;
-- local Bridge and DUBSAR Desktop;
-- a private Backend and Core;
-- Mission continuity;
-- canonical one- and multi-session governance;
-- explicit Human Gates.
+Human assistance may be offered when a customer wants:
 
-Not currently claimed as available:
+- a broader or unusual perimeter;
+- interpretation of material findings;
+- remediation prioritization;
+- connector or DUBSAR Node installation;
+- preparation for continuous governance.
 
-- operational Codex or Cursor adapters;
-- public Linux or macOS packages;
-- enterprise on-premise deployment;
-- certified compliance or security guarantees;
-- autonomous approval or release authority;
-- a commercial-ready public service.
+This is an optional service around the product, not a mandatory bottleneck before every report.
 
-This beta boundary applies to the installable product. The separately scoped DUBSAR Audit professional service is available on request under the boundaries documented in [AUDIT.md](AUDIT.md).
+---
+
+## AI Act boundary
+
+DUBSAR may help structure and preserve elements relevant to AI governance, including:
+
+- inventories of systems, agents, owners and purposes;
+- traceability of sources, versions, decisions and actions;
+- documented human oversight;
+- visible limitations and unavailable information.
+
+DUBSAR does not provide legal advice, certify AI Act compliance or issue an automatic legal verdict. Regulatory texts can inform rule-pack design, but the product must keep legal interpretation and client responsibility explicit.
 
 ---
 
 ## Summary
 
-DUBSAR is one product and one governance method.
+```text
+Website explains
+Portal scopes, shows and records
+Connectors collect bounded evidence
+Hermes roles analyze and explain
+Backend protects the boundary
+Core evaluates and preserves authority
+Human Gate assigns the decision
+Report makes the result reviewable
+Node applies approved governance later
+```
 
-The host adapter connects the coding agent. The Bridge transports locally. Desktop supplies the runtime. The Backend protects canonical writes. The Core owns governed state. The Runner produces mechanical evidence. The cockpit makes the state understandable. The audit surface applies the same method to a bounded professional engagement. Humans remain the final authority.
+**Agents propose. DUBSAR preserves and checks. Humans decide.**

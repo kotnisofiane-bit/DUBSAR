@@ -1,88 +1,59 @@
-# DUBSAR diagrams
+# DUBSAR Diagrams
 
-This folder contains the canonical public DUBSAR visual set.
+The SVG files currently stored in this folder document an earlier developer-first product direction:
 
-The diagrams are explanatory product documentation. They do not expose private Core logic, Backend routes, internal policies, confidential proof artifacts, secrets or tester data.
+- coding-agent host adapters;
+- multi-session development governance;
+- a Windows private-beta installation journey.
 
-## Canonical visuals
+They remain useful historical design material, but they are **not the canonical diagrams for the current portal-first product direction**.
 
-### 1. Product architecture
+## Current architecture
 
-![DUBSAR host-independent architecture](dubsar-architecture.svg)
+The current public architecture is maintained as Mermaid in:
 
-French version: [`dubsar-architecture-fr.svg`](dubsar-architecture-fr.svg)
+- [`../README.md`](../README.md);
+- [`../README.fr.md`](../README.fr.md);
+- [`../ARCHITECTURE.md`](../ARCHITECTURE.md).
 
-Explains the real responsibility chain:
-
-```text
-Coding agent
-  → DUBSAR host adapter
-  → local Bridge and runtime
-  → private Backend
-  → private DUBSAR Core
-  → cockpit and human authority
-```
-
-Claude Code is shown as the first integration. Codex, Cursor and other coding agents are clearly marked as future adapters rather than current availability.
-
-### 2. Governed multi-session model
-
-![DUBSAR governed multi-session model](dubsar-multi-session.svg)
-
-French version: [`dubsar-multi-session-fr.svg`](dubsar-multi-session-fr.svg)
-
-Shows one canonical Mission with:
-
-- separate session identities;
-- separate worktrees and processes;
-- attributable evidence streams;
-- explicit conflict handling;
-- shared Human Gate when required;
-- governed resume without silent overwrite.
-
-The diagram reflects an internal Windows technical proof, not a public beta claim.
-
-### 3. Windows controlled private-beta journey
-
-![DUBSAR Windows controlled private beta journey](dubsar-windows-journey.svg)
-
-Shows the target user path:
+It describes:
 
 ```text
-Install
-  → Connect
-  → Mission
-  → Governed work
-  → Evidence
-  → Human Gate
-  → Restart
-  → Resume
+authorized sources
+→ DUBSAR Portal
+→ bounded evidence snapshot
+→ deterministic orchestration and private Core
+↔ bounded Hermes roles
+→ human review
+→ traceable report
 ```
 
-It distinguishes completed internal technical proof from product validation still pending.
+## Historical diagrams
 
-## Visual system
+The existing files should be treated as historical until they are redrawn or moved to an explicit legacy area:
 
-The canonical DUBSAR visual language uses:
+- `dubsar-architecture.svg`;
+- `dubsar-architecture-fr.svg`;
+- `dubsar-multi-session.svg`;
+- `dubsar-multi-session-fr.svg`;
+- `dubsar-windows-journey.svg`.
 
-- dark graphite and night-blue backgrounds;
-- restrained turquoise for product flows and active state;
-- warm gold for evidence and Human Gates;
-- clear typography and bounded information density;
-- no purple, excessive neon or generic SaaS styling.
+Their presence does not establish:
 
-## Repository rule
+- a supported Claude Code product;
+- a generally available Windows package;
+- a working customer desktop;
+- current Marketplace availability;
+- production readiness.
 
-Only current DUBSAR visuals are retained in this folder. Superseded diagrams have been removed so that the public repository cannot present two competing product stories.
+## Next visual update
 
-The root English README embeds the English architecture visual. The French README embeds dedicated French variants of the architecture and multi-session visuals. This index remains the canonical place for the complete visual set.
+The next canonical visual set should cover:
 
-## Current status
+1. portal audit journey;
+2. deterministic Core and Hermes role separation;
+3. Human Gate and report;
+4. future Node and continuous-governance boundary;
+5. portal-user versus technical-administrator surfaces.
 
-```text
-Windows controlled private beta: being finalized
-Marketplace: not activated or announced
-product generally available: no
-public beta: no
-marketplace-ready: no
-```
+No private routes, credentials, policies, proof archives or deployment topology should appear in public diagrams.

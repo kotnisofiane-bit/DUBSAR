@@ -1,169 +1,136 @@
-# Privacy
+# Privacy Boundary
 
-This document describes the intended public privacy boundary for the DUBSAR controlled private beta. It is an engineering boundary, not a final legal privacy notice.
+This document describes the current product direction and the privacy questions that must be resolved before public availability.
 
-It does not define the complete contractual data-processing terms of a professional DUBSAR Audit engagement. Audit scope, authorized sources, access, retention and deletion are agreed before an engagement begins. The public website does not request credentials, tokens or source code.
+It is not yet a final production privacy notice.
 
-```text
-product generally available: no
-public beta: no
-marketplace-ready: no
-```
+## Current availability
 
----
+DUBSAR is in internal validation.
 
-## Product model
+No generally available customer portal, live connector package, local Node or production desktop is announced from this repository.
 
-DUBSAR is designed around thin host adapters connected to a private governance Core.
+## Data-minimization principle
 
-The first beta journey combines:
+DUBSAR should collect the smallest evidence scope required for an explicit audit mandate.
 
-- the DUBSAR Claude Code plugin;
-- a local Bridge;
-- DUBSAR Desktop and local runtime;
-- a private Backend and Core;
-- a local cockpit and Human Gate surface.
+The intended model favors:
 
-Claude Code is the first integration. Future adapters may connect Codex, Cursor or other coding-agent environments to the same governed Core. Those adapters are not currently available.
+- metadata over unrestricted content;
+- bounded windows over unlimited history;
+- explicit source allowlists;
+- structured facts over raw payload retention;
+- digests and references where content is not required;
+- visible exclusions and unavailable reads;
+- synthetic fixtures for internal testing.
 
-The public adapter is designed to remain thin. The private Backend and Core are not distributed through this repository.
+## Portal accounts
 
----
+A production portal privacy notice must document:
 
-## Data minimization
+- account identifiers and authentication provider;
+- tenant and project membership;
+- access and decision logs;
+- support and security communications;
+- account closure and deletion;
+- retention periods;
+- infrastructure and subprocessors.
 
-DUBSAR should process only the information required to provide governed project continuity and the requested feature.
+Public registration must not be announced until these elements match the deployed implementation.
 
-Public, local and private-service surfaces should avoid sending or retaining:
+## Audit imports
 
-- secrets or credentials;
-- private chain-of-thought;
-- unrestricted repository contents;
-- full terminal output when a bounded result is sufficient;
-- unrelated personal information;
-- private data not required by the active Mission or contract;
-- raw conversations when a bounded decision or evidence record is sufficient.
+An audit may require bounded exports from automation and business systems.
 
-Exact beta data flows must be documented and compared with the final implementation before publication.
+Before a user submits evidence, the product must identify:
 
----
+- which source is being provided;
+- the authorized purpose and scope;
+- the expected fields;
+- the collection window;
+- whether raw content is retained;
+- retention and deletion behavior;
+- who can review the result;
+- known limitations.
 
-## Local data
+Raw credentials, API keys and unrestricted mailbox or conversation archives must not be included in a normal audit import.
 
-The local Bridge and DUBSAR Desktop may store bounded local state required for:
+## Connectors
 
-- workspace recognition;
-- native and canonical session continuity;
-- worktree and process references;
-- local diagnostics;
-- cockpit operation;
-- secure access state;
-- restart and reconciliation observations.
+Future connectors should use least-privilege access and request only the capabilities required for the selected Rule Pack.
 
-Local state must not silently become a competing source of truth for canonical Mission, decision, evidence or Human Gate state.
+Connector credentials should:
 
-Sensitive access keys should be held only through the supported secure local mechanism. They must not appear in adapter files, command arguments, ordinary logs, public evidence or metadata intended for the coding agent.
+- remain in an approved secret store;
+- never appear in findings, reports or logs;
+- be revocable;
+- have explicit scope and ownership;
+- be separated from human-review authority.
 
----
+For a future local Node, source credentials are intended to stay inside the client environment.
 
-## Private service data
+## Models and Hermes
 
-The private Backend and Core may receive bounded project metadata and governed records required for:
+Before external use, DUBSAR must document:
 
-- Mission and workspace continuity;
-- canonical session identity;
-- lots and execution contracts;
-- decisions and constraints;
-- evidence relationships and verification status;
-- audit;
-- Human Gates and authorization state;
-- replay and reconciliation.
+- which model or agent providers process which fields;
+- whether provider training is enabled or disabled;
+- regional and retention behavior;
+- redaction and prompt boundaries;
+- what remains deterministic;
+- how agent outputs are separated from authoritative state.
 
-A host adapter must not send arbitrary repository content merely because the coding agent can access the workspace.
+No model output should silently expand the evidence scope.
 
-Any content-bearing feature requires:
+## Evidence and reports
 
-- an explicit product purpose;
-- a defined scope;
-- user-facing explanation;
-- minimization and retention rules;
-- appropriate authorization.
+Audit records may include:
 
----
+- source references;
+- normalized facts;
+- content digests;
+- proposed findings;
+- reviewer comments and decisions;
+- limitations;
+- report artifacts.
 
-## Coding-agent hosts
+The production policy must define retention, access, export and deletion for each category.
 
-DUBSAR operates inside or alongside a coding-agent host and is also subject to that host's independent data handling, account configuration and model-provider behavior.
+## Infrastructure
 
-For the first integration, this includes Claude Code.
+The final notice must match the real deployed providers and data flows, including hosting, routing, storage, authentication, observability and model services.
 
-DUBSAR does not control the host's separate privacy terms or the model provider's independent processing. Future adapters must document any host-specific differences before availability is claimed.
+An architectural intention is not a substitute for a verified data map.
 
----
+## AI Act and other regulation
 
-## Evidence and logs
+DUBSAR may help document provenance, traceability and human oversight.
 
-Evidence should remain bounded to what is required to support a governed decision.
+It does not certify legal compliance and this document does not replace legal advice, a data-protection impact assessment or client-specific contractual review.
 
-Public or tester-facing evidence must avoid:
+## Public repositories
 
-- credentials and tokens;
-- full private paths unless operationally necessary and protected;
-- unrelated source content;
-- raw private prompts;
-- private chain-of-thought;
-- unbounded stdout or terminal history;
-- private tester data.
+Never publish:
 
-An agent declaration and a deterministic verification result must remain distinguishable.
+- real audit exports;
+- client identifiers;
+- access tokens or cookies;
+- human-authorization proofs;
+- unredacted logs;
+- private reports;
+- confidential prompts or policies.
 
----
+Public examples should use synthetic data.
 
-## Beta access
+## Before external access
 
-Private beta access may require account, invitation, activation or licence metadata.
+Required work includes:
 
-The final categories, retention periods, deletion procedures and user rights must be documented before commercial availability.
-
-Do not submit real access keys, secrets, private service URLs, confidential repository content or sensitive personal information through public GitHub issues.
-
----
-
-## Platform status
-
-Windows is the first controlled private-beta target.
-
-Linux validation is planned later. macOS support is not announced.
-
-Platform-specific storage, secure-key handling, permissions, uninstall and deletion behavior must be documented before support is claimed for each platform.
-
----
-
-## Publication blockers
-
-Before Marketplace publication, the project must confirm:
-
-- the exact data sent by the final plugin and Desktop build;
-- the final canonical plugin version and package contents;
-- local storage locations and removal behavior on supported Windows;
-- whether Mission and workspace data survive update or reinstall intentionally;
-- private-service retention rules;
-- access, export and deletion procedures;
-- the final public privacy contact and legal notice;
-- differences introduced by any future host adapter;
-- consistency between this document and the implemented product.
-
----
-
-## Current status
-
-```text
-privacy notice: engineering boundary, not final legal notice
-Windows controlled private beta: in preparation
-Marketplace: not activated or announced
-supported public installation: none
-product generally available: no
-public beta: no
-marketplace-ready: no
-audit engagement data terms: agreed per mandate before work begins
-```
+1. verify the deployed data flow;
+2. complete the licence and third-party attribution audit;
+3. define retention and deletion;
+4. define subprocessors and regional boundaries;
+5. validate tenant isolation and access controls;
+6. publish the applicable privacy notice and terms;
+7. establish data-processing agreements where required;
+8. test export and deletion behavior.

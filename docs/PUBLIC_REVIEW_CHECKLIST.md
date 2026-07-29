@@ -1,121 +1,98 @@
 # DUBSAR Public Review Checklist
 
-This checklist is for the human review of the public-realignment pull request before any merge, repository rename or Marketplace activation.
-
----
+Use this checklist before merging a public-positioning change, announcing access or publishing an adapter.
 
 ## 1. Product identity
 
 - [ ] DUBSAR is the only current public product brand.
-- [ ] Scribe Builder is not presented as a parent product or company.
-- [ ] Scribe Launcher is not presented as a current product.
-- [ ] Eyes of SCRIBE is not presented as a separate product.
-- [ ] Historical names appear only in explicit legacy context or compatibility notes.
+- [ ] Portal audit is the primary customer-facing path.
+- [ ] Automations and AI agents are the primary problem space.
+- [ ] Historical SCRIBE names appear only as compatibility or legacy context.
+- [ ] Claude Code, Codex and Cursor remain secondary developer-adapter experiments.
 
----
+## 2. Product truth
 
-## 2. Product definition
+- [ ] Deterministic fixture validation is distinguished from an API test.
+- [ ] API evidence is distinguished from a browser user E2E.
+- [ ] The complete portal journey is not described as proved until it is.
+- [ ] Live connectors are not described as generally available.
+- [ ] Continuous governance and the DUBSAR Node are described as roadmap capabilities.
+- [ ] No external agency pilot is implied before internal acceptance.
 
-- [ ] DUBSAR is described as governance for long-running, multi-session AI coding projects.
-- [ ] The product beta and the DUBSAR Audit professional service are presented as distinct paths with different availability states.
-- [ ] Audit claims remain bounded, read-only by default and subject to human validation.
-- [ ] Claude Code is clearly the first supported integration.
-- [ ] DUBSAR is not described as permanently Claude-only.
-- [ ] Codex, Cursor and other adapters are described as future direction, not current availability.
-- [ ] The private Core is described as host-independent.
+## 3. Audit semantics
 
----
+- [ ] The audit scope, sources and time window remain explicit.
+- [ ] Findings remain linked to evidence.
+- [ ] Missing evidence can produce `not evaluable`.
+- [ ] Zero findings is not presented as compliance.
+- [ ] Deterministic results, agent explanations and human decisions remain distinct.
+- [ ] CTRL-303 language stays bounded to evidence found in connected sources.
 
-## 3. Architecture accuracy
+## 4. Authority model
 
-- [ ] Host adapter, Bridge, Desktop/runtime, Backend, Core, Runner and cockpit responsibilities are distinct.
-- [ ] Backend is the protected canonical write boundary.
-- [ ] Core owns Mission, decisions, contracts, sessions, evidence and Human Gates.
-- [ ] Desktop and cockpit are not presented as canonical truth owners.
-- [ ] Agent declarations are not described as verified evidence.
-- [ ] Human Gates remain authenticated human decisions.
+- [ ] Hermes roles are non-authoritative.
+- [ ] The private Core remains the canonical authority boundary.
+- [ ] Human review is attributable and bound to the displayed review state.
+- [ ] Agents cannot approve their own work.
+- [ ] An unavailable authority path never becomes a reassuring state.
 
----
+## 5. AI Act and regulation
 
-## 4. Technical proof claims
+- [ ] DUBSAR is not described as a certification.
+- [ ] No automatic legal verdict is claimed.
+- [ ] No legal advice is implied.
+- [ ] Regulatory relevance is limited to governance evidence and documentation support.
 
-- [ ] One-session and two-session results are described as internal Windows technical proofs.
-- [ ] No internal proof is presented as an external user beta proof.
-- [ ] Multi-session claims mention distinct identities, processes, worktrees and evidence.
-- [ ] Conflict handling is described without claiming impossible correctness guarantees.
-- [ ] Restart and reconciliation claims stay within demonstrated behavior.
+## 6. Portal, privacy and security
 
----
+- [ ] Public portal availability matches the real access state.
+- [ ] Authentication and tenant isolation have evidence before public access.
+- [ ] Imports, retention, deletion, logs and subprocessors are documented.
+- [ ] No connector credential, token or real client evidence is public.
+- [ ] A monitored security contact exists before general availability.
 
-## 5. Platform claims
+## 7. Local Node and desktop
 
-- [ ] Windows is described as the first controlled private-beta target in preparation.
-- [ ] Linux is not described as available before real validation.
-- [ ] macOS is not announced before feasibility, signing and runtime validation.
-- [ ] No platform support is inferred from compilation or CI alone.
+- [ ] The Node is not described as released before a supported package exists.
+- [ ] Source credentials are intended to remain local.
+- [ ] Node authority is restricted to its approved boundary.
+- [ ] Desktop is presented as technical administration, not a complete separate product.
+- [ ] Installation, update, rollback and removal are proved before support is claimed.
 
----
+## 8. Developer adapters and Marketplace
 
-## 6. Marketplace and installation
+- [ ] Historical Marketplace staging is visibly unsupported.
+- [ ] No public installation command is active.
+- [ ] No vendored runtime is promoted before licence and compatibility review.
+- [ ] Generic or default session fallback is removed before publication.
+- [ ] Package, plugin and repository licence metadata are reconciled.
+- [ ] Final source pin and integrity material describe the exact released bytes.
 
-- [ ] Marketplace is not described as activated, published or announced.
-- [ ] No supported public installation command is active.
-- [ ] The existing vendored `0.11.1` runtime is described as an earlier staging pin.
-- [ ] The final publication pin remains pending Windows stabilization.
-- [ ] No vendored runtime file was manually changed to imitate a newer private plugin.
-- [ ] Final re-vendoring, hashes and strict validation remain explicit publication gates.
+## 9. Public/private boundary
 
----
-
-## 7. Public/private boundary
-
-- [ ] No private Core source is published.
-- [ ] No private Backend source is published.
-- [ ] No secrets, tokens or private service credentials are present.
-- [ ] No private prompts, policies, journals or tester data are present.
-- [ ] Privacy and Security documents describe engineering boundaries honestly.
-
----
-
-## 8. Visual identity
-
-- [ ] Root README uses current DUBSAR diagrams.
-- [ ] Current visuals use graphite/night blue, turquoise and restrained gold.
-- [ ] No current visual contains SCRIBE branding.
-- [ ] Legacy diagrams are clearly classified and not embedded as current architecture.
-- [ ] The social-preview source uses DUBSAR.
-- [ ] No mock screenshot is presented as a shipped product capture.
-
----
-
-## 9. Legacy material
-
-- [ ] `LEGACY.md` clearly defines interpretation rules.
-- [ ] RFCs are classified as legacy and non-normative.
-- [ ] Current root documentation wins over historical material.
-- [ ] Compatibility-sensitive `scribe` identifiers are not renamed casually.
-
----
+- [ ] No private Core or Backend source is published.
+- [ ] No internal deployment topology, prompt or policy is exposed.
+- [ ] No secret, token, signing material or confidential proof is present.
+- [ ] Third-party attribution and licences are complete for every distributed component.
+- [ ] Public examples use synthetic data.
 
 ## 10. Repository operations
 
-- [ ] PR remains draft during review.
-- [ ] No merge occurs without explicit Human GO.
-- [ ] Repository rename is handled as a separate Human Gate.
-- [ ] Marketplace activation and announcement require a later separate Human GO.
-- [ ] Security and licensing contacts are confirmed live before publication.
+- [ ] Changes are reviewed through a branch and PR.
+- [ ] No merge occurs without explicit human review.
+- [ ] Repository metadata and topics match the approved positioning.
+- [ ] Legacy public repositories are clearly named, archived or explained.
+- [ ] Marketplace activation is a separate approval from documentation merge.
 
----
-
-## Current expected verdict
+## Expected verdict for this realignment
 
 ```text
 public documentation realignment: reviewable
-Windows product journey: still in preparation
-final plugin publication pin: pending
-Marketplace activation: blocked
-repository rename: not performed
-product generally available: no
-public beta: no
-marketplace-ready: no
+deterministic fixture controls: internally validated
+API audit path: internal evidence recorded
+complete portal browser E2E: not yet proved
+public portal availability: not announced
+continuous governance / DUBSAR Node: roadmap
+developer Marketplace: inactive
+general availability: no
 ```
