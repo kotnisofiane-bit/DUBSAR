@@ -206,4 +206,4 @@ Some technical identifiers still use `scribe` for compatibility. They are legacy
 
 Created by [**Sofiane Kotni**](https://www.linkedin.com/in/sofiane-kotni/), creator of DUBSAR and author of *Digital Trust*.
 
-Website: [dubsar.ai](https://dubsar.ai/) · [LinkedIn](https://www.linkedin.com/in/sofiane-kotni/) · [Digital Trust — English](https://www.amazon.fr/dp/B0GZ4RH1KX) · [Digital Trust — French](https://www.amazon.fr/dp/B0H739BFJP) · [Amazon author page](https://www.amazon.fr/stores/Sofiane-KOTNI/author/B0H6NBHZTC) · Contact: [contact@dubsar.ai](mailto:contact@dubsar.ai)
+Website: [dubsar.ai](https://dubsar.ai/) · [LinkedIn](https://www.linkedin.com/in/sofiane-kotni/) · [Digital Trust — English](https://www.amazon.fr/dp/B0GZ4RH1KX) · [Digital Trust — French](https://www.amazon.fr/dp/B0H739BFJP) · [Amazon author page](https://www.amazon.fr/stores/Sofiane-KOTNI/author/B0H6NBHZTC) · [Malt](https://www.malt.fr/profile/sofianekotni) · Contact: [contact@dubsar.ai](mailto:contact@dubsar.ai)
