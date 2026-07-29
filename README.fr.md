@@ -6,7 +6,7 @@
 
 **Gouverner le passage de l’intention à la preuve. Conserver l’autorité humaine.**
 
-DUBSAR rend les projets logiciels construits avec des agents de code plus explicables, vérifiables et contrôlables dans la durée.
+DUBSAR est un système de gouvernance et d’audit des projets logiciels construits avec des agents IA. Il conserve les décisions, les preuves, la traçabilité et une autorité humaine explicite dans la durée.
 
 Deux voies sont proposées aujourd’hui :
 
@@ -122,6 +122,8 @@ DUBSAR ne prétend pas :
 - exposer le Core propriétaire ;
 - présenter Codex ou Cursor comme des intégrations déjà disponibles.
 
+DUBSAR peut soutenir l’organisation des preuves et la traçabilité utiles à une préparation documentaire liée à l’AI Act, mais ne fournit aucun conseil juridique, ne certifie aucune conformité et ne remplace pas une évaluation juridique ou de conformité qualifiée.
+
 ## Frontière publique et privée
 
 Ce dépôt constitue la surface publique de documentation et de distribution de DUBSAR. Il peut contenir la doctrine, l’architecture, des exemples bornés, les informations publiques de sécurité et d’installation, ainsi que l’adaptateur Claude Code lorsque sa publication est autorisée.
@@ -156,6 +158,6 @@ Certains identifiants techniques utilisent encore `scribe` pour compatibilité. 
 
 ## Créé par
 
-Créé par [**Sofiane Kotni**](https://www.linkedin.com/in/sofiane-kotni/), créateur de DUBSAR et auteur de *Digital Trust*.
+Créé par [**Sofiane Kotni**](https://dubsar.ai/fr/sofiane-kotni/), créateur de DUBSAR et auteur de *Digital Trust*.
 
-Site : [dubsar.ai](https://dubsar.ai/fr/) · [LinkedIn](https://www.linkedin.com/in/sofiane-kotni/) · [Digital Trust — français](https://www.amazon.fr/dp/B0H739BFJP) · [Digital Trust — anglais](https://www.amazon.fr/dp/B0GZ4RH1KX) · [Page auteur Amazon](https://www.amazon.fr/stores/Sofiane-KOTNI/author/B0H6NBHZTC) · Contact : [contact@dubsar.ai](mailto:contact@dubsar.ai)
+Site : [dubsar.ai](https://dubsar.ai/fr/) · [LinkedIn](https://www.linkedin.com/in/sofiane-kotni/) · [Digital Trust — français](https://www.amazon.fr/dp/B0H739BFJP) · [Digital Trust — anglais](https://www.amazon.fr/dp/B0GZ4RH1KX) · [Page auteur Amazon](https://www.amazon.fr/stores/Sofiane-KOTNI/author/B0H6NBHZTC) · [Malt](https://www.malt.fr/profile/sofianekotni) · Contact : [contact@dubsar.ai](mailto:contact@dubsar.ai)

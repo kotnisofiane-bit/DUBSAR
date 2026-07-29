@@ -6,7 +6,7 @@
 
 **Govern the path from intent to evidence. Keep human authority.**
 
-DUBSAR makes software projects built with coding agents easier to explain, review and control over time.
+DUBSAR is a governance and audit system for software projects built with AI agents. It preserves decisions, evidence, traceability and explicit human authority over time.
 
 It is one governance system with two current ways to work with it:
 
@@ -149,6 +149,8 @@ DUBSAR does not:
 - expose the proprietary Core;
 - claim that Codex or Cursor adapters are already available.
 
+DUBSAR can support evidence organization and traceability work relevant to AI Act readiness, but it does not provide legal advice, certify compliance or replace a qualified legal or conformity assessment.
+
 ---
 
 ## Public / private boundary
@@ -204,6 +206,6 @@ Some technical identifiers still use `scribe` for compatibility. They are legacy
 
 ## Created by
 
-Created by [**Sofiane Kotni**](https://www.linkedin.com/in/sofiane-kotni/), creator of DUBSAR and author of *Digital Trust*.
+Created by [**Sofiane Kotni**](https://dubsar.ai/sofiane-kotni/), creator of DUBSAR and author of *Digital Trust*.
 
 Website: [dubsar.ai](https://dubsar.ai/) · [LinkedIn](https://www.linkedin.com/in/sofiane-kotni/) · [Digital Trust — English](https://www.amazon.fr/dp/B0GZ4RH1KX) · [Digital Trust — French](https://www.amazon.fr/dp/B0H739BFJP) · [Amazon author page](https://www.amazon.fr/stores/Sofiane-KOTNI/author/B0H6NBHZTC) · [Malt](https://www.malt.fr/profile/sofianekotni) · Contact: [contact@dubsar.ai](mailto:contact@dubsar.ai)
