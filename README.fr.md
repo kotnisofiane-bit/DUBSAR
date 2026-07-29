@@ -156,6 +156,6 @@ Certains identifiants techniques utilisent encore `scribe` pour compatibilité. 
 
 ## Créé par
 
-Créé par **Sofiane Kotni**.
+Créé par [**Sofiane Kotni**](https://www.linkedin.com/in/sofiane-kotni/), créateur de DUBSAR et auteur de *Digital Trust*.
 
-Site : [dubsar.ai](https://dubsar.ai/fr/) · Contact : [contact@dubsar.ai](mailto:contact@dubsar.ai)
+Site : [dubsar.ai](https://dubsar.ai/fr/) · [LinkedIn](https://www.linkedin.com/in/sofiane-kotni/) · [Digital Trust — français](https://www.amazon.fr/dp/B0H739BFJP) · [Digital Trust — anglais](https://www.amazon.fr/dp/B0GZ4RH1KX) · [Page auteur Amazon](https://www.amazon.fr/stores/Sofiane-KOTNI/author/B0H6NBHZTC) · Contact : [contact@dubsar.ai](mailto:contact@dubsar.ai)
