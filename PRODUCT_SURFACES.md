@@ -1,16 +1,204 @@
 # Product and Surfaces
 
-DUBSAR is one product with several technical surfaces. It is also used by Sofiane as the governed operator system behind a bounded professional audit service.
+DUBSAR is one governance and audit system with three distinct public surfaces:
 
-The user should not have to understand a collection of brands, launchers or private repositories. The public product is **DUBSAR**.
+1. **Automated audit** through the DUBSAR portal;
+2. **Professional DUBSAR Audit** operated under an agreed mandate;
+3. **DUBSAR for coding agents**, currently a controlled private beta.
+
+The surfaces share one doctrine and may share protected technical components.
+
+They are not the same offer and must not be presented as having the same maturity.
 
 ---
 
 ## Product definition
 
-DUBSAR is a governance layer for long-running, multi-session AI coding projects.
+DUBSAR helps organizations understand and govern automations and AI-assisted projects.
 
-It adds a persistent project layer around coding agents without rebuilding their native capabilities.
+It connects authorized facts, decisions and evidence while preserving:
+
+- provenance;
+- versions;
+- limitations;
+- uncertainty;
+- contradictions;
+- explicit human authority.
+
+The shared operating principle is:
+
+```text
+Systems analyze and apply declared rules
+DUBSAR preserves, relates and checks
+Humans authorize and decide
+```
+
+DUBSAR does not grant an agent or technical component the authority to approve its own work.
+
+---
+
+## Shared doctrine
+
+Every DUBSAR surface follows the same boundaries:
+
+- only authorized sources are examined;
+- persuasive wording is not treated as proof;
+- facts and inferences remain separate;
+- evidence remains tied to its source and version;
+- contradictions remain visible;
+- missing sources become explicit limitations;
+- read-only access is the default;
+- protected movement requires explicit authorization;
+- no agent conclusion becomes final without the required human review.
+
+The same doctrine applies whether DUBSAR is examining an existing automation or governing a software project during construction.
+
+---
+
+## Surface 1 — Automated audit portal
+
+The DUBSAR portal is the public entry point for a bounded automated audit.
+
+Its responsibilities are to:
+
+- collect the perimeter selected by the user;
+- identify the period and authorized sources;
+- connect available events and evidence;
+- apply declared consistency checks;
+- surface potential inconsistencies;
+- distinguish unavailable information from negative findings;
+- collect human classification;
+- prepare a reviewable report.
+
+The intended journey is:
+
+```text
+Authorized sources
+    ↓
+DUBSAR Portal
+    ↓
+Cross-source analysis
+    ↓
+Potential findings and limitations
+    ↓
+Human classification
+    ↓
+Report
+```
+
+### Portal authority boundary
+
+The portal can:
+
+- display evidence;
+- show relationships;
+- prepare findings;
+- record classifications;
+- generate a report.
+
+The portal cannot:
+
+- turn an inference into a fact;
+- silently consider an unavailable source compliant;
+- issue a legal compliance verdict;
+- authorize protected client actions by itself;
+- remove the responsibility of the designated human owner.
+
+### Portal maturity
+
+The portal is public and under active validation.
+
+This means it is the current commercial entry point without being presented as universally supported or production proven for every environment.
+
+[Open the portal](https://app.dubsar.ai/audits)
+
+---
+
+## Surface 2 — Professional DUBSAR Audit
+
+Professional DUBSAR Audit is a bounded service operated by Sofiane with DUBSAR.
+
+It is not simply the automated portal with a different label.
+
+The professional surface adds:
+
+- an agreed mandate;
+- explicit permissions;
+- bounded collection from authorized sources;
+- operator analysis;
+- DUBSAR evidence and contradiction records;
+- human classification and review;
+- a professional report;
+- an evidence register;
+- agreed retention, timing and price.
+
+The primary mandates are:
+
+### Launch readiness
+
+**Question:** Is the product genuinely ready to open to users?
+
+The review may cover:
+
+- critical user journeys;
+- installation;
+- permissions;
+- error behavior;
+- documentation;
+- billing;
+- data handling;
+- tests;
+- known limitations.
+
+The result may be:
+
+- GO;
+- GO under conditions;
+- NO-GO.
+
+### Agent governance
+
+**Question:** Can the team explain and verify how the project was built and approved?
+
+The review may cover:
+
+- Mission continuity;
+- decisions;
+- evidence;
+- contradictions;
+- agent actions;
+- human validations;
+- the boundary between generated proposals and approved movement.
+
+### Professional audit journey
+
+```text
+Agreed mandate and permissions
+    ↓
+Authorized project sources
+    ↓
+Bounded collection and analysis
+    ↓
+DUBSAR evidence, contradiction and decision records
+    ↓
+Human review and classification
+    ↓
+Professional report and evidence register
+```
+
+The service may examine a project that was not already using the DUBSAR coding-agent product.
+
+Its conclusions remain limited by the sources that exist and were authorized.
+
+[Professional audit method](AUDIT.md)
+
+---
+
+## Surface 3 — DUBSAR for coding agents
+
+DUBSAR for coding agents governs long-running, multi-session software projects assisted by AI coding agents.
+
+It adds a persistent project layer around existing agents without rebuilding their native capabilities.
 
 ```text
 Coding agents build
@@ -18,11 +206,11 @@ DUBSAR preserves Mission, decisions, boundaries and evidence
 Humans decide protected movement
 ```
 
-Claude Code is the first supported host. Codex, Cursor and other adapters are future product direction, not currently available integrations.
+Claude Code is the first host.
 
----
+Codex, Cursor and other adapters remain future direction and are not currently available integrations.
 
-## 1. Host adapter
+### 3.1 Host adapter
 
 A host adapter connects a coding-agent environment to DUBSAR.
 
@@ -37,15 +225,15 @@ Its role is to:
 - connect the host to the local DUBSAR runtime;
 - surface the next action and Human Gate status.
 
-The adapter remains thin. It does not contain the proprietary decision engine and does not make canonical business decisions locally.
+The adapter remains thin.
 
-Some command, MCP and environment identifiers may temporarily retain an internal `scribe` prefix for compatibility. Public labels and documentation use DUBSAR.
+It does not contain the proprietary Core and does not make canonical business decisions locally.
 
----
+Some command, MCP and environment identifiers may retain a temporary `scribe` prefix for compatibility. Public labels use DUBSAR.
 
-## 2. Local Bridge
+### 3.2 Local Bridge
 
-The Bridge provides bounded local transport between the host adapter and the local product runtime.
+The Bridge provides bounded local transport between the host adapter and the local runtime.
 
 It may support:
 
@@ -54,11 +242,9 @@ It may support:
 - start and status orchestration;
 - session-to-runtime connectivity.
 
-The Bridge is not the source of truth for Mission, decisions, contracts, evidence or Human Gates.
+The Bridge is not the source of truth for Mission, decisions, evidence or Human Gates.
 
----
-
-## 3. DUBSAR Desktop and local runtime
+### 3.3 DUBSAR Desktop and local runtime
 
 DUBSAR Desktop supplies the local runtime required by the current Claude Code integration.
 
@@ -66,46 +252,120 @@ Its responsibilities include:
 
 - bounded local process startup;
 - process identity and lifecycle control;
-- worktree provisioning through governed references;
+- governed worktree provisioning;
 - restart observations and reconciliation requests;
-- secure local configuration and access state;
-- navigation to the cockpit and Human Gate surfaces.
+- secure local configuration;
+- navigation to cockpit and Human Gate surfaces.
 
-Desktop is not marketed as a separate product and is not the proprietary Core.
+Desktop is not marketed as a separate product and is not the private Core.
 
-The legacy term “Launcher” no longer describes a public product. Internal launcher components may remain where changing them would break compatibility.
+The legacy term “Launcher” may remain internally where changing it would break compatibility. It is not a separate public brand.
+
+### 3.4 Multi-session governance
+
+DUBSAR relates several active sessions to one Mission while preserving isolation.
+
+```text
+Mission
+  ├── Session A → Worktree A → Process A → Evidence A
+  └── Session B → Worktree B → Process B → Evidence B
+                 ↓
+          Conflict or Human Gate when required
+```
+
+Internal Windows proofs have validated this model.
+
+The complete external product journey remains under validation.
 
 ---
 
-## 4. Private Backend
+## Optional deployment path — continuous governance
 
-The Backend is the protected service boundary and the only supported product writer to canonical Core state.
+Continuous governance may be proposed separately after an audit when the need is established.
 
-It validates and limits requests, verifies runtime bindings, rejects stale mutations and protects private implementation details.
+A DUBSAR Node is intended to apply declared controls inside an authorized client environment.
+
+Conceptually:
+
+```text
+Proposed action
+    ↓
+DUBSAR Node
+    ↓
+Declared rule evaluation
+    ↓
+Authorized action
+or
+Human Gate
+```
+
+A Node:
+
+- operates only within an agreed perimeter;
+- must not create its own permissions;
+- must not silently expand its authority;
+- must preserve the relationship between action, rule and authorization;
+- must stop or request human review when protected authority is required.
+
+The Node is not automatically included with a portal report or professional audit.
+
+No generally available Node deployment is currently claimed.
+
+---
+
+## Protected technical components
+
+The three public surfaces may rely on shared protected components.
+
+### DUBSAR Portal
+
+The Portal supports:
+
+- configuration;
+- source selection;
+- findings;
+- evidence display;
+- human classification;
+- reporting;
+- visibility into governed state.
+
+The Portal makes state understandable. It is not the final authority over protected actions.
+
+### Private Backend
+
+The Backend is the protected service boundary.
+
+Its responsibilities include:
+
+- validating requests;
+- limiting scope;
+- verifying runtime bindings;
+- rejecting stale or unauthorized mutations;
+- protecting private implementation details.
 
 The Backend is not distributed through this repository.
 
----
+### Private DUBSAR Core
 
-## 5. Private DUBSAR Core
-
-The Core is the source of truth for governed project state, including:
+The Core owns canonical governed state, including:
 
 - Mission;
 - decisions and constraints;
-- lots and execution contracts;
-- canonical DUBSAR sessions;
-- runtime allocations and process state;
-- evidence relationships and verification tiers;
+- evidence relationships;
+- contradictions;
 - audit state;
-- Human Gates and authorizations;
-- replay and reconciliation decisions.
+- declared rules;
+- Human Gates;
+- authorizations;
+- replay and reconciliation state.
 
-The Core remains private.
+The Core can evaluate declared rules and preserve canonical outcomes.
 
----
+It cannot grant itself authority outside the agreed policy and authorization model.
 
-## 6. Runner
+Human authority remains explicit for protected movement.
+
+### Runner
 
 The Runner produces bounded mechanical evidence such as:
 
@@ -115,111 +375,153 @@ The Runner produces bounded mechanical evidence such as:
 - hashes;
 - execution artefact references.
 
-It does not own Mission state and cannot create a Human GO.
+The Runner does not own Mission state and cannot create a Human GO.
 
----
-
-## 7. DUBSAR cockpit
+### Cockpit
 
 The cockpit makes governed state readable to the human.
 
-It is intended to show:
+It may display:
 
-- the recognized project and active Mission;
-- active sessions and their state;
-- lots, contracts and worktrees;
-- relevant decisions and constraints;
-- declared and verified evidence without conflating them;
-- conflicts and stale state;
+- recognized projects;
+- active Missions;
+- sessions;
+- contracts and worktrees;
+- decisions and constraints;
+- declared and verified evidence;
+- conflicts;
+- stale state;
 - pending Human Gates;
-- bounded diagnostics and availability state.
+- availability and diagnostic information.
 
-The cockpit displays and controls through governed boundaries. It does not become the authority that approves its own state.
+The cockpit cannot approve its own state.
 
-The former public label “Eyes of SCRIBE” is historical and should not remain a separate product brand.
-
----
-
-## 8. Professional audit surface
-
-DUBSAR Audit is a professional service, not a second autonomous software platform.
-
-For an audit engagement, the operating surface combines:
-
-- an agreed mandate and authorized sources;
-- bounded collection through approved client tools;
-- DUBSAR Mission, evidence, contradiction and decision records;
-- human classification and validation;
-- a professional report and evidence register.
-
-The service may examine a project that was not already using the Claude Code plugin. In that case, the audit is retrospective and its conclusions are limited by the sources that exist and were authorized.
-
-The audit does not expose the private Core, grant autonomous authority to an agent or imply that the client has deployed the private-beta product.
+The former label “Eyes of SCRIBE” is historical and must not remain a separate public product brand.
 
 ---
 
-## 9. Multi-session surface
+## Authority model
 
-DUBSAR relates several active sessions to one Mission while preserving isolation.
+DUBSAR separates analysis, rules, execution and authority.
 
-```text
-Mission
-  ├── Session A → Worktree A → Process A → Evidence A
-  └── Session B → Worktree B → Process B → Evidence B
-                 ↓
-          Conflict / Human Gate when required
-```
+| Layer | Role | Authority boundary |
+|---|---|---|
+| Portal | Configure, display, classify and report | Cannot authorize protected actions alone |
+| Analysis components | Relate facts and surface findings | Cannot convert inference into fact |
+| Core | Preserve canonical state and evaluate declared rules | Cannot expand its own authority |
+| Node | Apply authorized controls | Cannot act outside its mandate |
+| Runner | Produce mechanical evidence | Cannot approve movement |
+| Agent | Propose or perform bounded work | Cannot approve its own work |
+| Human authority | Validate findings and authorize protected movement | Remains accountable for the decision |
 
-Internal technical proofs have validated this model on Windows. The public product journey remains under validation.
+The intended doctrine is not “the Core replaces the human.”
+
+It is:
+
+**The Portal makes evidence visible. The Core preserves state and applies declared rules. The Node enforces authorized controls. Humans retain final authority.**
 
 ---
 
-## Public distribution
+## AI Act boundary
 
-This repository is intended to become both:
+DUBSAR can help structure documentation relevant to AI Act readiness, including:
 
-- the public product and doctrine repository;
-- the Claude Code Marketplace repository for the thin first host adapter.
+- system and agent inventories;
+- purposes and designated owners;
+- source and version traceability;
+- human-oversight records;
+- evidence registers;
+- known limitations;
+- uncertainty and missing information.
 
-The Marketplace is not activated or announced. No installation command should be treated as active until the package, supported platform, licence, security contacts and beta access flow are validated.
+DUBSAR does not:
+
+- provide legal advice;
+- certify regulatory compliance;
+- produce an automatic conformity verdict;
+- replace a qualified legal or conformity assessment.
+
+---
+
+## Public and private boundary
+
+This repository is intended to remain:
+
+- the public doctrine and documentation repository;
+- the future distribution home for authorized thin host adapters;
+- a bounded source of examples, diagrams and public trust information.
+
+It may contain:
+
+- public product doctrine;
+- public architecture descriptions;
+- bounded examples;
+- security and privacy information;
+- installation boundaries;
+- authorized adapter metadata.
+
+It does not publish:
+
+- the proprietary DUBSAR Core;
+- private Backend implementation details;
+- internal policies or prompts;
+- sealed journals;
+- confidential client or tester data;
+- secrets, tokens or trust material.
 
 ---
 
 ## Platform boundary
 
-- **Windows:** first controlled private-beta target, still in preparation.
-- **Linux:** planned for later validation; not announced.
-- **macOS:** not announced; feasibility and packaging remain to be evaluated.
+### Automated audit portal
+
+Web-based public entry point under active validation.
+
+### Windows
+
+First controlled private-beta target for the coding-agent product.
+
+### Linux
+
+Planned for later validation. Not currently announced.
+
+### macOS
+
+Not currently announced. Packaging, signing and runtime behavior remain to be evaluated.
+
+### Claude Code
+
+First coding-agent integration and current engineering focus.
+
+### Codex, Cursor and other hosts
+
+Future adapter direction. Not currently supported publicly.
 
 ---
 
-## Current beta boundary
+## Current maturity summary
 
-The current private-beta preparation covers:
-
-- Claude Code as the first host;
-- the DUBSAR plugin;
-- local Bridge and DUBSAR Desktop;
-- a private Backend and Core;
-- Mission continuity;
-- canonical one- and multi-session governance;
-- explicit Human Gates.
-
-Not currently claimed as available:
-
-- operational Codex or Cursor adapters;
-- public Linux or macOS packages;
-- enterprise on-premise deployment;
-- certified compliance or security guarantees;
-- autonomous approval or release authority;
-- a commercial-ready public service.
-
-This beta boundary applies to the installable product. The separately scoped DUBSAR Audit professional service is available on request under the boundaries documented in [AUDIT.md](AUDIT.md).
+| Surface | Maturity |
+|---|---|
+| Automated audit portal | Public, under active validation |
+| Professional DUBSAR Audit | Available on request |
+| DUBSAR for Claude Code | Functional controlled private beta |
+| External coding-agent access | Selective, invitation only |
+| Public Marketplace | Not active |
+| DUBSAR Node | Separate scoped path, not generally available |
+| Codex / Cursor | Future direction |
+| Private Core | Active, proprietary and protected |
 
 ---
 
 ## Summary
 
-DUBSAR is one product and one governance method.
+DUBSAR is one governance and audit system.
 
-The host adapter connects the coding agent. The Bridge transports locally. Desktop supplies the runtime. The Backend protects canonical writes. The Core owns governed state. The Runner produces mechanical evidence. The cockpit makes the state understandable. The audit surface applies the same method to a bounded professional engagement. Humans remain the final authority.
+The automated portal prepares a bounded first result.
+
+The professional audit adds a mandate, operator analysis and human review.
+
+The coding-agent product governs software projects during construction.
+
+The Portal makes evidence readable. The Backend protects requests. The Core preserves canonical state and evaluates declared rules. The Runner produces mechanical evidence. The Node applies only authorized controls. The cockpit surfaces governed state. Human authority remains final.
