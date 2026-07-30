@@ -165,7 +165,7 @@ It does not publish:
 - internal policies or sealed journals;
 - client or tester data;
 - secrets, tokens or trust material;
-- private Backend implementation details.
+- private implementation or topology details.
 
 No public software licence is currently selected or granted by this repository.
 Future licensing will be decided separately for each component before
@@ -178,15 +178,12 @@ notices. See [Rights and Licensing Status](RIGHTS.md).
 
 ### Understand DUBSAR
 
-1. [Why DUBSAR?](WHY_DUBSAR.md)
+1. [DUBSAR website](https://dubsar.ai/)
 2. [DUBSAR Audit](AUDIT.md)
-3. [Product and surfaces](PRODUCT_SURFACES.md)
-4. [Current status](STATUS.md)
-5. [Architecture](ARCHITECTURE.md)
-6. [FAQ](FAQ.md)
-7. [Roadmap](ROADMAP.md)
+3. [Why DUBSAR?](WHY_DUBSAR.md)
+4. [Public skills](https://github.com/kotnisofiane-bit/dubsar-agent-skills)
 
-### Distribution and trust
+### Trust
 
 - [Rights and licensing status](RIGHTS.md)
 - [Installation](INSTALLATION.md)
@@ -194,6 +191,10 @@ notices. See [Rights and Licensing Status](RIGHTS.md).
 - [Security](SECURITY.md)
 - [Privacy](PRIVACY.md)
 - [Integrity and provenance](INTEGRITY.md)
+
+Other repository documents may describe earlier coding-agent, Marketplace or
+installation work. They are retained for context while the public
+documentation is reviewed; they do not establish a current offer.
 
 ---
 

@@ -172,7 +172,7 @@ Il ne publie pas :
 - les politiques ou journaux internes ;
 - les données de clients ou de testeurs ;
 - les secrets, jetons ou éléments de confiance ;
-- les détails privés du Backend.
+- les détails privés d’implémentation ou de topologie.
 
 Aucune licence logicielle publique n’est actuellement choisie ou accordée par
 ce dépôt. Les licences futures seront décidées séparément pour chaque composant
@@ -185,15 +185,12 @@ licences et notices. Voir [Droits et statut des licences](RIGHTS.md).
 
 ### Comprendre DUBSAR
 
-1. [Pourquoi DUBSAR ?](WHY_DUBSAR.md)
+1. [Site DUBSAR](https://dubsar.ai/fr/)
 2. [Audit DUBSAR](AUDIT.fr.md)
-3. [Produit et surfaces](PRODUCT_SURFACES.md)
-4. [État actuel](STATUS.md)
-5. [Architecture](ARCHITECTURE.md)
-6. [FAQ](FAQ.md)
-7. [Feuille de route](ROADMAP.md)
+3. [Pourquoi DUBSAR ?](WHY_DUBSAR.md)
+4. [Skills publics](https://github.com/kotnisofiane-bit/dubsar-agent-skills)
 
-### Distribution et confiance
+### Confiance
 
 - [Droits et statut des licences](RIGHTS.md)
 - [Installation](INSTALLATION.md)
@@ -201,6 +198,11 @@ licences et notices. Voir [Droits et statut des licences](RIGHTS.md).
 - [Sécurité](SECURITY.md)
 - [Confidentialité](PRIVACY.md)
 - [Intégrité et provenance](INTEGRITY.md)
+
+D’autres documents du dépôt peuvent décrire d’anciens travaux autour des
+agents de code, de la Marketplace ou de l’installation. Ils sont conservés
+comme contexte pendant la révision de la documentation publique et
+n’établissent pas une offre actuelle.
 
 ---
 
