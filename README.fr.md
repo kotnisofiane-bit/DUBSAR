@@ -6,16 +6,17 @@
 
 **Auditez vos automatisations. Gouvernez ce qui agit.**
 
-DUBSAR relie les faits, les décisions et les preuves de vos workflows. Le
-système rend les incohérences visibles, conserve les limites de couverture et
-remet la validation au responsable humain désigné.
+DUBSAR relie les faits, les décisions et les preuves des systèmes d’agents IA
+et des automatisations. Le système rend les incohérences visibles, conserve les
+limites de couverture et remet la validation au responsable humain désigné.
 
 La direction publique actuelle repose sur deux surfaces :
 
 1. un portail d’audit automatisé, en construction et bientôt disponible ;
-2. un Audit professionnel DUBSAR borné, disponible sur demande.
+2. un audit professionnel DUBSAR borné, disponible sur demande.
 
 [Découvrir l’audit](https://dubsar.ai/fr/audit) ·
+[Skills publics](https://github.com/kotnisofiane-bit/dubsar-agent-skills) ·
 [État actuel](STATUS.md) ·
 [English version](README.md)
 

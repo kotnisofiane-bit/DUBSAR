@@ -6,9 +6,9 @@
 
 **Audit your automations. Govern what can act.**
 
-DUBSAR connects facts, decisions and evidence across workflows. It makes
-inconsistencies visible, preserves coverage limitations and returns validation
-to the designated human authority.
+DUBSAR connects facts, decisions and evidence across AI-agent systems and
+automation workflows. It makes inconsistencies visible, preserves coverage
+limitations and returns validation to the designated human authority.
 
 The current public direction has two delivery surfaces:
 
@@ -16,6 +16,7 @@ The current public direction has two delivery surfaces:
 2. a bounded Professional DUBSAR Audit, available on request.
 
 [Explore the audit](https://dubsar.ai/audit) ·
+[Public skills](https://github.com/kotnisofiane-bit/dubsar-agent-skills) ·
 [Current status](STATUS.md) ·
 [Version française](README.fr.md)
 
