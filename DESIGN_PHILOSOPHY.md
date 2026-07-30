@@ -99,9 +99,10 @@ findings, review and reports. It is coming soon and remains under development
 and validation. The public marketing website provides product information; it
 does not provide access to the portal.
 
-A future Node and desktop are intended for technical administrators who need local credentials, runtime health, connector configuration and controlled execution.
-
-These surfaces share one authority model. They do not create separate governance brains.
+Continuous governance or installed components may be considered later under a
+separate scope. Their architecture, data placement, distribution, support and
+licensing remain undecided and are not promised by the current product
+direction.
 
 ## Preserve the private authority boundary
 
@@ -117,13 +118,13 @@ Every public claim should name which boundary was actually exercised.
 
 ## Developer heritage
 
-Earlier Claude Code, desktop and multi-session work remains useful.
+Earlier Claude Code, local-runtime and multi-session work remains useful.
 
-It contributes patterns for identity, evidence, local runtime and Human Gates.
-DUBSAR for coding agents remains a controlled private-beta surface, with Claude
-Code first. Codex, Cursor and other adapters remain future directions. This
-surface is distinct from the planned portal and is not a generally available
-public product.
+It contributes patterns for identity, evidence and Human Gates.
+That coding-agent path is now paused. It is retained as project heritage, not a
+current commercial surface, active beta or supported integration. The current
+delivery surfaces are the coming-soon audit portal and the Professional DUBSAR
+Audit available on request.
 
 ## Summary
 

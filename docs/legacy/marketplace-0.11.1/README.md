@@ -54,8 +54,10 @@ distribution candidate. Leaving an executable manifest and plugin tree in the
 default branch made an unsupported installation path discoverable and blurred
 the current product boundary.
 
-The current repository keeps the product doctrine and public evidence while the
-coding-agent product remains a controlled private beta.
+At the time of retirement, the repository kept the product doctrine and public
+evidence while the coding-agent work was still described as a controlled
+private beta. That direction was later paused; no active coding-agent beta is
+currently offered. See the current [status](../../../STATUS.md).
 
 ## Historical recovery
 

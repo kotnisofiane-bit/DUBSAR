@@ -2,39 +2,50 @@
 
 ## Current decision
 
-DUBSAR does not currently publish a Claude Code Marketplace package.
+DUBSAR does not currently publish a Claude Code Marketplace package or any
+other public product package.
 
-The historical staging manifest and vendored `plugins/scribe/` runtime have been
-retired from the active repository tree. There is no supported public
-installation command, Marketplace source, plugin archive or self-service update
-path in this repository.
+The historical staging manifest and vendored `plugins/scribe/` runtime have
+been retired from the active repository tree. There is no supported public
+installation command, Marketplace source, plugin archive, beta-access path or
+self-service update path in this repository.
 
-This decision applies only to public package distribution. It does not change
-the status of:
+This decision does not change the status of:
 
-- the public DUBSAR marketing website and documentation;
+- the public DUBSAR website and documentation;
 - the automated audit portal, which is coming soon and is not yet publicly
   available;
 - the Professional DUBSAR Audit, available on request;
-- the controlled DUBSAR for Claude Code private beta, available only through an
-  explicitly approved test path.
+- the separate public skills repository described below.
+
+Earlier Claude Code work is historical and paused as a product direction. It is
+not a current commercial surface or controlled beta.
+
+## Separate public skills
+
+The
+[dubsar-agent-skills](https://github.com/kotnisofiane-bit/dubsar-agent-skills)
+repository is a separate MIT-licensed publication of doctrine and bounded local
+helpers.
+
+It is not a Marketplace package, DUBSAR product runtime or distribution of the
+Portal, private Core or private implementation. Its licence and installation
+instructions apply only to that repository.
 
 ## Why the staging surface was retired
 
 The visible staging surface could be discovered as if it were installable even
-though it was not the final product package. It also combined:
+though it was not a final product package. It also combined:
 
 - an earlier private-source pin;
 - historical `scribe` identifiers;
 - an executable plugin tree;
 - Marketplace metadata;
-- conflicting historical licence signals, now preserved only with the retired
-  record. Any future public distribution requires a new component-specific
-  licence review.
+- historical licence terms that now belong only to the retired record.
 
-Keeping that surface in the default branch created more ambiguity than useful
-product evidence. The active repository now documents the product boundary
-without exposing an obsolete installation candidate.
+Keeping that surface in the default branch created ambiguity. The active
+repository now documents the public/private boundary without exposing an
+obsolete installation candidate.
 
 ## Historical record
 
@@ -48,36 +59,39 @@ The record preserves:
   `c2878313198aceccac078bf9446c5ab45751e424`;
 - historical vendored-tree aggregate SHA-256
   `df9cee3af505c606824edd27485d471a418e75593468426ff10c00501bb0f38f`;
-- the retirement date and scope.
+- the retirement date and scope;
+- the historical licence text in its archival location.
 
-Git history preserves the previous bytes. They are not a supported package and
-must not be copied from history for installation or production use.
+Git history preserves earlier bytes. They are not a supported package and must
+not be copied from history for installation or production use. The archival
+record does not select or grant a current licence for any DUBSAR component.
 
-## Conditions for any future Marketplace publication
+## If distribution is considered later
 
-A future Marketplace surface must be created deliberately from the then-current
-product boundary. It must not reactivate the retired snapshot by default.
+Any future publication must be a new, explicit component-specific decision. It
+must not reactivate the retired snapshot by default.
 
 Before publication:
 
-1. select one approved canonical plugin commit and version;
-2. define the public package name and compatibility policy;
-3. complete dependency, provenance and licence review;
-4. generate a minimal distribution from the approved source;
-5. regenerate per-file and aggregate integrity evidence;
-6. validate clean install, update, rollback and removal on every claimed
+1. identify the exact component, canonical source and version;
+2. complete dependency, provenance and licence review;
+3. define compatibility and support boundaries;
+4. generate minimal artifacts from approved source;
+5. produce integrity evidence;
+6. validate clean installation, update, rollback and removal on every claimed
    platform;
-7. prove the complete private-beta tester journey without hidden operator
-   intervention;
-8. publish accurate security, privacy, support and data-boundary information;
-9. obtain an explicit Human GO for distribution.
+7. publish accurate security, privacy and data-boundary information;
+8. obtain explicit approval for distribution.
+
+No future Marketplace publication is promised or scheduled here.
 
 ## Status
 
 ```text
-public Marketplace: retired from the active tree
-supported public installation: none
+public DUBSAR Marketplace: retired from the active tree
+supported public DUBSAR installation: none
 historical staging version: 0.11.1, record only
-controlled Claude Code private beta: selective, Windows first
-future Marketplace publication: requires a new reviewed package and Human GO
+active coding-agent beta: none
+public skills: separate MIT-licensed companion resource
+future product distribution: undecided; requires a new reviewed decision
 ```

@@ -36,7 +36,7 @@ does not:
 
 - authenticate a future package;
 - approve installation;
-- establish compatibility with a current Desktop, Backend or Core;
+- establish compatibility with any current or future private component;
 - establish production readiness;
 - replace a dependency, provenance or licence review;
 - grant rights to private components.
@@ -47,7 +47,7 @@ this record alone.
 
 ## Future distribution requirements
 
-If DUBSAR later publishes a new plugin package, its integrity record must be
+If DUBSAR ever publishes a software component, its integrity record must be
 generated from the final approved artifact and must include:
 
 1. the public package name, version and canonical source commit;
@@ -68,8 +68,8 @@ This retirement does not select a public software licence for DUBSAR.
 
 The previous private-beta licence has been moved from the repository root to the
 [historical `0.11.1` record](docs/legacy/marketplace-0.11.1/LICENSE.txt). It
-describes the retired plugin snapshot and does not decide the licensing of the
-Portal, Desktop, Backend, future plugins or any other future distribution.
+describes the retired plugin snapshot and does not decide the licensing of any
+current or future DUBSAR component or distribution.
 
 The active repository's current rights and distribution position is recorded in
 [Rights and Licensing Status](RIGHTS.md). Third-party components remain subject

@@ -1,278 +1,117 @@
-# Public Realignment Audit — R2
+# Current Public Alignment Audit — R3
 
 ## Scope
 
-This audit reviews the public repository against the current DUBSAR product direction after the internal one-session and two-session Windows technical proofs.
+This audit records the public-documentation boundary after DUBSAR refocused on:
 
-It covers public positioning, architecture, product surfaces, platform claims, Marketplace staging, status, roadmap, FAQ and compatibility naming.
+1. the automated audit portal, under construction and coming soon;
+2. the Professional DUBSAR Audit, available on request.
 
-It does not publish or independently audit the private Core implementation.
+It covers positioning, surfaces, status, architecture, roadmap, installation,
+Marketplace history, public skills and the public/private boundary. It does not
+publish or independently audit private implementation.
 
----
+Earlier R2 positioning around a coding-agent private beta is superseded by this
+record and remains relevant only as project history.
 
 ## Executive verdict
 
-The original public doctrine contained a strong foundation:
+The current public story is:
 
-- decision memory is different from conversation history;
-- agents should not self-validate;
-- evidence matters more than persuasive explanation;
-- protected movement requires explicit human authority;
-- replay and fail-closed boundaries matter;
-- the proprietary Core should remain private.
+- audit and evidence first;
+- explicit limitations and source coverage;
+- bounded agent assistance;
+- deterministic controls kept distinct from model explanations;
+- human review for protected conclusions;
+- no automatic legal or regulatory compliance verdict.
 
-The main defect was the public product story.
+The portal and professional service share this doctrine but have different
+availability states.
 
-The repository was originally framed around:
+## Current surfaces
 
-- SCRIBE or Scribe Builder as the public brand;
-- Scribe Launcher as a speculative product surface;
-- Eyes of SCRIBE as a separate cockpit direction;
-- plugins and MCP as hypothetical future delivery forms;
-- documentation-only publication;
-- no concrete multi-session product claim.
+| Surface | Public claim |
+|---|---|
+| Automated audit portal | Coming soon; under construction and validation; not publicly available |
+| Professional DUBSAR Audit | Available on request under an agreed mandate |
 
-That story no longer matches the product trajectory.
+Continuous governance or installed components may be considered later under a
+separate scope. Their architecture, distribution, support and licensing are
+undecided and not promised.
 
----
+## Public skills boundary
 
-## Current product truth
+The separate
+[dubsar-agent-skills](https://github.com/kotnisofiane-bit/dubsar-agent-skills)
+repository contains MIT-licensed public doctrine and bounded local helpers.
 
-DUBSAR is one governance product with host-specific adapters.
+It is not the DUBSAR product, Portal, private Core or private implementation.
+It grants no access to private services, does not constitute a DUBSAR
+installation and does not prove product availability. Its MIT licence applies
+only to that repository.
 
-```text
-Coding agent
-  → DUBSAR host adapter
-  → local Bridge and runtime
-  → private Backend
-  → private DUBSAR Core
-  → governed project state
-  → human-facing cockpit and decision
-```
+## Historical coding-agent boundary
 
-Claude Code is the first supported integration.
+Earlier DUBSAR experiments explored coding-agent project governance and a
+Claude Code Marketplace staging package. They informed the current doctrine but
+are paused as a product direction.
 
-The same Core is intended to support future adapters for Codex, Cursor and other coding-agent environments. Those adapters are not currently available.
+Current claims are deliberately limited:
 
-The user experiences one product called DUBSAR.
+- no current coding-agent commercial surface;
+- no active public or private beta;
+- no supported Claude Code, Codex or Cursor integration;
+- no public plugin, runtime or supported installation;
+- historical Marketplace staging retired from the active tree;
+- non-executable tombstone retained for provenance only.
 
----
+## Public/private and licensing boundary
 
-## Technical proof versus product availability
+This repository remains public documentation, not a software distribution.
 
-Internal Windows technical proofs have completed:
+It does not publish the Portal, private Core, private implementation or a
+current installable DUBSAR component.
 
-- one real governed Claude Code session;
-- two real sessions linked to the same canonical Mission;
-- distinct identities, processes and worktrees;
-- separated evidence;
-- explicit conflict handling without silent overwrite;
-- Human Gate and single-use authorization behavior;
-- restart reconciliation.
+No current public software licence is selected or granted by this repository.
+Future component licensing remains deferred. The exact historical private-beta
+licence remains with its tombstone and is not a current root licence.
+Third-party licences remain unaffected. See [RIGHTS.md](RIGHTS.md).
 
-These proofs establish a serious technical substrate.
+## Claim controls
 
-They do not establish:
+The public documentation must not imply:
 
-- a supported public installation;
-- an autonomous external tester journey;
-- Linux or macOS support;
-- operational Codex or Cursor integrations;
-- commercial or production readiness.
+- general portal availability;
+- production readiness from an API or interface proof;
+- automatic causality or complete source coverage;
+- AI Act certification or legal advice;
+- availability of an installed DUBSAR product;
+- a coding-agent beta or Marketplace package;
+- that public skills contain or unlock private DUBSAR components.
 
-The next product-validation target is a reproducible Windows private-beta journey without hidden expert intervention.
+## Canonical references
 
----
-
-## Public naming classification
-
-### Current public product name
-
-- DUBSAR.
-
-### Current public surfaces
-
-- DUBSAR for Claude Code;
-- DUBSAR Desktop and local runtime;
-- DUBSAR cockpit.
-
-These are surfaces of one product, not separate brands.
-
-### Obsolete current-facing product names
-
-- SCRIBE;
-- Scribe Builder;
-- Scribe Launcher;
-- Eyes of SCRIBE.
-
-These names may remain in Git history or explicit legacy archives, but must not describe the current product.
-
-### Temporary technical compatibility identifiers
-
-- private repository names;
-- `scribe-bridge`;
-- `scribe-mcp`;
-- `/scribe-*` commands;
-- `scribe.*` MCP tools;
-- `SCRIBE_*` environment variables;
-- historical routes, schemas and storage paths.
-
-These identifiers do not create a second product. They should be migrated only through tested compatibility work.
-
----
-
-## Product responsibility model
-
-### Coding-agent host
-
-Owns native intelligence, editing, tools, tests, sub-agents and worktrees.
-
-### Host adapter
-
-Propagates native session identity, exposes bounded DUBSAR surfaces and connects to the local runtime.
-
-### Local Bridge
-
-Provides bounded local transport and orchestration without owning canonical Mission state.
-
-### DUBSAR Desktop
-
-Provides local runtime, process/worktree mechanics and human-facing controls.
-
-### Private Backend
-
-Protects the private boundary and remains the only supported writer to canonical Core state.
-
-### Private Core
-
-Owns Mission, decisions, contracts, canonical sessions, evidence relationships, audit, Human Gates and replay.
-
-### Runner
-
-Produces mechanical evidence such as snapshots, diffs, tests and hashes.
-
-### Cockpit
-
-Displays and controls governed state without becoming an approval authority.
-
----
-
-## Platform claims
-
-### Windows
-
-First controlled private-beta target. Product installation and the independent tester journey remain in preparation.
-
-### Linux
-
-Planned for later validation. No support announcement yet.
-
-### macOS
-
-Not announced. Packaging, signing, permissions and runtime feasibility must be evaluated first.
-
-The public repository must not imply cross-platform support from code portability or CI alone.
-
----
-
-## Marketplace decision
-
-The public repository remains the home for DUBSAR documentation, doctrine and
-public distribution status. It does not currently contain or advertise an
-installable Claude Code Marketplace package.
-
-The historical staging manifest and vendored runtime were retired from the
-active tree on 2026-07-30. Any future package location is a later distribution
-decision, not a commitment made by this audit.
-
----
-
-## Retired Marketplace staging record
-
-The repository previously contained a vendored plugin runtime from:
-
-```text
-scribe-claude-code-plugin@c2878313198aceccac078bf9446c5ab45751e424
-version 0.11.1
-```
-
-This was an earlier staging pin, not a final publication candidate. Its
-executable manifest and runtime are no longer present in the active tree. A
-non-executable tombstone preserves the source pin and aggregate hash.
-
-Any future package must start from a newly approved commit and receive new
-integrity, dependency, licence and installation review.
-
----
-
-## Publication blockers
-
-Before any future Marketplace publication or announcement:
-
-- complete the current-facing DUBSAR copy;
-- remove obsolete product-brand references from navigation and primary visuals;
-- stabilize the Windows tester journey;
-- select the final plugin commit and version;
-- generate a minimal package from that exact pin;
-- regenerate integrity hashes;
-- pass strict Marketplace and plugin validation;
-- verify installation, update, rollback and removal on Windows;
-- verify Privacy and Security documents against the implemented data flow;
-- before any future software distribution, confirm current security and
-  licensing contacts for that component;
-- decide the final public plugin id;
-- decide whether the repository is renamed before publication;
-- obtain a separate explicit Human GO to activate and announce the Marketplace.
-
-Linux and macOS are not automatic blockers for an initial Windows-only controlled beta.
-
----
-
-## Files realigned in R2
-
-Current-facing documents updated:
-
-- `README.md`;
-- `WHY_DUBSAR.md`;
-- `PRODUCT_SURFACES.md`;
-- `ARCHITECTURE.md`;
-- `STATUS.md`;
-- `ROADMAP.md`;
-- `FAQ.md`;
-- `MARKETPLACE.md`;
-- `INSTALLATION.md`;
-- `CHANGELOG.md`;
-- the non-executable historical Marketplace tombstone.
-
-Legacy `WHY_SCRIBE.md` was removed from the branch.
-
----
-
-## Remaining public work
-
-- redraw canonical DUBSAR diagrams;
-- migrate or archive legacy diagram and RFC branding;
-- add real product captures only when they reflect the approved product build;
-- update GitHub repository description, topics, website link and social preview;
-- decide and execute repository rename under separate Human GO;
-- re-vendor the final plugin runtime after Windows stabilization;
-- merge only after a separate human review and GO.
-
----
+- [README](README.md)
+- [Status](STATUS.md)
+- [Product and surfaces](PRODUCT_SURFACES.md)
+- [Architecture](ARCHITECTURE.md)
+- [Audit method](AUDIT.md)
+- [Roadmap](ROADMAP.md)
+- [Installation](INSTALLATION.md)
+- [Marketplace history](MARKETPLACE.md)
+- [Rights and licensing status](RIGHTS.md)
 
 ## Canonical status
 
 ```text
-DUBSAR PUBLIC REPOSITORY REALIGNMENT R2 — REVIEW BRANCH
-WINDOWS CONTROLLED PRIVATE BETA — IN PREPARATION
-INTERNAL ONE-SESSION TECHNICAL PROOF — COMPLETED
-INTERNAL TWO-SESSION TECHNICAL PROOF — COMPLETED
-EXTERNAL INSTALLATION AND USABILITY PROOF — PENDING
-HISTORICAL MARKETPLACE SURFACE — RETIRED FROM ACTIVE TREE
-FINAL PUBLIC PLUGIN PIN — NOT SELECTED
-REPOSITORY — NOT RENAMED
-NO PRIVATE CORE PUBLISHED
-not commercial-ready
-not beta-ready
-not marketplace-ready
+public documentation alignment: review branch
+automated audit portal: coming soon, not publicly available
+professional DUBSAR Audit: available on request
+public skills: separate MIT-licensed companion resource
+historical coding-agent package: paused; no active beta
+historical Marketplace surface: retired from active tree
+supported public DUBSAR installation: none
+private Core: not published
+component licensing decisions: deferred
+general production availability: not claimed
 ```

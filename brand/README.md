@@ -5,13 +5,17 @@ This directory contains the canonical public identity assets used by this reposi
 | Asset | Purpose |
 |---|---|
 | `dubsar-mark.svg` | Transparent checkpoint mark for compact placements |
-| `dubsar-app-icon.svg` | Square application and plugin icon source |
+| `dubsar-app-icon.svg` | Square DUBSAR identity source |
 | `dubsar-app-icon-{32,64,128,256,512,1024}.png` | Ready-to-use transparent PNG icon sizes |
 | `dubsar-readme-header.svg` | English README header |
 | `dubsar-readme-header-fr.svg` | French README header |
-| `dubsar-readme-header.png` / `dubsar-readme-header-fr.png` | Raster header previews |
 | `dubsar-github-social-preview.svg` | Source artwork for repository sharing cards |
-| `dubsar-github-social-preview.png` | Upload-ready GitHub social preview, 1280 × 640 |
+| `dubsar-readme-header.png` | Current English README header export |
+| `dubsar-readme-header-fr.png` | Current French README header export |
+| `dubsar-github-social-preview.png` | Current repository sharing-card export |
+
+The three PNG exports above are generated from the aligned SVG sources and
+carry the same current availability claims.
 
 ## Identity rule
 

@@ -13,9 +13,9 @@ validation remain in progress. Professional DUBSAR Audit is available on
 request.
 
 The public website provides product information and does not provide access to
-the portal. DUBSAR for coding agents remains a controlled private beta. No
-generally available connector package, local Node or production desktop is
-announced from this repository.
+the portal. Earlier coding-agent packaging is paused and no active beta is
+offered. No generally available installed DUBSAR product is announced from this
+repository.
 
 ## Data-minimization principle
 
@@ -75,7 +75,9 @@ Connector credentials should:
 - have explicit scope and ownership;
 - be separated from human-review authority.
 
-For a future local Node, source credentials are intended to stay inside the client environment.
+If an installed component is ever considered, its data placement and credential
+boundary will require a separate privacy and security decision. No local
+architecture is selected or promised today.
 
 ## Models and Hermes
 

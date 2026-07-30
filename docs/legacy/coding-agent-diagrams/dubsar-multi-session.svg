@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720" role="img" aria-labelledby="title desc">
-  <title id="title">DUBSAR governed multi-session model</title>
-  <desc id="desc">One canonical Mission with two isolated governed sessions, separate worktrees and evidence, explicit conflict handling, Human Gate, and resumable governed work.</desc>
+  <title id="title">Historical DUBSAR multi-session model — retired direction</title>
+  <desc id="desc">Historical, non-current multi-session model from an earlier coding-agent direction. It is retained only as a project record.</desc>
   <defs>
     <marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0,10 4,0 8" fill="#4fd1c5"/></marker>
     <marker id="g" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0,10 4,0 8" fill="#d7a640"/></marker>

@@ -2,8 +2,7 @@
 
 The automated DUBSAR Audit portal is coming soon. It is under construction and
 validation and is not currently available. It is distinct from the Professional
-DUBSAR Audit, available on request, and from the controlled private beta for
-Claude Code.
+DUBSAR Audit, available on request as a bounded human-led engagement.
 
 Its first target is a bounded **automation-coherence audit**: connect or import
 authorized evidence from an automation system and a business system, detect
@@ -115,23 +114,17 @@ be documented and validated before general availability.
 
 ## After the audit
 
-The audit is intended to lead to continuous governance when a customer chooses
-to go further.
+The first outcome is a bounded report with its evidence, limitations and human
+review.
 
-A separately scoped installed **DUBSAR Node**, administered through the
-desktop, is intended to connect selected automation and agent execution paths
-to the private DUBSAR Core. Depending on the system, that boundary may use a
-controlled HTTP gateway, API or host adapter. It may prepare sensitive actions
-for human approval and later enforce bounded policy decisions.
+Continuous governance or installed components may be considered later under a
+separate scope when an audit establishes a real need. No architecture,
+distribution model, supported platform, service boundary or licensing decision
+has been selected or promised for that possible direction.
 
-DUBSAR Node is a separate deployment path and is not generally available.
-
-DUBSAR for Claude Code is a distinct functional controlled private beta being
-finalized. Access is selective and invitation-based, with Windows as the first
-supported target. It is not a prerequisite for the portal audit. Codex and
-Cursor remain future integration surfaces, and no availability claim is made
-for them. The historical public Claude Code Marketplace staging surface has
-been retired from the active tree; no public package is available.
+Earlier coding-agent experiments are not a current product surface or active
+beta. The historical Claude Code Marketplace staging surface has been retired
+from the active tree; no public package or supported integration is available.
 
 ## AI Act preparation boundary
 
@@ -163,12 +156,13 @@ legal certification.
 
 Requests can start through the
 [professional audit page](https://dubsar.ai/audit) or
-[Sofiane Kotni's Malt profile](https://www.malt.fr/profile/sofianekotni).
+[contact@dubsar.ai](mailto:contact@dubsar.ai).
 
 ## Follow the validation
 
 The portal is coming soon and remains unavailable while construction and
 validation continue. The public method and professional engagement are
-described at [dubsar.ai/audit](https://dubsar.ai/audit). Selective access to the
-controlled Claude Code beta is described at
-[dubsar.ai/early-access](https://dubsar.ai/early-access).
+described at [dubsar.ai/audit](https://dubsar.ai/audit). Public doctrine and
+bounded local helpers are available separately in the MIT-licensed
+[dubsar-agent-skills](https://github.com/kotnisofiane-bit/dubsar-agent-skills)
+repository; they are not the DUBSAR product or runtime.

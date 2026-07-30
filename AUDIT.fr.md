@@ -2,8 +2,8 @@
 
 Le portail automatisé d’Audit DUBSAR sera bientôt disponible. Il est en cours de
 construction et de validation et n’est pas disponible actuellement. Il se
-distingue de l’Audit professionnel DUBSAR, disponible sur demande, et de la bêta
-privée contrôlée pour Claude Code.
+distingue de l’Audit professionnel DUBSAR, disponible sur demande sous la forme
+d’une intervention humaine bornée.
 
 Sa première cible est un **audit borné de cohérence des automatisations** :
 connecter ou importer des preuves autorisées issues d’un système
@@ -123,25 +123,19 @@ toute disponibilité générale.
 
 ## Après l’audit
 
-L’audit doit pouvoir conduire à une gouvernance continue lorsqu’un client
-choisit d’aller plus loin.
+Le premier résultat est un rapport borné avec ses preuves, ses limites et sa
+revue humaine.
 
-Un **Node DUBSAR** installé dans un périmètre distinct et administré depuis le
-desktop est destiné à relier certains chemins d’exécution d’automatisations et
-d’agents au Core DUBSAR privé. Selon le système, cette frontière pourra utiliser
-une gateway HTTP contrôlée, une API ou un adaptateur hôte. Elle pourra préparer
-les actions sensibles pour une approbation humaine, puis appliquer des décisions
-de politique bornées.
+Une gouvernance continue ou des composants installés pourront éventuellement
+être étudiés plus tard dans un périmètre distinct, si un audit fait apparaître
+un besoin réel. Aucune architecture, distribution, plateforme prise en charge,
+frontière de service ou décision de licence n’est aujourd’hui choisie ou
+promise pour cette direction éventuelle.
 
-Le Node DUBSAR constitue un chemin de déploiement distinct et n’est pas
-disponible de manière générale.
-
-DUBSAR pour Claude Code est une bêta privée contrôlée fonctionnelle en cours de
-finalisation. L’accès est sélectif, sur invitation, avec Windows comme première
-cible prise en charge. Cette bêta n’est pas nécessaire pour l’audit portail.
-Codex et Cursor restent de futures surfaces d’intégration, sans promesse de
-disponibilité. L’ancienne surface de Marketplace publique Claude Code a été
-retirée de l’arbre actif ; aucun paquet public n’est disponible.
+Les expérimentations antérieures autour des agents de code ne constituent ni
+une surface produit actuelle ni une bêta active. L’ancienne surface de
+Marketplace Claude Code a été retirée de l’arbre actif ; aucun paquet ou
+intégration pris en charge n’est disponible publiquement.
 
 ## Frontière de préparation à l’AI Act
 
@@ -177,12 +171,14 @@ prestation ne constitue pas une certification juridique.
 
 Une demande peut être initiée depuis la
 [page de l’audit professionnel](https://dubsar.ai/fr/audit) ou le
-[profil Malt de Sofiane Kotni](https://www.malt.fr/profile/sofianekotni).
+[contact DUBSAR](mailto:contact@dubsar.ai).
 
 ## Suivre la validation
 
 Le portail sera bientôt disponible et reste indisponible pendant sa construction
 et sa validation. La méthode publique et la prestation professionnelle sont
-décrites sur [dubsar.ai/fr/audit](https://dubsar.ai/fr/audit). L’accès sélectif
-à la bêta contrôlée Claude Code est présenté sur
-[dubsar.ai/fr/early-access](https://dubsar.ai/fr/early-access).
+décrites sur [dubsar.ai/fr/audit](https://dubsar.ai/fr/audit). La doctrine
+publique et des assistants locaux bornés sont disponibles séparément dans le
+dépôt MIT
+[dubsar-agent-skills](https://github.com/kotnisofiane-bit/dubsar-agent-skills) ;
+ils ne constituent ni le produit DUBSAR ni son runtime.

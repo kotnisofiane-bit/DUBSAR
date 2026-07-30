@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720" role="img" aria-labelledby="title desc">
-  <title id="title">Modèle multi-session gouverné par DUBSAR</title>
-  <desc id="desc">Une Mission canonique avec deux sessions gouvernées et isolées, des worktrees et preuves séparés, une gestion explicite des conflits, un Human Gate et une reprise gouvernée.</desc>
+  <title id="title">Modèle multi-session historique DUBSAR — direction retirée</title>
+  <desc id="desc">Archive historique et non actuelle d’un ancien modèle multi-session pour agents de code, conservée uniquement comme trace du projet.</desc>
   <defs>
     <marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0,10 4,0 8" fill="#4fd1c5"/></marker>
     <marker id="g" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0,10 4,0 8" fill="#d7a640"/></marker>

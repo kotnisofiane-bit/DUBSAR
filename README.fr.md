@@ -6,37 +6,39 @@
 
 **Auditez vos automatisations. Gouvernez ce qui agit.**
 
-DUBSAR relie les faits, les décisions et les preuves de vos workflows. Le système rend les incohérences visibles, conserve les limites de couverture et remet la validation au responsable humain désigné.
+DUBSAR relie les faits, les décisions et les preuves de vos workflows. Le
+système rend les incohérences visibles, conserve les limites de couverture et
+remet la validation au responsable humain désigné.
 
-DUBSAR possède aujourd’hui trois surfaces distinctes. Elles partagent une même doctrine, mais pas le même usage ni le même niveau de maturité.
+La direction publique actuelle repose sur deux surfaces :
 
-[Découvrir l’audit](https://dubsar.ai/fr/audit) · [Demander un accès bêta](https://dubsar.ai/fr/early-access) · [English version](README.md)
+1. un portail d’audit automatisé, en construction et bientôt disponible ;
+2. un Audit professionnel DUBSAR borné, disponible sur demande.
+
+[Découvrir l’audit](https://dubsar.ai/fr/audit) ·
+[État actuel](STATUS.md) ·
+[English version](README.md)
 
 ---
 
-## Trois surfaces, une même méthode
+## Deux surfaces, une même méthode
 
 | Surface | Usage | Statut actuel |
 |---|---|---|
-| **Audit automatisé** | Examiner un périmètre d’automatisations, relier les événements disponibles et préparer un rapport validable | Portail en cours de construction et de validation ; bientôt disponible |
+| **Portail d’audit automatisé** | Examiner un périmètre d’automatisations, relier les événements disponibles et préparer un rapport validable | En construction et en validation ; bientôt disponible |
 | **Audit professionnel DUBSAR** | Examiner un projet ou une automatisation sous mandat, avec sources autorisées et revue humaine | Disponible sur demande |
-| **DUBSAR pour agents de code** | Gouverner la construction d’un projet logiciel assisté par des agents | Bêta privée contrôlée, Claude Code en premier |
 
-Ces surfaces ne doivent pas être confondues :
+Le portail est destiné à préparer un premier résultat structuré. L’audit
+professionnel ajoute un mandat convenu, une analyse opérateur et une revue
+humaine. Aucune de ces surfaces n’est destinée à produire automatiquement un
+verdict juridique ou réglementaire.
 
-- le portail prépare un premier résultat structuré ;
-- l’audit professionnel ajoute un mandat, une analyse et une revue humaines ;
-- le produit pour agents de code gouverne un projet pendant sa construction.
+### Portail d’audit automatisé
 
----
+La page publique de l’audit constitue le point d’entrée produit actuel. Le
+portail lui-même n’est pas encore accessible au public.
 
-## 1. Audit automatisé
-
-La page publique de présentation de l’audit constitue le point d’entrée
-commercial actuel. Le portail automatisé est encore en cours de construction et
-de validation ; il n’est pas encore accessible au public.
-
-Le parcours visé est simple :
+Le parcours visé est le suivant :
 
 1. définir les automatisations, la période et les sources autorisées ;
 2. relier les événements disponibles sans inventer de causalité ;
@@ -44,65 +46,32 @@ Le parcours visé est simple :
 4. faire classer les constats par le responsable désigné ;
 5. produire un rapport où preuves, limites et validations restent reliées.
 
-Le parcours vise l’autonomie jusqu’au premier rapport. Cette autonomie ne signifie ni décision automatique, ni certification, ni suppression de la responsabilité humaine.
+L’autonomie ne signifie ni décision automatique, ni certification, ni
+suppression de la responsabilité humaine.
 
 [Découvrir l’audit automatisé](https://dubsar.ai/fr/audit)
 
----
+### Audit professionnel DUBSAR
 
-## 2. Audit professionnel DUBSAR
+L’Audit professionnel DUBSAR est une intervention bornée, opérée par Sofiane
+avec DUBSAR. Ses principaux mandats sont la préparation au lancement et la
+gouvernance des agents.
 
-L’Audit professionnel DUBSAR est une intervention bornée, opérée par Sofiane avec DUBSAR.
+Chaque intervention commence par un accord explicite sur le périmètre, les
+sources autorisées, les permissions, les limites d’accès, la conservation, le
+calendrier, le prix et les livrables. La lecture seule est la règle par défaut.
+Les faits, inférences, contradictions, limites et décisions humaines restent
+distincts.
 
-Deux mandats principaux sont proposés :
-
-- **préparation au lancement** — le produit est-il réellement prêt à être ouvert aux utilisateurs ?
-- **gouvernance des agents** — l’équipe peut-elle expliquer et vérifier comment le projet a été construit et validé ?
-
-L’intervention commence par un accord explicite sur :
-
-- le périmètre ;
-- les sources autorisées ;
-- les permissions ;
-- les limites d’accès ;
-- la conservation ;
-- le calendrier ;
-- le prix.
-
-Le fonctionnement est en lecture seule par défaut. Le rapport distingue les faits, les inférences, les contradictions, les limites et les décisions humaines.
-
-[Comprendre la méthode](AUDIT.fr.md) · [Demander un accompagnement sur Malt](https://www.malt.fr/profile/sofianekotni)
-
----
-
-## 3. DUBSAR pour agents de code
-
-DUBSAR pour agents de code gouverne les projets logiciels longs, multi-sessions et assistés par l’IA.
-
-Le produit conserve notamment :
-
-- la Mission et les contraintes actives ;
-- les décisions et leurs raisons ;
-- les preuves reliées aux sources et aux versions ;
-- les contradictions entre tickets, documentation, code et tests ;
-- l’identité et l’isolation des sessions ;
-- les Human Gates nécessaires aux mouvements protégés ;
-- le chemin permettant de reprendre ou d’expliquer le projet.
-
-Claude Code est la première intégration. La bêta privée fonctionnelle est en cours de finalisation pour des projets extérieurs sélectionnés, avec Windows comme première cible.
-
-L’ancienne surface de Marketplace publique a été retirée de l’arbre actif du
-dépôt. Aucun parcours d’installation publique autonome n’est actuellement
-revendiqué. Codex, Cursor et les autres adaptateurs appartiennent à la direction
-future.
-
-[État actuel](STATUS.md) · [Surfaces techniques](PRODUCT_SURFACES.md) · [Demander un accès bêta](https://dubsar.ai/fr/early-access)
+[Comprendre la méthode](AUDIT.fr.md) ·
+[Demander un audit](https://dubsar.ai/fr/audit) ·
+[Contact](mailto:contact@dubsar.ai)
 
 ---
 
 ## Doctrine commune
 
-Toutes les surfaces DUBSAR suivent les mêmes principes :
+Toutes les surfaces actuelles de DUBSAR suivent les mêmes principes :
 
 - seules les sources autorisées sont examinées ;
 - une affirmation n’est jamais traitée comme une preuve ;
@@ -114,51 +83,62 @@ Toutes les surfaces DUBSAR suivent les mêmes principes :
 - aucun agent ne peut approuver seul son propre travail ;
 - les décisions protégées restent sous autorité humaine.
 
-**Les systèmes analysent et appliquent des règles déclarées. DUBSAR conserve et vérifie. L’humain autorise et décide.**
-
----
-
-## Surfaces techniques
-
-L’audit automatisé et le produit pour agents de code utilisent la même discipline, mais des parcours techniques différents.
-
-### Parcours audit
+**Les systèmes analysent et appliquent des règles déclarées. DUBSAR conserve et
+vérifie. L’humain autorise et décide.**
 
 ```text
 Sources autorisées
     ↓
-Portail DUBSAR
+Audit DUBSAR
     ↓
 Preuves, incohérences et limites
     ↓
 Validation humaine
     ↓
-Rapport
+Rapport validable
 ```
 
-Une gouvernance continue ou un DUBSAR Node constitue un déploiement séparé. Elle n’est pas implicite dans le premier diagnostic.
+Une gouvernance continue ou des composants installés pourront éventuellement
+être étudiés plus tard dans un périmètre distinct. Leur architecture,
+distribution, support et licence restent indécis et ne sont pas promis par
+l’audit initial.
 
-### Parcours agents de code
+---
 
-```text
-Agent de code
-    ↓
-Adaptateur hôte
-    ↓
-Bridge et environnement local
-    ↓
-Backend et Core protégés
-    ↓
-Cockpit, preuves et Human Gates
-```
+## Skills publics
 
-Le Core propriétaire reste privé. Les composants techniques ne constituent pas des marques ou des produits séparés.
+Le dépôt distinct
+[dubsar-agent-skills](https://github.com/kotnisofiane-bit/dubsar-agent-skills)
+publie sous licence MIT une doctrine et des assistants locaux bornés pour les
+travaux d’audit et de gouvernance.
+
+Ces skills constituent une ressource publique complémentaire. Ils ne sont
+**ni** le produit DUBSAR, **ni** le Portail, le Core privé ou un runtime ; ils
+ne donnent accès à aucun service privé et ne constituent pas une
+installation prise en charge de DUBSAR. Leur licence s’applique uniquement à
+ce dépôt.
+
+---
+
+## Travaux antérieurs sur les agents de code
+
+Les premières expérimentations DUBSAR ont étudié la gouvernance de projets
+assistés par des agents de code, avec notamment un paquet de préparation pour
+Claude Code. Ces travaux ont nourri la doctrine actuelle sur la preuve et
+l’autorité humaine, mais ne constituent plus une surface commerciale actuelle
+ni une bêta publique ou privée active.
+
+L’ancienne surface de Marketplace a été retirée de l’arbre actif. Ce dépôt ne
+propose aucun plugin public, runtime, accès bêta ou parcours d’installation
+pris en charge. Les décisions produit futures seront documentées lorsqu’elles
+seront définies et validées.
 
 ---
 
 ## AI Act
 
-DUBSAR peut aider à structurer des éléments utiles à une préparation documentaire liée à l’AI Act :
+DUBSAR peut aider à structurer des éléments utiles à une préparation
+documentaire liée à l’AI Act :
 
 - inventaire des systèmes, agents, responsables et finalités ;
 - traçabilité des sources, versions, décisions et validations ;
@@ -166,14 +146,15 @@ DUBSAR peut aider à structurer des éléments utiles à une préparation docume
 - limites, incertitudes et informations manquantes ;
 - registres de preuves et de contradictions.
 
-DUBSAR ne fournit aucun conseil juridique, ne délivre aucune certification et ne produit aucun verdict automatique de conformité.
+DUBSAR ne fournit aucun conseil juridique, ne délivre aucune certification et
+ne produit aucun verdict automatique de conformité.
 
 ---
 
 ## Frontière publique et privée
 
-Ce dépôt constitue la frontière documentaire publique de DUBSAR. Il ne s'agit
-pas d'une distribution logicielle publique.
+Ce dépôt constitue la frontière documentaire publique de DUBSAR. Il ne s’agit
+pas d’une distribution logicielle publique.
 
 Il peut contenir :
 
@@ -185,9 +166,9 @@ Il peut contenir :
 
 Il ne publie pas :
 
-- le Portail, le Desktop ou leur implémentation ;
+- le Portail ou toute autre implémentation produit privée ;
 - le Core propriétaire ;
-- des plugins actuels, adaptateurs hôtes ou un runtime installable ;
+- tout composant DUBSAR actuellement installable ;
 - les politiques ou journaux internes ;
 - les données de clients ou de testeurs ;
 - les secrets, jetons ou éléments de confiance ;
@@ -216,7 +197,7 @@ licences et notices. Voir [Droits et statut des licences](RIGHTS.md).
 
 - [Droits et statut des licences](RIGHTS.md)
 - [Installation](INSTALLATION.md)
-- [Marketplace](MARKETPLACE.md)
+- [Historique Marketplace et état de distribution](MARKETPLACE.md)
 - [Sécurité](SECURITY.md)
 - [Confidentialité](PRIVACY.md)
 - [Intégrité et provenance](INTEGRITY.md)
@@ -225,6 +206,14 @@ licences et notices. Voir [Droits et statut des licences](RIGHTS.md).
 
 ## Créé par
 
-Créé par [**Sofiane Kotni**](https://dubsar.ai/fr/sofiane-kotni/), créateur de DUBSAR et auteur de *Digital Trust*.
+Créé par [**Sofiane Kotni**](https://dubsar.ai/fr/sofiane-kotni/), créateur de
+DUBSAR et auteur de *Digital Trust*.
 
-[Site DUBSAR](https://dubsar.ai/fr/) · [LinkedIn](https://www.linkedin.com/in/sofiane-kotni/) · [Digital Trust — français](https://www.amazon.fr/dp/B0H739BFJP) · [Digital Trust — anglais](https://www.amazon.fr/dp/B0GZ4RH1KX) · [Page auteur Amazon](https://www.amazon.fr/stores/Sofiane-KOTNI/author/B0H6NBHZTC) · [Malt](https://www.malt.fr/profile/sofianekotni) · [Contact](mailto:contact@dubsar.ai)
+[Site DUBSAR](https://dubsar.ai/fr/) ·
+[LinkedIn](https://www.linkedin.com/in/sofiane-kotni/) ·
+[GitHub](https://github.com/kotnisofiane-bit) ·
+[Skills publics](https://github.com/kotnisofiane-bit/dubsar-agent-skills) ·
+[Digital Trust — français](https://www.amazon.fr/dp/B0H739BFJP) ·
+[Digital Trust — anglais](https://www.amazon.fr/dp/B0GZ4RH1KX) ·
+[Page auteur Amazon](https://www.amazon.fr/stores/Sofiane-KOTNI/author/B0H6NBHZTC) ·
+[Contact](mailto:contact@dubsar.ai)

@@ -4,6 +4,20 @@ All notable public repository and distribution changes will be recorded here.
 
 ## 2026-07-30
 
+### Portal-first public alignment
+
+- established the automated audit portal and Professional DUBSAR Audit as the
+  two current delivery surfaces;
+- reclassified earlier coding-agent packaging as paused historical work rather
+  than a current commercial surface or private beta;
+- linked the separate MIT-licensed `dubsar-agent-skills` repository as public
+  doctrine and bounded local helpers, not as the DUBSAR product, Core, Backend
+  or runtime;
+- removed current beta-access, host-support and platform-support claims;
+- kept continuous governance and installed components as future,
+  separately-scoped directions;
+- preserved the existing rights boundary and historical Marketplace tombstone.
+
 ### Historical Marketplace surface retired
 
 - removed the active `.claude-plugin/marketplace.json` staging manifest;
@@ -24,7 +38,10 @@ No public package, release or installation command was created by this change.
 
 ## Earlier public realignment
 
-### Current positioning refresh
+### Superseded positioning refresh
+
+The following entry records an earlier public direction and is not the current
+product claim.
 
 - aligned the repository with the current `dubsar.ai` website;
 - presented two distinct entry paths: the DUBSAR private-beta product and DUBSAR Audit professional service;
@@ -33,7 +50,10 @@ No public package, release or installation command was created by this change.
 - added English and French public entry-point documentation;
 - clarified that audits are remote, bounded, read-only by default and human-validated.
 
-## Unreleased — DUBSAR public realignment R2
+## Historical — DUBSAR public realignment R2
+
+This R2 entry is retained as change history. Its coding-agent beta positioning
+was superseded by the portal-first alignment above.
 
 ### Changed
 

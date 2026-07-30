@@ -75,17 +75,16 @@ portal access is opened, DUBSAR must validate:
 - backup and recovery;
 - dependency and infrastructure review.
 
-## Future local Node
+## Possible future installed components
 
-The intended Node security model is:
+Continuous governance or installed components may be considered later only
+under a separate, explicit scope.
 
-- outbound authenticated HTTPS only;
-- short-lived, scoped device authorization;
-- source credentials retained locally;
-- bounded and filtered evidence submission;
-- no direct Node access to private Core writes or Human Gate authority.
-
-No public Node package currently implements a supported production boundary.
+No local topology, credential placement, network boundary, authorization model,
+distribution channel, supported platform or licence has been selected or
+promised. Any future proposal would require its own threat model, data-flow
+review, least-privilege design, installation and update validation, and explicit
+human approval before a public claim.
 
 ## Disclosure status
 

@@ -1,303 +1,238 @@
 # DUBSAR Architecture
 
-This document describes the public product boundary. It deliberately omits private implementation details, credentials, internal policies and deployment topology.
+This document describes the public product boundary. It deliberately omits
+private implementation details, credentials, internal policies and deployment
+topology.
 
-## Product path
+## Current product path
 
-DUBSAR is organized around three distinct delivery surfaces:
+DUBSAR has two current delivery surfaces:
 
-- the automated audit portal, coming soon and currently under construction and
+- the automated audit portal, coming soon and under construction and
   validation;
 - the Professional DUBSAR Audit, available on request as a bounded,
-  human-led engagement;
-- DUBSAR for Claude Code, a functional controlled private beta being finalized,
-  with selective invitation and Windows as the first supported target.
+  human-led engagement.
 
-The architecture below describes the portal-first audit journey for business
-automations and AI agents. The professional service can apply the same evidence
-and authority boundaries with an agreed mandate. The coding-agent beta is a
-separate product surface and is not a prerequisite for the portal.
+Both use the same evidence and authority boundaries.
 
 ```mermaid
 flowchart LR
-    S["Authorized sources"] --> P["DUBSAR Portal"]
+    S["Authorized sources"] --> P["DUBSAR audit surface"]
     P --> E["Bounded evidence snapshot"]
-    E --> O["Deterministic orchestration"]
-    O --> C["Private DUBSAR Core"]
-    O <--> H["Bounded Hermes roles"]
-    C --> R["Proposed findings"]
-    R --> G["Human review"]
-    G --> T["Traceable report"]
+    E --> C["Declared controls and bounded analysis"]
+    C --> F["Candidate findings and limitations"]
+    F --> H["Human review"]
+    H --> R["Traceable report"]
 ```
 
 The intended sequence is:
 
 1. an authorized user defines a bounded audit scope;
-2. approved exports or connectors provide only the required evidence;
-3. DUBSAR freezes the evidence scope and records content digests;
-4. deterministic controls evaluate explicit conditions;
-5. specialized Hermes roles analyze or explain bounded material;
-6. the Core preserves canonical state, provenance and limitations;
+2. approved exports or connectors provide only required evidence;
+3. DUBSAR freezes the evidence scope and records provenance;
+4. declared controls evaluate explicit conditions;
+5. bounded agent roles may analyze or explain material;
+6. facts, inferences, contradictions and limitations remain distinct;
 7. a human confirms, corrects or rejects proposed findings;
 8. the report preserves evidence, decisions and scope limits.
 
-The complete browser journey is still under construction and validation. The
-marketing website is public, but the portal is not currently available.
+The complete portal browser journey remains under construction and validation.
+The marketing website is public, but the portal is not currently available.
+
+---
 
 ## Responsibility boundaries
 
 ### Public website
 
-`dubsar.ai` explains the product, its method and its limitations. A short orientation questionnaire may help a visitor understand whether an audit is relevant, but it is not itself an audit or a regulatory assessment.
+[dubsar.ai](https://dubsar.ai/) explains the product, method and limitations.
+Marketing or orientation content is not itself an audit or regulatory
+assessment.
 
-### DUBSAR Portal
+### Automated audit portal
 
-The [DUBSAR Portal](https://dubsar.ai/audit) is the intended primary self-service
-audit surface. It is coming soon and is not currently available. Construction,
-end-to-end validation and security validation are in progress.
+The [DUBSAR audit page](https://dubsar.ai/audit) describes the planned
+self-service audit. The intended portal supports scope definition, evidence
+intake, progress and availability states, finding review, human decisions and
+report access.
 
-The intended surface combines:
-
-- authentication and access control;
-- a conversational and task-oriented interface;
-- project and audit scope;
-- evidence import or connection;
-- progress and availability states;
-- finding review;
-- human decisions;
-- report access.
-
-LibreChat can provide part of the portal shell. DUBSAR remains responsible for the audit contracts, evidence boundaries, workflow and authority model.
+The implementation, authentication model, private service topology and
+credentials are not published in this repository.
 
 ### Professional DUBSAR Audit
 
 The Professional DUBSAR Audit is available on request as a separate bounded
 engagement. Scope, authorized sources, permissions, retention, deliverables,
-timing and price are agreed before work starts. The engagement remains
-human-led and read-only by default; it does not bypass evidence limitations or
-turn a report into a legal certification.
+timing and price are agreed before work starts.
 
-See [AUDIT.md](AUDIT.md) for the public service boundary.
+The engagement remains human-led and read-only by default. It does not bypass
+evidence limitations or turn a report into legal certification.
+
+See [AUDIT.md](AUDIT.md).
 
 ### Evidence boundary
 
-Every audit starts from a bounded evidence snapshot.
-
-The snapshot records:
+Every audit starts from a bounded evidence snapshot. Publicly relevant
+properties include:
 
 - source kind and authorized scope;
 - collection window and known retention limits;
-- content or projection digests;
+- provenance and version references;
 - completeness and unavailable reads;
-- references that a finding is allowed to cite.
+- references a finding is allowed to cite.
 
-Missing or partial evidence must remain visible. It must never be converted silently into a positive result.
+Missing or partial evidence remains visible. It is never silently converted
+into a positive result.
 
-### Deterministic orchestrator
+### Declared controls and bounded agents
 
-The orchestrator controls the order of the audit.
+Declared controls produce bounded mechanical results. Agent roles may inspect,
+explain, challenge or summarize material under an explicit assignment.
 
-It is responsible for transitions such as:
+Agent output remains a proposal. It cannot alter the evidence boundary, create
+a human approval or promote itself to verified truth.
 
-```text
-accept request
-→ freeze evidence
-→ apply deterministic controls
-→ prepare bounded roles
-→ collect role results
-→ prepare review
-→ await human decision
-→ render report
-```
+### Private implementation boundary
 
-An LLM does not decide which protected transition happens next.
+Private DUBSAR implementation preserves governed audit state and the declared
+authority model. Its internal component layout, source, policies, credentials
+and deployment topology are not described or distributed through this
+repository.
 
-### Hermes roles
-
-Hermes supplies specialized agent roles for analysis and explanation.
-
-A role receives:
-
-- a closed objective;
-- an explicit control vocabulary;
-- bounded evidence references and facts;
-- a required output contract;
-- a distinct session identity.
-
-Hermes outputs remain non-authoritative proposals. They do not create a Human GO, alter the evidence snapshot or approve their own work.
-
-### Private Backend and Core
-
-The protected Backend is the public product's controlled service boundary.
-
-The private Core owns canonical audit state, including:
-
-- audit and run identity;
-- rule-pack identity;
-- evidence relationships;
-- role packets and accepted results;
-- contradictions and limitations;
-- review state;
-- human decisions;
-- report projection.
-
-The Core is proprietary and is not distributed in this repository.
+The proprietary Core remains private.
 
 ### Human review
 
-Human review is a product boundary, not a decorative checkbox.
-
-The reviewer must be able to see:
+Human review is a product boundary. The reviewer must be able to understand:
 
 - the proposed finding;
 - the evidence used;
-- the control applied;
+- the declared control;
 - the scope and unavailable evidence;
-- the exact review version being decided.
+- the exact state being reviewed.
 
-The decision confirms, corrects or rejects a proposal. It does not retroactively turn incomplete evidence into verified evidence.
+The decision confirms, corrects or rejects a proposal. It does not
+retroactively make incomplete evidence complete.
 
 ### Report
 
-The report is a projection of canonical audit state. It must preserve:
+The report is intended to preserve source provenance, findings and their
+evidence, human dispositions, contradictions, limitations and unavailable
+sources.
 
-- source provenance;
-- rule-pack and evidence digests;
-- findings and their evidence;
-- human dispositions;
-- contradictions;
-- limitations and unavailable sources.
+Rendering a report is not the same as authorizing a deployment, release or
+regulated use.
 
-Rendering a report is not the same as authorizing a deployment, release or regulated use.
+---
 
-## First Rule Pack
+## First audit profile
 
-The planned initial portal path centers on **Automation Coherence**.
-
-Its current control families cover:
+The planned initial portal path centers on **Automation Coherence**. Its current
+control families examine:
 
 1. duplicate consequences without an attributable idempotency boundary;
 2. actions incompatible with an observed business state;
-3. missing traceability, version or expected human-validation evidence within the connected scope.
+3. missing traceability, version or expected human-validation evidence within
+   the connected scope.
 
-The pack is still being consolidated into the canonical audit contracts.
-Deterministic fixture validation exists, while complete browser E2E proof
+Deterministic fixture validation exists. Complete browser end-to-end proof
 remains an active validation boundary.
 
-## User and operator surfaces
+---
 
-### Portal users
+## Separate public skills boundary
 
-Business, operations, compliance and agency users will work primarily through
-the portal once it becomes available. They will define scope, inspect findings,
-make review decisions and access reports.
+The
+[dubsar-agent-skills](https://github.com/kotnisofiane-bit/dubsar-agent-skills)
+repository publishes MIT-licensed doctrine and bounded local helpers.
 
-### Technical administrators
+Those skills may help structure audit and governance work locally. They are not
+the Portal, private Core, runtime or private product
+component. They do not provide access to private services and do not represent
+a deployment of this architecture.
 
-A separately scoped local Node and planned administration desktop are intended
-for technical operators who need to:
+---
 
-- connect local or private systems;
-- keep credentials close to the client environment;
-- inspect runtime and connector health;
-- manage approved policies;
-- observe controlled execution.
+## Possible future continuous governance
 
-The Node and desktop are complementary administration surfaces, not a second
-governance authority. DUBSAR Node is a separate scoped deployment path and is
-not generally available.
+Audit is the current entry point. Continuous governance or installed components
+may be considered later under a separate scope.
 
-## Future continuous governance
+No topology, local-versus-hosted boundary, distribution model, supported
+platform, service contract or licence is selected or promised. This document
+does not claim an ability to block arbitrary business actions in production.
 
-Audit is the entry point. Continuous governance is a later product stage.
+---
 
-The intended evolution is:
+## Historical coding-agent context
 
-```text
-bounded audit
-→ understood workflows and evidence
-→ approved rules and owners
-→ continuous observation
-→ policy decision
-→ human approval when required
-```
+Earlier engineering explored coding-agent project governance and a Claude Code
+staging package. That work informed the current doctrine but is not a current
+product surface, active beta or supported host integration.
 
-Future policy outcomes may include:
+The Marketplace staging surface is retired from the active tree. No current
+plugin, runtime, beta-access path or platform-support claim is made.
 
-- `ALLOW`;
-- `DENY`;
-- `REQUIRE_HUMAN_APPROVAL`;
-- `ALLOW_WITH_CONDITIONS`.
-
-These outcomes are roadmap capabilities. DUBSAR does not currently claim that it can block arbitrary business actions in production.
+---
 
 ## Connector independence
 
-DUBSAR is designed so that n8n, HubSpot, Make, coding-agent hosts and future systems remain evidence or execution surfaces rather than sources of DUBSAR authority.
+Third-party systems remain evidence or execution surfaces rather than sources
+of DUBSAR authority.
 
-Connectors should:
+Connectors should use documented boundaries, expose bounded data, fail
+explicitly and remain replaceable. A third-party change must not silently
+change the meaning of an existing DUBSAR control.
 
-- use documented and versioned boundaries;
-- expose bounded data;
-- fail explicitly;
-- avoid sending source credentials to the Core;
-- remain replaceable.
-
-A change in a third-party tool may require an adapter update. It must not change the meaning of an existing DUBSAR control silently.
-
-## Coding-agent adapters
-
-DUBSAR for Claude Code is a distinct functional controlled private beta being
-finalized. Access is selective and invitation-based, with Windows as the first
-supported target. It reuses the same canonical-state, evidence and explicit
-authority model without becoming a separate governance brain.
-
-Codex and Cursor remain future integration surfaces. They are not prerequisites
-for the portal audit, and no availability claim is made for them. The historical
-Claude Code Marketplace staging surface has been retired from the active tree;
-no public package or installation path is available.
+---
 
 ## AI Act boundary
 
-DUBSAR is designed to help document governance-relevant elements such as provenance, traceability, human oversight, scope and retained evidence.
+DUBSAR is designed to help document governance-relevant elements such as
+provenance, traceability, human oversight, scope and retained evidence.
 
-It does not certify AI Act compliance, replace legal analysis or issue a regulatory conformity verdict.
+It does not certify AI Act compliance, replace legal analysis or issue a
+regulatory conformity verdict.
+
+---
 
 ## Public and private boundary
 
 This repository may publish:
 
 - product documentation;
-- public contracts and diagrams;
-- synthetic fixtures and examples;
-- explicitly approved thin adapters;
-- security, privacy and integrity information.
+- public architecture and diagrams;
+- synthetic fixtures and bounded examples;
+- security, privacy and integrity information;
+- non-executable historical records.
 
 It does not publish:
 
+- the Portal or other private product implementation;
 - the proprietary Core;
 - private Backend implementation;
+- any current installable DUBSAR component;
 - internal prompts or policies;
 - confidential evidence or client data;
 - secrets, tokens or trust material;
-- unreviewed production topology.
+- production topology.
+
+---
 
 ## Current maturity
 
 ```text
 deterministic synthetic-fixture controls: internally validated
 recorded audit API path: internal evidence exists
-automated audit portal: coming soon, under construction and validation, not available
+automated audit portal: coming soon, under construction and validation
 complete portal browser E2E proof: in progress
 professional DUBSAR Audit: available on request
-DUBSAR for Claude Code: functional controlled private beta being finalized
-coding-agent beta target: selective invitation, Windows first
-public Claude Code Marketplace: historical staging retired; no public package
-DUBSAR Node: separate scoped deployment path, not generally available
-Codex and Cursor adapters: future
-live business connectors: roadmap
-continuous policy enforcement: roadmap
+public skills: separate MIT-licensed companion resource
+historical coding-agent package: paused; no public package or beta
+continuous governance / installed components: possible later; architecture and distribution undecided
+private Core: proprietary, not distributed
 general production availability: not claimed
 ```
 
-See [STATUS.md](STATUS.md) for the current claim boundary and [ROADMAP.md](ROADMAP.md) for sequencing.
+See [STATUS.md](STATUS.md) for the current claim boundary and
+[ROADMAP.md](ROADMAP.md) for sequencing.

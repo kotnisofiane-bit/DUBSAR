@@ -95,8 +95,10 @@ Only after this baseline can continuous orchestration or policy enforcement be c
 
 The automated portal implementing this journey is coming soon and remains
 under development and validation. It is not currently available for public
-use. Professional DUBSAR Audit remains available on request; continuous
-governance through a local Node is not generally available.
+use. Professional DUBSAR Audit remains available on request. Continuous
+governance or installed components may be considered later under a separate
+scope, but their architecture, distribution, support and licensing are
+undecided and not promised.
 
 ## Human authority
 
