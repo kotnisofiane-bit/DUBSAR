@@ -6,27 +6,29 @@
 
 **Audit your automations. Govern what can act.**
 
-DUBSAR connects facts, decisions and evidence across workflows. It makes inconsistencies visible, preserves coverage limitations and returns validation to the designated human authority.
+DUBSAR connects facts, decisions and evidence across AI-agent systems and
+automation workflows. It makes inconsistencies visible, preserves coverage
+limitations and returns validation to the designated human authority.
 
-DUBSAR currently has three distinct surfaces. They share one doctrine, but they do not have the same use or maturity level.
+DUBSAR currently focuses its public direction on two delivery surfaces:
 
-[Explore the audit](https://dubsar.ai/audit) · [Request beta access](https://dubsar.ai/early-access) · [Version française](README.fr.md)
+1. an automated audit portal, under construction and coming soon;
+2. a bounded Professional DUBSAR Audit, available on request.
+
+[Explore the audit](https://dubsar.ai/audit) · [Public skills](https://github.com/kotnisofiane-bit/dubsar-agent-skills) · [Version française](README.fr.md)
 
 ---
 
-## Three surfaces, one method
+## Two surfaces, one method
 
 | Surface | Purpose | Current status |
 |---|---|---|
-| **Automated audit** | Examine a bounded set of automations, connect available events and prepare a reviewable report | Portal under construction and validation; coming soon |
+| **Automated audit portal** | Examine a bounded set of automations, connect available events and prepare a reviewable report | Under construction and validation; coming soon |
 | **Professional DUBSAR Audit** | Examine a project or automation under an agreed mandate, with authorized sources and human review | Available on request |
-| **DUBSAR for coding agents** | Govern a software project while AI coding agents help build it | Controlled private beta, Claude Code first |
 
-These surfaces must remain distinct:
-
-- the portal prepares a structured first result;
-- the professional audit adds a mandate, analysis and human review;
-- the coding-agent product governs a project during construction.
+The portal is intended to prepare a structured first result. The professional
+audit adds an agreed mandate, operator analysis and human review. Neither
+surface issues an automatic legal or regulatory compliance verdict.
 
 ---
 
@@ -71,29 +73,7 @@ Each engagement begins with explicit agreement on:
 
 Read-only operation is the default. The report keeps facts, inferences, contradictions, limitations and human decisions separate.
 
-[Read the method](AUDIT.md) · [Request support on Malt](https://www.malt.fr/profile/sofianekotni)
-
----
-
-## 3. DUBSAR for coding agents
-
-DUBSAR for coding agents governs long-running, multi-session software projects assisted by AI.
-
-The product preserves:
-
-- the Mission and active constraints;
-- decisions and their reasons;
-- evidence tied to sources and versions;
-- contradictions across tickets, documentation, code and tests;
-- session identity and isolation;
-- Human Gates for protected movement;
-- the path required to resume or explain the project.
-
-Claude Code is the first integration. The functional private beta is being finalized for selected external projects, with Windows as the first target.
-
-The public Marketplace is not active. No generally available self-installation path is currently claimed. Codex, Cursor and other adapters remain future direction.
-
-[Current status](STATUS.md) · [Technical surfaces](PRODUCT_SURFACES.md) · [Request beta access](https://dubsar.ai/early-access)
+[Read the method](AUDIT.md) · [Request an audit](https://dubsar.ai/audit) · [Contact](mailto:kotni.sofiane@dubsar.ai)
 
 ---
 
@@ -115,11 +95,7 @@ Every DUBSAR surface follows the same principles:
 
 ---
 
-## Technical surfaces
-
-The automated audit and coding-agent product use the same discipline through different technical journeys.
-
-### Audit journey
+## Current audit journey
 
 ```text
 Authorized sources
@@ -133,23 +109,36 @@ Human validation
 Report
 ```
 
-Continuous governance or deployment of a DUBSAR Node is a separate path. It is not implied by the initial diagnostic.
+Continuous governance or installed components may be considered later under a
+separate scope. Their architecture, distribution, support and licensing are
+undecided and are not promised by the initial audit.
 
-### Coding-agent journey
+---
 
-```text
-Coding agent
-    ↓
-Host adapter
-    ↓
-Bridge and local runtime
-    ↓
-Protected Backend and Core
-    ↓
-Cockpit, evidence and Human Gates
-```
+## Public skills
 
-The proprietary Core remains private. Technical components are not separate product brands.
+The separate [dubsar-agent-skills](https://github.com/kotnisofiane-bit/dubsar-agent-skills)
+repository publishes MIT-licensed doctrine and bounded local helpers for audit
+and governance work.
+
+Those skills are a public companion resource. They are **not** the DUBSAR
+product, Portal, private Core or runtime, and they do not provide access to
+private services. Their license applies only to that repository.
+
+---
+
+## Earlier coding-agent work
+
+Earlier DUBSAR experiments explored project governance around coding agents,
+including staging packages for coding-agent environments. That work informed
+the current evidence and human-authority doctrine, but it is historical and
+does not describe a current commercial surface, access program or supported
+installation.
+
+Historical Marketplace and plugin files remain in this repository. They are
+not a supported public installation path and must not be read as a current
+product-availability claim. No future runtime, integration, deployment model
+or license is promised here.
 
 ---
 
@@ -169,14 +158,15 @@ DUBSAR does not provide legal advice, issue certification or produce an automati
 
 ## Public and private boundary
 
-This repository is DUBSAR’s public documentation and distribution boundary.
+This repository is DUBSAR’s public documentation and historical public-code
+boundary.
 
 It may contain:
 
 - public doctrine and architecture;
 - bounded examples and diagrams;
-- public security, privacy and installation information;
-- authorized host adapters.
+- public security and privacy information;
+- historical distribution and integration material.
 
 It does not publish:
 
@@ -184,9 +174,10 @@ It does not publish:
 - internal policies or sealed journals;
 - client or tester data;
 - secrets, tokens or trust material;
-- private Backend implementation details.
+- private implementation or topology details.
 
 Some technical identifiers still use `scribe` for compatibility. They do not represent a second public product.
+Existing files remain subject to their own notices and license terms.
 
 ---
 
@@ -194,21 +185,20 @@ Some technical identifiers still use `scribe` for compatibility. They do not rep
 
 ### Understand DUBSAR
 
-1. [Why DUBSAR?](WHY_DUBSAR.md)
+1. [DUBSAR website](https://dubsar.ai/)
 2. [DUBSAR Audit](AUDIT.md)
-3. [Product and surfaces](PRODUCT_SURFACES.md)
-4. [Current status](STATUS.md)
-5. [Architecture](ARCHITECTURE.md)
-6. [FAQ](FAQ.md)
-7. [Roadmap](ROADMAP.md)
+3. [Why DUBSAR?](WHY_DUBSAR.md)
+4. [Public skills](https://github.com/kotnisofiane-bit/dubsar-agent-skills)
 
-### Distribution and trust
+### Trust
 
-- [Installation](INSTALLATION.md)
-- [Marketplace](MARKETPLACE.md)
 - [Security](SECURITY.md)
 - [Privacy](PRIVACY.md)
 - [Integrity and provenance](INTEGRITY.md)
+
+Other repository documents may describe earlier coding-agent, Marketplace or
+installation work. They are retained for context while the public
+documentation is reviewed; they do not establish a current offer.
 
 ---
 
@@ -216,4 +206,4 @@ Some technical identifiers still use `scribe` for compatibility. They do not rep
 
 Created by [**Sofiane Kotni**](https://dubsar.ai/sofiane-kotni/), creator of DUBSAR and author of *Digital Trust*.
 
-[DUBSAR website](https://dubsar.ai/) · [LinkedIn](https://www.linkedin.com/in/sofiane-kotni/) · [Digital Trust — English](https://www.amazon.fr/dp/B0GZ4RH1KX) · [Digital Trust — French](https://www.amazon.fr/dp/B0H739BFJP) · [Amazon author page](https://www.amazon.fr/stores/Sofiane-KOTNI/author/B0H6NBHZTC) · [Malt](https://www.malt.fr/profile/sofianekotni) · [Contact](mailto:contact@dubsar.ai)
+[DUBSAR website](https://dubsar.ai/) · [LinkedIn](https://www.linkedin.com/in/sofiane-kotni/) · [GitHub](https://github.com/kotnisofiane-bit) · [Public skills](https://github.com/kotnisofiane-bit/dubsar-agent-skills) · [Digital Trust — English](https://www.amazon.fr/dp/B0GZ4RH1KX) · [Digital Trust — French](https://www.amazon.fr/dp/B0H739BFJP) · [Amazon author page](https://www.amazon.fr/stores/Sofiane-KOTNI/author/B0H6NBHZTC) · [Contact](mailto:kotni.sofiane@dubsar.ai)
