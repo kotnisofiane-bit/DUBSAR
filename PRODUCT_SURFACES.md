@@ -1,6 +1,6 @@
 # Product and Surfaces
 
-DUBSAR is one governance and audit system with three distinct public surfaces:
+DUBSAR is one governance and audit system with three distinct product surfaces:
 
 1. **Automated audit** through the DUBSAR portal;
 2. **Professional DUBSAR Audit** operated under an agreed mandate;
@@ -57,7 +57,10 @@ The same doctrine applies whether DUBSAR is examining an existing automation or 
 
 ## Surface 1 — Automated audit portal
 
-The DUBSAR portal is the public entry point for a bounded automated audit.
+The DUBSAR portal is the planned self-service surface for a bounded automated
+audit. It is under construction and validation and is not yet publicly
+available. The current public entry point is the
+[audit overview](https://dubsar.ai/audit).
 
 Its responsibilities are to:
 
@@ -106,11 +109,11 @@ The portal cannot:
 
 ### Portal maturity
 
-The portal is public and under active validation.
+The portal is under construction and active validation. It is coming soon and
+is not currently presented as publicly accessible, generally available or
+production proven.
 
-This means it is the current commercial entry point without being presented as universally supported or production proven for every environment.
-
-[Open the portal](https://app.dubsar.ai/audits)
+[Explore the automated audit](https://dubsar.ai/audit)
 
 ---
 
@@ -315,11 +318,11 @@ No generally available Node deployment is currently claimed.
 
 ## Protected technical components
 
-The three public surfaces may rely on shared protected components.
+The three product surfaces may rely on shared protected components.
 
 ### DUBSAR Portal
 
-The Portal supports:
+The Portal is designed to support:
 
 - configuration;
 - source selection;
@@ -475,7 +478,8 @@ It does not publish:
 
 ### Automated audit portal
 
-Web-based public entry point under active validation.
+Web-based surface under construction and validation. It is not currently
+presented as publicly accessible; the marketing audit page remains public.
 
 ### Windows
 
@@ -503,7 +507,7 @@ Future adapter direction. Not currently supported publicly.
 
 | Surface | Maturity |
 |---|---|
-| Automated audit portal | Public, under active validation |
+| Automated audit portal | Under construction and validation; coming soon, not publicly available |
 | Professional DUBSAR Audit | Available on request |
 | DUBSAR for Claude Code | Functional controlled private beta |
 | External coding-agent access | Selective, invitation only |
@@ -518,10 +522,13 @@ Future adapter direction. Not currently supported publicly.
 
 DUBSAR is one governance and audit system.
 
-The automated portal prepares a bounded first result.
+The automated portal is intended to prepare a bounded first result.
 
 The professional audit adds a mandate, operator analysis and human review.
 
 The coding-agent product governs software projects during construction.
 
-The Portal makes evidence readable. The Backend protects requests. The Core preserves canonical state and evaluates declared rules. The Runner produces mechanical evidence. The Node applies only authorized controls. The cockpit surfaces governed state. Human authority remains final.
+The Portal is designed to make evidence readable. The Backend protects
+requests. The Core preserves canonical state and evaluates declared rules. The
+Runner produces mechanical evidence. The Node applies only authorized controls.
+The cockpit surfaces governed state. Human authority remains final.

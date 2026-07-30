@@ -1,34 +1,42 @@
 # Decision Memory
 
-Software projects do not evolve only through code. They evolve through decisions.
+Automations and AI-agent systems do not evolve only through configuration or
+code. They evolve through decisions.
 
-An architectural choice, a rejected option, a locked constraint, a rollback or an accepted risk can shape a project for months. If that reasoning is not preserved, each new coding-agent session starts from a partial version of the project.
+A business rule, a rejected option, an approval, a rollback or an accepted risk
+can shape an operating process for months. If that reasoning is not preserved,
+the next audit or execution starts from a partial account of the system.
 
 DUBSAR treats decision memory as infrastructure.
 
 ---
 
-## Conversation history is not project memory
+## Conversation history is not governed memory
 
 Conversation history records what was said.
 
-Decision memory records what became meaningful for the project.
+Decision memory records what became meaningful for the governed process.
 
-A conversation may contain drafts, uncertainty, alternatives and abandoned ideas. A governed memory should preserve the decisions, reasons, constraints, evidence and human authority that future work depends on.
+A conversation may contain drafts, uncertainty, alternatives and abandoned
+ideas. Governed memory should preserve the decisions, reasons, constraints,
+evidence and human authority that future work depends on.
 
 The goal is not to remember everything.
 
-The goal is to remember what the project depends on.
+The goal is to remember what the governed process depends on.
 
 ---
 
-## The Mission is the continuity anchor
+## The governed case is the continuity anchor
 
-A DUBSAR project is organized around a persistent Mission.
+A DUBSAR audit or governance case needs a persistent identity.
 
-The Mission provides the durable context within which decisions, lots, contracts, sessions, executions, evidence and Human Gates can be related and resumed across coding-agent sessions and, eventually, across supported hosts.
+That identity provides the durable context within which scope, source versions,
+executions, findings, evidence and Human Gates can be related across time.
 
-A session can end. A host can restart. The governed Mission should remain identifiable and replayable.
+When the portal becomes available, a portal session may end. A connector or
+Node can restart. The governed case should remain identifiable and its evidence
+path reproducible.
 
 ---
 
@@ -36,15 +44,15 @@ A session can end. A host can restart. The governed Mission should remain identi
 
 A meaningful decision should be relatable to:
 
-- the Mission and project;
-- the question or intent;
+- the audit or governance case;
+- the business question or intended action;
 - the alternatives considered where relevant;
 - the chosen decision and reason;
-- the constraints it activates or removes;
-- the lot or contract it affects;
-- the canonical session or execution context;
-- supporting evidence and its verification tier;
-- the human decision when protected movement occurred;
+- the rule, policy or constraint it activates or removes;
+- the affected system, workflow and business object;
+- the relevant execution identity and source versions;
+- supporting evidence and its verification level;
+- the human decision when a protected action was reviewed;
 - later replacement, revision or rollback.
 
 ---
@@ -55,10 +63,10 @@ Decision memory is not a museum of permanent rules.
 
 A decision can be challenged, replaced or reversed. DUBSAR should preserve the transition rather than silently overwrite the past.
 
-Future sessions need to know both:
+Future audits and executions need to know both:
 
-- what is currently authoritative for the project;
-- how and why the project arrived there.
+- what is currently authoritative for the governed process;
+- how and why that state was reached.
 
 ---
 
@@ -74,15 +82,15 @@ It provides the governed context in which agents can propose and humans can deci
 
 Decision memory becomes useful when it informs:
 
-- Mission resumption;
-- lot selection and scope;
-- execution contracts;
+- case resumption;
+- audit scope and source boundaries;
+- workflow and policy selection;
 - relevant constraints;
-- canonical session creation;
+- canonical execution identity;
 - expected evidence;
 - audit questions;
 - Human Gate dossiers;
-- replay after restart, compaction, handoff or host change.
+- replay after retry, restart, handoff or connector change.
 
 It is not a passive archive detached from the workflow.
 
@@ -109,17 +117,19 @@ This prevents a persuasive narrative from becoming a substitute for proof.
 A governed path may be summarized as:
 
 ```text
-Mission
-  → Decision and constraints
-  → Lot and contract
-  → Canonical session and execution
-  → Proposal or execution report
-  → Audit and evidence
+Authorized scope
+  → Evidence snapshot
+  → Rule and source versions
+  → Execution or proposed action
+  → Findings and limitations
+  → Human review
   → Human Gate
-  → Result
+  → Decision and traceable report
 ```
 
-Replay does not mean storing private chain-of-thought or every token of every interaction. It means preserving the project-level facts required to explain and resume the work.
+Replay does not mean storing private chain-of-thought or every token of every
+interaction. It means preserving the bounded facts required to explain a result
+and resume the governed process.
 
 ---
 
@@ -129,11 +139,11 @@ Replay does not mean storing private chain-of-thought or every token of every in
 - Which decision is active now?
 - What replaced the previous direction?
 - Why was this option rejected?
-- Which session or execution produced this result?
+- Which workflow, agent or execution produced this result?
 - Which evidence supported the change?
 - Was that evidence declared or verified?
 - Which human decision authorized protected movement?
-- What should the next session or supported host inherit?
+- What should the next execution, connector or Node inherit?
 
 ---
 
@@ -141,4 +151,5 @@ Replay does not mean storing private chain-of-thought or every token of every in
 
 Conversations disappear. Decisions remain.
 
-A project that remembers its governed decisions can evolve across sessions and tools without repeatedly losing its own reasoning.
+An organization that preserves governed decisions can evolve its automations and
+agents without repeatedly losing the evidence and authority behind them.

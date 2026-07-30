@@ -1,88 +1,91 @@
 # Security Policy
 
-DUBSAR is preparing a controlled private beta.
-
-```text
-product generally available: no
-public beta: no
-marketplace-ready: no
-```
+DUBSAR is under active development and is not generally available for production use.
 
 ## Supported versions
 
-No public release is currently supported.
+No public production version is currently supported.
 
-The repository contains public documentation and Marketplace staging material, including an earlier vendored Claude Code plugin pin. The DUBSAR Marketplace is not activated or announced, the final publication pin is not selected and there is no supported public installation.
-
-Private beta testers receive version-specific package and support instructions through the controlled beta channel.
+Historical Marketplace or plugin staging files in this repository are unsupported and must not be installed in a production environment.
 
 ## Reporting a vulnerability
 
-Do not publish suspected vulnerabilities, secrets, access keys, private service URLs, tester data or exploit details in a public GitHub issue.
+Until a dedicated monitored security channel is confirmed publicly, contact:
 
-Report suspected vulnerabilities privately by email to **security@dubsar.ai**. Private beta testers may also use the private support channel supplied with their invitation.
+`contact@dubsar.ai`
 
-The security contact must be confirmed as live and monitored before Marketplace activation.
+Use `SECURITY` in the subject line and provide only the minimum information required to establish contact.
 
-## Scope
+Do not include:
 
-Useful reports may concern:
+- credentials or tokens;
+- private keys;
+- cookies or session material;
+- real client evidence;
+- personal data;
+- exploit code targeting a live third-party system;
+- private Core material.
 
-- the public Claude Code host-adapter package;
-- DUBSAR Desktop, Bridge or local runtime behavior;
-- unintended secret or data exposure;
-- unsafe command, worktree or process behavior;
+A secure exchange channel can be agreed after initial contact.
+
+## Current public scope
+
+Reports may concern:
+
+- this public documentation repository;
+- public marketing website behavior;
+- unexpected exposure or access-control failure on a DUBSAR endpoint;
 - authentication or authorization boundaries;
-- canonical session or stale-write integrity;
-- Human Gate or single-use authorization bypass;
-- package provenance, integrity, update, rollback or uninstall paths;
-- ways an agent could falsely appear human-approved or verified;
-- separation failures between sessions, worktrees or evidence;
-- restart or reconciliation behavior that leaves phantom process state.
+- accidental data or secret exposure;
+- published adapter staging material.
 
-The private Backend and Core are not published in this repository. Do not attempt to access systems, accounts or data for which you do not have explicit authorization.
+Private repositories, client environments and third-party services must not be probed without explicit authorization.
 
-## Coding-agent hosts
+## Product security model
 
-Claude Code is the first supported integration under preparation.
+DUBSAR is designed around:
 
-Future Codex, Cursor or other adapters will require separate security review for their host-specific permissions, session identity, tool boundaries, process model and data flow before support is claimed.
+- explicit identity;
+- bounded evidence collection;
+- least-privilege connectors;
+- separation of browser, service, agent and human authority;
+- deterministic state transitions;
+- fail-closed behavior for protected operations;
+- visible missing or unavailable evidence;
+- private Core isolation;
+- expurgated proof artifacts.
 
-## Platform posture
+These are design requirements. They are not a claim that a public production security review has been completed.
 
-Windows is the first controlled private-beta target.
+## Portal boundary
 
-Linux validation is planned later. macOS support is not announced.
+The automated audit portal is coming soon. It remains under development and
+validation and is not currently available for public use. Before any public
+portal access is opened, DUBSAR must validate:
 
-A platform is not considered supported because code compiles or CI passes. Package integrity, installation, permissions, secure storage, process identity, update and removal must be validated on the real target platform.
+- registration and authentication;
+- tenant and project isolation;
+- upload and connector authorization;
+- rate and abuse controls;
+- secret handling;
+- evidence retention and deletion;
+- human-decision authentication;
+- audit and administrative logging;
+- backup and recovery;
+- dependency and infrastructure review.
 
-## Response posture
+## Future local Node
 
-During private beta preparation, DUBSAR may change quickly. Valid security reports will be triaged according to impact and reproducibility.
+The intended Node security model is:
 
-No response-time guarantee is currently offered.
+- outbound authenticated HTTPS only;
+- short-lived, scoped device authorization;
+- source credentials retained locally;
+- bounded and filtered evidence submission;
+- no direct Node access to private Core writes or Human Gate authority.
 
-## Never include
+No public Node package currently implements a supported production boundary.
 
-- real access, activation or licence keys;
-- API tokens, bearer tokens or SSH keys;
-- private customer or tester data;
-- confidential repository content;
-- full sensitive logs;
-- private prompts or chain-of-thought;
-- private service URLs not intended for publication;
-- instructions requiring unauthorized access.
+## Disclosure status
 
-## Current status
-
-```text
-public security contact: security@dubsar.ai — monitoring to be confirmed
-Windows controlled private beta: in preparation
-Marketplace: not activated or announced
-supported public release: none
-product generally available: no
-public beta: no
-marketplace-ready: no
-```
-
-This document primarily covers the product and public repository. Security scope and access for a professional DUBSAR Audit engagement are agreed in its mandate; read-only access is the default.
+A full vulnerability-disclosure and response SLA will be published before general availability.

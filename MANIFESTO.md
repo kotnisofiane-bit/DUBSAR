@@ -1,93 +1,86 @@
 # Manifesto
 
-Software is increasingly built with AI.
+Automation is becoming easier to create.
 
-Ideas become faster. Code becomes faster. Reviews become faster.
+AI agents can plan, call tools, move data and produce business actions quickly.
 
-But speed does not automatically create coherence.
+Speed does not automatically create coherence.
 
-A project can move quickly and still lose its memory. A capable agent can produce a reasonable change while forgetting why the project rejected the same direction three sessions earlier.
+## Actions need a recoverable reason
 
-DUBSAR begins from this observation.
+An action may cross a workflow engine, a model, an API and a business system.
 
----
+When something goes wrong, an organization should be able to recover:
 
-## Conversations disappear. Decisions remain.
+- which event started the path;
+- which rule or version applied;
+- which evidence was available;
+- what was missing;
+- which agent or system acted;
+- whether human approval was expected;
+- who made the final decision.
 
-AI-assisted development often starts with conversation.
-
-Conversation can clarify, accelerate and propose. But it is long, partial and easy to lose when sessions restart, context is compacted or work moves to another tool.
-
-Projects do not only need better conversations.
-
-They need durable decision structures.
-
----
+DUBSAR exists to preserve that path.
 
 ## Intelligence is not authority
 
-More capable models can produce better proposals.
+A capable model can produce a strong proposal.
 
-A proposal is still not a decision. An agent report is still not independent proof. A green-looking result is still not a Human GO.
+A proposal is still not proof. An agent explanation is still not a deterministic control. Agreement between several agents is still not a Human GO.
 
-A proposed change must be bounded. Evidence must be distinguished from assertion. Responsibility must remain visible.
+DUBSAR separates:
 
-DUBSAR exists because intelligence alone does not make a long-running project reliable.
+- evidence from assertion;
+- observation from inference;
+- deterministic results from model explanations;
+- missing information from positive findings;
+- human decisions from technical credentials.
 
----
+## Audit comes first
 
-## Preserve what the project depends on
+Before governing an automation continuously, understand it.
 
-DUBSAR is designed to preserve:
+The first DUBSAR journey is a bounded audit:
 
-- the Mission;
-- decisions and their reasons;
-- active constraints;
-- bounded lots and contracts;
-- canonical session identity;
-- declared and verified evidence;
-- audit state;
-- explicit human decisions;
-- replay across sessions and supported hosts.
+```text
+authorized sources
+→ frozen evidence
+→ deterministic controls
+→ specialized agent roles
+→ human review
+→ traceable report
+```
 
-The goal is not to store everything.
+This baseline can later support continuous observation, policy decisions and controlled orchestration.
 
-The goal is to prevent the project from forgetting what makes its current direction coherent.
+The automated portal intended to support this journey is coming soon. It
+remains under development and validation and is not currently available for
+public use. Professional DUBSAR Audit remains available on request.
 
----
+## Agents should have roles, not sovereignty
 
-## Work with existing coding agents
+DUBSAR uses specialized agent roles because different perspectives are useful.
 
-Coding agents already know how to plan, edit, test and use tools.
-
-DUBSAR should not become another coding agent or rebuild every host environment. It adds the project memory and governance layer that must survive beyond one session or one tool.
-
-Claude Code is the first supported integration. Future host adapters may connect Codex, Cursor and other coding-agent environments to the same governed Core.
-
-Coding agents build.
-
-DUBSAR preserves decisions, boundaries and evidence.
-
-Humans decide.
-
----
+Those roles remain bounded by explicit evidence and output contracts. They cannot rewrite the snapshot, approve their own conclusion or become the canonical source of truth.
 
 ## Human responsibility must remain exercisable
 
-Saying that humans remain responsible is not enough.
+Responsibility is meaningless when the evidence is scattered or the decision is opaque.
 
-A human cannot meaningfully approve what is unclear, scattered or unsupported. Responsibility needs a readable dossier, explicit boundaries and evidence that can be questioned.
+A human needs a readable dossier: finding, rule, evidence, scope, limitations and alternatives.
 
-DUBSAR is not designed to slow every action. It is designed to make protected movement traceable, bounded and reviewable.
+DUBSAR is not designed to slow every action. It is designed to make protected movement attributable and reviewable.
 
----
+## Independence matters
+
+Organizations use several automation tools and agent runtimes.
+
+DUBSAR should not depend on one vendor to define the meaning of governance. Connectors can change. The evidence and authority model must remain stable.
 
 ## A quieter form of progress
 
 DUBSAR is not built around claims of autonomous certainty.
 
-It is built around continuity, evidence and coherence.
+It is built around evidence, coherence and explicit authority.
 
-Technology evolves quickly. Trust evolves deliberately.
-
-The purpose of structure is not to stop evolution. It is to let a project evolve across sessions and tools without losing the reasoning and responsibility that hold it together.
+**Agents assist. DUBSAR preserves and checks. Humans decide.**

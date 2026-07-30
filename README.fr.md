@@ -10,7 +10,7 @@ DUBSAR relie les faits, les décisions et les preuves de vos workflows. Le syst�
 
 DUBSAR possède aujourd’hui trois surfaces distinctes. Elles partagent une même doctrine, mais pas le même usage ni le même niveau de maturité.
 
-[Ouvrir le portail d’audit](https://app.dubsar.ai/audits) · [Découvrir l’audit](https://dubsar.ai/fr/audit) · [Demander un accès bêta](https://dubsar.ai/fr/early-access) · [English version](README.md)
+[Découvrir l’audit](https://dubsar.ai/fr/audit) · [Demander un accès bêta](https://dubsar.ai/fr/early-access) · [English version](README.md)
 
 ---
 
@@ -18,7 +18,7 @@ DUBSAR possède aujourd’hui trois surfaces distinctes. Elles partagent une mê
 
 | Surface | Usage | Statut actuel |
 |---|---|---|
-| **Audit automatisé** | Examiner un périmètre d’automatisations, relier les événements disponibles et préparer un rapport validable | Portail public en validation active |
+| **Audit automatisé** | Examiner un périmètre d’automatisations, relier les événements disponibles et préparer un rapport validable | Portail en cours de construction et de validation ; bientôt disponible |
 | **Audit professionnel DUBSAR** | Examiner un projet ou une automatisation sous mandat, avec sources autorisées et revue humaine | Disponible sur demande |
 | **DUBSAR pour agents de code** | Gouverner la construction d’un projet logiciel assisté par des agents | Bêta privée contrôlée, Claude Code en premier |
 
@@ -32,7 +32,9 @@ Ces surfaces ne doivent pas être confondues :
 
 ## 1. Audit automatisé
 
-Le portail constitue le point d’entrée commercial public de DUBSAR.
+La page publique de présentation de l’audit constitue le point d’entrée
+commercial actuel. Le portail automatisé est encore en cours de construction et
+de validation ; il n’est pas encore accessible au public.
 
 Le parcours visé est simple :
 
@@ -44,7 +46,7 @@ Le parcours visé est simple :
 
 Le parcours vise l’autonomie jusqu’au premier rapport. Cette autonomie ne signifie ni décision automatique, ni certification, ni suppression de la responsabilité humaine.
 
-[Ouvrir le portail d’audit](https://app.dubsar.ai/audits)
+[Découvrir l’audit automatisé](https://dubsar.ai/fr/audit)
 
 ---
 

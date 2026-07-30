@@ -2,131 +2,131 @@
 
 DUBSAR is designed around a practical question:
 
-> How can AI-assisted work remain understandable and governable as a project grows across sessions, agents and tools?
+> How can business automations and AI agents remain understandable, governable and attributable across tools and over time?
 
-The answer is not to rebuild the coding agent. It is to preserve the project layer around it.
+The answer is not to ask another agent to declare that everything is safe. It is to combine bounded evidence, deterministic controls, specialized roles and explicit human authority.
 
----
+## Audit before continuous governance
 
-## Start from the real host
+Responsible orchestration starts by understanding the existing system.
 
-Coding-agent hosts already provide intelligence, editing, tools, tests and execution environments.
+The intended first product path therefore:
 
-DUBSAR should use those native capabilities rather than duplicate them. A host adapter stays thin, the local runtime handles bounded integration and the private Core owns governed project state.
+1. defines a bounded scope;
+2. collects authorized evidence;
+3. freezes a reproducible snapshot;
+4. applies explicit controls;
+5. exposes findings and missing information;
+6. records a human disposition;
+7. preserves a traceable report.
 
-Claude Code is the first supported host. Future adapters may connect Codex, Cursor and other environments to the same Core.
+The automated portal implementing this journey is coming soon. It remains
+under development and validation and is not currently available for public
+use.
 
----
+Continuous policy enforcement follows only when the audit establishes a justified and testable need.
 
-## Build around Missions and decisions
+## Determinism and agents have different jobs
 
-A conversation can produce useful ideas. A project evolves through decisions made within a continuing Mission.
+Agents are useful for interpretation, exploration and explanation.
 
-DUBSAR therefore focuses on:
+Deterministic components own:
 
-```text
-Mission → Decision → Contract → Session → Proposal → Audit → Evidence → Human Gate → Result
-```
+- identity and state transitions;
+- evidence digests and scope;
+- control vocabulary;
+- idempotence;
+- declared policy evaluation;
+- Human Gate enforcement;
+- stable report projection.
 
-The decision path is more durable than the current conversation window or host session.
-
----
-
-## Keep responsibilities separate
-
-- The coding-agent host interprets, proposes and acts through its native capabilities.
-- The DUBSAR adapter exposes governed state inside that host.
-- The local runtime connects the host to the private service.
-- The Backend protects canonical writes.
-- The Core owns Mission and governance state.
-- Deterministic verifiers produce bounded verification.
-- Humans decide protected movement.
-
-No layer should quietly absorb another layer's authority.
-
----
-
-## Prefer explicit boundaries
-
-A lot or execution contract should make clear:
-
-- the objective;
-- allowed and forbidden scope;
-- the applicable base or workspace;
-- required evidence;
-- relevant roles;
-- session and runtime expectations;
-- Human Gate conditions.
-
-Boundaries do not make work correct. They make divergence reviewable.
-
----
+Model output is input to governance, not governance itself.
+Protected decisions remain attributable to the authorized human authority.
 
 ## Evidence over confidence
 
-Fluent explanations are useful but not sufficient.
+Fluent explanations are useful but insufficient.
 
-DUBSAR distinguishes declarations from deterministic verification and keeps missing or invalid evidence visible. A tool or agent cannot promote its own statement to verified truth by adding a field or stronger wording.
+DUBSAR keeps observed facts, deterministic results, inferences, missing evidence and unavailable sources distinct. Stronger wording cannot promote an unsupported claim into a verified fact.
 
----
+## Human responsibility must be usable
 
-## Reduce cognitive load
+Saying “a human remains responsible” is not enough.
 
-Governance should show the human what matters now:
+The reviewer needs:
 
-- the active Mission;
-- the current lot and next action;
-- active sessions and their state;
-- applicable decisions and constraints;
-- evidence and its status;
-- the decision required.
+- the finding;
+- the evidence;
+- the rule;
+- the scope;
+- the limitations;
+- the exact review state being decided.
 
-The product should not expose every internal event merely because it exists.
+A Human Gate is therefore a bound decision surface, not a decorative checkbox.
 
----
+## Prefer explicit boundaries
+
+Every audit or governed action should identify:
+
+- objective;
+- owner;
+- allowed scope;
+- prohibited scope;
+- evidence requirements;
+- active Rule Pack or policy;
+- agent role boundaries;
+- Human Gate conditions;
+- expected output.
+
+Boundaries do not guarantee correctness. They make divergence reviewable.
 
 ## Fail closed selectively
 
-Protected movement should stop when required identity, scope, evidence or human approval is missing.
+A protected action should stop when required identity, evidence, policy or authorization is missing.
 
 Harmless reads should not become unusable through indiscriminate blocking. Fail-closed behavior must protect meaningful boundaries rather than perform security theatre.
 
----
+## Keep connectors replaceable
 
-## Preserve local continuity, keep canonical authority private
+n8n, Make, CRM systems, model providers and coding-agent hosts evolve independently.
 
-Local state helps reconnect sessions, workspaces, processes and the cockpit.
+DUBSAR should use documented, versioned contracts and explicit degraded states. A connector change may require an adapter update; it must not change the meaning of an audit result silently.
 
-Canonical Mission, decision, contract, session, evidence and Human Gate authority remains in the private Core. The adapter, Bridge and Desktop are not allowed to become accidental second business brains.
+## A portal for users, local administration for operators
 
----
+The portal is intended to become the primary product surface for scope,
+findings, review and reports. It is coming soon and remains under development
+and validation. The public marketing website provides product information; it
+does not provide access to the portal.
 
-## Public first, internal rename later
+A future Node and desktop are intended for technical administrators who need local credentials, runtime health, connector configuration and controlled execution.
 
-The public product is DUBSAR.
+These surfaces share one authority model. They do not create separate governance brains.
 
-Internal `scribe` identifiers may remain while compatibility depends on them. A controlled migration is preferable to a global rename that breaks commands, routes or stored state.
+## Preserve the private authority boundary
 
----
+Public adapters, schemas and examples can remain inspectable.
 
-## Visible product progress
+Canonical audit state, protected policy and proprietary deterministic mechanisms remain in the private DUBSAR Core. Open-source components in the surrounding system do not make the complete product open source.
 
-Internal tests, hashes and guardrails are necessary. They are not the whole product.
+## Keep public status honest
 
-Each major iteration should produce a real user-visible capability in a supported host or the cockpit: start, resume, understand, review or decide.
+An interface, an API test, a deterministic function test, a user E2E and production readiness are different kinds of proof.
 
----
+Every public claim should name which boundary was actually exercised.
+
+## Developer heritage
+
+Earlier Claude Code, desktop and multi-session work remains useful.
+
+It contributes patterns for identity, evidence, local runtime and Human Gates.
+DUBSAR for coding agents remains a controlled private-beta surface, with Claude
+Code first. Codex, Cursor and other adapters remain future directions. This
+surface is distinct from the planned portal and is not a generally available
+public product.
 
 ## Summary
 
-DUBSAR favors:
+DUBSAR is not designed to maximize autonomous activity.
 
-- Missions over isolated sessions;
-- decisions over raw transcripts;
-- contracts over implicit assumptions;
-- evidence over confidence;
-- replay over opacity;
-- host adapters over provider lock-in;
-- compatibility over cosmetic purity;
-- human authority over autonomous approval;
-- visible product value over endless internal validation.
+It is designed to make automation activity more attributable, bounded, reviewable and governable.
