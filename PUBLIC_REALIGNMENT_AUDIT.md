@@ -218,7 +218,8 @@ Before any future Marketplace publication or announcement:
 - pass strict Marketplace and plugin validation;
 - verify installation, update, rollback and removal on Windows;
 - verify Privacy and Security documents against the implemented data flow;
-- confirm public security and licensing contacts are monitored;
+- before any future software distribution, confirm current security and
+  licensing contacts for that component;
 - decide the final public plugin id;
 - decide whether the repository is renamed before publication;
 - obtain a separate explicit Human GO to activate and announce the Marketplace.

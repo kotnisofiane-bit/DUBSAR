@@ -171,24 +171,30 @@ DUBSAR does not provide legal advice, issue certification or produce an automati
 
 ## Public and private boundary
 
-This repository is DUBSAR’s public documentation and distribution boundary.
+This repository is DUBSAR's public documentation boundary. It is not a public
+software distribution.
 
 It may contain:
 
 - public doctrine and architecture;
 - bounded examples and diagrams;
-- public security, privacy and installation information;
-- authorized host adapters.
+- public security, privacy and distribution-status information;
+- non-executable historical records.
 
 It does not publish:
 
+- the Portal, Desktop or their implementation;
 - the proprietary Core;
+- current plugins, host adapters or an installable runtime;
 - internal policies or sealed journals;
 - client or tester data;
 - secrets, tokens or trust material;
 - private Backend implementation details.
 
-Some technical identifiers still use `scribe` for compatibility. They do not represent a second public product.
+No public software licence is currently selected or granted by this repository.
+Future licensing will be decided separately for each component before
+distribution. Third-party materials remain subject to their own licences and
+notices. See [Rights and Licensing Status](RIGHTS.md).
 
 ---
 
@@ -206,6 +212,7 @@ Some technical identifiers still use `scribe` for compatibility. They do not rep
 
 ### Distribution and trust
 
+- [Rights and licensing status](RIGHTS.md)
 - [Installation](INSTALLATION.md)
 - [Marketplace](MARKETPLACE.md)
 - [Security](SECURITY.md)

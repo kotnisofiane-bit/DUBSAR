@@ -290,12 +290,13 @@ be documented and validated before it becomes available. See
 The whole DUBSAR product is not open source.
 
 The private Core and private Backend implementation are not distributed here.
-Public documentation, staging adapter material and third-party components are
-governed by their respective licences and notices. Public visibility does not
-create an open-source licence grant.
+No public software licence is currently selected or granted by this repository
+for the Portal, Desktop, Backend or plugins. Their licensing will be decided
+separately before any distribution.
 
-Distribution remains subject to component provenance, dependency and licence
-review.
+Original DUBSAR documentation and assets remain rights-reserved unless a file
+expressly states otherwise. Third-party components remain governed by their own
+licences and notices. See [Rights and Licensing Status](RIGHTS.md).
 
 ---
 

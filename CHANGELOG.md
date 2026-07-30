@@ -13,6 +13,10 @@ All notable public repository and distribution changes will be recorded here.
   non-installable retirement record;
 - preserved version `0.11.1`, its source pin and aggregate hash in a
   non-executable tombstone;
+- moved the exact historical private-beta licence into that tombstone and
+  removed it as the current repository-root licence;
+- added `RIGHTS.md` to record that no public software licence is currently
+  selected and that third-party licences remain unaffected;
 - kept future Marketplace publication behind a new provenance, licence,
   installation and explicit Human GO review.
 

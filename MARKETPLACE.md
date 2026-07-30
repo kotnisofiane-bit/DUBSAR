@@ -28,8 +28,9 @@ though it was not the final product package. It also combined:
 - historical `scribe` identifiers;
 - an executable plugin tree;
 - Marketplace metadata;
-- licence signals that require a separate legal review before any future public
-  distribution.
+- conflicting historical licence signals, now preserved only with the retired
+  record. Any future public distribution requires a new component-specific
+  licence review.
 
 Keeping that surface in the default branch created more ambiguity than useful
 product evidence. The active repository now documents the product boundary

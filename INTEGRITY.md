@@ -64,10 +64,16 @@ The new record must not reuse the retired `0.11.1` hash.
 
 ## Licence boundary
 
-This retirement does not select or amend a future public software licence. The
-repository-root `LICENSE` file is left unchanged pending a separate explicit
-legal and distribution review. This integrity record does not grant additional
-rights.
+This retirement does not select a public software licence for DUBSAR.
+
+The previous private-beta licence has been moved from the repository root to the
+[historical `0.11.1` record](docs/legacy/marketplace-0.11.1/LICENSE.txt). It
+describes the retired plugin snapshot and does not decide the licensing of the
+Portal, Desktop, Backend, future plugins or any other future distribution.
+
+The active repository's current rights and distribution position is recorded in
+[Rights and Licensing Status](RIGHTS.md). Third-party components remain subject
+to their own licences and notices.
 
 ## Status
 

@@ -172,24 +172,31 @@ DUBSAR ne fournit aucun conseil juridique, ne délivre aucune certification et n
 
 ## Frontière publique et privée
 
-Ce dépôt constitue la surface publique de documentation et de distribution de DUBSAR.
+Ce dépôt constitue la frontière documentaire publique de DUBSAR. Il ne s'agit
+pas d'une distribution logicielle publique.
 
 Il peut contenir :
 
 - la doctrine et l’architecture publiques ;
 - des exemples et diagrammes bornés ;
-- les informations publiques de sécurité, confidentialité et installation ;
-- les adaptateurs hôtes dont la publication a été autorisée.
+- les informations publiques de sécurité, confidentialité et état de
+  distribution ;
+- des archives historiques non exécutables.
 
 Il ne publie pas :
 
+- le Portail, le Desktop ou leur implémentation ;
 - le Core propriétaire ;
+- des plugins actuels, adaptateurs hôtes ou un runtime installable ;
 - les politiques ou journaux internes ;
 - les données de clients ou de testeurs ;
 - les secrets, jetons ou éléments de confiance ;
 - les détails privés du Backend.
 
-Certains identifiants techniques utilisent encore `scribe` pour compatibilité. Ils ne désignent pas un second produit public.
+Aucune licence logicielle publique n’est actuellement choisie ou accordée par
+ce dépôt. Les licences futures seront décidées séparément pour chaque composant
+avant toute distribution. Les éléments tiers restent soumis à leurs propres
+licences et notices. Voir [Droits et statut des licences](RIGHTS.md).
 
 ---
 
@@ -207,6 +214,7 @@ Certains identifiants techniques utilisent encore `scribe` pour compatibilité. 
 
 ### Distribution et confiance
 
+- [Droits et statut des licences](RIGHTS.md)
 - [Installation](INSTALLATION.md)
 - [Marketplace](MARKETPLACE.md)
 - [Sécurité](SECURITY.md)

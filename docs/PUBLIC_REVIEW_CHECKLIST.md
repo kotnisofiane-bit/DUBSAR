@@ -65,6 +65,9 @@ staging items were superseded when the executable staging surface was retired on
 - [x] No supported public installation command is active.
 - [x] A non-executable tombstone preserves the historical pin and aggregate
   hash.
+- [x] The historical private-beta licence is preserved with the tombstone, not
+  presented as the active repository-root licence.
+- [x] `RIGHTS.md` records that no current public software licence is selected.
 - [ ] Any future package receives a new provenance, dependency, licence,
   integrity and installation review.
 - [ ] Any future Marketplace publication receives a separate explicit Human GO.
@@ -108,7 +111,8 @@ staging items were superseded when the executable staging surface was retired on
 - [ ] Repository rename is handled as a separate Human Gate.
 - [ ] Any new Marketplace publication and announcement require a later separate
   Human GO.
-- [ ] Security and licensing contacts are confirmed live before publication.
+- [ ] Before any future software distribution, current security and licensing
+  contacts are confirmed and published with that component.
 
 ---
 

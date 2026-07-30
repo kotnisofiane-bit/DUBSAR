@@ -205,7 +205,8 @@ Future host-adapter direction. No operational public support is currently claime
 
 ## Public distribution status
 
-This repository is the public documentation and distribution boundary for DUBSAR.
+This repository is DUBSAR's public documentation boundary. It is not a public
+software distribution.
 
 Current distribution status:
 
@@ -216,10 +217,13 @@ Current distribution status:
 - no supported public installation command is active;
 - the historical Marketplace manifest and vendored runtime have been retired
   from the active tree;
+- no public software licence is currently selected or granted by this
+  repository; future component licensing remains deferred;
 - no generally available coding-agent product release is claimed;
 - the private Core is not distributed here.
 
-The repository can be referenced as public documentation.
+The repository can be referenced as public documentation. Current rights and
+third-party licence boundaries are recorded in [RIGHTS.md](RIGHTS.md).
 
 It must not be presented as proof that the coding-agent product is already generally installable or production ready.
 

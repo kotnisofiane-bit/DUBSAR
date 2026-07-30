@@ -36,6 +36,17 @@ cover this tombstone and must not be reused for a future package.
 The source repository is private. This recorded provenance is therefore not an
 independently reproducible public build recipe.
 
+## Historical licence record
+
+The exact private-beta licence text that accompanied the retired `0.11.x`
+plugin snapshot is preserved at [`LICENSE.txt`](LICENSE.txt).
+
+It is retained as historical evidence and is no longer the repository-root
+licence. Moving the text does not rewrite Git history, retroactively change
+earlier terms or select a licence for any current or future DUBSAR component.
+The contact information inside that file is preserved verbatim as part of the
+record and is not presented here as the current support channel.
+
 ## Why it was retired
 
 The snapshot was an earlier private-beta staging pin, not the final DUBSAR
