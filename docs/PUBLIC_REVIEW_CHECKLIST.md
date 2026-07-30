@@ -63,9 +63,10 @@ historical context.
 ## 6. Repository operation
 
 - [x] The historical tombstone and `RIGHTS.md` retain their intended boundary.
-- [x] The review branch remains uncommitted by this alignment pass.
-- [ ] A human reviews the final diff.
-- [ ] A later authorized workflow decides whether to commit, push or merge.
+- [x] The review branch is committed and published through pull request 19.
+- [x] The final diff has been reviewed against the current public/product boundary.
+- [x] The repository owner explicitly authorized final review and merge on
+  2026-07-30.
 
 ## Expected verdict
 
