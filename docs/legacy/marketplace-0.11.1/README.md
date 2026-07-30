@@ -25,6 +25,7 @@ It is not:
 | Plugin version | `0.11.1` |
 | Private source repository | `kotnisofiane-bit/scribe-claude-code-plugin` |
 | Private source commit | `c2878313198aceccac078bf9446c5ab45751e424` |
+| Last public repository snapshot with the active staging tree | `c00a2b6ef044b6a55764cebf271e948d39e0d7bd` |
 | Historical vendored tree | 49 tracked plugin files |
 | Historical vendored-tree aggregate SHA-256 | `df9cee3af505c606824edd27485d471a418e75593468426ff10c00501bb0f38f` |
 | Retired active paths | `.claude-plugin/marketplace.json`, `plugins/scribe/` |
@@ -62,9 +63,11 @@ currently offered. See the current [status](../../../STATUS.md).
 ## Historical recovery
 
 The former files and their detailed per-file hashes remain available in Git
-history for authorized audit or forensic comparison. They must not be restored,
-copied or installed as a current product package.
+history at the public snapshot recorded above for authorized audit, recovery or
+forensic comparison. They are not a current product package and must not be
+presented or installed as one.
 
-Any future Marketplace release must be built from a newly approved source pin
-and receive its own provenance, integrity, dependency, licence, security and
-installation review.
+Whether a Marketplace surface is useful again remains undecided. Any future
+release would require a new explicit decision, an approved source pin and its
+own provenance, integrity, dependency, licence, security and installation
+review; it would not silently reactivate this historical snapshot.
