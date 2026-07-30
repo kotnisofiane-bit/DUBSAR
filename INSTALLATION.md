@@ -1,125 +1,83 @@
 # Installation
 
-There is no supported public installation of the DUBSAR product yet.
+There is no supported public installation of DUBSAR at this time.
 
-The controlled private beta is being prepared for Windows first. The final public package, Marketplace pin and installation commands are not yet approved.
+The public repository no longer contains an active Marketplace manifest or a
+vendored Claude Code plugin runtime. Source visibility, documentation or Git
+history must not be treated as an installation path.
 
-Do not treat the visible staging plugin source as a complete or supported installation path.
+## Product surfaces
 
----
+### Automated audit portal
 
-## Intended Windows beta journey
+The portal is coming soon and is still under construction and validation. It is
+not currently available and does not require a local installation from this
+repository.
 
-The target tester flow is:
+The public audit method is described at
+[dubsar.ai/audit](https://dubsar.ai/audit).
 
-1. Receive controlled beta access.
-2. Download the approved DUBSAR Windows package from the authorized channel.
-3. Install DUBSAR Desktop and the local runtime.
-4. Install the approved DUBSAR Claude Code plugin from this Marketplace after publication.
-5. Approve the required Claude Code plugin and MCP prompts.
-6. Start DUBSAR through the supported Claude Code flow.
-7. Verify local component and access state.
-8. Recognize or attach the intended workspace.
-9. Resume an existing Mission or create a new one.
-10. Complete a bounded governed task and understand the resulting evidence or Human Gate.
-11. Restart and resume without hidden operator repair.
+### Professional DUBSAR Audit
 
-The beta is not ready until this path is reproducible with the approved package and documented recovery behavior.
+The professional audit is available on request as a separately scoped,
+human-led engagement. It does not imply that a generally available software
+package or local Node has been published.
 
----
+### DUBSAR for Claude Code
 
-## Current platform status
+The coding-agent product remains a controlled private beta, selective and
+Windows-first. If access is approved, the tester receives a bounded,
+version-pinned procedure through the controlled beta channel.
 
-### Windows
+Nothing in this public repository replaces that approved procedure.
 
-First controlled private-beta target. Packaging, installation and the end-to-end tester journey are still being finalized and validated.
-
-### Linux
-
-Planned for validation after Windows stabilizes. No supported Linux package or beta is currently announced.
-
-### macOS
-
-Not currently announced. Packaging, signing, notarization, permissions, secure storage and runtime behavior must be evaluated before any support claim.
-
----
-
-## Current prerequisites under validation
-
-- supported Claude Code version;
-- approved DUBSAR Desktop/runtime package;
-- approved Claude Code plugin pin and version;
-- Windows architecture and version support;
-- local process and worktree behavior;
-- beta access or activation state;
-- network access to the private service where required;
-- secure local token and permission handling;
-- clean update, rollback and removal;
-- preservation or migration of Mission and workspace state;
-- honest diagnostics when a component is unavailable.
-
----
-
-## Internal compatibility names
-
-Early beta diagnostics may display internal `scribe` identifiers such as:
-
-- `scribe-mcp`;
-- `/scribe-*` commands;
-- `scribe.*` tools;
-- `SCRIBE_*` environment variables;
-- historical local paths or component names.
-
-These are technical compatibility identifiers, not a second product name.
-
-Do not manually rename executables, paths, commands, routes or stored state unless an official tested migration is published.
-
----
-
-## Do not use legacy commands
-
-Installation commands from earlier SCRIBE staging material are not canonical DUBSAR instructions.
+## No public install commands
 
 Do not:
 
-- install from an unpublished Marketplace path;
-- copy a private staging package into a public installation manually;
-- mix an old Desktop package with a newer plugin or Backend pin;
-- assume that source visibility means the complete product is publicly installable;
-- replace internal identifiers through a global search and replace.
+- install a plugin from an older Git commit;
+- reconstruct the retired `plugins/scribe/` tree;
+- copy an unpublished Marketplace manifest into Claude Code;
+- mix historical Desktop, runtime, plugin or Backend versions;
+- assume that an internal technical identifier such as `scribe` names a second
+  public product;
+- use staging material in a production or client environment.
 
----
+## Requirements for an approved beta procedure
 
-## Package provenance requirement
+Any controlled beta procedure must identify:
 
-A supported package must identify and verify the exact versions of the components it executes.
+- the approved Desktop and local runtime version;
+- the approved plugin version and source commit;
+- required private Backend/Core compatibility;
+- hashes or signatures for distributed artifacts;
+- supported operating system and prerequisites;
+- credential and secret boundaries;
+- clean install, update, rollback and removal steps;
+- expected self-check and acceptance evidence;
+- a support and incident contact.
 
-At minimum, the publication evidence must bind:
+A green CI run, a visible source tree or a working internal API is not proof of
+a reproducible user installation.
 
-- Desktop package commit and installer hash;
-- Bridge commit;
-- Backend compatibility pin;
-- Claude Code plugin commit and version;
-- required private Core compatibility state;
-- supported Claude Code version;
-- supported operating system.
+## Future public installation
 
-A green CI run alone is not a user installation proof.
+Public installation instructions will be added only after a new package passes
+the distribution gates in [Marketplace and Distribution](MARKETPLACE.md).
 
----
-
-## Publication status
+Until then:
 
 ```text
-Windows controlled private beta: in preparation
 supported public installation: none
-public Marketplace: not activated or announced
-final plugin pin: not selected
-Linux package: not announced
-macOS package: not announced
-product generally available: no
-public beta: no
-marketplace-ready: no
+public Marketplace manifest: none
+public plugin runtime in this repository: none
+automated audit portal: coming soon, not currently available
+controlled Claude Code private beta: selective, Windows first
 ```
 
-These labels describe the installable product and Marketplace path. They do not describe the separately scoped [DUBSAR Audit professional service](AUDIT.md), which is available on request without claiming public product installation.
+See also:
+
+- [Current status](STATUS.md)
+- [Security boundary](SECURITY.md)
+- [Integrity and provenance](INTEGRITY.md)
+- [Historical Marketplace record](docs/legacy/marketplace-0.11.1/README.md)

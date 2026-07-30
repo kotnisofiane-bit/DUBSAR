@@ -272,9 +272,9 @@ The earlier desktop, bridge and plugin work may contribute:
 These integrations should reuse the same private Core and authority model. They
 must not become separate product brains or delay the portal-first audit.
 
-The public Claude Code Marketplace is inactive. The controlled beta is not a
-public Marketplace or general-availability claim, and no availability is
-claimed for Codex or Cursor.
+The historical Claude Code Marketplace staging surface has been retired from the
+active tree. The controlled beta is not a public Marketplace or
+general-availability claim, and no availability is claimed for Codex or Cursor.
 
 ---
 
@@ -304,7 +304,7 @@ automated audit portal: coming soon, under construction and validation, not avai
 professional DUBSAR Audit: available on request
 DUBSAR for Claude Code: functional controlled private beta being finalized
 coding-agent beta access: selective invitation, Windows first
-public Claude Code Marketplace: inactive
+public Claude Code Marketplace: historical staging retired; no public package
 DUBSAR Node: separate scoped deployment path, not generally available
 Codex and Cursor adapters: future
 bounded external portal validation: next stage

@@ -17,7 +17,7 @@ They share one evidence and human-authority doctrine, but they do not have the s
 | Professional DUBSAR Audit | Available on request |
 | DUBSAR for Claude Code | Functional controlled private beta being finalized |
 | External coding-agent beta access | Selective, invitation only, Windows first |
-| Public Claude Code Marketplace | Not active or announced |
+| Public Claude Code Marketplace | Retired from the active tree; no public package available |
 | Continuous governance / DUBSAR Node | Separate scoped deployment path; not generally available |
 | Codex / Cursor adapters | Future direction, not currently available |
 | Private DUBSAR Core | Proprietary, under active development, not distributed here |
@@ -211,9 +211,11 @@ Current distribution status:
 
 - the repository is publicly available as `kotnisofiane-bit/DUBSAR`;
 - public doctrine, architecture and bounded examples are available;
-- the thin Claude Code adapter is being prepared for controlled distribution;
+- the thin Claude Code adapter is being prepared through a controlled private
+  distribution path and is not published in this repository;
 - no supported public installation command is active;
-- no public Marketplace release is active;
+- the historical Marketplace manifest and vendored runtime have been retired
+  from the active tree;
 - no generally available coding-agent product release is claimed;
 - the private Core is not distributed here.
 

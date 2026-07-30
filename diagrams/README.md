@@ -81,7 +81,7 @@ The root English README embeds the English architecture visual. The French READM
 
 ```text
 Windows controlled private beta: being finalized
-Marketplace: not activated or announced
+Marketplace: historical staging retired; no public package
 product generally available: no
 public beta: no
 marketplace-ready: no

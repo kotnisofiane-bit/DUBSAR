@@ -91,7 +91,9 @@ The product preserves:
 
 Claude Code is the first integration. The functional private beta is being finalized for selected external projects, with Windows as the first target.
 
-The public Marketplace is not active. No generally available self-installation path is currently claimed. Codex, Cursor and other adapters remain future direction.
+The historical public Marketplace surface has been retired from the active
+repository tree. No generally available self-installation path is currently
+claimed. Codex, Cursor and other adapters remain future direction.
 
 [Current status](STATUS.md) · [Technical surfaces](PRODUCT_SURFACES.md) · [Request beta access](https://dubsar.ai/early-access)
 

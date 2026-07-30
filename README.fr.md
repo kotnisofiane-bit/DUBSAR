@@ -91,7 +91,10 @@ Le produit conserve notamment :
 
 Claude Code est la première intégration. La bêta privée fonctionnelle est en cours de finalisation pour des projets extérieurs sélectionnés, avec Windows comme première cible.
 
-La Marketplace publique n’est pas active. Aucun parcours d’installation publique autonome n’est actuellement revendiqué. Codex, Cursor et les autres adaptateurs appartiennent à la direction future.
+L’ancienne surface de Marketplace publique a été retirée de l’arbre actif du
+dépôt. Aucun parcours d’installation publique autonome n’est actuellement
+revendiqué. Codex, Cursor et les autres adaptateurs appartiennent à la direction
+future.
 
 [État actuel](STATUS.md) · [Surfaces techniques](PRODUCT_SURFACES.md) · [Demander un accès bêta](https://dubsar.ai/fr/early-access)
 

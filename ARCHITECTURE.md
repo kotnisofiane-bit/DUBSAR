@@ -253,9 +253,9 @@ supported target. It reuses the same canonical-state, evidence and explicit
 authority model without becoming a separate governance brain.
 
 Codex and Cursor remain future integration surfaces. They are not prerequisites
-for the portal audit, and no availability claim is made for them. The public
-Claude Code Marketplace is inactive and has not been announced as an
-installation path.
+for the portal audit, and no availability claim is made for them. The historical
+Claude Code Marketplace staging surface has been retired from the active tree;
+no public package or installation path is available.
 
 ## AI Act boundary
 
@@ -292,7 +292,7 @@ complete portal browser E2E proof: in progress
 professional DUBSAR Audit: available on request
 DUBSAR for Claude Code: functional controlled private beta being finalized
 coding-agent beta target: selective invitation, Windows first
-public Claude Code Marketplace: inactive
+public Claude Code Marketplace: historical staging retired; no public package
 DUBSAR Node: separate scoped deployment path, not generally available
 Codex and Cursor adapters: future
 live business connectors: roadmap

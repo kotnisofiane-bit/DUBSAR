@@ -130,7 +130,8 @@ DUBSAR for Claude Code is a distinct functional controlled private beta being
 finalized. Access is selective and invitation-based, with Windows as the first
 supported target. It is not a prerequisite for the portal audit. Codex and
 Cursor remain future integration surfaces, and no availability claim is made
-for them. The public Claude Code Marketplace is inactive.
+for them. The historical public Claude Code Marketplace staging surface has
+been retired from the active tree; no public package is available.
 
 ## AI Act preparation boundary
 

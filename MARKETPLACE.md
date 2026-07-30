@@ -1,189 +1,82 @@
 # Marketplace and Distribution
 
-This repository is intended to become the **single public repository** for DUBSAR documentation and Claude Code Marketplace distribution.
+## Current decision
 
-There will not be a separate public doctrine repository and a second public Marketplace repository.
+DUBSAR does not currently publish a Claude Code Marketplace package.
 
-The Marketplace is **not activated or announced**.
+The historical staging manifest and vendored `plugins/scribe/` runtime have been
+retired from the active repository tree. There is no supported public
+installation command, Marketplace source, plugin archive or self-service update
+path in this repository.
 
----
+This decision applies only to public package distribution. It does not change
+the status of:
 
-## Product and adapter boundary
+- the public DUBSAR marketing website and documentation;
+- the automated audit portal, which is coming soon and is not yet publicly
+  available;
+- the Professional DUBSAR Audit, available on request;
+- the controlled DUBSAR for Claude Code private beta, available only through an
+  explicitly approved test path.
 
-DUBSAR is a governance layer for long-running, multi-session AI coding projects.
+## Why the staging surface was retired
 
-Claude Code is the first supported integration. The Marketplace package distributes only the thin Claude Code adapter. The private Core remains host-independent and private.
+The visible staging surface could be discovered as if it were installable even
+though it was not the final product package. It also combined:
 
-Future adapters for Codex, Cursor or other coding-agent environments are product direction only. They are not distributed or claimed as operational here.
+- an earlier private-source pin;
+- historical `scribe` identifiers;
+- an executable plugin tree;
+- Marketplace metadata;
+- licence signals that require a separate legal review before any future public
+  distribution.
 
----
+Keeping that surface in the default branch created more ambiguity than useful
+product evidence. The active repository now documents the product boundary
+without exposing an obsolete installation candidate.
 
-## Repository structure
+## Historical record
 
-The publication candidate is expected to contain:
+The retired staging snapshot is recorded, but not redistributed, at
+[`docs/legacy/marketplace-0.11.1/README.md`](docs/legacy/marketplace-0.11.1/README.md).
 
-```text
-.claude-plugin/
-  marketplace.json
-plugins/
-  scribe/                 # temporary technical compatibility path
-    .claude-plugin/plugin.json
-    .mcp.json
-    commands/
-    hooks/
-    bin/
-    src/
-    package.json
-    LICENSE
-README.md
-INSTALLATION.md
-SECURITY.md
-PRIVACY.md
-CHANGELOG.md
-INTEGRITY.md
-```
+The record preserves:
 
-The public product name is DUBSAR. The `plugins/scribe` path and `scribe-bridge` package name are temporary technical compatibility identifiers until a tested migration plan exists.
+- historical plugin version `0.11.1`;
+- private source commit
+  `c2878313198aceccac078bf9446c5ab45751e424`;
+- historical vendored-tree aggregate SHA-256
+  `df9cee3af505c606824edd27485d471a418e75593468426ff10c00501bb0f38f`;
+- the retirement date and scope.
 
----
+Git history preserves the previous bytes. They are not a supported package and
+must not be copied from history for installation or production use.
 
-## Current staging state
+## Conditions for any future Marketplace publication
 
-The draft PR currently contains a vendored thin plugin runtime assembled from an earlier reviewed private commit:
+A future Marketplace surface must be created deliberately from the then-current
+product boundary. It must not reactivate the retired snapshot by default.
 
-```text
-scribe-claude-code-plugin@c2878313198aceccac078bf9446c5ab45751e424
-plugin version 0.11.1
-```
+Before publication:
 
-This pin was valid for the earlier PR stage. It is **not the final publication candidate** after the one-session and two-session runtime work completed later.
+1. select one approved canonical plugin commit and version;
+2. define the public package name and compatibility policy;
+3. complete dependency, provenance and licence review;
+4. generate a minimal distribution from the approved source;
+5. regenerate per-file and aggregate integrity evidence;
+6. validate clean install, update, rollback and removal on every claimed
+   platform;
+7. prove the complete private-beta tester journey without hidden operator
+   intervention;
+8. publish accurate security, privacy, support and data-boundary information;
+9. obtain an explicit Human GO for distribution.
 
-The vendored runtime must remain frozen until it is deliberately replaced from the final approved canonical plugin commit. Documentation work may continue without pretending the old pin is the final beta package.
-
-No manual edits should be made inside the vendored runtime to imitate a newer private version.
-
----
-
-## Internal proof versus public availability
-
-Internal Windows technical validation has completed:
-
-- one real governed Claude Code session;
-- two real sessions on the same Mission;
-- distinct identities, processes and worktrees;
-- separated evidence;
-- explicit conflict handling;
-- Human Gate and single-use authorization behavior;
-- restart reconciliation.
-
-This does not make the Marketplace publicly available.
-
-The remaining product question is whether an approved package can be installed and used through a repeatable tester journey without hidden operator intervention.
-
----
-
-## Publication blockers
-
-Before the Marketplace is activated or announced:
-
-1. Complete the DUBSAR public copy and remove legacy product-brand language.
-2. Stabilize the Windows private-beta product journey.
-3. Select the final canonical Claude Code plugin commit and version.
-4. Re-vendor the plugin runtime from that single pin without manual runtime edits.
-5. Regenerate per-file and aggregate integrity hashes.
-6. Pass strict Claude Code Marketplace and plugin validation.
-7. Confirm the final public plugin name and description.
-8. Verify clean installation, update, rollback and removal on supported Windows.
-9. Confirm the implemented data flow matches Privacy and Security documentation.
-10. Confirm `security@dubsar.ai` and `licensing@dubsar.ai` exist and are monitored.
-11. Document beta access and Desktop prerequisites honestly.
-12. Decide whether the public repository is renamed before activation.
-13. Obtain explicit Human GO to publish and announce the Marketplace.
-
-Linux and macOS are not publication blockers for an initial Windows-only controlled beta unless product strategy later decides otherwise.
-
----
-
-## Public plugin naming
-
-The Marketplace id is intended to use the DUBSAR brand.
-
-The current plugin technical id remains `scribe-bridge`. Before publication, the project must choose between:
-
-- a clean public DUBSAR plugin id with tested compatibility handling; or
-- a temporary historical technical id clearly described as compatibility-only.
-
-No global rename is permitted without runtime, installation, update and migration tests.
-
----
-
-## Compatibility identifiers
-
-The first package may retain internal identifiers such as:
-
-- `scribe-mcp`;
-- `/scribe-*` commands;
-- `scribe.*` MCP tools;
-- `SCRIBE_*` environment variables;
-- existing routes, tokens or local storage paths.
-
-These identifiers are not public brands or separate products.
-
-Future `/dubsar-*` aliases or deeper migrations require a separate compatibility plan.
-
----
-
-## Platform status
-
-- **Windows:** first controlled private-beta target, still in preparation.
-- **Linux:** planned for later validation; not announced.
-- **macOS:** not announced; feasibility and packaging remain to be evaluated.
-
-Marketplace metadata must not list an operating system as supported until the corresponding package and product journey are proven.
-
----
-
-## Installation commands
-
-No public installation command is active.
-
-Commands from legacy SCRIBE staging documentation are not canonical DUBSAR installation instructions.
-
-When publication is authorized, this document and [INSTALLATION.md](INSTALLATION.md) will contain the supported commands for this repository and the approved package version.
-
----
-
-## Distribution boundary
-
-The Marketplace package may distribute only:
-
-- the thin Claude Code adapter;
-- approved public documentation;
-- public metadata and licence files.
-
-It must not distribute:
-
-- the private Core;
-- private Backend implementation;
-- private tests, development scripts or internal reports;
-- confidential proof artifacts;
-- secrets or tokens;
-- tester data;
-- private prompts or policies.
-
----
-
-## Canonical status
+## Status
 
 ```text
-DUBSAR Marketplace: NOT ACTIVATED OR ANNOUNCED
-Windows controlled private beta: IN PREPARATION
-final public plugin pin: NOT SELECTED
-public repository rename: NOT PERFORMED
-supported public installation: NONE
-product generally available: NO
-public beta: NO
-marketplace-ready: NO
+public Marketplace: retired from the active tree
+supported public installation: none
+historical staging version: 0.11.1, record only
+controlled Claude Code private beta: selective, Windows first
+future Marketplace publication: requires a new reviewed package and Human GO
 ```
-
-This status block applies to product distribution. It does not describe the availability of the separately scoped [DUBSAR Audit professional service](AUDIT.md).

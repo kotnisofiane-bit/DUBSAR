@@ -177,42 +177,43 @@ The public repository must not imply cross-platform support from code portabilit
 
 ## Marketplace decision
 
-The existing public repository remains the intended single home for:
+The public repository remains the home for DUBSAR documentation, doctrine and
+public distribution status. It does not currently contain or advertise an
+installable Claude Code Marketplace package.
 
-1. DUBSAR documentation and doctrine;
-2. the Claude Code Marketplace package;
-3. public security, privacy, installation and release information.
-
-A second public Marketplace repository is not planned.
+The historical staging manifest and vendored runtime were retired from the
+active tree on 2026-07-30. Any future package location is a later distribution
+decision, not a commitment made by this audit.
 
 ---
 
-## Current Marketplace staging truth
+## Retired Marketplace staging record
 
-The draft PR already contains a vendored plugin runtime from:
+The repository previously contained a vendored plugin runtime from:
 
 ```text
 scribe-claude-code-plugin@c2878313198aceccac078bf9446c5ab45751e424
 version 0.11.1
 ```
 
-This was an earlier valid staging pin, but it predates later canonical session and runtime work.
+This was an earlier staging pin, not a final publication candidate. Its
+executable manifest and runtime are no longer present in the active tree. A
+non-executable tombstone preserves the source pin and aggregate hash.
 
-It must not be presented as the final publication candidate.
-
-The correct next step is not to edit the vendored runtime manually. After the Windows product journey stabilizes, the plugin must be re-vendored from one final approved commit, then rehashed and revalidated.
+Any future package must start from a newly approved commit and receive new
+integrity, dependency, licence and installation review.
 
 ---
 
 ## Publication blockers
 
-Before Marketplace activation or announcement:
+Before any future Marketplace publication or announcement:
 
 - complete the current-facing DUBSAR copy;
 - remove obsolete product-brand references from navigation and primary visuals;
 - stabilize the Windows tester journey;
 - select the final plugin commit and version;
-- re-vendor the runtime from that exact pin;
+- generate a minimal package from that exact pin;
 - regenerate integrity hashes;
 - pass strict Marketplace and plugin validation;
 - verify installation, update, rollback and removal on Windows;
@@ -240,7 +241,7 @@ Current-facing documents updated:
 - `MARKETPLACE.md`;
 - `INSTALLATION.md`;
 - `CHANGELOG.md`;
-- `.claude-plugin/marketplace.json` metadata.
+- the non-executable historical Marketplace tombstone.
 
 Legacy `WHY_SCRIBE.md` was removed from the branch.
 
@@ -266,7 +267,7 @@ WINDOWS CONTROLLED PRIVATE BETA — IN PREPARATION
 INTERNAL ONE-SESSION TECHNICAL PROOF — COMPLETED
 INTERNAL TWO-SESSION TECHNICAL PROOF — COMPLETED
 EXTERNAL INSTALLATION AND USABILITY PROOF — PENDING
-MARKETPLACE — NOT ACTIVATED OR ANNOUNCED
+HISTORICAL MARKETPLACE SURFACE — RETIRED FROM ACTIVE TREE
 FINAL PUBLIC PLUGIN PIN — NOT SELECTED
 REPOSITORY — NOT RENAMED
 NO PRIVATE CORE PUBLISHED

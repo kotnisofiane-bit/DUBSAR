@@ -511,7 +511,7 @@ Future adapter direction. Not currently supported publicly.
 | Professional DUBSAR Audit | Available on request |
 | DUBSAR for Claude Code | Functional controlled private beta |
 | External coding-agent access | Selective, invitation only |
-| Public Marketplace | Not active |
+| Public Marketplace | Historical staging surface retired from the active tree; no public package |
 | DUBSAR Node | Separate scoped path, not generally available |
 | Codex / Cursor | Future direction |
 | Private Core | Active, proprietary and protected |

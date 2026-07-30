@@ -6,7 +6,8 @@ DUBSAR is under active development and is not generally available for production
 
 No public production version is currently supported.
 
-Historical Marketplace or plugin staging files in this repository are unsupported and must not be installed in a production environment.
+Historical Marketplace or plugin staging files recoverable from Git history are
+unsupported and must not be restored or installed in a production environment.
 
 ## Reporting a vulnerability
 

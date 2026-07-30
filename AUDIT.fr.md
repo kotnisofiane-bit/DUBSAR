@@ -140,7 +140,8 @@ DUBSAR pour Claude Code est une bêta privée contrôlée fonctionnelle en cours
 finalisation. L’accès est sélectif, sur invitation, avec Windows comme première
 cible prise en charge. Cette bêta n’est pas nécessaire pour l’audit portail.
 Codex et Cursor restent de futures surfaces d’intégration, sans promesse de
-disponibilité. La Marketplace publique Claude Code est inactive.
+disponibilité. L’ancienne surface de Marketplace publique Claude Code a été
+retirée de l’arbre actif ; aucun paquet public n’est disponible.
 
 ## Frontière de préparation à l’AI Act
 

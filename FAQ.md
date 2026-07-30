@@ -223,10 +223,9 @@ no availability claim is made for them.
 
 No.
 
-This repository may contain historical or staging Marketplace material. It is
-not a supported public installation path, and no visible command or source tree
-should be treated as an active release until publication is explicitly
-authorized.
+The historical Marketplace manifest and vendored plugin runtime have been
+retired from the active repository tree. The remaining tombstone is a
+non-executable provenance record, not a supported public installation path.
 
 The controlled Claude Code private beta does not make the public Marketplace
 active.
@@ -334,7 +333,8 @@ Status depends on the product surface:
   finalized, selective and Windows-first;
 - DUBSAR Node is a separate scoped deployment path and is not generally
   available;
-- the public Claude Code Marketplace is inactive;
+- the public Claude Code Marketplace surface has been retired from the active
+  tree and no public package is available;
 - Codex and Cursor integrations remain future work.
 
 No blanket production-readiness claim is made. The complete portal UI journey,

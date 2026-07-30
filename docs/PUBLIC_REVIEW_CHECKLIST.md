@@ -1,6 +1,8 @@
 # DUBSAR Public Review Checklist
 
-This checklist is for the human review of the public-realignment pull request before any merge, repository rename or Marketplace activation.
+This checklist records the earlier public-realignment review. Its Marketplace
+staging items were superseded when the executable staging surface was retired on
+2026-07-30.
 
 ---
 
@@ -58,12 +60,14 @@ This checklist is for the human review of the public-realignment pull request be
 
 ## 6. Marketplace and installation
 
-- [ ] Marketplace is not described as activated, published or announced.
-- [ ] No supported public installation command is active.
-- [ ] The existing vendored `0.11.1` runtime is described as an earlier staging pin.
-- [ ] The final publication pin remains pending Windows stabilization.
-- [ ] No vendored runtime file was manually changed to imitate a newer private plugin.
-- [ ] Final re-vendoring, hashes and strict validation remain explicit publication gates.
+- [x] The historical Marketplace manifest is absent from the active tree.
+- [x] The vendored `0.11.1` runtime is absent from the active tree.
+- [x] No supported public installation command is active.
+- [x] A non-executable tombstone preserves the historical pin and aggregate
+  hash.
+- [ ] Any future package receives a new provenance, dependency, licence,
+  integrity and installation review.
+- [ ] Any future Marketplace publication receives a separate explicit Human GO.
 
 ---
 
@@ -102,7 +106,8 @@ This checklist is for the human review of the public-realignment pull request be
 - [ ] PR remains draft during review.
 - [ ] No merge occurs without explicit Human GO.
 - [ ] Repository rename is handled as a separate Human Gate.
-- [ ] Marketplace activation and announcement require a later separate Human GO.
+- [ ] Any new Marketplace publication and announcement require a later separate
+  Human GO.
 - [ ] Security and licensing contacts are confirmed live before publication.
 
 ---
@@ -113,7 +118,7 @@ This checklist is for the human review of the public-realignment pull request be
 public documentation realignment: reviewable
 Windows product journey: still in preparation
 final plugin publication pin: pending
-Marketplace activation: blocked
+historical Marketplace surface: retired from active tree
 repository rename: not performed
 product generally available: no
 public beta: no
