@@ -1,8 +1,47 @@
 # Changelog
 
-All notable public repository and Marketplace changes will be recorded here.
+All notable public repository and distribution changes will be recorded here.
 
-### Current positioning refresh
+## 2026-07-30
+
+### Portal-first public alignment
+
+- established the automated audit portal and Professional DUBSAR Audit as the
+  two current delivery surfaces;
+- reclassified earlier coding-agent packaging as paused historical work rather
+  than a current commercial surface or private beta;
+- linked the separate MIT-licensed `dubsar-agent-skills` repository as public
+  doctrine and bounded local helpers, not as the DUBSAR product, Core, Backend
+  or runtime;
+- removed current beta-access, host-support and platform-support claims;
+- kept continuous governance and installed components as future,
+  separately-scoped directions;
+- preserved the existing rights boundary and historical Marketplace tombstone.
+
+### Historical Marketplace surface retired
+
+- removed the active `.claude-plugin/marketplace.json` staging manifest;
+- removed the vendored `plugins/scribe/` executable runtime from the active
+  tree;
+- replaced public installation and integrity instructions with a
+  non-installable retirement record;
+- preserved version `0.11.1`, its source pin and aggregate hash in a
+  non-executable tombstone;
+- moved the exact historical private-beta licence into that tombstone and
+  removed it as the current repository-root licence;
+- added `RIGHTS.md` to record that no public software licence is currently
+  selected and that third-party licences remain unaffected;
+- kept future Marketplace publication behind a new provenance, licence,
+  installation and explicit Human GO review.
+
+No public package, release or installation command was created by this change.
+
+## Earlier public realignment
+
+### Superseded positioning refresh
+
+The following entry records an earlier public direction and is not the current
+product claim.
 
 - aligned the repository with the current `dubsar.ai` website;
 - presented two distinct entry paths: the DUBSAR private-beta product and DUBSAR Audit professional service;
@@ -11,7 +50,10 @@ All notable public repository and Marketplace changes will be recorded here.
 - added English and French public entry-point documentation;
 - clarified that audits are remote, bounded, read-only by default and human-validated.
 
-## Unreleased — DUBSAR public realignment R2
+## Historical — DUBSAR public realignment R2
+
+This R2 entry is retained as change history. Its coding-agent beta positioning
+was superseded by the portal-first alignment above.
 
 ### Changed
 
@@ -28,13 +70,13 @@ All notable public repository and Marketplace changes will be recorded here.
 - legacy internal `scribe` identifiers retained only where required for compatibility;
 - `WHY_SCRIBE.md` replaced by `WHY_DUBSAR.md`.
 
-### Marketplace staging
+### Historical Marketplace staging (retired 2026-07-30)
 
-- existing public PR remains the single documentation and future Marketplace home;
-- Marketplace remains not activated or announced;
+- the repository contained an unpublished Marketplace staging surface;
+- the Marketplace was not activated or announced;
 - no supported public installation command is active;
-- the currently vendored plugin `0.11.1` pin is documented as an earlier staging pin, not the final publication candidate;
-- final runtime re-vendoring, hashes and strict validation are deferred until the Windows product journey selects an approved canonical plugin commit.
+- plugin `0.11.1` was an earlier staging pin, not a final publication candidate;
+- the manifest and vendored runtime were later retired from the active tree.
 
 ### Added or refreshed
 

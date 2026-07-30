@@ -34,9 +34,9 @@ A DUBSAR audit or governance case needs a persistent identity.
 That identity provides the durable context within which scope, source versions,
 executions, findings, evidence and Human Gates can be related across time.
 
-When the portal becomes available, a portal session may end. A connector or
-Node can restart. The governed case should remain identifiable and its evidence
-path reproducible.
+When the portal becomes available, a portal session may end and an evidence
+source may change or reconnect. The governed case should remain identifiable
+and its evidence path reproducible.
 
 ---
 
@@ -143,7 +143,7 @@ and resume the governed process.
 - Which evidence supported the change?
 - Was that evidence declared or verified?
 - Which human decision authorized protected movement?
-- What should the next execution, connector or Node inherit?
+- What should the next execution or evidence-source review inherit?
 
 ---
 

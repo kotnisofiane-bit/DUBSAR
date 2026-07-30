@@ -40,17 +40,16 @@ They may appear in Git history, legacy diagrams, legacy RFCs or technical compat
 
 The [`rfcs/`](rfcs/) folder is an explicit legacy conceptual reference layer.
 
-Its documents are non-normative for current DUBSAR behavior and do not specify the current host-adapter, canonical-session or multi-session architecture.
+Its documents are non-normative for current DUBSAR behavior and do not specify
+the current product architecture.
 
-### Diagrams
+### Historical coding-agent diagrams
 
-Historical SVG files that do not begin with `dubsar-` predate the current visual and product architecture.
-
-Current diagrams are:
-
-- [`diagrams/dubsar-architecture.svg`](diagrams/dubsar-architecture.svg)
-- [`diagrams/dubsar-multi-session.svg`](diagrams/dubsar-multi-session.svg)
-- [`diagrams/dubsar-windows-journey.svg`](diagrams/dubsar-windows-journey.svg)
+The earlier coding-agent architecture, multi-session and Windows-journey SVGs
+are archived under
+[`docs/legacy/coding-agent-diagrams/`](docs/legacy/coding-agent-diagrams/).
+They are historical records, not current product diagrams, availability claims
+or supported installation guidance.
 
 ### Git history and earlier pull requests
 

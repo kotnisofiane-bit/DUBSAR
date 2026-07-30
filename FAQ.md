@@ -2,18 +2,15 @@
 
 ## What is DUBSAR?
 
-DUBSAR is a governance system for AI automations and agents.
+DUBSAR is an audit and governance system for AI automations and agents.
 
 It is designed to connect actions to evidence, expose contradictions and
 missing information, keep deterministic controls separate from model
 explanations, and preserve explicit human authority over sensitive decisions.
 
-The current product has three distinct delivery surfaces: the automated audit
-portal, which is coming soon and remains under construction and validation; the
-Professional DUBSAR Audit, available on request; and DUBSAR for Claude Code, a
-functional controlled private beta being finalized. Continuous governance
-through an installed DUBSAR Node is a separate scoped path and is not generally
-available.
+The current direction has two delivery surfaces: an automated audit portal,
+which is coming soon and remains under construction and validation, and the
+Professional DUBSAR Audit, available on request.
 
 ---
 
@@ -22,17 +19,17 @@ available.
 No. DUBSAR is not another general-purpose model and does not replace the tools
 that perform the work.
 
-It can coordinate specialized agent roles, but an agent does not govern itself.
-The private DUBSAR Core owns canonical state and deterministic policy; agents
-may analyze, explain and propose; humans retain protected decisions.
+Agents may analyze, explain and propose within a bounded assignment. They do not
+govern themselves or approve their own conclusions. Human authority remains
+explicit for protected decisions.
 
 ---
 
 ## What problem does DUBSAR address first?
 
 Automation behavior is often spread across workflow tools, CRM records,
-messages, business state and human approvals. A single system may show that an
-action ran without establishing whether it was duplicated, compatible with the
+messages, business state and human approvals. A system may show that an action
+ran without establishing whether it was duplicated, compatible with the
 current business state or properly validated.
 
 DUBSAR begins by freezing a bounded evidence scope and testing specific
@@ -40,22 +37,19 @@ cross-system coherence questions without inventing causality.
 
 ---
 
-## What is the first product surface?
+## What are the current product surfaces?
 
-The first planned self-service product surface is the DUBSAR audit portal.
+There are two:
 
-Its initial target journey is:
+1. the planned self-service DUBSAR audit portal;
+2. the Professional DUBSAR Audit, available on request under an agreed mandate.
 
-1. provide explicitly authorized, bounded sources;
-2. freeze the evidence snapshot and coverage;
-3. run deterministic controls;
-4. display every candidate finding with its evidence and limitations;
-5. let a human mark it true, false or uncertain;
-6. generate an evidence-linked report.
+The portal prepares a structured first result. The professional audit adds
+operator analysis, agreed permissions, human review and a professional
+deliverable.
 
-The portal is coming soon and is not currently available. Its construction and
-validation are in progress, and this target journey must not be presented as an
-active service or a production-readiness claim.
+The portal is coming soon and is not currently available. The professional
+service is available now on request.
 
 ---
 
@@ -77,19 +71,17 @@ is not turned into a claim that the record or event never existed.
 
 They are the first bounded evidence profile, not the permanent product limit.
 
-Other systems will require explicit source contracts, normalization,
-completeness semantics and test fixtures before support is claimed. A logo or a
-generic connector is not enough to establish a reliable audit.
+Other systems require explicit source contracts, normalization, completeness
+semantics and test fixtures before support is claimed. A logo or generic
+connector is not enough to establish a reliable audit.
 
 ---
 
 ## Does DUBSAR prove causality?
 
-No.
-
-DUBSAR can establish bounded observations and deterministic relationships in
-the evidence it received. It must keep observed, derived, inferred,
-not-captured and unavailable information distinct.
+No. DUBSAR can establish bounded observations and deterministic relationships
+in the evidence it received. Observed, derived, inferred, not-captured and
+unavailable information must remain distinct.
 
 Temporal proximity or a plausible model explanation does not become proof of
 causality.
@@ -116,12 +108,9 @@ It does not automate away responsibility:
 A Human Gate is an explicit, attributable decision at a protected point in the
 workflow.
 
-For the planned first portal audit, the human will review the evidence shown for
-a candidate finding and record a disposition such as true, false or uncertain.
-A model cannot create that decision by claiming that approval occurred.
-
-Future continuous-governance paths may also use Human Gates before a sensitive
-business action is released.
+For the planned first portal audit, a human reviews the evidence for a candidate
+finding and records a disposition such as true, false or uncertain. A model
+cannot create that decision by claiming that approval occurred.
 
 ---
 
@@ -130,9 +119,9 @@ business action is released.
 The automation-coherence evaluator has been exercised on synthetic fixtures. A
 controlled deployment also recorded an API-level audit path.
 
-That does **not** yet prove the complete portal journey as a normal user. The
+That does **not** prove the complete portal journey as a normal user. The
 browser flow from sign-in and source upload through review, reload and report
-export still requires a full user-interface E2E proof.
+export still requires complete end-to-end proof.
 
 A reachable page, successful account creation or working API route is not, by
 itself, proof that the product journey works.
@@ -144,9 +133,9 @@ See [Current status](STATUS.md).
 ## Is the portal publicly available?
 
 No. The [DUBSAR audit page](https://dubsar.ai/audit) is public, but the
-self-service portal is coming soon and is not currently available. Construction,
-complete browser-journey validation and security validation are still in
-progress.
+self-service portal is coming soon and is not currently available.
+Construction, complete browser-journey validation and security validation are
+still in progress.
 
 ---
 
@@ -163,59 +152,34 @@ successful.
 
 ## What happens after the audit?
 
-The intended next step is continuous governance when a customer chooses to
-instrument selected automation or agent paths.
+The first outcome is a bounded report with its evidence, limitations and human
+review.
 
-A separately scoped installed **DUBSAR Node**, administered through the
-desktop, is intended to connect those paths to the private Core through a
-controlled HTTP gateway, API or host adapter. It may prepare sensitive actions
-for human approval and later apply bounded policy decisions.
-
-This is a separate deployment path and is not generally available or presented
-as production-ready.
-
----
-
-## What is the difference between the portal, Node and desktop?
-
-- **Portal:** the planned user-facing audit journey, evidence review and reports;
-  coming soon and not currently available.
-- **DUBSAR Node:** the separately scoped installed boundary between selected customer
-  systems and DUBSAR governance.
-- **Desktop:** the future administrative cockpit for technical operators to
-  configure, observe and maintain that installed boundary.
-- **Private Core:** the canonical authority for governed state, evidence
-  relationships, policy and Human Gates.
-
-They are product surfaces with different responsibilities, not separate
-governance brains.
+Continuous governance or an installed local component may later be considered
+under a separate scope when the audit establishes a real need. Its architecture,
+distribution, supported platforms and licensing are undecided and not promised.
 
 ---
 
 ## Does DUBSAR replace n8n, Make or other automation tools?
 
-Replacement is not the first product claim.
+No replacement claim is made.
 
 The first audit is designed to work from bounded evidence produced by existing
-systems. Future governance and orchestration may coordinate DUBSAR-managed
-agents or sit on selected action paths, but support must be proved integration
-by integration.
-
-DUBSAR should not depend on undocumented behavior or pretend that a connector
-removes the need for a stable contract.
+systems. Any future integration or governed action path must be proved
+individually through a stable, documented contract.
 
 ---
 
 ## Where do Claude Code, Codex and Cursor fit?
 
-DUBSAR for Claude Code is a distinct functional controlled private beta being
-finalized. Access is selective and invitation-based, with Windows as the first
-supported target.
+Earlier DUBSAR experiments explored governance around coding agents, including
+a Claude Code staging package. Those experiments informed the evidence and
+human-authority doctrine now used by DUBSAR.
 
-The beta applies the same Core principles—canonical state, evidence, explicit
-authority and replay—to agent-assisted development. It is not a prerequisite
-for the portal audit. Codex and Cursor remain future integration surfaces, and
-no availability claim is made for them.
+They are not current product surfaces. No active public or private beta,
+supported plugin, runtime or host integration is offered, and no availability
+claim is made for Claude Code, Codex or Cursor.
 
 ---
 
@@ -223,26 +187,35 @@ no availability claim is made for them.
 
 No.
 
-This repository may contain historical or staging Marketplace material. It is
-not a supported public installation path, and no visible command or source tree
-should be treated as an active release until publication is explicitly
-authorized.
+The historical Marketplace manifest and vendored plugin runtime have been
+retired from the active repository tree. The remaining tombstone is a
+non-executable provenance record, not a supported installation path.
 
-The controlled Claude Code private beta does not make the public Marketplace
-active.
+---
+
+## What is `dubsar-agent-skills`?
+
+The separate
+[dubsar-agent-skills](https://github.com/kotnisofiane-bit/dubsar-agent-skills)
+repository publishes MIT-licensed doctrine and bounded local helpers for audit
+and governance work.
+
+It is not the DUBSAR product, Portal, private Core or runtime.
+It grants no access to private services and does not make DUBSAR installable or
+generally available. Its MIT licence applies only to that repository.
 
 ---
 
 ## Which operating systems are supported?
 
-The web portal has a separate browser and service boundary. For the coding-agent
-product, the controlled Claude Code private beta is Windows-first and available
-only by selective invitation.
+The planned portal has a browser and service boundary; supported browser and
+service conditions will be announced with availability.
 
-There is no generally available Node or desktop distribution today. Linux and
-macOS support for the coding-agent beta or installed Node must not be claimed
-before their real package, permissions, storage, update and removal paths are
-validated and announced.
+There is no generally available installed DUBSAR product today. No Windows,
+Linux or macOS support claim is made for one.
+
+The separate public skills may be used only according to their own repository
+instructions and do not establish DUBSAR platform support.
 
 ---
 
@@ -256,9 +229,7 @@ help an organization prepare documentation and controls relevant to the EU AI
 Act.
 
 DUBSAR does not provide legal advice, determine legal applicability, assign an
-authoritative risk classification or certify compliance. The provider,
-deployer and relevant professional or public authorities retain their own
-responsibilities.
+authoritative risk classification or certify compliance.
 
 ---
 
@@ -267,10 +238,9 @@ responsibilities.
 The audit starts read-only by default: no ticket, message, correction or
 external mutation is created merely because an audit ran.
 
-Future continuous governance may deliberately mediate selected actions. Such a
-path will require an explicit policy, narrow credentials, attributable Human
-Gates, fail-closed behavior and separate validation. It must not be implied by
-the current audit.
+Any future path that mediates selected actions would require an explicit
+policy, narrow credentials, attributable Human Gates, fail-closed behavior and
+separate validation. It must not be implied by the current audit.
 
 ---
 
@@ -279,24 +249,28 @@ the current audit.
 The public marketing website must not request connector credentials, tokens or
 source archives.
 
-The planned portal has a different data boundary. Its authentication, source
+The planned portal has a different data boundary. Authentication, source
 imports, retention, deletion, logs, subprocessors and model-provider flows must
 be documented and validated before it becomes available. See
-[Privacy](PRIVACY.md) and [Security](SECURITY.md) for the published boundary.
+[Privacy](PRIVACY.md) and [Security](SECURITY.md).
 
 ---
 
 ## Is DUBSAR open source?
 
-The whole DUBSAR product is not open source.
+The complete DUBSAR product is not open source.
 
-The private Core and private Backend implementation are not distributed here.
-Public documentation, staging adapter material and third-party components are
-governed by their respective licences and notices. Public visibility does not
-create an open-source licence grant.
+The private Core and other private implementation are not distributed here. No
+public software licence is currently selected or granted by this repository
+for unpublished DUBSAR components. Any architecture, distribution or licensing
+decision will be made separately if a concrete publication is ever considered.
 
-Distribution remains subject to component provenance, dependency and licence
-review.
+The separate public skills repository is MIT-licensed. That licence does not
+extend to this documentation repository or to private DUBSAR components.
+
+Original DUBSAR documentation and assets remain rights-reserved unless a file
+expressly states otherwise. Third-party components remain governed by their own
+licences and notices. See [Rights and Licensing Status](RIGHTS.md).
 
 ---
 
@@ -304,42 +278,39 @@ review.
 
 DUBSAR is the public product.
 
-Some historical repository, command, schema, MCP, environment or local-storage
-identifiers may still contain `scribe` while compatibility work continues.
-They are implementation identifiers, not a second current product and not an
-availability claim.
+Some historical repository or implementation identifiers may still contain
+`scribe`. They are not a second current product and do not establish an
+availability or installation claim.
 
 ---
 
 ## Is the Professional DUBSAR Audit available now?
 
-Yes. The self-service portal is still under construction, while the Professional
-DUBSAR Audit is available on request as a separate, human-led engagement for an
-agreed scope such as evidence review, interpretation, remediation planning or
-preparation of a separately scoped installation. Read-only collection remains
-the default. See the
-[audit boundary](AUDIT.md) or
-[Sofiane Kotni's Malt profile](https://www.malt.fr/profile/sofianekotni).
+Yes. The self-service portal is still under construction, while the
+Professional DUBSAR Audit is available on request as a separate, human-led
+engagement. Scope, authorized sources, permissions, retention, deliverables,
+timing and price are agreed before work begins. Read-only collection remains
+the default.
+
+See the [audit boundary](AUDIT.md),
+[request an audit](https://dubsar.ai/audit) or
+[contact Sofiane Kotni](mailto:kotni.sofiane@dubsar.ai).
 
 ---
 
 ## Is DUBSAR beta-ready or production-ready?
 
-Status depends on the product surface:
+Status depends on the surface:
 
 - the automated audit portal is coming soon, under construction and validation,
   and not currently available;
 - the Professional DUBSAR Audit is available on request;
-- DUBSAR for Claude Code is a functional controlled private beta being
-  finalized, selective and Windows-first;
-- DUBSAR Node is a separate scoped deployment path and is not generally
-  available;
-- the public Claude Code Marketplace is inactive;
-- Codex and Cursor integrations remain future work.
+- the public skills are a separate MIT-licensed companion resource;
+- the earlier coding-agent package is paused and no active beta exists;
+- continuous governance or installed components may be considered later, but
+  their architecture, distribution, support and licensing are undecided.
 
-No blanket production-readiness claim is made. The complete portal UI journey,
-installed Node, administrative desktop and continuous-governance path still
-require their own end-to-end proofs.
+No blanket production-readiness claim is made.
 
 “Implemented,” “API-tested,” “interface demonstrated,” “user E2E proved” and
 “production-ready” are different statuses and must remain different.
@@ -349,7 +320,7 @@ require their own end-to-end proofs.
 ## Where can I follow the project?
 
 Start with [dubsar.ai](https://dubsar.ai/), the
-[DUBSAR audit page](https://dubsar.ai/audit) and the
-[DUBSAR audit method](AUDIT.md). Professional audit requests can start on the
-audit page, while selective Claude Code beta access is described at
-[dubsar.ai/early-access](https://dubsar.ai/early-access).
+[DUBSAR audit page](https://dubsar.ai/audit), the
+[DUBSAR audit method](AUDIT.md), the
+[current status](STATUS.md) and the separate
+[public skills repository](https://github.com/kotnisofiane-bit/dubsar-agent-skills).

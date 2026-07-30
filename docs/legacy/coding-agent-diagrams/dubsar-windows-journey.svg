@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="650" viewBox="0 0 1400 650" role="img" aria-labelledby="title desc">
-  <title id="title">DUBSAR Windows controlled private beta journey</title>
-  <desc id="desc">Target Windows journey from approved package installation through Mission, governed work, evidence, Human Gate and resumable continuity.</desc>
+  <title id="title">Historical DUBSAR Windows beta journey — retired direction</title>
+  <desc id="desc">Historical, non-current Windows beta journey from an earlier coding-agent direction. No active beta, supported package or installation path is offered.</desc>
   <defs>
     <marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0,10 4,0 8" fill="#4fd1c5"/></marker>
     <style>

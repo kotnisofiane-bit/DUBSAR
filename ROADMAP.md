@@ -1,32 +1,28 @@
 # Roadmap
 
-This roadmap describes the current product direction. It is not a delivery guarantee.
+This roadmap describes the current product direction. It is not a delivery
+guarantee.
 
 DUBSAR is a **portal-first audit and governance product for AI agents and
-business automations** with three distinct delivery surfaces today:
+business automations** with two current delivery surfaces:
 
 - the automated audit portal, coming soon and currently under construction and
   validation;
-- the Professional DUBSAR Audit, available on request;
-- DUBSAR for Claude Code, a functional controlled private beta being finalized,
-  selective and Windows-first.
-
-DUBSAR Node is a separate scoped deployment path and is not generally
-available.
+- the Professional DUBSAR Audit, available on request.
 
 The sequence is deliberate:
 
 ```text
-clean and reconcile the foundation
-  -> build and validate the portal end-to-end
-  -> validate the portal with bounded external use
-  -> add continuous governance through DUBSAR Node
-  -> expand connectors and optional host adapters
+reconcile the foundation
+  -> validate the first rule pack
+  -> prove the portal journey end to end
+  -> validate it with bounded external use
+  -> expand evidence sources
+  -> decide whether any later governance scope is justified
 ```
 
-Professional audits and the controlled coding-agent beta progress in parallel
-within their own published boundaries. No external portal pilot should replace
-the internal end-to-end proof required for a stronger availability claim.
+Earlier coding-agent packaging is paused and is not part of the current
+commercial roadmap claim.
 
 ---
 
@@ -34,29 +30,28 @@ the internal end-to-end proof required for a stronger availability claim.
 
 Current priority:
 
-- reconcile canonical local and GitHub histories;
-- preserve recoverable sources before cleanup;
-- identify the authoritative version of each component;
-- remove duplicate, stale and accidental artefacts from release paths;
+- identify the authoritative version of each active component;
+- remove duplicate, stale and accidental artifacts from release paths;
 - audit dependencies, licences and provenance before redistribution;
 - document the public/private boundary;
-- keep the private Core and confidential proof material outside the public repository.
+- keep the private Core and confidential proof material outside the public
+  repository;
+- keep current public claims aligned across the site and repositories.
 
 Exit criteria:
 
-- every active component has one identified canonical repository and branch;
+- every active component has one identified canonical source;
 - retained changes are attributable and reviewable;
-- licence and provenance blockers are recorded;
-- the clean baseline can be reproduced without relying on historical local
-  copies or transient development workspaces.
-
-This stage is not product feature work. It protects the validity of all later proofs.
+- licence and provenance questions are recorded without forcing premature
+  component-licence decisions;
+- public documentation does not expose or imply a private implementation.
 
 ---
 
 ## 1. Canonical automation-coherence rule pack
 
-The first product slice is a bounded automation audit, not a universal compliance scanner.
+The first product slice is a bounded automation audit, not a universal
+compliance scanner.
 
 Current target:
 
@@ -76,14 +71,13 @@ The initial controls focus on:
 
 Exit criteria:
 
-- the canonical rule pack and its digest are unambiguous;
+- rule and evidence identities remain linked through the result;
 - deterministic fixture results are reproducible;
-- missing evidence produces an explicit bounded state;
-- rule, evidence and finding identifiers remain linked through the full chain.
+- missing evidence produces an explicit bounded state.
 
 ---
 
-## 2. Strengthen portal end-to-end proof
+## 2. Prove the portal journey end to end
 
 The portal is not currently available. Construction and complete product
 validation must be performed internally with non-sensitive fixtures before any
@@ -95,51 +89,42 @@ Required journey:
 2. create a bounded audit;
 3. provide or select authorized fixture sources;
 4. freeze one evidence snapshot;
-5. run deterministic controls and role-based analysis;
+5. run declared controls and bounded analysis;
 6. display findings, evidence and limitations;
 7. obtain a human decision bound to the displayed review state;
 8. generate and reload a stable report;
-9. preserve sufficient proof artifacts to reproduce the run.
+9. preserve enough evidence to reproduce the run.
 
-The test must also cover:
-
-- retry and double-click without duplicate runs;
-- partial source coverage;
-- agent or evaluator unavailability;
-- service restart and resume;
-- clear failure states rather than false success;
-- separation between agent contribution, deterministic result and human authority.
+Validation must also cover retry behavior, partial coverage, unavailable
+components, service restart, explicit failures and the separation of agent
+contribution, deterministic result and human authority.
 
 Exit criteria:
 
-- the journey passes without manual API substitution, mocks or hidden database repair;
-- the final projection records the human decision and report state;
-- the evidence package includes versions, logs, projections and user-interface captures;
-- an explicit Human GO authorizes movement to controlled external use.
+- the browser journey passes without manual API substitution or hidden repair;
+- the final report preserves the human decision and evidence boundary;
+- an explicit approval authorizes movement to bounded external use.
 
 ---
 
-## 3. Controlled portal validation before availability
+## 3. Controlled portal validation
 
-The portal remains unavailable while construction and the internal end-to-end
-proof are completed. A controlled validation stage follows before any broader
-availability claim.
+A controlled validation stage follows internal end-to-end proof before any
+broader availability claim.
 
 Initial perimeter:
 
 - French-first user experience;
 - one automation-coherence audit;
-- controlled n8n-style workflow and execution input;
+- controlled workflow and execution input;
 - one bounded business source such as a CRM export;
 - read-only operation;
 - explicit scope, time window and source limitations;
-- client-side validation of findings;
+- user review of findings;
 - exportable report and evidence register.
 
-Once opened, the portal should not require a manually accompanied audit for
-every user. Human assistance may remain optional for qualification,
-interpretation or a broader mandate. The separate Professional DUBSAR Audit is
-available on request for organizations that want that human-led engagement.
+The separate Professional DUBSAR Audit remains available for organizations that
+want a human-led mandate.
 
 Exit criteria:
 
@@ -152,7 +137,8 @@ Exit criteria:
 
 ## 4. Bounded external validation
 
-External validation begins with a small, explicitly authorized perimeter. It is not a production-wide customer deployment.
+External validation begins with a small, explicitly authorized perimeter. It is
+not a production-wide customer deployment.
 
 The first external users should validate:
 
@@ -160,52 +146,20 @@ The first external users should validate:
 - whether findings are understandable and correctly bounded;
 - whether human classification is practical;
 - whether the report shortens discovery and prioritization work;
-- which connector or context gaps still require interviews;
-- whether the audit identifies a justified continuous-governance use case.
-
-No claim should imply that interviews are always eliminated. The objective is to reduce avoidable discovery work and make remaining questions more targeted.
+- which context gaps still require interviews;
+- whether a later governance need is justified.
 
 Exit criteria:
 
 - users obtain a useful result without unsafe access or overclaiming;
 - material failure and limitation cases are documented;
-- the product value is demonstrated before expanding connector scope;
-- any move to continuous governance is based on an audited need.
+- value is demonstrated before expanding connector scope.
 
 ---
 
-## 5. DUBSAR Node and continuous governance
+## 5. Evidence-source expansion
 
-Continuous governance follows the audit; it does not precede it.
-
-DUBSAR Node is a separate scoped deployment path and is not generally
-available.
-
-Planned work:
-
-- define a stable Node-to-Backend contract;
-- install the Node in or near the customer environment;
-- add administrator-facing health and connector controls;
-- evaluate sensitive actions before execution;
-- support bounded policy results such as `ALLOW`, `DENY`, `REQUIRE_HUMAN_APPROVAL` and conditional allow;
-- keep protected credentials and actions outside agent prompts;
-- preserve an attributable action and decision ledger;
-- fail closed for protected actions when the authority path is unavailable.
-
-Initial governed actions should be narrow and reversible where possible. Examples may include requiring approval before a sensitive outbound email or blocking an action that contradicts an explicit business state.
-
-Exit criteria:
-
-- one selected action is governed end to end in a controlled environment;
-- the Node cannot bypass or impersonate the Core or Human Gate;
-- retry, outage and recovery behavior are proven;
-- administrators can understand system state and intervene safely.
-
----
-
-## 6. Connector expansion
-
-Connector breadth follows proof of the first audit, not the other way around.
+Connector breadth follows proof of the first audit.
 
 Possible additions include:
 
@@ -216,25 +170,19 @@ Possible additions include:
 - code and project sources where relevant;
 - generic event or evidence ingestion.
 
-Each connector must define:
+Each source contract must define minimum permissions, collected and excluded
+fields, pagination, truncation, time windows, version detection, unavailable
+states, retry behavior and test fixtures.
 
-- minimum required permissions;
-- fields collected and excluded;
-- pagination, truncation and time-window behavior;
-- version and change detection;
-- explicit degraded and unavailable states;
-- retry and idempotency behavior;
-- test fixtures independent of the third-party service.
-
-DUBSAR rules and canonical decisions must remain independent of any one connector vendor.
+DUBSAR controls must remain independent of any one connector vendor.
 
 ---
 
-## 7. AI governance and AI Act preparation
+## 6. AI governance and AI Act preparation
 
 Regulatory requirements may inform dedicated rule packs and report structures.
 
-Possible product support includes:
+Possible support includes:
 
 - system and agent inventory;
 - purpose, owner and responsibility records;
@@ -243,54 +191,78 @@ Possible product support includes:
 - limitation and incident records;
 - exportable governance evidence.
 
-This work must remain within a clear boundary:
+This work remains within a clear boundary:
 
 - no legal advice;
 - no automatic legal verdict;
 - no claim of certification;
 - no conversion of incomplete evidence into compliance;
 - dated and versioned regulatory mappings;
-- review by appropriate legal or compliance professionals when required.
+- review by appropriate professionals when required.
 
 ---
 
-## 8. Coding-agent product and future adapters
+## 7. Public doctrine and skills
 
-DUBSAR for Claude Code is a parallel functional controlled private beta being
-finalized. Access is selective and invitation-based, with Windows as the first
-supported target. Codex and Cursor remain future adapter paths.
+The
+[dubsar-agent-skills](https://github.com/kotnisofiane-bit/dubsar-agent-skills)
+repository may continue to publish MIT-licensed doctrine and bounded local
+helpers.
 
-The earlier desktop, bridge and plugin work may contribute:
+That work remains independently versioned and must preserve a clear boundary:
 
-- local runtime and process control;
-- workspace and session identity;
-- decision continuity;
-- evidence capture;
-- Human Gate presentation;
-- technical administrator experience.
+- the skills are not the DUBSAR product or a product-installation path;
+- they contain no private Core, Portal, private implementation or runtime;
+- they grant no access to private services;
+- their MIT licence applies only to their own repository.
 
-These integrations should reuse the same private Core and authority model. They
-must not become separate product brains or delay the portal-first audit.
+Public helpers may demonstrate the doctrine, but they do not prove portal
+availability or production readiness.
 
-The public Claude Code Marketplace is inactive. The controlled beta is not a
-public Marketplace or general-availability claim, and no availability is
-claimed for Codex or Cursor.
+---
+
+## 8. Possible later governance scope
+
+Continuous governance or installed local components may be considered after
+the audit product establishes a justified need.
+
+No architecture, local-versus-hosted boundary, distribution model, supported
+platform, service contract, schedule or licence is selected or promised. Any
+concrete proposal would require a separate product, security, privacy,
+provenance, licensing and operational decision.
+
+---
+
+## Historical coding-agent work
+
+Earlier DUBSAR experiments explored multi-session software-project governance
+and a Claude Code Marketplace staging package. They provided useful technical
+and doctrinal lessons.
+
+That path is paused as a product direction:
+
+- it is not a current commercial surface;
+- no active public or private beta is offered;
+- no Claude Code, Codex or Cursor support is claimed;
+- the historical Marketplace surface is retired from the active tree;
+- no future adapter or package publication is promised.
+
+Any return to that direction would require a new product decision and current
+evidence.
 
 ---
 
 ## Explicitly out of scope for the current claim
 
-- a real agency pilot before internal browser end-to-end acceptance;
 - general availability of the portal;
-- production deployment of DUBSAR Node;
 - broad live-connector coverage;
 - autonomous approval or self-certification by an agent;
 - guaranteed replacement of discovery interviews;
 - AI Act certification or legal compliance verdicts;
 - public distribution of the private Core;
-- general availability of DUBSAR for Claude Code;
-- public Claude Code Marketplace distribution;
-- supported Codex or Cursor products.
+- public installation of a DUBSAR local product;
+- an active coding-agent beta or Marketplace package;
+- supported Claude Code, Codex or Cursor integrations.
 
 ---
 
@@ -299,15 +271,12 @@ claimed for Codex or Cursor.
 ```text
 foundation reconciliation: in progress
 first deterministic rule pack: internal validation
-full portal browser E2E: not yet proven
-automated audit portal: coming soon, under construction and validation, not available
+full portal browser E2E: not yet proved
+automated audit portal: coming soon, under construction and validation
 professional DUBSAR Audit: available on request
-DUBSAR for Claude Code: functional controlled private beta being finalized
-coding-agent beta access: selective invitation, Windows first
-public Claude Code Marketplace: inactive
-DUBSAR Node: separate scoped deployment path, not generally available
-Codex and Cursor adapters: future
-bounded external portal validation: next stage
+public skills: separate MIT-licensed companion resource
+historical coding-agent package: paused; Marketplace surface retired
+continuous governance / installed components: possible later; all implementation and distribution decisions undecided
 private Core: proprietary, not distributed
 general production availability: not claimed
 ```

@@ -41,7 +41,8 @@ These documents preserve useful reasoning about:
 - replay;
 - human validation.
 
-They also show how the doctrine evolved before the current host-adapter and multi-session architecture existed.
+They also show how the doctrine evolved through earlier coding-agent
+experiments. Those experiments do not define the current product architecture.
 
 ---
 
@@ -78,16 +79,13 @@ None of those statements should override current root documentation.
 
 The legacy RFC set does not fully specify:
 
-- host adapters;
-- Claude Code as the first integration rather than the product boundary;
-- future Codex, Cursor or other adapters;
-- canonical DUBSAR session identity;
-- native host session linkage;
-- worktree and process bindings;
-- multi-session conflict handling;
-- Backend-only canonical writes;
-- restart reconciliation;
-- current Windows-first beta packaging.
+- the portal-first automation-audit journey;
+- evidence-source and coverage contracts;
+- deterministic automation-coherence controls;
+- human review of candidate findings;
+- report and limitation projections;
+- the current separation between the coming-soon portal and the Professional
+  DUBSAR Audit.
 
 For these topics, use the root documentation.
 
@@ -109,21 +107,14 @@ It must not publish:
 
 ---
 
-## Future replacement strategy
+## Possible future replacement strategy
 
 The legacy RFCs should not be mechanically renamed from SCRIBE to DUBSAR.
 
-New DUBSAR RFCs should be written only when the current product behavior is stable enough to support a useful public invariant without exposing private mechanisms.
-
-Possible future DUBSAR RFCs include:
-
-- Host Adapter Contract;
-- Canonical Session Identity;
-- Multi-Session Concurrency and Conflict;
-- Evidence Tiers and Verifier Boundary;
-- Human Gate Authentication;
-- Restart and Reconciliation;
-- Public Package Provenance.
+New DUBSAR RFCs should be written only when current product behavior is stable
+enough to support a useful public invariant without exposing private
+mechanisms. This index does not select a future local topology, distribution
+model, support boundary or licence.
 
 Until then, this folder remains an explicit historical reference layer.
 

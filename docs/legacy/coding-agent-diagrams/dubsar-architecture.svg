@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
-  <title id="title">DUBSAR architecture</title>
-  <desc id="desc">Host-independent DUBSAR architecture from coding agent to host adapter, local runtime, private Backend, private Core, cockpit and human authority.</desc>
+  <title id="title">Historical DUBSAR coding-agent architecture — retired direction</title>
+  <desc id="desc">Historical, non-current architecture record from an earlier coding-agent direction. It is not a current product, availability or installation claim.</desc>
   <defs>
     <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0,10 4,0 8" fill="#4fd1c5"/></marker>
     <marker id="arrowGold" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0,10 4,0 8" fill="#d7a640"/></marker>

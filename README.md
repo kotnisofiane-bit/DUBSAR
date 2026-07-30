@@ -10,12 +10,15 @@ DUBSAR connects facts, decisions and evidence across AI-agent systems and
 automation workflows. It makes inconsistencies visible, preserves coverage
 limitations and returns validation to the designated human authority.
 
-DUBSAR currently focuses its public direction on two delivery surfaces:
+The current public direction has two delivery surfaces:
 
 1. an automated audit portal, under construction and coming soon;
 2. a bounded Professional DUBSAR Audit, available on request.
 
-[Explore the audit](https://dubsar.ai/audit) · [Public skills](https://github.com/kotnisofiane-bit/dubsar-agent-skills) · [Version française](README.fr.md)
+[Explore the audit](https://dubsar.ai/audit) ·
+[Public skills](https://github.com/kotnisofiane-bit/dubsar-agent-skills) ·
+[Current status](STATUS.md) ·
+[Version française](README.fr.md)
 
 ---
 
@@ -28,58 +31,46 @@ DUBSAR currently focuses its public direction on two delivery surfaces:
 
 The portal is intended to prepare a structured first result. The professional
 audit adds an agreed mandate, operator analysis and human review. Neither
-surface issues an automatic legal or regulatory compliance verdict.
+surface is intended to issue an automatic legal or regulatory compliance
+verdict.
 
----
+### Automated audit portal
 
-## 1. Automated audit
+The public audit page is the current product entry point. The portal itself is
+not yet publicly available.
 
-The public audit page is the current commercial entry point. The automated
-portal itself is under construction and validation and is not yet publicly
-available.
-
-The intended journey is straightforward:
+The intended journey is:
 
 1. define the automations, period and authorized sources;
 2. connect available events without inventing causality;
 3. surface inconsistencies, uncertainty and missing information;
 4. let the designated owner classify the findings;
-5. produce a report where evidence, limitations and validations remain connected.
+5. produce a report where evidence, limitations and validations remain linked.
 
-The journey aims to be self-service through the first report. Self-service does not mean automatic authority, certification or removal of human responsibility.
+Self-service does not mean automatic authority, certification or removal of
+human responsibility.
 
 [Explore the automated audit](https://dubsar.ai/audit)
 
----
+### Professional DUBSAR Audit
 
-## 2. Professional DUBSAR Audit
+Professional DUBSAR Audit is a bounded engagement operated by Sofiane with
+DUBSAR. Its primary mandates are launch readiness and agent governance.
 
-Professional DUBSAR Audit is a bounded engagement operated by Sofiane with DUBSAR.
+Each engagement begins with explicit agreement on scope, authorized sources,
+permissions, access limitations, retention, timing, price and deliverables.
+Read-only operation is the default. Facts, inferences, contradictions,
+limitations and human decisions remain distinct.
 
-Two primary mandates are available:
-
-- **launch readiness** — is the product genuinely ready to open to users?
-- **agent governance** — can the team explain and verify how the project was built and approved?
-
-Each engagement begins with explicit agreement on:
-
-- scope;
-- authorized sources;
-- permissions;
-- access limitations;
-- retention;
-- timing;
-- price.
-
-Read-only operation is the default. The report keeps facts, inferences, contradictions, limitations and human decisions separate.
-
-[Read the method](AUDIT.md) · [Request an audit](https://dubsar.ai/audit) · [Contact](mailto:kotni.sofiane@dubsar.ai)
+[Read the method](AUDIT.md) ·
+[Request an audit](https://dubsar.ai/audit) ·
+[Contact Sofiane Kotni](mailto:kotni.sofiane@dubsar.ai)
 
 ---
 
 ## Shared doctrine
 
-Every DUBSAR surface follows the same principles:
+Every current DUBSAR surface follows the same principles:
 
 - only authorized sources are examined;
 - a claim is never treated as evidence;
@@ -91,22 +82,19 @@ Every DUBSAR surface follows the same principles:
 - no agent can approve its own work;
 - protected decisions remain under human authority.
 
-**Systems analyze and apply declared rules. DUBSAR preserves and checks. Humans authorize and decide.**
-
----
-
-## Current audit journey
+**Systems analyze and apply declared rules. DUBSAR preserves and checks.
+Humans authorize and decide.**
 
 ```text
 Authorized sources
     ↓
-DUBSAR Portal
+DUBSAR audit
     ↓
 Evidence, inconsistencies and limitations
     ↓
 Human validation
     ↓
-Report
+Reviewable report
 ```
 
 Continuous governance or installed components may be considered later under a
@@ -117,28 +105,29 @@ undecided and are not promised by the initial audit.
 
 ## Public skills
 
-The separate [dubsar-agent-skills](https://github.com/kotnisofiane-bit/dubsar-agent-skills)
+The separate
+[dubsar-agent-skills](https://github.com/kotnisofiane-bit/dubsar-agent-skills)
 repository publishes MIT-licensed doctrine and bounded local helpers for audit
 and governance work.
 
 Those skills are a public companion resource. They are **not** the DUBSAR
-product, Portal, private Core or runtime, and they do not provide access to
-private services. Their license applies only to that repository.
+product, Portal, private Core or runtime; they do not provide access to private
+services and do not constitute a supported DUBSAR installation.
+Their licence applies only to that repository.
 
 ---
 
 ## Earlier coding-agent work
 
 Earlier DUBSAR experiments explored project governance around coding agents,
-including staging packages for coding-agent environments. That work informed
-the current evidence and human-authority doctrine, but it is historical and
-does not describe a current commercial surface, access program or supported
-installation.
+including a Claude Code staging package. That path informed the current
+evidence and human-authority doctrine, but it is not a current commercial
+surface or active public or private beta.
 
-Historical Marketplace and plugin files remain in this repository. They are
-not a supported public installation path and must not be read as a current
-product-availability claim. No future runtime, integration, deployment model
-or license is promised here.
+The historical Marketplace staging surface has been retired from the active
+tree. No public plugin, runtime, beta-access path or supported installation is
+offered from this repository. Future product decisions will be documented only
+when they are defined and validated.
 
 ---
 
@@ -152,32 +141,37 @@ DUBSAR can help structure material relevant to AI Act documentation readiness:
 - limitations, uncertainty and missing information;
 - evidence and contradiction registers.
 
-DUBSAR does not provide legal advice, issue certification or produce an automatic compliance verdict.
+DUBSAR does not provide legal advice, issue certification or produce an
+automatic compliance verdict.
 
 ---
 
 ## Public and private boundary
 
-This repository is DUBSAR’s public documentation and historical public-code
-boundary.
+This repository is DUBSAR's public documentation boundary. It is not a public
+software distribution.
 
 It may contain:
 
 - public doctrine and architecture;
 - bounded examples and diagrams;
-- public security and privacy information;
-- historical distribution and integration material.
+- public security, privacy and distribution-status information;
+- non-executable historical records.
 
 It does not publish:
 
+- the Portal or other private product implementation;
 - the proprietary Core;
+- any current installable DUBSAR component;
 - internal policies or sealed journals;
 - client or tester data;
 - secrets, tokens or trust material;
 - private implementation or topology details.
 
-Some technical identifiers still use `scribe` for compatibility. They do not represent a second public product.
-Existing files remain subject to their own notices and license terms.
+No public software licence is currently selected or granted by this repository.
+Future licensing will be decided separately for each component before
+distribution. Third-party materials remain subject to their own licences and
+notices. See [Rights and Licensing Status](RIGHTS.md).
 
 ---
 
@@ -192,6 +186,9 @@ Existing files remain subject to their own notices and license terms.
 
 ### Trust
 
+- [Rights and licensing status](RIGHTS.md)
+- [Installation](INSTALLATION.md)
+- [Marketplace history and distribution status](MARKETPLACE.md)
 - [Security](SECURITY.md)
 - [Privacy](PRIVACY.md)
 - [Integrity and provenance](INTEGRITY.md)
@@ -204,6 +201,14 @@ documentation is reviewed; they do not establish a current offer.
 
 ## Created by
 
-Created by [**Sofiane Kotni**](https://dubsar.ai/sofiane-kotni/), creator of DUBSAR and author of *Digital Trust*.
+Created by [**Sofiane Kotni**](https://dubsar.ai/sofiane-kotni/), creator of
+DUBSAR and author of *Digital Trust*.
 
-[DUBSAR website](https://dubsar.ai/) · [LinkedIn](https://www.linkedin.com/in/sofiane-kotni/) · [GitHub](https://github.com/kotnisofiane-bit) · [Public skills](https://github.com/kotnisofiane-bit/dubsar-agent-skills) · [Digital Trust — English](https://www.amazon.fr/dp/B0GZ4RH1KX) · [Digital Trust — French](https://www.amazon.fr/dp/B0H739BFJP) · [Amazon author page](https://www.amazon.fr/stores/Sofiane-KOTNI/author/B0H6NBHZTC) · [Contact](mailto:kotni.sofiane@dubsar.ai)
+[DUBSAR website](https://dubsar.ai/) ·
+[LinkedIn](https://www.linkedin.com/in/sofiane-kotni/) ·
+[GitHub](https://github.com/kotnisofiane-bit) ·
+[Public skills](https://github.com/kotnisofiane-bit/dubsar-agent-skills) ·
+[Digital Trust — English](https://www.amazon.fr/dp/B0GZ4RH1KX) ·
+[Digital Trust — French](https://www.amazon.fr/dp/B0H739BFJP) ·
+[Amazon author page](https://www.amazon.fr/stores/Sofiane-KOTNI/author/B0H6NBHZTC) ·
+[Contact Sofiane Kotni](mailto:kotni.sofiane@dubsar.ai)

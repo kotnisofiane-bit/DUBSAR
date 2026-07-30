@@ -51,17 +51,23 @@ human review and reports without requiring users to understand internal
 repositories or agent plumbing. It is coming soon and remains under
 development and validation; it is not currently available for public use.
 
-## 12. Local administration stays local where needed
+## 12. Future installed architecture remains undecided
 
-A future Node and desktop may keep source credentials and technical administration near the client environment. They do not become a second Core.
+Continuous governance or installed components may be considered later under a
+separate scope. Their architecture, data placement, distribution, support and
+licensing remain undecided and are not promised.
 
-## 13. One authority model across integrations
+## 13. One authority model across evidence sources
 
-n8n, Make, CRM systems, Hermes, Claude Code, Codex, Cursor and future adapters should reuse the same evidence and authority semantics.
+Current and future evidence sources should preserve the same distinction
+between facts, analysis and human authority. This principle does not select or
+promise a future integration architecture.
 
 ## 14. Public and private boundaries stay explicit
 
-Public documentation and approved thin adapters remain separate from the private Core, private Backend implementation, confidential evidence and trust material.
+Public documentation and any separately published material remain separate
+from the private Core, private implementation, confidential evidence and trust
+material.
 
 ## 15. Public claims follow proof
 

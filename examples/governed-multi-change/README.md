@@ -4,11 +4,15 @@ This fictional example illustrates how DUBSAR can govern a coherent lot containi
 
 It does not contain or describe the private Core implementation.
 
+It is a doctrine example inherited from earlier coding-agent experiments. It
+does not describe a current integration, active beta, installation path or
+supported product workflow.
+
 ---
 
 ## Scenario
 
-A user asks Claude Code to fix a bug, add the regression test and update the related documentation.
+A user asks a coding agent to fix a bug, add the regression test and update the related documentation.
 
 These changes form one coherent product outcome. DUBSAR does not need to create three artificial macro-lots merely because three files or change types are involved.
 
@@ -42,9 +46,9 @@ The execution contract should make clear:
 
 ---
 
-## Claude Code's role
+## Coding agent's role
 
-Claude Code may plan and implement the lot using its native tools.
+A coding agent may plan and implement the lot using its native tools.
 
 It may report:
 
@@ -143,4 +147,5 @@ The goal is neither “approve everything” nor “create one process per file�
 
 The goal is a coherent governed lot with explicit scope, evidence and human authority where it matters.
 
-Claude Code builds. DUBSAR preserves the governed project state. Humans decide protected movement.
+The coding agent proposes and builds. The doctrine preserves attributable state
+and evidence. Humans decide protected movement.

@@ -1,125 +1,86 @@
 # Installation
 
-There is no supported public installation of the DUBSAR product yet.
+There is no supported public installation of the DUBSAR product at this time.
 
-The controlled private beta is being prepared for Windows first. The final public package, Marketplace pin and installation commands are not yet approved.
+This repository is a public documentation boundary. It does not contain the
+Portal, private Core, private product implementation or an installable DUBSAR
+runtime. Source visibility, documentation and Git history must not be treated
+as an installation path.
 
-Do not treat the visible staging plugin source as a complete or supported installation path.
+## Current product access
 
----
+### Automated audit portal
 
-## Intended Windows beta journey
+The portal is coming soon and remains under construction and validation. It is
+not currently publicly available and does not require a local installation
+from this repository.
 
-The target tester flow is:
+The public method is described at
+[dubsar.ai/audit](https://dubsar.ai/audit).
 
-1. Receive controlled beta access.
-2. Download the approved DUBSAR Windows package from the authorized channel.
-3. Install DUBSAR Desktop and the local runtime.
-4. Install the approved DUBSAR Claude Code plugin from this Marketplace after publication.
-5. Approve the required Claude Code plugin and MCP prompts.
-6. Start DUBSAR through the supported Claude Code flow.
-7. Verify local component and access state.
-8. Recognize or attach the intended workspace.
-9. Resume an existing Mission or create a new one.
-10. Complete a bounded governed task and understand the resulting evidence or Human Gate.
-11. Restart and resume without hidden operator repair.
+### Professional DUBSAR Audit
 
-The beta is not ready until this path is reproducible with the approved package and documented recovery behavior.
+The professional audit is available on request as a separately scoped,
+human-led engagement. It does not imply that a generally available software
+package or installed component has been published.
 
----
+## Separate public skills
 
-## Current platform status
+The
+[dubsar-agent-skills](https://github.com/kotnisofiane-bit/dubsar-agent-skills)
+repository publishes MIT-licensed doctrine and bounded local helpers. Follow
+that repository's own README and licence for those files.
 
-### Windows
+Installing or copying those skills:
 
-First controlled private-beta target. Packaging, installation and the end-to-end tester journey are still being finalized and validated.
+- is not an installation of the DUBSAR product;
+- does not include the Portal, private Core, private implementation or runtime;
+- does not grant access to private DUBSAR services;
+- does not activate a public DUBSAR beta.
 
-### Linux
+The skills repository's MIT licence does not apply to this repository or to
+private DUBSAR components.
 
-Planned for validation after Windows stabilizes. No supported Linux package or beta is currently announced.
-
-### macOS
-
-Not currently announced. Packaging, signing, notarization, permissions, secure storage and runtime behavior must be evaluated before any support claim.
-
----
-
-## Current prerequisites under validation
-
-- supported Claude Code version;
-- approved DUBSAR Desktop/runtime package;
-- approved Claude Code plugin pin and version;
-- Windows architecture and version support;
-- local process and worktree behavior;
-- beta access or activation state;
-- network access to the private service where required;
-- secure local token and permission handling;
-- clean update, rollback and removal;
-- preservation or migration of Mission and workspace state;
-- honest diagnostics when a component is unavailable.
-
----
-
-## Internal compatibility names
-
-Early beta diagnostics may display internal `scribe` identifiers such as:
-
-- `scribe-mcp`;
-- `/scribe-*` commands;
-- `scribe.*` tools;
-- `SCRIBE_*` environment variables;
-- historical local paths or component names.
-
-These are technical compatibility identifiers, not a second product name.
-
-Do not manually rename executables, paths, commands, routes or stored state unless an official tested migration is published.
-
----
-
-## Do not use legacy commands
-
-Installation commands from earlier SCRIBE staging material are not canonical DUBSAR instructions.
+## No public product install commands
 
 Do not:
 
-- install from an unpublished Marketplace path;
-- copy a private staging package into a public installation manually;
-- mix an old Desktop package with a newer plugin or Backend pin;
-- assume that source visibility means the complete product is publicly installable;
-- replace internal identifiers through a global search and replace.
+- install a plugin from an older Git commit;
+- reconstruct the retired `plugins/scribe/` tree;
+- copy an unpublished Marketplace manifest into a host;
+- mix historical Desktop, runtime, plugin or Backend versions;
+- assume that an internal identifier such as `scribe` names a current public
+  product;
+- use staging material in a production or client environment.
 
----
+## Future distribution
 
-## Package provenance requirement
+Any future software distribution will require a new, component-specific
+decision and review. At minimum, it must define:
 
-A supported package must identify and verify the exact versions of the components it executes.
+- the exact distributed component and canonical source;
+- its licence and third-party notices;
+- supported platforms and compatibility;
+- artifact integrity and provenance;
+- credential, privacy and security boundaries;
+- clean installation, update, rollback and removal;
+- acceptance evidence and support boundaries.
 
-At minimum, the publication evidence must bind:
-
-- Desktop package commit and installer hash;
-- Bridge commit;
-- Backend compatibility pin;
-- Claude Code plugin commit and version;
-- required private Core compatibility state;
-- supported Claude Code version;
-- supported operating system.
-
-A green CI run alone is not a user installation proof.
-
----
-
-## Publication status
+No future DUBSAR software publication is promised by this document.
 
 ```text
-Windows controlled private beta: in preparation
-supported public installation: none
-public Marketplace: not activated or announced
-final plugin pin: not selected
-Linux package: not announced
-macOS package: not announced
-product generally available: no
-public beta: no
-marketplace-ready: no
+supported public DUBSAR installation: none
+public DUBSAR Marketplace manifest: none
+public DUBSAR plugin or runtime in this repository: none
+automated audit portal: coming soon, not currently available
+professional DUBSAR Audit: available on request
+public skills: separate MIT-licensed companion resource
 ```
 
-These labels describe the installable product and Marketplace path. They do not describe the separately scoped [DUBSAR Audit professional service](AUDIT.md), which is available on request without claiming public product installation.
+See also:
+
+- [Current status](STATUS.md)
+- [Rights and licensing status](RIGHTS.md)
+- [Security boundary](SECURITY.md)
+- [Integrity and provenance](INTEGRITY.md)
+- [Historical Marketplace record](docs/legacy/marketplace-0.11.1/README.md)

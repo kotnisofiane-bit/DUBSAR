@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
-  <title id="title">Architecture DUBSAR</title>
-  <desc id="desc">Architecture DUBSAR indépendante de l’hôte, depuis l’agent de code jusqu’à l’adaptateur hôte, au runtime local, au Backend privé, au Core privé, au cockpit et à l’autorité humaine.</desc>
+  <title id="title">Architecture historique DUBSAR pour agents de code — direction retirée</title>
+  <desc id="desc">Archive historique et non actuelle d’une ancienne direction autour des agents de code. Elle ne décrit ni un produit, ni une disponibilité, ni une installation actuelle.</desc>
   <defs>
     <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0,10 4,0 8" fill="#4fd1c5"/></marker>
     <marker id="arrowGold" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><polygon points="0 0,10 4,0 8" fill="#d7a640"/></marker>

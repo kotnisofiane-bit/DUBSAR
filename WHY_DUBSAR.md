@@ -66,10 +66,9 @@ The automated portal implementing this journey is coming soon. It remains
 under development and validation and is not currently available for public
 use.
 
-This first audit can later become the foundation for continuous governance:
-policy evaluation, recurring evidence collection, controlled orchestration and
-Human Gates before sensitive actions. Those capabilities remain roadmap items,
-not current production claims.
+This first audit may later help determine whether a separate continuous
+governance scope is justified. No architecture, distribution, support or
+licensing decision is selected or promised for that possible direction.
 
 ---
 
@@ -141,26 +140,25 @@ The planned portal is intended to give non-developer users a common place to:
 It separates the business audit experience from the technical administration
 surface.
 
-A future local Node or desktop may support installation, credentials, local
-execution and continuous governance inside a customer environment. It is a
-prototype and roadmap direction, not the first generally available product.
+Continuous governance or installed components may be considered later under a
+separate scope. Their architecture, data placement, distribution, support and
+licensing are undecided and not promised.
 
-DUBSAR for coding agents is a distinct controlled private-beta surface, with
-Claude Code first. Codex, Cursor and similar adapters remain future directions.
-This surface is real, but it is separate from the planned portal and is not a
-generally available public product.
+Earlier coding-agent experiments helped establish the evidence and authority
+doctrine. They are now paused as a product direction and are not a current
+commercial surface, active beta or supported integration.
 
 ---
 
 ## Why keep the Core private?
 
-Public adapters, schemas and examples can remain inspectable and
-interoperable. The deterministic authority model and proprietary decision
-mechanisms need a consistent protected implementation.
+Public doctrine, schemas and bounded examples can remain inspectable. The
+deterministic authority model and proprietary decision mechanisms need a
+consistent protected implementation.
 
 The private Core owns canonical governance state. This public repository
-documents the product boundary and may distribute thin integration components;
-it does not publish the private engine.
+documents the product boundary; it does not publish the private engine or a
+current integration component.
 
 Using open-source components such as Hermes does not imply that the complete
 DUBSAR product is distributed under one open-source license.
@@ -204,13 +202,12 @@ Today, the DUBSAR marketing website and public documentation are publicly
 available. The automated audit portal is coming soon: it remains under
 development and validation and is not currently available for public use.
 Deterministic controls and an API-backed audit path have internal technical
-evidence. The complete end-to-end portal journey, production connectors,
-continuous policy enforcement and local administration Node still require
-further implementation and end-user validation.
+evidence. The complete end-to-end portal journey and production evidence-source
+coverage still require further implementation and end-user validation.
 
-Professional DUBSAR Audit remains available on request. DUBSAR for coding
-agents remains a controlled private beta. No generally available Node
-deployment is currently claimed.
+Professional DUBSAR Audit remains available on request. Earlier coding-agent
+packaging is paused and no active beta or generally available installed
+component is currently claimed.
 
 DUBSAR distinguishes a prototype interface, an API proof and a real user
 journey. Public claims will follow the evidence.

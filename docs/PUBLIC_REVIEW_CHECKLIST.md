@@ -1,121 +1,82 @@
 # DUBSAR Public Review Checklist
 
-This checklist is for the human review of the public-realignment pull request before any merge, repository rename or Marketplace activation.
+This checklist reflects the current portal-first public direction. Earlier
+coding-agent private-beta positioning is superseded and belongs only to
+historical context.
 
----
+## 1. Current offer
 
-## 1. Product identity
+- [x] DUBSAR is the only current public product brand.
+- [x] The automated audit portal is presented as coming soon and not yet
+  publicly available.
+- [x] The Professional DUBSAR Audit is presented as available on request.
+- [x] No coding-agent integration is presented as a current commercial surface
+  or active beta.
+- [x] Continuous governance or installed components are only possible later
+  considerations; architecture, distribution, support and licensing are
+  undecided and not promised.
 
-- [ ] DUBSAR is the only current public product brand.
-- [ ] Scribe Builder is not presented as a parent product or company.
-- [ ] Scribe Launcher is not presented as a current product.
-- [ ] Eyes of SCRIBE is not presented as a separate product.
-- [ ] Historical names appear only in explicit legacy context or compatibility notes.
+## 2. Audit claims
 
----
+- [x] Audit scope and sources are explicit and bounded.
+- [x] Read-only collection is the default.
+- [x] Facts, inferences, missing evidence and limitations remain distinct.
+- [x] Human review remains explicit.
+- [x] No automatic causality, certification or legal-compliance verdict is
+  claimed.
+- [x] API or fixture evidence is not presented as complete browser E2E proof.
 
-## 2. Product definition
+## 3. Public skills boundary
 
-- [ ] DUBSAR is described as governance for long-running, multi-session AI coding projects.
-- [ ] The product beta and the DUBSAR Audit professional service are presented as distinct paths with different availability states.
-- [ ] Audit claims remain bounded, read-only by default and subject to human validation.
-- [ ] Claude Code is clearly the first supported integration.
-- [ ] DUBSAR is not described as permanently Claude-only.
-- [ ] Codex, Cursor and other adapters are described as future direction, not current availability.
-- [ ] The private Core is described as host-independent.
+- [x] `dubsar-agent-skills` is linked as a separate MIT-licensed repository.
+- [x] The skills are described as doctrine and bounded local helpers.
+- [x] They are not presented as the DUBSAR product, Portal, Core or private
+  implementation.
+- [x] They grant no access to private services and do not constitute a DUBSAR
+  installation.
+- [x] Their MIT licence is not extended to this repository or private
+  components.
 
----
+## 4. Marketplace and installation
 
-## 3. Architecture accuracy
+- [x] The historical Marketplace manifest is absent from the active tree.
+- [x] The vendored `0.11.1` runtime is absent from the active tree.
+- [x] No supported public DUBSAR installation command is active.
+- [x] A non-executable tombstone preserves the historical pin and aggregate
+  hash.
+- [x] The historical licence is preserved with the tombstone, not presented as
+  the active repository-root licence.
+- [x] `RIGHTS.md` records that no current public software licence is selected.
+- [x] Any future package requires a new component-specific decision and
+  provenance, dependency, licence, integrity, security and installation review.
 
-- [ ] Host adapter, Bridge, Desktop/runtime, Backend, Core, Runner and cockpit responsibilities are distinct.
-- [ ] Backend is the protected canonical write boundary.
-- [ ] Core owns Mission, decisions, contracts, sessions, evidence and Human Gates.
-- [ ] Desktop and cockpit are not presented as canonical truth owners.
-- [ ] Agent declarations are not described as verified evidence.
-- [ ] Human Gates remain authenticated human decisions.
+## 5. Public/private boundary
 
----
+- [x] No private Core source is published by the documentation branch.
+- [x] No Portal or other private product implementation is published by the
+  documentation branch.
+- [x] No current installable DUBSAR component is published.
+- [x] No secrets, tokens, private policies, client data or private deployment
+  topology are intentionally documented.
+- [x] Future component licensing decisions remain deferred.
 
-## 4. Technical proof claims
+## 6. Repository operation
 
-- [ ] One-session and two-session results are described as internal Windows technical proofs.
-- [ ] No internal proof is presented as an external user beta proof.
-- [ ] Multi-session claims mention distinct identities, processes, worktrees and evidence.
-- [ ] Conflict handling is described without claiming impossible correctness guarantees.
-- [ ] Restart and reconciliation claims stay within demonstrated behavior.
+- [x] The historical tombstone and `RIGHTS.md` retain their intended boundary.
+- [x] The review branch is committed and published through pull request 19.
+- [x] The final diff has been reviewed against the current public/product boundary.
+- [x] The repository owner explicitly authorized final review and merge on
+  2026-07-30.
 
----
-
-## 5. Platform claims
-
-- [ ] Windows is described as the first controlled private-beta target in preparation.
-- [ ] Linux is not described as available before real validation.
-- [ ] macOS is not announced before feasibility, signing and runtime validation.
-- [ ] No platform support is inferred from compilation or CI alone.
-
----
-
-## 6. Marketplace and installation
-
-- [ ] Marketplace is not described as activated, published or announced.
-- [ ] No supported public installation command is active.
-- [ ] The existing vendored `0.11.1` runtime is described as an earlier staging pin.
-- [ ] The final publication pin remains pending Windows stabilization.
-- [ ] No vendored runtime file was manually changed to imitate a newer private plugin.
-- [ ] Final re-vendoring, hashes and strict validation remain explicit publication gates.
-
----
-
-## 7. Public/private boundary
-
-- [ ] No private Core source is published.
-- [ ] No private Backend source is published.
-- [ ] No secrets, tokens or private service credentials are present.
-- [ ] No private prompts, policies, journals or tester data are present.
-- [ ] Privacy and Security documents describe engineering boundaries honestly.
-
----
-
-## 8. Visual identity
-
-- [ ] Root README uses current DUBSAR diagrams.
-- [ ] Current visuals use graphite/night blue, turquoise and restrained gold.
-- [ ] No current visual contains SCRIBE branding.
-- [ ] Legacy diagrams are clearly classified and not embedded as current architecture.
-- [ ] The social-preview source uses DUBSAR.
-- [ ] No mock screenshot is presented as a shipped product capture.
-
----
-
-## 9. Legacy material
-
-- [ ] `LEGACY.md` clearly defines interpretation rules.
-- [ ] RFCs are classified as legacy and non-normative.
-- [ ] Current root documentation wins over historical material.
-- [ ] Compatibility-sensitive `scribe` identifiers are not renamed casually.
-
----
-
-## 10. Repository operations
-
-- [ ] PR remains draft during review.
-- [ ] No merge occurs without explicit Human GO.
-- [ ] Repository rename is handled as a separate Human Gate.
-- [ ] Marketplace activation and announcement require a later separate Human GO.
-- [ ] Security and licensing contacts are confirmed live before publication.
-
----
-
-## Current expected verdict
+## Expected verdict
 
 ```text
-public documentation realignment: reviewable
-Windows product journey: still in preparation
-final plugin publication pin: pending
-Marketplace activation: blocked
-repository rename: not performed
-product generally available: no
-public beta: no
-marketplace-ready: no
+public documentation: aligned for review
+portal: coming soon, not publicly available
+professional audit: available on request
+public skills: separate MIT-licensed companion resource
+active coding-agent beta: none
+supported public DUBSAR installation: none
+historical Marketplace surface: retired
+private implementation: not published
 ```
