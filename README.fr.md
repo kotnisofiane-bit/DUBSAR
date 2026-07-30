@@ -4,139 +4,193 @@
 
 # DUBSAR
 
-**Gouverner le passage de l’intention à la preuve. Conserver l’autorité humaine.**
+**Auditez vos automatisations. Gouvernez ce qui agit.**
 
-DUBSAR est un système de gouvernance et d’audit des projets logiciels construits avec des agents IA. Il conserve les décisions, les preuves, la traçabilité et une autorité humaine explicite dans la durée.
+DUBSAR relie les faits, les décisions et les preuves de vos workflows. Le système rend les incohérences visibles, conserve les limites de couverture et remet la validation au responsable humain désigné.
 
-Deux voies sont proposées aujourd’hui :
+DUBSAR possède aujourd’hui trois surfaces distinctes. Elles partagent une même doctrine, mais pas le même usage ni le même niveau de maturité.
 
-| Produit | Prestation professionnelle |
-|---|---|
-| **DUBSAR pour Claude Code** — bêta privée contrôlée pour gouverner un projet réel pendant sa construction. | **Audit DUBSAR** — audit borné et étayé par des preuves sur la préparation au lancement ou la gouvernance des agents. |
-| Sur invitation · Windows en premier | Sur demande · À distance · Lecture seule par défaut |
-
-[Demander un accès bêta](https://dubsar.ai/fr/early-access) · [Demander un audit](https://dubsar.ai/fr/audit) · [Documentation anglaise](README.md)
+[Ouvrir le portail d’audit](https://app.dubsar.ai/audits) · [Découvrir l’audit](https://dubsar.ai/fr/audit) · [Demander un accès bêta](https://dubsar.ai/fr/early-access) · [English version](README.md)
 
 ---
 
-<p align="center">
-  <img src="diagrams/dubsar-architecture-fr.svg" alt="Architecture DUBSAR : agent de code, adaptateur hôte, environnement local, Backend et Core protégés, cockpit et autorité humaine." />
-</p>
+## Trois surfaces, une même méthode
+
+| Surface | Usage | Statut actuel |
+|---|---|---|
+| **Audit automatisé** | Examiner un périmètre d’automatisations, relier les événements disponibles et préparer un rapport validable | Portail public en validation active |
+| **Audit professionnel DUBSAR** | Examiner un projet ou une automatisation sous mandat, avec sources autorisées et revue humaine | Disponible sur demande |
+| **DUBSAR pour agents de code** | Gouverner la construction d’un projet logiciel assisté par des agents | Bêta privée contrôlée, Claude Code en premier |
+
+Ces surfaces ne doivent pas être confondues :
+
+- le portail prépare un premier résultat structuré ;
+- l’audit professionnel ajoute un mandat, une analyse et une revue humaines ;
+- le produit pour agents de code gouverne un projet pendant sa construction.
 
 ---
 
-## Pourquoi DUBSAR existe
+## 1. Audit automatisé
 
-Les agents accélèrent la production. Ils ne garantissent pas à eux seuls la continuité, la preuve ni l’autorité.
+Le portail constitue le point d’entrée commercial public de DUBSAR.
 
-D’une session ou d’un outil à l’autre, un projet peut perdre :
+Le parcours visé est simple :
 
-- sa Mission et ses contraintes actives ;
-- les décisions prises et leurs raisons ;
-- le lien entre les affirmations et les preuves vérifiées ;
+1. définir les automatisations, la période et les sources autorisées ;
+2. relier les événements disponibles sans inventer de causalité ;
+3. signaler les incohérences, incertitudes et informations manquantes ;
+4. faire classer les constats par le responsable désigné ;
+5. produire un rapport où preuves, limites et validations restent reliées.
+
+Le parcours vise l’autonomie jusqu’au premier rapport. Cette autonomie ne signifie ni décision automatique, ni certification, ni suppression de la responsabilité humaine.
+
+[Ouvrir le portail d’audit](https://app.dubsar.ai/audits)
+
+---
+
+## 2. Audit professionnel DUBSAR
+
+L’Audit professionnel DUBSAR est une intervention bornée, opérée par Sofiane avec DUBSAR.
+
+Deux mandats principaux sont proposés :
+
+- **préparation au lancement** — le produit est-il réellement prêt à être ouvert aux utilisateurs ?
+- **gouvernance des agents** — l’équipe peut-elle expliquer et vérifier comment le projet a été construit et validé ?
+
+L’intervention commence par un accord explicite sur :
+
+- le périmètre ;
+- les sources autorisées ;
+- les permissions ;
+- les limites d’accès ;
+- la conservation ;
+- le calendrier ;
+- le prix.
+
+Le fonctionnement est en lecture seule par défaut. Le rapport distingue les faits, les inférences, les contradictions, les limites et les décisions humaines.
+
+[Comprendre la méthode](AUDIT.fr.md) · [Demander un accompagnement sur Malt](https://www.malt.fr/profile/sofianekotni)
+
+---
+
+## 3. DUBSAR pour agents de code
+
+DUBSAR pour agents de code gouverne les projets logiciels longs, multi-sessions et assistés par l’IA.
+
+Le produit conserve notamment :
+
+- la Mission et les contraintes actives ;
+- les décisions et leurs raisons ;
+- les preuves reliées aux sources et aux versions ;
 - les contradictions entre tickets, documentation, code et tests ;
-- les Human Gates encore en attente ;
-- le chemin nécessaire pour reprendre ou expliquer le projet.
-
-DUBSAR ajoute une couche de gouvernance durable autour des agents existants :
-
-- Mission persistante et mémoire des décisions ;
-- travail borné et contrats explicites ;
-- identité des sessions ;
-- preuves reliées aux sources et versions ;
-- contradictions et limites visibles ;
-- reprise et rejeu ;
-- Human Gates pour les décisions protégées.
-
-**Les agents proposent. DUBSAR préserve et vérifie. L’humain décide.**
-
-DUBSAR n’est pas un nouvel agent de code et ne remplace pas le développeur.
-
----
-
-## Voie 1 — DUBSAR pour Claude Code
+- l’identité et l’isolation des sessions ;
+- les Human Gates nécessaires aux mouvements protégés ;
+- le chemin permettant de reprendre ou d’expliquer le projet.
 
 Claude Code est la première intégration. La bêta privée fonctionnelle est en cours de finalisation pour des projets extérieurs sélectionnés, avec Windows comme première cible.
 
-Les preuves techniques internes à une et deux sessions sont acquises. L’installation et l’expérience autonome d’un utilisateur extérieur restent à valider avant toute ouverture publique de la Marketplace.
+La Marketplace publique n’est pas active. Aucun parcours d’installation publique autonome n’est actuellement revendiqué. Codex, Cursor et les autres adaptateurs appartiennent à la direction future.
 
-Le modèle multi-session conserve une Mission canonique tout en séparant les identités, les worktrees, les processus et les preuves de chaque session. Les conflits restent visibles et les déplacements protégés passent par une décision humaine explicite.
-
-<p align="center">
-  <img src="diagrams/dubsar-multi-session-fr.svg" alt="Modèle multi-session gouverné par DUBSAR : Mission canonique, sessions isolées, preuves attribuables, conflits visibles et Human Gate partagé." />
-</p>
-
-Codex, Cursor et d’autres environnements font partie de la direction future. Ils ne sont pas présentés comme des intégrations disponibles aujourd’hui.
-
-[Surfaces du produit](PRODUCT_SURFACES.md) · [État actuel](STATUS.md) · [Limites d’installation](INSTALLATION.md)
+[État actuel](STATUS.md) · [Surfaces techniques](PRODUCT_SURFACES.md) · [Demander un accès bêta](https://dubsar.ai/fr/early-access)
 
 ---
 
-## Voie 2 — Audit DUBSAR
+## Doctrine commune
 
-L’Audit DUBSAR est une prestation opérée par Sofiane avec DUBSAR. Il répond à l’une de ces questions :
+Toutes les surfaces DUBSAR suivent les mêmes principes :
 
-1. **Préparation au lancement** — le produit est-il réellement prêt à être ouvert aux utilisateurs ?
-2. **Gouvernance des agents** — l’équipe peut-elle expliquer et vérifier comment le projet a été construit et validé ?
+- seules les sources autorisées sont examinées ;
+- une affirmation n’est jamais traitée comme une preuve ;
+- les faits et les inférences restent séparés ;
+- la provenance et la version des preuves sont conservées ;
+- les contradictions et les limites restent visibles ;
+- une source absente devient une limite, pas une conformité implicite ;
+- la lecture seule est la règle par défaut ;
+- aucun agent ne peut approuver seul son propre travail ;
+- les décisions protégées restent sous autorité humaine.
 
-L’audit examine uniquement les sources autorisées dans un mandat défini. Le rapport distingue les faits, les inférences, les preuves, les contradictions, les limites et les décisions humaines.
-
-Selon l’environnement du client, les sources autorisées peuvent inclure GitHub, Jira, Confluence, Linear, Notion, Slack ou Google Drive. Chaque constat conserve sa provenance et les limites d’accès restent visibles dans le rapport.
-
-Pour un audit de préparation au lancement, le verdict est **GO, GO sous conditions ou NO-GO**, accompagné de constats priorisés et d’un registre de preuves.
-
-La prestation est disponible sur demande, réalisée à distance et en lecture seule par défaut. Aucun résultat final n’est livré sans revue humaine.
-
-[Méthode d’audit](AUDIT.fr.md) · [Demander un audit](https://dubsar.ai/fr/audit)
+**Les systèmes analysent et appliquent des règles déclarées. DUBSAR conserve et vérifie. L’humain autorise et décide.**
 
 ---
 
-## Une méthode, deux niveaux de maturité
+## Surfaces techniques
+
+L’audit automatisé et le produit pour agents de code utilisent la même discipline, mais des parcours techniques différents.
+
+### Parcours audit
 
 ```text
-Produit DUBSAR pour Claude Code : bêta privée contrôlée en finalisation
-Audit DUBSAR : prestation professionnelle disponible sur demande
-Marketplace publique : non activée
-Adaptateurs Codex / Cursor : direction future
-Core privé : propriétaire et non distribué ici
+Sources autorisées
+    ↓
+Portail DUBSAR
+    ↓
+Preuves, incohérences et limites
+    ↓
+Validation humaine
+    ↓
+Rapport
 ```
 
-La prestation d’audit ne présente pas la bêta comme une plateforme d’entreprise arrivée à maturité. Elle utilise DUBSAR comme système opérateur gouverné, avec les sources autorisées du projet et une validation humaine, afin de produire un résultat professionnel.
+Une gouvernance continue ou un DUBSAR Node constitue un déploiement séparé. Elle n’est pas implicite dans le premier diagnostic.
 
-## Direction du produit
+### Parcours agents de code
 
-DUBSAR est conçu autour d’adaptateurs hôtes plutôt que d’un Core lié définitivement à Claude Code. Le produit à long terme reste DUBSAR lui-même : une couche de gouvernance pour les projets logiciels assistés par des agents.
+```text
+Agent de code
+    ↓
+Adaptateur hôte
+    ↓
+Bridge et environnement local
+    ↓
+Backend et Core protégés
+    ↓
+Cockpit, preuves et Human Gates
+```
 
-L’audit est une application professionnelle de cette méthode et un moyen de l’éprouver sur des projets réels. Il ne remplace pas la trajectoire produit.
+Le Core propriétaire reste privé. Les composants techniques ne constituent pas des marques ou des produits séparés.
 
-## Ce que DUBSAR ne prétend pas faire
+---
 
-DUBSAR ne prétend pas :
+## AI Act
 
-- remplacer les agents de code, les développeurs ou l’autorité technique du client ;
-- permettre à un agent de valider seul son propre travail ;
-- confondre une affirmation convaincante avec une preuve ;
-- fusionner, publier ou déployer silencieusement ;
-- certifier une conformité réglementaire ;
-- garantir un code sans défaut ni vulnérabilité ;
-- exposer le Core propriétaire ;
-- présenter Codex ou Cursor comme des intégrations déjà disponibles.
+DUBSAR peut aider à structurer des éléments utiles à une préparation documentaire liée à l’AI Act :
 
-DUBSAR peut soutenir l’organisation des preuves et la traçabilité utiles à une préparation documentaire liée à l’AI Act, mais ne fournit aucun conseil juridique, ne certifie aucune conformité et ne remplace pas une évaluation juridique ou de conformité qualifiée.
+- inventaire des systèmes, agents, responsables et finalités ;
+- traçabilité des sources, versions, décisions et validations ;
+- supervision humaine explicite ;
+- limites, incertitudes et informations manquantes ;
+- registres de preuves et de contradictions.
+
+DUBSAR ne fournit aucun conseil juridique, ne délivre aucune certification et ne produit aucun verdict automatique de conformité.
+
+---
 
 ## Frontière publique et privée
 
-Ce dépôt constitue la surface publique de documentation et de distribution de DUBSAR. Il peut contenir la doctrine, l’architecture, des exemples bornés, les informations publiques de sécurité et d’installation, ainsi que l’adaptateur Claude Code lorsque sa publication est autorisée.
+Ce dépôt constitue la surface publique de documentation et de distribution de DUBSAR.
 
-Il ne publie pas le Core propriétaire, les détails privés du Backend, les politiques internes, les journaux scellés, les données confidentielles de clients ou de testeurs, ni aucun secret ou élément de confiance.
+Il peut contenir :
 
-Certains identifiants techniques utilisent encore `scribe` pour compatibilité. Ce sont des noms historiques d’implémentation, pas un second produit public.
+- la doctrine et l’architecture publiques ;
+- des exemples et diagrammes bornés ;
+- les informations publiques de sécurité, confidentialité et installation ;
+- les adaptateurs hôtes dont la publication a été autorisée.
+
+Il ne publie pas :
+
+- le Core propriétaire ;
+- les politiques ou journaux internes ;
+- les données de clients ou de testeurs ;
+- les secrets, jetons ou éléments de confiance ;
+- les détails privés du Backend.
+
+Certains identifiants techniques utilisent encore `scribe` pour compatibilité. Ils ne désignent pas un second produit public.
 
 ---
 
 ## Documentation
 
-### Pour commencer
+### Comprendre DUBSAR
 
 1. [Pourquoi DUBSAR ?](WHY_DUBSAR.md)
 2. [Audit DUBSAR](AUDIT.fr.md)
@@ -160,4 +214,4 @@ Certains identifiants techniques utilisent encore `scribe` pour compatibilité. 
 
 Créé par [**Sofiane Kotni**](https://dubsar.ai/fr/sofiane-kotni/), créateur de DUBSAR et auteur de *Digital Trust*.
 
-Site : [dubsar.ai](https://dubsar.ai/fr/) · [LinkedIn](https://www.linkedin.com/in/sofiane-kotni/) · [Digital Trust — français](https://www.amazon.fr/dp/B0H739BFJP) · [Digital Trust — anglais](https://www.amazon.fr/dp/B0GZ4RH1KX) · [Page auteur Amazon](https://www.amazon.fr/stores/Sofiane-KOTNI/author/B0H6NBHZTC) · [Malt](https://www.malt.fr/profile/sofianekotni) · Contact : [contact@dubsar.ai](mailto:contact@dubsar.ai)
+[Site DUBSAR](https://dubsar.ai/fr/) · [LinkedIn](https://www.linkedin.com/in/sofiane-kotni/) · [Digital Trust — français](https://www.amazon.fr/dp/B0H739BFJP) · [Digital Trust — anglais](https://www.amazon.fr/dp/B0GZ4RH1KX) · [Page auteur Amazon](https://www.amazon.fr/stores/Sofiane-KOTNI/author/B0H6NBHZTC) · [Malt](https://www.malt.fr/profile/sofianekotni) · [Contact](mailto:contact@dubsar.ai)
