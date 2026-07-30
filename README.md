@@ -63,7 +63,7 @@ limitations and human decisions remain distinct.
 
 [Read the method](AUDIT.md) ·
 [Request an audit](https://dubsar.ai/audit) ·
-[Contact](mailto:contact@dubsar.ai)
+[Contact Sofiane Kotni](mailto:kotni.sofiane@dubsar.ai)
 
 ---
 
@@ -209,4 +209,4 @@ DUBSAR and author of *Digital Trust*.
 [Digital Trust — English](https://www.amazon.fr/dp/B0GZ4RH1KX) ·
 [Digital Trust — French](https://www.amazon.fr/dp/B0H739BFJP) ·
 [Amazon author page](https://www.amazon.fr/stores/Sofiane-KOTNI/author/B0H6NBHZTC) ·
-[Contact](mailto:contact@dubsar.ai)
+[Contact Sofiane Kotni](mailto:kotni.sofiane@dubsar.ai)

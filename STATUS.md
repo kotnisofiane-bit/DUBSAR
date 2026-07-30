@@ -80,7 +80,7 @@ final conclusion is delivered without human review.
 
 [Professional audit method](AUDIT.md) ·
 [Request an audit](https://dubsar.ai/audit) ·
-[Contact](mailto:contact@dubsar.ai)
+[Contact Sofiane Kotni](mailto:kotni.sofiane@dubsar.ai)
 
 ---
 

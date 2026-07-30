@@ -294,7 +294,7 @@ the default.
 
 See the [audit boundary](AUDIT.md),
 [request an audit](https://dubsar.ai/audit) or
-[contact DUBSAR](mailto:contact@dubsar.ai).
+[contact Sofiane Kotni](mailto:kotni.sofiane@dubsar.ai).
 
 ---
 

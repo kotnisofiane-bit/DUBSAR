@@ -171,7 +171,7 @@ prestation ne constitue pas une certification juridique.
 
 Une demande peut être initiée depuis la
 [page de l’audit professionnel](https://dubsar.ai/fr/audit) ou le
-[contact DUBSAR](mailto:contact@dubsar.ai).
+[contacter Sofiane Kotni](mailto:kotni.sofiane@dubsar.ai).
 
 ## Suivre la validation
 

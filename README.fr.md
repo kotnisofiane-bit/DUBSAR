@@ -65,7 +65,7 @@ distincts.
 
 [Comprendre la méthode](AUDIT.fr.md) ·
 [Demander un audit](https://dubsar.ai/fr/audit) ·
-[Contact](mailto:contact@dubsar.ai)
+[Contacter Sofiane Kotni](mailto:kotni.sofiane@dubsar.ai)
 
 ---
 
@@ -216,4 +216,4 @@ DUBSAR et auteur de *Digital Trust*.
 [Digital Trust — français](https://www.amazon.fr/dp/B0H739BFJP) ·
 [Digital Trust — anglais](https://www.amazon.fr/dp/B0GZ4RH1KX) ·
 [Page auteur Amazon](https://www.amazon.fr/stores/Sofiane-KOTNI/author/B0H6NBHZTC) ·
-[Contact](mailto:contact@dubsar.ai)
+[Contacter Sofiane Kotni](mailto:kotni.sofiane@dubsar.ai)

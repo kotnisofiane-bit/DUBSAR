@@ -13,7 +13,7 @@ unsupported and must not be restored or installed in a production environment.
 
 Until a dedicated monitored security channel is confirmed publicly, contact:
 
-`contact@dubsar.ai`
+`kotni.sofiane@dubsar.ai`
 
 Use `SECURITY` in the subject line and provide only the minimum information required to establish contact.
 

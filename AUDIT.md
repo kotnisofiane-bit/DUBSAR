@@ -156,7 +156,7 @@ legal certification.
 
 Requests can start through the
 [professional audit page](https://dubsar.ai/audit) or
-[contact@dubsar.ai](mailto:contact@dubsar.ai).
+[kotni.sofiane@dubsar.ai](mailto:kotni.sofiane@dubsar.ai).
 
 ## Follow the validation
 
