@@ -1,311 +1,303 @@
-# Architecture
+# DUBSAR Architecture
 
-DUBSAR is not a coding agent and not a replacement for coding agents.
+This document describes the public product boundary. It deliberately omits private implementation details, credentials, internal policies and deployment topology.
 
-It is a governance layer for long-running, multi-session AI coding projects.
+## Product path
 
-> Coding agents may plan and act. Project movement remains bounded by Mission state, decisions, evidence and human authority.
+DUBSAR is organized around three distinct delivery surfaces:
 
----
+- the automated audit portal, a public entry point under active validation;
+- the Professional DUBSAR Audit, available on request as a bounded,
+  human-led engagement;
+- DUBSAR for Claude Code, a functional controlled private beta being finalized,
+  with selective invitation and Windows as the first supported target.
 
-## Host-independent product architecture
+The architecture below describes the portal-first audit journey for business
+automations and AI agents. The professional service can apply the same evidence
+and authority boundaries with an agreed mandate. The coding-agent beta is a
+separate product surface and is not a prerequisite for the portal.
 
-DUBSAR is designed around host adapters rather than a Core tied to one provider.
-
-```text
-Coding agent
-    ↓
-DUBSAR host adapter
-    ↓
-Local Bridge and runtime
-    ↓
-Private Backend
-    ↓
-Private DUBSAR Core
-    ↓
-Governed state returned to product surfaces
-    ↓
-Human decision when required
+```mermaid
+flowchart LR
+    S["Authorized sources"] --> P["DUBSAR Portal"]
+    P --> E["Bounded evidence snapshot"]
+    E --> O["Deterministic orchestration"]
+    O --> C["Private DUBSAR Core"]
+    O <--> H["Bounded Hermes roles"]
+    C --> R["Proposed findings"]
+    R --> G["Human review"]
+    G --> T["Traceable report"]
 ```
 
-Claude Code is the first supported host. Codex, Cursor and other coding-agent integrations are future adapter directions, not currently available product claims.
+The intended sequence is:
 
----
+1. an authorized user defines a bounded audit scope;
+2. approved exports or connectors provide only the required evidence;
+3. DUBSAR freezes the evidence scope and records content digests;
+4. deterministic controls evaluate explicit conditions;
+5. specialized Hermes roles analyze or explain bounded material;
+6. the Core preserves canonical state, provenance and limitations;
+7. a human confirms, corrects or rejects proposed findings;
+8. the report preserves evidence, decisions and scope limits.
 
-## Current Claude Code architecture
-
-```text
-Claude Code
-    ↓
-DUBSAR plugin
-    ↓
-Local Bridge
-    ↓
-Private Backend
-    ↓
-Private DUBSAR Core
-    ↓
-Mission / sessions / contracts / decisions / evidence / Human Gates
-    ↓
-DUBSAR Desktop and cockpit
-    ↓
-Human decision
-```
-
-DUBSAR Desktop supplies the local runtime and human-facing product surface. It is not a separate product and it is not the canonical source of business state.
-
----
+The complete browser journey is still being consolidated. The portal is public
+under active validation, but that status is not a general-availability or
+production-readiness claim.
 
 ## Responsibility boundaries
 
-### Coding agent host
+### Public website
 
-The host remains responsible for its native capabilities, including where available:
+`dubsar.ai` explains the product, its method and its limitations. A short orientation questionnaire may help a visitor understand whether an audit is relevant, but it is not itself an audit or a regulatory assessment.
 
-- planning and reasoning;
-- editing;
-- tools;
-- tests;
-- sub-agents;
-- worktrees;
-- checkpoints and context management.
+### DUBSAR Portal
 
-DUBSAR should configure, observe or govern these capabilities where necessary. It should not rebuild them without a clear governance reason.
+The controlled [DUBSAR Portal](https://app.dubsar.ai/audits) is the primary
+self-service audit surface. It is a public entry point under active validation.
+Public reachability does not establish that every browser path, connector,
+security boundary or operating condition is generally available or
+production-ready.
 
-### DUBSAR host adapter
+It combines:
 
-The adapter is the entry point inside the coding-agent environment.
+- authentication and access control;
+- a conversational and task-oriented interface;
+- project and audit scope;
+- evidence import or connection;
+- progress and availability states;
+- finding review;
+- human decisions;
+- report access.
 
-For Claude Code, this is the DUBSAR plugin.
+LibreChat can provide part of the portal shell. DUBSAR remains responsible for the audit contracts, evidence boundaries, workflow and authority model.
 
-Its responsibilities include:
+### Professional DUBSAR Audit
 
-- propagating the native session identity;
-- exposing bounded DUBSAR commands and tools;
-- projecting canonical state to the host;
-- connecting the host to the local Bridge;
-- surfacing the next governed action and Human Gate status.
+The Professional DUBSAR Audit is available on request as a separate bounded
+engagement. Scope, authorized sources, permissions, retention, deliverables,
+timing and price are agreed before work starts. The engagement remains
+human-led and read-only by default; it does not bypass evidence limitations or
+turn a report into a legal certification.
 
-The adapter remains thin:
+See [AUDIT.md](AUDIT.md) for the public service boundary.
 
-- no proprietary Core logic;
-- no independent canonical state;
-- no secret handling through chat or command arguments;
-- no independent Human GO generation.
+### Evidence boundary
 
-### Local Bridge
+Every audit starts from a bounded evidence snapshot.
 
-The Bridge is a bounded local transport and orchestration layer.
+The snapshot records:
 
-It may:
+- source kind and authorized scope;
+- collection window and known retention limits;
+- content or projection digests;
+- completeness and unavailable reads;
+- references that a finding is allowed to cite.
 
-- connect the host adapter to the local product runtime;
-- maintain bounded local continuity references;
-- transport closed requests and responses;
-- support local lifecycle coordination.
+Missing or partial evidence must remain visible. It must never be converted silently into a positive result.
 
-It must not become the owner of Mission, contract, decision, evidence or Human Gate truth.
+### Deterministic orchestrator
 
-### Private Backend
+The orchestrator controls the order of the audit.
 
-The Backend is the protected product boundary and the only supported product writer to canonical Core state.
-
-It is responsible for:
-
-- authentication and authorization boundaries;
-- schema and request validation;
-- controlled access to private Core functions;
-- runtime binding verification;
-- projecting only the state required by product surfaces;
-- rejecting stale or inconsistent mutations.
-
-### Private DUBSAR Core
-
-The Core is the canonical authority for governed project state:
-
-- Projects and Missions;
-- decision memory;
-- lots and execution contracts;
-- canonical DUBSAR sessions;
-- runtime allocations and bindings;
-- evidence relationships and verification tiers;
-- audit state;
-- Human Gates and single-use authorizations;
-- deterministic resume, replay and reconciliation decisions.
-
-The Core is private and is not distributed through this public repository.
-
-### Runner
-
-The Runner is the mechanical evidence authority for bounded execution artifacts such as:
-
-- snapshots;
-- diffs;
-- test results;
-- hashes;
-- execution artefact references.
-
-It does not own Mission state and does not create Human GO.
-
-### DUBSAR Desktop and cockpit
-
-Desktop provides the local runtime and operator-facing controls.
-
-The cockpit displays governed state and evidence available to the human. It may trigger bounded product actions through the Backend, but it does not fabricate canonical state or approve itself.
-
----
-
-## Canonical session model
-
-A governed session links distinct identities rather than collapsing them into one ambiguous "session" value.
-
-A canonical relationship may include:
+It is responsible for transitions such as:
 
 ```text
-dubsar_session_id
-  ↔ native host session id
-  ↔ Mission
-  ↔ lot and contract
-  ↔ runtime allocation
-  ↔ worktree binding
-  ↔ base SHA
-  ↔ process identity
-  ↔ session revision and Mission head
+accept request
+→ freeze evidence
+→ apply deterministic controls
+→ prepare bounded roles
+→ collect role results
+→ prepare review
+→ await human decision
+→ render report
 ```
 
-The Core mints the canonical DUBSAR session identity. Native host identities, local transport references and operating-system process identities remain distinct but linked.
+An LLM does not decide which protected transition happens next.
 
-No product path should use a generic `default` identity for real multi-session work.
+### Hermes roles
 
----
+Hermes supplies specialized agent roles for analysis and explanation.
 
-## Multi-session governance
+A role receives:
 
-Two sessions on one Mission must share governed project state without sharing execution identity.
+- a closed objective;
+- an explicit control vocabulary;
+- bounded evidence references and facts;
+- a required output contract;
+- a distinct session identity.
+
+Hermes outputs remain non-authoritative proposals. They do not create a Human GO, alter the evidence snapshot or approve their own work.
+
+### Private Backend and Core
+
+The protected Backend is the public product's controlled service boundary.
+
+The private Core owns canonical audit state, including:
+
+- audit and run identity;
+- rule-pack identity;
+- evidence relationships;
+- role packets and accepted results;
+- contradictions and limitations;
+- review state;
+- human decisions;
+- report projection.
+
+The Core is proprietary and is not distributed in this repository.
+
+### Human review
+
+Human review is a product boundary, not a decorative checkbox.
+
+The reviewer must be able to see:
+
+- the proposed finding;
+- the evidence used;
+- the control applied;
+- the scope and unavailable evidence;
+- the exact review version being decided.
+
+The decision confirms, corrects or rejects a proposal. It does not retroactively turn incomplete evidence into verified evidence.
+
+### Report
+
+The report is a projection of canonical audit state. It must preserve:
+
+- source provenance;
+- rule-pack and evidence digests;
+- findings and their evidence;
+- human dispositions;
+- contradictions;
+- limitations and unavailable sources.
+
+Rendering a report is not the same as authorizing a deployment, release or regulated use.
+
+## First Rule Pack
+
+The current public portal path centers on **Automation Coherence**.
+
+Its current control families cover:
+
+1. duplicate consequences without an attributable idempotency boundary;
+2. actions incompatible with an observed business state;
+3. missing traceability, version or expected human-validation evidence within the connected scope.
+
+The pack is still being consolidated into the canonical audit contracts.
+Deterministic fixture validation exists, while complete browser E2E proof
+remains an active validation boundary.
+
+## User and operator surfaces
+
+### Portal users
+
+Business, operations, compliance and agency users work primarily through the portal. They define scope, inspect findings, make review decisions and access reports.
+
+### Technical administrators
+
+A separately scoped local Node and planned administration desktop are intended
+for technical operators who need to:
+
+- connect local or private systems;
+- keep credentials close to the client environment;
+- inspect runtime and connector health;
+- manage approved policies;
+- observe controlled execution.
+
+The Node and desktop are complementary administration surfaces, not a second
+governance authority. DUBSAR Node is a separate scoped deployment path and is
+not generally available.
+
+## Future continuous governance
+
+Audit is the entry point. Continuous governance is a later product stage.
+
+The intended evolution is:
 
 ```text
-Canonical Mission
-  ├── Session A
-  │     ├── lot / contract A
-  │     ├── worktree A
-  │     ├── process A
-  │     └── evidence A
-  │
-  └── Session B
-        ├── lot / contract B
-        ├── worktree B
-        ├── process B
-        └── evidence B
+bounded audit
+→ understood workflows and evidence
+→ approved rules and owners
+→ continuous observation
+→ policy decision
+→ human approval when required
 ```
 
-Required properties include:
+Future policy outcomes may include:
 
-- distinct native and DUBSAR session identities;
-- distinct runtime allocations and worktrees;
-- shared canonical Mission and decisions;
-- revision and head checks before mutation;
-- explicit conflict detection;
-- no silent last-writer-wins behavior;
-- separated journals and evidence;
-- shared Human Gate when a protected conflict or movement requires it;
-- honest restart reconciliation.
+- `ALLOW`;
+- `DENY`;
+- `REQUIRE_HUMAN_APPROVAL`;
+- `ALLOW_WITH_CONDITIONS`.
 
-Internal Windows technical proofs have validated governed one-session and two-session execution. Public product reproducibility remains under validation.
+These outcomes are roadmap capabilities. DUBSAR does not currently claim that it can block arbitrary business actions in production.
 
----
+## Connector independence
 
-## Governed project path
+DUBSAR is designed so that n8n, HubSpot, Make, coding-agent hosts and future systems remain evidence or execution surfaces rather than sources of DUBSAR authority.
 
-```text
-Mission
-  → applicable decisions and constraints
-  → bounded lot and contract
-  → canonical session and runtime binding
-  → agent proposal or execution
-  → mechanical evidence and audit
-  → Human Gate when required
-  → result and replay
-```
+Connectors should:
 
-An agent report is an assertion. It does not become verified evidence because the report says that work passed.
+- use documented and versioned boundaries;
+- expose bounded data;
+- fail explicitly;
+- avoid sending source credentials to the Core;
+- remain replaceable.
 
-A Human Gate is a separate authenticated human decision. It cannot be inferred from agent wording, a green check or a client-provided flag.
+A change in a third-party tool may require an adapter update. It must not change the meaning of an existing DUBSAR control silently.
 
----
+## Coding-agent adapters
 
-## Evidence model
+DUBSAR for Claude Code is a distinct functional controlled private beta being
+finalized. Access is selective and invitation-based, with Windows as the first
+supported target. It reuses the same canonical-state, evidence and explicit
+authority model without becoming a separate governance brain.
 
-DUBSAR distinguishes at least:
+Codex and Cursor remain future integration surfaces. They are not prerequisites
+for the portal audit, and no availability claim is made for them. The public
+Claude Code Marketplace is inactive and has not been announced as an
+installation path.
 
-- **DECLARED** — asserted by an agent, tool or user;
-- **VERIFIED** — checked by an identified deterministic verifier;
-- **MISSING** — expected evidence was not supplied;
-- **INVALID** — malformed, inconsistent or tampered evidence.
+## AI Act boundary
 
-Public documentation describes these guarantees without publishing the private enforcement mechanisms.
+DUBSAR is designed to help document governance-relevant elements such as provenance, traceability, human oversight, scope and retained evidence.
 
----
+It does not certify AI Act compliance, replace legal analysis or issue a regulatory conformity verdict.
 
-## Concurrency and integrity
+## Public and private boundary
 
-Protected mutations should be bound to the canonical state they were prepared from.
-
-Relevant mechanisms include:
-
-- expected revision checks;
-- Mission and lot heads;
-- base SHA commitments;
-- content hashes;
-- idempotency keys;
-- single-use authorization nonces;
-- stale-write rejection;
-- explicit divergence states;
-- fail-closed reconciliation.
-
-A stale session must not silently overwrite newer canonical state.
-
----
-
-## Distribution architecture
-
-This public repository is intended to host:
+This repository may publish:
 
 - product documentation;
-- Marketplace metadata;
-- thin public host-adapter packages;
-- security, privacy, licence and changelog material.
+- public contracts and diagrams;
+- synthetic fixtures and examples;
+- explicitly approved thin adapters;
+- security, privacy and integrity information.
 
-It must not host:
+It does not publish:
 
-- the private Core;
-- private Backend source;
-- internal audit histories or sealed journals;
-- private prompts or policies;
-- confidential proof artifacts;
+- the proprietary Core;
+- private Backend implementation;
+- internal prompts or policies;
+- confidential evidence or client data;
 - secrets, tokens or trust material;
-- private tester data.
+- unreviewed production topology.
 
-The Marketplace is not activated or announced.
+## Current maturity
 
----
+```text
+deterministic synthetic-fixture controls: internally validated
+recorded audit API path: internal evidence exists
+automated audit portal: public entry point under active validation
+complete portal browser E2E proof: in progress
+professional DUBSAR Audit: available on request
+DUBSAR for Claude Code: functional controlled private beta being finalized
+coding-agent beta target: selective invitation, Windows first
+public Claude Code Marketplace: inactive
+DUBSAR Node: separate scoped deployment path, not generally available
+Codex and Cursor adapters: future
+live business connectors: roadmap
+continuous policy enforcement: roadmap
+general production availability: not claimed
+```
 
-## Compatibility boundary
-
-The public product is DUBSAR.
-
-Internal technical identifiers may remain temporarily in:
-
-- private repository names;
-- routes and schema identifiers;
-- component and token names;
-- MCP server and command identifiers;
-- environment variables;
-- local storage paths.
-
-They must be migrated only through deliberate compatibility plans, not global search-and-replace changes.
-
----
-
-## Summary
-
-Coding agents act. DUBSAR remembers the Mission, governs canonical sessions, links evidence and keeps Human Gates explicit. The private Core remains the source of truth. Humans remain the final authority.
+See [STATUS.md](STATUS.md) for the current claim boundary and [ROADMAP.md](ROADMAP.md) for sequencing.

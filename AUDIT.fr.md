@@ -1,75 +1,187 @@
 # Audit DUBSAR
 
-L’Audit DUBSAR est une prestation professionnelle étayée par des preuves, destinée aux produits et projets logiciels construits avec des agents de code.
+Le portail automatisé d’Audit DUBSAR est un point d’entrée public en validation
+active. Il se distingue de l’Audit professionnel DUBSAR, disponible sur
+demande, et de la bêta privée contrôlée pour Claude Code.
 
-Ce n’est ni une certification automatique ni un simple scan de code. L’audit est opéré par Sofiane avec DUBSAR, des sources autorisées et une revue humaine.
+Sa première cible est un **audit borné de cohérence des automatisations** :
+connecter ou importer des preuves autorisées issues d’un système
+d’automatisation et d’un système métier, détecter des incohérences précises,
+faire examiner chaque constat proposé par un humain, puis produire un rapport
+relié aux preuves.
 
-## Mandats proposés
+Ce n’est ni une certification juridique, ni un verdict générique sur l’IA, ni
+la promesse de reconstruire automatiquement tous les processus métier.
 
-### Préparation au lancement
+## Premier profil d’audit : cohérence des automatisations
 
-**Question :** le produit est-il réellement prêt à être ouvert aux utilisateurs ?
+Le premier profil de travail utilise des exports bornés de n8n et HubSpot. Il
+pose trois questions :
 
-Le mandat peut couvrir le parcours critique, l’installation, les permissions, les erreurs, la documentation, la facturation, les données, les tests et les limites connues.
+1. La même conséquence métier a-t-elle été exécutée plusieurs fois sans
+   frontière d’idempotence attribuable ?
+2. Une action a-t-elle été exécutée alors que l’état métier disponible indiquait
+   qu’elle ne devait pas l’être ?
+3. Les sources connectées permettent-elles d’établir la version du workflow, la
+   règle active et la validation humaine attendue pour une action sensible ?
 
-**Résultat :** GO, GO sous conditions ou NO-GO, avec les bloqueurs et un plan d’action ordonné.
+Le troisième contrôle est volontairement borné. Lorsque la preuve manque,
+DUBSAR doit indiquer **« aucune preuve trouvée dans les sources connectées »**,
+et non affirmer que l’événement ou la validation n’a jamais existé.
 
-### Gouvernance des agents
+Ces contrôles produisent des constats candidats dans un périmètre de preuves
+déclaré. Ils ne prouvent ni la causalité, ni l’exhaustivité, ni la conformité
+réglementaire.
 
-**Question :** l’équipe peut-elle expliquer et vérifier comment le projet a été construit et validé ?
+## Parcours autonome visé
 
-Le mandat peut couvrir la continuité, les décisions, les preuves, les contradictions, les validations et la frontière entre l’action des agents et l’autorité humaine.
-
-**Résultat :** un état gouverné de ce qui est établi, incertain, contradictoire ou en attente d’une décision humaine.
-
-## Déroulement
+Le parcours prévu dans le portail est le suivant :
 
 ```text
-Mandat et permissions convenus
+Créer ou ouvrir un espace d’audit
     ↓
-Sources du projet explicitement autorisées
+Autoriser et fournir des sources bornées
     ↓
-Collecte et analyse bornées
+Figer l’instantané de preuves et sa couverture
     ↓
-Registres DUBSAR de preuves, contradictions et décisions
+Exécuter les contrôles déterministes
     ↓
-Revue et classification humaines
+Expliquer les constats candidats avec l’assistance d’agents
     ↓
-Rapport professionnel et registre de preuves
+Revue humaine : vrai, faux ou incertain
+    ↓
+Générer le rapport relié aux preuves
 ```
 
-Les sources possibles incluent GitHub, Jira, Confluence, Linear, Notion, Slack et Google Drive. Seules les sources explicitement autorisées dans le mandat sont examinées.
+La revue humaine fait partie du produit ; ce n’est pas un traitement
+d’exception. Un modèle peut expliquer, résumer ou proposer une classification,
+mais il ne peut pas promouvoir sa propre sortie en vérité vérifiée ni créer un
+Human GO.
 
-## Livrable
+## Limite de validation actuelle
 
-Le rapport professionnel contient, selon le mandat :
+L’évaluateur de cohérence des automatisations a été exercé sur des jeux de
+données synthétiques, et un parcours d’audit au niveau API a été enregistré
+dans un déploiement contrôlé.
 
-- le résumé exécutif, le mandat et le périmètre ;
-- les sources examinées et les limites d’accès ;
-- les constats reliés aux preuves et à leur criticité ;
-- les incertitudes, contradictions et limitations ;
-- les actions prioritaires et le verdict ;
-- le registre de preuves permettant la revue et le rejeu.
+Le parcours complet dans le navigateur n’a **pas encore été prouvé de bout en
+bout au niveau requis pour une disponibilité générale ou pour une mise en
+production**. Les preuves actuelles n’établissent notamment pas tous les
+parcours, de la connexion et l’import jusqu’à la revue, au rechargement et à
+l’export du rapport, dans toutes les conditions d’exploitation prises en charge.
 
-Les faits, inférences, contradictions et décisions humaines restent explicitement séparés.
+Pendant la validation active :
+
+- le portail reste un point d’entrée public dans les limites de validation
+  publiées ;
+- une preuve au niveau API ne doit pas être présentée comme un E2E d’interface ;
+- zéro constat signifie « aucun constat détecté dans le périmètre borné », et
+  non « l’automatisation est conforme » ;
+- une source absente ou incomplète reste visible et peut rendre un contrôle non
+  évaluable.
+
+L’accessibilité publique ne constitue pas, à elle seule, une promesse de
+disponibilité générale, de prise en charge universelle des connecteurs ou de
+mise en production.
+
+Consultez [l’état actuel](STATUS.md) pour connaître la frontière produit la plus
+récente.
+
+## Contenu prévu du rapport
+
+Le rapport doit contenir :
+
+- la question d’audit, le mandat et le périmètre borné ;
+- les enregistrements de provenance des sources, leurs versions, leurs
+  empreintes et leurs limites de couverture ;
+- les constats candidats reliés à leurs références de preuve ;
+- les faits observés séparés des éléments dérivés ou inférés ;
+- les incertitudes, preuves manquantes et sources indisponibles ;
+- la décision humaine sur chaque constat proposé ;
+- les actions de suivi prioritaires ;
+- un identifiant de rapport reproductible et un registre de preuves.
+
+Le rapport ne doit jamais laisser entendre que les sources connectées étaient
+complètes si leur couverture n’a pas réellement été établie.
 
 ## Frontières de sécurité et d’autorité
 
-- Le fonctionnement en lecture seule est la règle par défaut.
-- Aucun identifiant, jeton ou code source n’est demandé sur le site public.
-- Aucun ticket, aucune correction et aucune mutation externe ne sont créés par défaut.
-- Une source indisponible est signalée comme une limite ; elle n’est pas silencieusement considérée conforme ou non conforme.
-- Aucune conclusion produite par un agent ne devient définitive sans revue humaine.
-- Le client autorise le périmètre et reste décisionnaire des remédiations.
+- La collecte en lecture seule est la règle par défaut pour un audit.
+- Le site commercial public ne demande aucun identifiant de connecteur, jeton
+  ou archive de source.
+- L’accès aux sources doit être explicite, borné et attribuable.
+- Aucun ticket, aucune correction, aucun message et aucune mutation externe ne
+  sont créés par défaut.
+- Une source indisponible est signalée comme une limite ; elle n’est jamais
+  silencieusement considérée conforme ou non conforme.
+- Les résultats déterministes, les explications des agents et les décisions
+  humaines restent des enregistrements distincts.
+- Le client reste responsable des décisions métier et de remédiation.
 
-## Relation avec le produit DUBSAR
+Les flux de données du portail, la conservation, la suppression, les
+sous-traitants et l’authentification devront être documentés et validés avant
+toute disponibilité générale.
 
-Le produit gouverne le projet pendant sa construction. L’audit examine un état borné du projet pour produire un résultat exploitable pour la décision.
+## Après l’audit
 
-Les deux utilisent les mêmes principes : Mission, provenance, preuves, contradictions, rejeu et Human Gates. La prestation peut également examiner un projet qui n’utilisait pas déjà le plugin DUBSAR pour Claude Code, si les sources nécessaires existent et sont autorisées.
+L’audit doit pouvoir conduire à une gouvernance continue lorsqu’un client
+choisit d’aller plus loin.
 
-## Demander un audit
+Un **Node DUBSAR** installé dans un périmètre distinct et administré depuis le
+desktop est destiné à relier certains chemins d’exécution d’automatisations et
+d’agents au Core DUBSAR privé. Selon le système, cette frontière pourra utiliser
+une gateway HTTP contrôlée, une API ou un adaptateur hôte. Elle pourra préparer
+les actions sensibles pour une approbation humaine, puis appliquer des décisions
+de politique bornées.
 
-Utilisez le [formulaire de demande d’audit](https://dubsar.ai/fr/audit) ou écrivez à [contact@dubsar.ai](mailto:contact@dubsar.ai).
+Le Node DUBSAR constitue un chemin de déploiement distinct et n’est pas
+disponible de manière générale.
 
-Le périmètre, les sources, les permissions, la conservation, le calendrier et le prix sont convenus avant le début de l’audit.
+DUBSAR pour Claude Code est une bêta privée contrôlée fonctionnelle en cours de
+finalisation. L’accès est sélectif, sur invitation, avec Windows comme première
+cible prise en charge. Cette bêta n’est pas nécessaire pour l’audit portail.
+Codex et Cursor restent de futures surfaces d’intégration, sans promesse de
+disponibilité. La Marketplace publique Claude Code est inactive.
+
+## Frontière de préparation à l’AI Act
+
+DUBSAR est conçu pour soutenir des travaux concrets de gouvernance : inventaire
+des systèmes, traçabilité des preuves, limites documentées et supervision
+humaine explicite. Ces capacités peuvent aider une organisation à préparer la
+documentation et les contrôles pertinents au regard de l’AI Act européen.
+
+DUBSAR :
+
+- ne détermine pas seul si l’AI Act s’applique à une organisation ou à un
+  système ;
+- n’attribue pas de classification de risque juridiquement opposable ;
+- ne fournit pas de conseil juridique ;
+- ne certifie pas la conformité ;
+- ne remplace ni le fournisseur, ni le déployeur, ni le conseil juridique, ni
+  l’autorité compétente.
+
+## Audit professionnel DUBSAR
+
+Le portail autonome n’impose pas à Sofiane de revoir chaque première analyse.
+Pour les organisations qui ont besoin d’un mandat guidé, l’Audit professionnel
+DUBSAR est disponible sur demande.
+
+Il s’agit d’une prestation distincte et conduite par un humain pour des travaux
+convenus tels que le cadrage, la revue des preuves, l’interprétation, la
+planification des corrections ou la préparation d’une installation dans un
+périmètre distinct. Le périmètre, les sources autorisées, les permissions, la
+conservation, les livrables, le calendrier et le prix sont convenus avant le
+démarrage. La collecte en lecture seule reste la règle par défaut et la
+prestation ne constitue pas une certification juridique.
+
+Une demande peut être initiée depuis la
+[page de l’audit professionnel](https://dubsar.ai/fr/audit) ou le
+[profil Malt de Sofiane Kotni](https://www.malt.fr/profile/sofianekotni).
+
+## Suivre la validation
+
+Le [portail public](https://app.dubsar.ai/audits) est en validation active. La
+méthode publique et la prestation professionnelle sont décrites sur
+[dubsar.ai/fr/audit](https://dubsar.ai/fr/audit). L’accès sélectif à la bêta
+contrôlée Claude Code est présenté sur
+[dubsar.ai/fr/early-access](https://dubsar.ai/fr/early-access).

@@ -1,112 +1,108 @@
 # Why Not Just Agents?
 
-AI agents are useful. Multiple agents can also be useful.
+AI agents are useful. Multi-agent systems can divide work, use tools and move quickly.
 
-DUBSAR does not reject agentic development. It asks a different question:
+DUBSAR is being built as an audit and governance layer. It can orchestrate
+bounded roles, but it does not make another model the final authority over
+those agents.
 
-> What does the project remember, verify and require when an agent session ends or work moves to another tool?
+## Agent activity is not governance
 
----
+A group of agents can still:
 
-## More agents do not automatically create governance
+- repeat the same action;
+- use incompatible business state;
+- lose the rule or version that triggered an action;
+- cite incomplete evidence;
+- approve its own output;
+- hide disagreement behind a fluent summary;
+- become impossible to reconstruct later.
 
-A project can use one agent or many and still suffer from:
+More roles do not automatically create traceability, separation of authority or deterministic control.
 
-- forgotten decisions;
-- unclear authority;
-- missing or self-reported evidence;
-- repeated assumptions;
-- scope drift;
-- weak replay;
-- human approval without the relevant dossier.
+## Deterministic orchestration
 
-The issue is not only who speaks. The issue is how proposed work becomes governed project movement.
+DUBSAR separates two kinds of work.
 
----
+Agents are useful for:
 
-## Agent collaboration is not durable project state
+- interpreting bounded material;
+- explaining a proposed finding;
+- exploring hypotheses;
+- preparing a review;
+- carrying out an explicitly authorized role.
 
-Agents can exchange messages, critique work and produce plans, patches or reviews.
+Deterministic components are required for:
 
-A long-running project still needs to know:
-
-- which Mission is active;
-- which decisions and constraints apply;
-- what the current lot permits;
-- which canonical session owns the work;
-- what evidence is expected;
-- what was merely declared;
-- what was independently verified;
-- what requires a Human Gate;
-- how the path can be resumed later.
-
-Agent conversation alone does not guarantee those properties.
-
----
-
-## DUBSAR focuses on the project layer
-
-DUBSAR does not manage agents as personalities.
-
-It governs the project state around their work:
+- identity and state transitions;
+- evidence digests and scope;
+- rule-pack selection;
+- control execution;
+- idempotence;
+- contradiction handling;
+- Human Gate enforcement;
+- report projection.
 
 ```text
-Mission
-  → decisions and constraints
-  → bounded contract
-  → canonical session
-  → agent proposal or execution
-  → audit and evidence
-  → Human Gate
-  → result and replay
+agents propose and explain
+deterministic controls preserve the rules
+the Core preserves canonical state
+humans decide protected movement
 ```
 
-The host agent remains capable. The project becomes more coherent.
+## Why Hermes?
 
----
+Hermes provides a flexible open agent runtime and specialized roles.
 
-## Why the host remains in control of execution
+Within DUBSAR, a Hermes role receives a closed objective, explicit evidence and a required output contract. It does not own the Mission, alter the evidence snapshot or create an authoritative decision.
 
-Coding-agent environments already supply planning, tools, editing, tests and execution capabilities.
+The value is not the role name itself. The value is the combination of:
 
-DUBSAR should not create a competing coding agent or orchestration engine merely to claim ownership of execution.
+- bounded role;
+- attributable session;
+- explicit evidence;
+- deterministic control;
+- independent human review.
 
-It connects through a thin host adapter while keeping Mission, decision, evidence and Human Gate truth in the private DUBSAR Core.
+## Why not only n8n, Make or a coding-agent host?
 
-Claude Code is the first supported host. Codex, Cursor and other adapters are future direction, not currently available integrations.
+Existing automation and agent platforms execute useful workflows. They also expose their own logs and controls.
 
----
+DUBSAR is intended to work across those surfaces:
 
-## Role separation still matters
+- compare execution with business state;
+- preserve an independent evidence snapshot;
+- apply controls that are not tied to one vendor;
+- keep human decisions and limitations visible;
+- continue governing when several automation systems coexist.
 
-Architect, coder, auditor and verifier are useful responsibility patterns:
+DUBSAR does not need to replace every workflow engine to provide that layer.
 
-- framing is not execution;
-- proposing is not verification;
-- verification is not final approval;
-- no agent validates itself;
-- no agent creates a Human GO.
+## Audit before orchestration
 
-These roles do not require DUBSAR to host a full proprietary team of agents. They define how authority and evidence should remain separated when different roles are used.
+The first product path is an audit.
 
----
+Audit establishes:
 
-## One governed memory across sessions and hosts
+- which systems and workflows exist;
+- what evidence is available;
+- where inconsistencies appear;
+- which actions are sensitive;
+- which owners and validations matter;
+- which parts are not evaluable.
 
-A user should not have to rebuild the project's core reasoning every time a host restarts, compacts context or work moves to another supported coding-agent environment.
+Only after this baseline can continuous orchestration or policy enforcement be configured responsibly.
 
-DUBSAR provides the continuing Mission and decision memory around those sessions.
+## Human authority
 
-Coding agents may propose and act. DUBSAR preserves the governed project context. The human decides protected movement.
+A human decision is not a ceremonial confirmation after the agents agree.
 
----
+The reviewer must see the finding, evidence, rule, scope and limitations. The decision can confirm, correct or reject the proposal.
+
+It cannot turn missing evidence into verified evidence and it cannot be manufactured by another agent.
 
 ## Summary
 
-Long-running AI projects need more than agent activity.
+DUBSAR uses agents, but does not ask agents to be their own constitution.
 
-They need durable Mission state, canonical sessions, decisions, constraints, evidence, audit, Human Gates and replay.
-
-DUBSAR adds that project layer.
-
-Not more intelligence. More reliable project movement.
+It combines agent capabilities with deterministic controls, evidence boundaries, private canonical state and explicit human authority.

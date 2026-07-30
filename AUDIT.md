@@ -1,75 +1,173 @@
 # DUBSAR Audit
 
-DUBSAR Audit is a professional, evidence-backed service for software products and projects built with coding agents.
+The automated DUBSAR Audit portal is a public entry point under active
+validation. It is distinct from the Professional DUBSAR Audit, available on
+request, and from the controlled private beta for Claude Code.
 
-It is not an automated certification and not a generic code scan. It is a bounded audit operated by Sofiane with DUBSAR, authorized project sources and human review.
+Its first target is a bounded **automation-coherence audit**: connect or import
+authorized evidence from an automation system and a business system, detect
+specific inconsistencies, let a human review every proposed finding, and produce
+an evidence-linked report.
 
-## Available mandates
+It is not a legal certification, a generic AI verdict or a claim that every
+business process can be reconstructed automatically.
 
-### Launch readiness
+## First audit profile: automation coherence
 
-**Question:** Is the product genuinely ready to open to users?
+The initial working profile uses bounded n8n and HubSpot exports. It asks three
+questions:
 
-The mandate may cover the critical journey, installation, permissions, failure paths, documentation, billing, data handling, testing and known limitations.
+1. Was the same business consequence executed more than once without an
+   attributable idempotency boundary?
+2. Was an action executed while the available business state indicated that it
+   should not be?
+3. Can the connected sources establish the workflow version, active rule and
+   expected human validation for a sensitive action?
 
-**Result:** GO, GO under conditions or NO-GO, with blockers and an ordered action plan.
+The third control is deliberately bounded. When the evidence is absent, DUBSAR
+must say **“no proof found in the connected sources”**, not that the event or
+validation never existed.
 
-### Agent governance
+These controls produce candidate findings within a declared evidence scope.
+They do not prove causality, completeness or regulatory compliance.
 
-**Question:** Can the team explain and verify how the project was built and approved?
+## Target self-service journey
 
-The mandate may cover continuity, decisions, evidence, contradictions, validations and the boundary between agent action and human authority.
-
-**Result:** A governed view of what is established, uncertain, contradictory or awaiting a human decision.
-
-## Operating model
+The intended portal journey is:
 
 ```text
-Agreed mandate and permissions
+Create or open an audit space
     ↓
-Authorized project sources
+Authorize and provide bounded sources
     ↓
-Bounded collection and analysis
+Freeze the evidence snapshot and coverage
     ↓
-DUBSAR evidence, contradiction and decision records
+Run deterministic controls
     ↓
-Human review and classification
+Explain candidate findings with agent assistance
     ↓
-Professional report and evidence register
+Human review: true, false or uncertain
+    ↓
+Generate the evidence-linked report
 ```
 
-Possible sources include GitHub, Jira, Confluence, Linear, Notion, Slack and Google Drive. Only sources explicitly authorized in the mandate are examined.
+The human review is part of the product, not an exception path. A model may
+explain, summarize or propose a classification, but it cannot promote its own
+output to verified truth or create a Human GO.
 
-## Deliverable
+## Current validation boundary
 
-The professional report contains, as applicable:
+The automation-coherence evaluator has been exercised against synthetic
+fixtures, and an API-level audit path has been recorded in a controlled
+deployment.
 
-- executive summary, mandate and scope;
-- sources examined and access limitations;
-- findings tied to evidence and severity;
-- uncertainties, contradictions and limitations;
-- prioritized actions and verdict;
-- evidence register for review and replay.
+The complete browser-based journey has **not yet been proved end to end to a
+general-availability or production-readiness standard**. In particular, the
+current evidence does not establish every path from sign-in through upload,
+review, reload and report export under all supported operating conditions.
 
-Facts, inferences, contradictions and human decisions remain explicitly separated.
+During active validation:
+
+- the portal remains a public entry point within its published validation
+  boundary;
+- API-level evidence must not be described as a user-interface E2E;
+- a zero-finding result means “no finding detected in the bounded scope,” not
+  “the automation is compliant”;
+- an unavailable or incomplete source remains visible and may make a control
+  not evaluable.
+
+Public reachability is not, by itself, a claim of general availability,
+universal connector support or production readiness.
+
+See [Current status](STATUS.md) for the latest product boundary.
+
+## What the report is intended to contain
+
+The report is intended to contain:
+
+- the audit question, mandate and bounded scope;
+- source records, versions, digests and coverage limitations;
+- candidate findings tied to evidence references;
+- observed facts separated from derived or inferred statements;
+- uncertainty, missing evidence and unavailable sources;
+- the human disposition of each proposed finding;
+- prioritized follow-up actions;
+- a reproducible report identifier and evidence register.
+
+No report should imply that connected sources were complete unless their
+coverage was actually established.
 
 ## Safety and authority boundaries
 
-- Read-only operation is the default.
-- No credentials, tokens or source code are requested through the public website.
-- No ticket, remediation or external mutation is created by default.
-- An unavailable source is reported as a limitation, not silently treated as compliant or non-compliant.
-- No agent-generated conclusion becomes final without human review.
-- The client authorizes the perimeter and remains responsible for remediation decisions.
+- Read-only collection is the default for an audit.
+- The public marketing website does not request connector credentials, tokens
+  or source archives.
+- Source access must be explicit, bounded and attributable.
+- No ticket, remediation, message or external mutation is created by default.
+- An unavailable source is reported as a limitation, never silently treated as
+  conformant or non-conformant.
+- Deterministic control results, agent explanations and human decisions remain
+  distinct records.
+- The customer remains responsible for business and remediation decisions.
 
-## Relationship to the DUBSAR product
+Portal data flows, retention, deletion, subprocessors and authentication must
+be documented and validated before general availability.
 
-The product governs a project while it is being built. The audit examines a bounded project state to produce a decision-ready result.
+## After the audit
 
-Both use the same principles: Mission, provenance, evidence, contradictions, replay and Human Gates. The audit service can also examine projects that were not already using the DUBSAR Claude Code plugin, provided the required sources are available and authorized.
+The audit is intended to lead to continuous governance when a customer chooses
+to go further.
 
-## Request an audit
+A separately scoped installed **DUBSAR Node**, administered through the
+desktop, is intended to connect selected automation and agent execution paths
+to the private DUBSAR Core. Depending on the system, that boundary may use a
+controlled HTTP gateway, API or host adapter. It may prepare sensitive actions
+for human approval and later enforce bounded policy decisions.
 
-Use the [DUBSAR Audit request form](https://dubsar.ai/audit) or write to [contact@dubsar.ai](mailto:contact@dubsar.ai).
+DUBSAR Node is a separate deployment path and is not generally available.
 
-Scope, sources, permissions, retention, timing and price are agreed before any audit begins.
+DUBSAR for Claude Code is a distinct functional controlled private beta being
+finalized. Access is selective and invitation-based, with Windows as the first
+supported target. It is not a prerequisite for the portal audit. Codex and
+Cursor remain future integration surfaces, and no availability claim is made
+for them. The public Claude Code Marketplace is inactive.
+
+## AI Act preparation boundary
+
+DUBSAR is being designed to support practical governance work such as system
+inventory, evidence traceability, documented limitations and explicit human
+oversight. Those capabilities may help an organization prepare documentation
+and controls relevant to the EU AI Act.
+
+DUBSAR does not:
+
+- determine by itself whether the AI Act applies to an organization or system;
+- assign a legally authoritative risk classification;
+- provide legal advice;
+- certify compliance;
+- replace the provider, deployer, legal counsel or competent authority.
+
+## Professional DUBSAR Audit
+
+The self-service portal does not require Sofiane to review every initial run.
+For organizations that need a guided mandate, the Professional DUBSAR Audit is
+available on request.
+
+It is a separate, human-led engagement for agreed work such as scoping,
+evidence review, interpretation, remediation planning or preparation of a
+separately scoped installation. Scope, authorized sources, permissions,
+retention, deliverables, timing and price are agreed before work starts.
+Read-only collection remains the default, and the service does not provide
+legal certification.
+
+Requests can start through the
+[professional audit page](https://dubsar.ai/audit) or
+[Sofiane Kotni's Malt profile](https://www.malt.fr/profile/sofianekotni).
+
+## Follow the validation
+
+The [public portal](https://app.dubsar.ai/audits) is under active validation.
+The public method and professional engagement are described at
+[dubsar.ai/audit](https://dubsar.ai/audit). Selective access to the controlled
+Claude Code beta is described at
+[dubsar.ai/early-access](https://dubsar.ai/early-access).
