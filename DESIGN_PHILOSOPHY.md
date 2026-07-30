@@ -10,7 +10,7 @@ The answer is not to ask another agent to declare that everything is safe. It is
 
 Responsible orchestration starts by understanding the existing system.
 
-The first product path therefore:
+The intended first product path therefore:
 
 1. defines a bounded scope;
 2. collects authorized evidence;
@@ -19,6 +19,10 @@ The first product path therefore:
 5. exposes findings and missing information;
 6. records a human disposition;
 7. preserves a traceable report.
+
+The automated portal implementing this journey is coming soon. It remains
+under development and validation and is not currently available for public
+use.
 
 Continuous policy enforcement follows only when the audit establishes a justified and testable need.
 
@@ -88,9 +92,12 @@ n8n, Make, CRM systems, model providers and coding-agent hosts evolve independen
 
 DUBSAR should use documented, versioned contracts and explicit degraded states. A connector change may require an adapter update; it must not change the meaning of an audit result silently.
 
-## Portal for users, local administration for operators
+## A portal for users, local administration for operators
 
-The portal is the primary surface for scope, findings, review and reports.
+The portal is intended to become the primary product surface for scope,
+findings, review and reports. It is coming soon and remains under development
+and validation. The public marketing website provides product information; it
+does not provide access to the portal.
 
 A future Node and desktop are intended for technical administrators who need local credentials, runtime health, connector configuration and controlled execution.
 
@@ -115,8 +122,8 @@ Earlier Claude Code, desktop and multi-session work remains useful.
 It contributes patterns for identity, evidence, local runtime and Human Gates.
 DUBSAR for coding agents remains a controlled private-beta surface, with Claude
 Code first. Codex, Cursor and other adapters remain future directions. This
-surface is distinct from the portal and is not the primary public commercial
-entry point.
+surface is distinct from the planned portal and is not a generally available
+public product.
 
 ## Summary
 

@@ -1,6 +1,7 @@
 # Status
 
-DUBSAR is an active governance and audit system with three distinct public surfaces:
+DUBSAR is an active governance and audit system with three distinct product
+surfaces:
 
 1. an automated audit portal;
 2. a bounded professional audit service;
@@ -12,7 +13,7 @@ They share one evidence and human-authority doctrine, but they do not have the s
 
 | Surface | Current status |
 |---|---|
-| Automated audit portal | Public entry point under active validation |
+| Automated audit portal | Under construction and validation; coming soon, not publicly available |
 | Professional DUBSAR Audit | Available on request |
 | DUBSAR for Claude Code | Functional controlled private beta being finalized |
 | External coding-agent beta access | Selective, invitation only, Windows first |
@@ -27,7 +28,8 @@ These statuses must not be conflated.
 
 ## 1. Automated audit portal
 
-The DUBSAR portal is the current public commercial entry point.
+The public [DUBSAR audit page](https://dubsar.ai/audit) is the current commercial
+entry point. The automated portal itself is under construction and validation.
 
 Its intended journey is:
 
@@ -38,7 +40,9 @@ Its intended journey is:
 5. let the designated owner classify the findings;
 6. produce a report that keeps evidence, limitations and validations connected.
 
-The portal is publicly accessible and remains under active validation.
+The portal is not yet presented as publicly accessible. It will be announced
+when its construction and validation boundary supports a controlled public
+opening.
 
 The current status does not imply that:
 
@@ -51,7 +55,7 @@ The current status does not imply that:
 
 The target is a clear first result with explicit coverage and human validation.
 
-[Open the audit portal](https://app.dubsar.ai/audits) · [Audit overview](https://dubsar.ai/audit)
+[Audit overview](https://dubsar.ai/audit)
 
 ---
 
@@ -168,9 +172,12 @@ No generally available Node installation or enterprise deployment is currently c
 
 ### Web portal
 
-Public entry point under active validation.
+Under construction and validation. It is not currently presented as publicly
+accessible; the public marketing entry point is the
+[audit overview](https://dubsar.ai/audit).
 
-Its availability does not change the maturity status of the installable coding-agent product.
+This portal status does not change the maturity status of the installable
+coding-agent product.
 
 ### Windows
 

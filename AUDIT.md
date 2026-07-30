@@ -1,8 +1,9 @@
 # DUBSAR Audit
 
-The automated DUBSAR Audit portal is a public entry point under active
-validation. It is distinct from the Professional DUBSAR Audit, available on
-request, and from the controlled private beta for Claude Code.
+The automated DUBSAR Audit portal is coming soon. It is under construction and
+validation and is not currently available. It is distinct from the Professional
+DUBSAR Audit, available on request, and from the controlled private beta for
+Claude Code.
 
 Its first target is a bounded **automation-coherence audit**: connect or import
 authorized evidence from an automation system and a business system, detect
@@ -66,18 +67,17 @@ general-availability or production-readiness standard**. In particular, the
 current evidence does not establish every path from sign-in through upload,
 review, reload and report export under all supported operating conditions.
 
-During active validation:
+During construction and active validation:
 
-- the portal remains a public entry point within its published validation
-  boundary;
+- the portal remains unavailable to the public;
 - API-level evidence must not be described as a user-interface E2E;
 - a zero-finding result means “no finding detected in the bounded scope,” not
   “the automation is compliant”;
 - an unavailable or incomplete source remains visible and may make a control
   not evaluable.
 
-Public reachability is not, by itself, a claim of general availability,
-universal connector support or production readiness.
+The public marketing website describes the intended audit method; it does not
+provide access to the portal.
 
 See [Current status](STATUS.md) for the latest product boundary.
 
@@ -149,9 +149,9 @@ DUBSAR does not:
 
 ## Professional DUBSAR Audit
 
-The self-service portal does not require Sofiane to review every initial run.
-For organizations that need a guided mandate, the Professional DUBSAR Audit is
-available on request.
+The planned self-service portal is intended not to require Sofiane to review
+every initial run. While it is under construction, the Professional DUBSAR
+Audit remains available on request for organizations that need a guided mandate.
 
 It is a separate, human-led engagement for agreed work such as scoping,
 evidence review, interpretation, remediation planning or preparation of a
@@ -166,8 +166,8 @@ Requests can start through the
 
 ## Follow the validation
 
-The [public portal](https://app.dubsar.ai/audits) is under active validation.
-The public method and professional engagement are described at
-[dubsar.ai/audit](https://dubsar.ai/audit). Selective access to the controlled
-Claude Code beta is described at
+The portal is coming soon and remains unavailable while construction and
+validation continue. The public method and professional engagement are
+described at [dubsar.ai/audit](https://dubsar.ai/audit). Selective access to the
+controlled Claude Code beta is described at
 [dubsar.ai/early-access](https://dubsar.ai/early-access).

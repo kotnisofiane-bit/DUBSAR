@@ -10,7 +10,7 @@ DUBSAR connects facts, decisions and evidence across workflows. It makes inconsi
 
 DUBSAR currently has three distinct surfaces. They share one doctrine, but they do not have the same use or maturity level.
 
-[Open the audit portal](https://app.dubsar.ai/audits) · [Explore the audit](https://dubsar.ai/audit) · [Request beta access](https://dubsar.ai/early-access) · [Version française](README.fr.md)
+[Explore the audit](https://dubsar.ai/audit) · [Request beta access](https://dubsar.ai/early-access) · [Version française](README.fr.md)
 
 ---
 
@@ -18,7 +18,7 @@ DUBSAR currently has three distinct surfaces. They share one doctrine, but they 
 
 | Surface | Purpose | Current status |
 |---|---|---|
-| **Automated audit** | Examine a bounded set of automations, connect available events and prepare a reviewable report | Public portal under active validation |
+| **Automated audit** | Examine a bounded set of automations, connect available events and prepare a reviewable report | Portal under construction and validation; coming soon |
 | **Professional DUBSAR Audit** | Examine a project or automation under an agreed mandate, with authorized sources and human review | Available on request |
 | **DUBSAR for coding agents** | Govern a software project while AI coding agents help build it | Controlled private beta, Claude Code first |
 
@@ -32,7 +32,9 @@ These surfaces must remain distinct:
 
 ## 1. Automated audit
 
-The portal is DUBSAR’s current public commercial entry point.
+The public audit page is the current commercial entry point. The automated
+portal itself is under construction and validation and is not yet publicly
+available.
 
 The intended journey is straightforward:
 
@@ -44,7 +46,7 @@ The intended journey is straightforward:
 
 The journey aims to be self-service through the first report. Self-service does not mean automatic authority, certification or removal of human responsibility.
 
-[Open the audit portal](https://app.dubsar.ai/audits)
+[Explore the automated audit](https://dubsar.ai/audit)
 
 ---
 

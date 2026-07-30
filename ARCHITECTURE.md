@@ -6,7 +6,8 @@ This document describes the public product boundary. It deliberately omits priva
 
 DUBSAR is organized around three distinct delivery surfaces:
 
-- the automated audit portal, a public entry point under active validation;
+- the automated audit portal, coming soon and currently under construction and
+  validation;
 - the Professional DUBSAR Audit, available on request as a bounded,
   human-led engagement;
 - DUBSAR for Claude Code, a functional controlled private beta being finalized,
@@ -40,9 +41,8 @@ The intended sequence is:
 7. a human confirms, corrects or rejects proposed findings;
 8. the report preserves evidence, decisions and scope limits.
 
-The complete browser journey is still being consolidated. The portal is public
-under active validation, but that status is not a general-availability or
-production-readiness claim.
+The complete browser journey is still under construction and validation. The
+marketing website is public, but the portal is not currently available.
 
 ## Responsibility boundaries
 
@@ -52,13 +52,11 @@ production-readiness claim.
 
 ### DUBSAR Portal
 
-The controlled [DUBSAR Portal](https://app.dubsar.ai/audits) is the primary
-self-service audit surface. It is a public entry point under active validation.
-Public reachability does not establish that every browser path, connector,
-security boundary or operating condition is generally available or
-production-ready.
+The [DUBSAR Portal](https://dubsar.ai/audit) is the intended primary self-service
+audit surface. It is coming soon and is not currently available. Construction,
+end-to-end validation and security validation are in progress.
 
-It combines:
+The intended surface combines:
 
 - authentication and access control;
 - a conversational and task-oriented interface;
@@ -174,7 +172,7 @@ Rendering a report is not the same as authorizing a deployment, release or regul
 
 ## First Rule Pack
 
-The current public portal path centers on **Automation Coherence**.
+The planned initial portal path centers on **Automation Coherence**.
 
 Its current control families cover:
 
@@ -190,7 +188,9 @@ remains an active validation boundary.
 
 ### Portal users
 
-Business, operations, compliance and agency users work primarily through the portal. They define scope, inspect findings, make review decisions and access reports.
+Business, operations, compliance and agency users will work primarily through
+the portal once it becomes available. They will define scope, inspect findings,
+make review decisions and access reports.
 
 ### Technical administrators
 
@@ -287,7 +287,7 @@ It does not publish:
 ```text
 deterministic synthetic-fixture controls: internally validated
 recorded audit API path: internal evidence exists
-automated audit portal: public entry point under active validation
+automated audit portal: coming soon, under construction and validation, not available
 complete portal browser E2E proof: in progress
 professional DUBSAR Audit: available on request
 DUBSAR for Claude Code: functional controlled private beta being finalized

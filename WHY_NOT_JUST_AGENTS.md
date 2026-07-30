@@ -80,7 +80,7 @@ DUBSAR does not need to replace every workflow engine to provide that layer.
 
 ## Audit before orchestration
 
-The first product path is an audit.
+The intended first product path is an audit.
 
 Audit establishes:
 
@@ -92,6 +92,11 @@ Audit establishes:
 - which parts are not evaluable.
 
 Only after this baseline can continuous orchestration or policy enforcement be configured responsibly.
+
+The automated portal implementing this journey is coming soon and remains
+under development and validation. It is not currently available for public
+use. Professional DUBSAR Audit remains available on request; continuous
+governance through a local Node is not generally available.
 
 ## Human authority
 

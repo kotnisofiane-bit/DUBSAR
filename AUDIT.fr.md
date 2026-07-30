@@ -1,8 +1,9 @@
 # Audit DUBSAR
 
-Le portail automatisé d’Audit DUBSAR est un point d’entrée public en validation
-active. Il se distingue de l’Audit professionnel DUBSAR, disponible sur
-demande, et de la bêta privée contrôlée pour Claude Code.
+Le portail automatisé d’Audit DUBSAR sera bientôt disponible. Il est en cours de
+construction et de validation et n’est pas disponible actuellement. Il se
+distingue de l’Audit professionnel DUBSAR, disponible sur demande, et de la bêta
+privée contrôlée pour Claude Code.
 
 Sa première cible est un **audit borné de cohérence des automatisations** :
 connecter ou importer des preuves autorisées issues d’un système
@@ -70,19 +71,17 @@ production**. Les preuves actuelles n’établissent notamment pas tous les
 parcours, de la connexion et l’import jusqu’à la revue, au rechargement et à
 l’export du rapport, dans toutes les conditions d’exploitation prises en charge.
 
-Pendant la validation active :
+Pendant la construction et la validation active :
 
-- le portail reste un point d’entrée public dans les limites de validation
-  publiées ;
+- le portail reste indisponible au public ;
 - une preuve au niveau API ne doit pas être présentée comme un E2E d’interface ;
 - zéro constat signifie « aucun constat détecté dans le périmètre borné », et
   non « l’automatisation est conforme » ;
 - une source absente ou incomplète reste visible et peut rendre un contrôle non
   évaluable.
 
-L’accessibilité publique ne constitue pas, à elle seule, une promesse de
-disponibilité générale, de prise en charge universelle des connecteurs ou de
-mise en production.
+Le site marketing public décrit la méthode d’audit prévue ; il ne donne pas
+accès au portail.
 
 Consultez [l’état actuel](STATUS.md) pour connaître la frontière produit la plus
 récente.
@@ -162,9 +161,10 @@ DUBSAR :
 
 ## Audit professionnel DUBSAR
 
-Le portail autonome n’impose pas à Sofiane de revoir chaque première analyse.
-Pour les organisations qui ont besoin d’un mandat guidé, l’Audit professionnel
-DUBSAR est disponible sur demande.
+Le futur portail autonome est conçu pour ne pas imposer à Sofiane de revoir
+chaque première analyse. Pendant sa construction, l’Audit professionnel DUBSAR
+reste disponible sur demande pour les organisations qui ont besoin d’un mandat
+guidé.
 
 Il s’agit d’une prestation distincte et conduite par un humain pour des travaux
 convenus tels que le cadrage, la revue des preuves, l’interprétation, la
@@ -180,8 +180,8 @@ Une demande peut être initiée depuis la
 
 ## Suivre la validation
 
-Le [portail public](https://app.dubsar.ai/audits) est en validation active. La
-méthode publique et la prestation professionnelle sont décrites sur
-[dubsar.ai/fr/audit](https://dubsar.ai/fr/audit). L’accès sélectif à la bêta
-contrôlée Claude Code est présenté sur
+Le portail sera bientôt disponible et reste indisponible pendant sa construction
+et sa validation. La méthode publique et la prestation professionnelle sont
+décrites sur [dubsar.ai/fr/audit](https://dubsar.ai/fr/audit). L’accès sélectif
+à la bêta contrôlée Claude Code est présenté sur
 [dubsar.ai/fr/early-access](https://dubsar.ai/fr/early-access).

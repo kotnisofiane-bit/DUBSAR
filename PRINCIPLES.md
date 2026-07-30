@@ -44,9 +44,12 @@ When required identity, evidence, policy or approval is unavailable, a protected
 
 Fail-closed behavior remains targeted; harmless reads should not be blocked merely to look strict.
 
-## 11. The portal serves users
+## 11. The portal is designed for users
 
-The portal provides scope, progress, findings, evidence, human review and reports without requiring users to understand internal repositories or agent plumbing.
+The planned portal is intended to provide scope, progress, findings, evidence,
+human review and reports without requiring users to understand internal
+repositories or agent plumbing. It is coming soon and remains under
+development and validation; it is not currently available for public use.
 
 ## 12. Local administration stays local where needed
 

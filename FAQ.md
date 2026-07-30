@@ -9,10 +9,11 @@ missing information, keep deterministic controls separate from model
 explanations, and preserve explicit human authority over sensitive decisions.
 
 The current product has three distinct delivery surfaces: the automated audit
-portal, which is public under active validation; the Professional DUBSAR Audit,
-available on request; and DUBSAR for Claude Code, a functional controlled
-private beta being finalized. Continuous governance through an installed
-DUBSAR Node is a separate scoped path and is not generally available.
+portal, which is coming soon and remains under construction and validation; the
+Professional DUBSAR Audit, available on request; and DUBSAR for Claude Code, a
+functional controlled private beta being finalized. Continuous governance
+through an installed DUBSAR Node is a separate scoped path and is not generally
+available.
 
 ---
 
@@ -41,7 +42,7 @@ cross-system coherence questions without inventing causality.
 
 ## What is the first product surface?
 
-The first product surface is the DUBSAR audit portal.
+The first planned self-service product surface is the DUBSAR audit portal.
 
 Its initial target journey is:
 
@@ -52,9 +53,9 @@ Its initial target journey is:
 5. let a human mark it true, false or uncertain;
 6. generate an evidence-linked report.
 
-The portal is a public entry point under active validation. This target journey
-and its remaining validation work must not be presented as a claim of general
-availability or production readiness.
+The portal is coming soon and is not currently available. Its construction and
+validation are in progress, and this target journey must not be presented as an
+active service or a production-readiness claim.
 
 ---
 
@@ -115,9 +116,9 @@ It does not automate away responsibility:
 A Human Gate is an explicit, attributable decision at a protected point in the
 workflow.
 
-For the first portal audit, the human reviews the evidence shown for a candidate
-finding and records a disposition such as true, false or uncertain. A model
-cannot create that decision by claiming that approval occurred.
+For the planned first portal audit, the human will review the evidence shown for
+a candidate finding and record a disposition such as true, false or uncertain.
+A model cannot create that decision by claiming that approval occurred.
 
 Future continuous-governance paths may also use Human Gates before a sensitive
 business action is released.
@@ -142,13 +143,10 @@ See [Current status](STATUS.md).
 
 ## Is the portal publicly available?
 
-Yes. The [DUBSAR Portal](https://app.dubsar.ai/audits) is a public entry point
-under active validation.
-
-That status is narrower than general availability or production readiness. The
-complete browser journey and security boundary still require their own proofs,
-and a reachable deployment or working API route does not establish that every
-path or connector is supported.
+No. The [DUBSAR audit page](https://dubsar.ai/audit) is public, but the
+self-service portal is coming soon and is not currently available. Construction,
+complete browser-journey validation and security validation are still in
+progress.
 
 ---
 
@@ -180,7 +178,8 @@ as production-ready.
 
 ## What is the difference between the portal, Node and desktop?
 
-- **Portal:** the user-facing audit journey, evidence review and reports.
+- **Portal:** the planned user-facing audit journey, evidence review and reports;
+  coming soon and not currently available.
 - **DUBSAR Node:** the separately scoped installed boundary between selected customer
   systems and DUBSAR governance.
 - **Desktop:** the future administrative cockpit for technical operators to
@@ -280,10 +279,10 @@ the current audit.
 The public marketing website must not request connector credentials, tokens or
 source archives.
 
-The portal has a different data boundary. Its authentication, source imports,
-retention, deletion, logs, subprocessors and model-provider flows must be
-documented and validated before general availability. See [Privacy](PRIVACY.md)
-and [Security](SECURITY.md) for the published boundary.
+The planned portal has a different data boundary. Its authentication, source
+imports, retention, deletion, logs, subprocessors and model-provider flows must
+be documented and validated before it becomes available. See
+[Privacy](PRIVACY.md) and [Security](SECURITY.md) for the published boundary.
 
 ---
 
@@ -312,15 +311,13 @@ availability claim.
 
 ---
 
-## Is professional support required?
+## Is the Professional DUBSAR Audit available now?
 
-No. The public portal is a self-service surface and does not require a guided
-engagement.
-
-The Professional DUBSAR Audit is already available on request as a separate,
-human-led engagement for an agreed scope such as evidence review,
-interpretation, remediation planning or preparation of a separately scoped
-installation. Read-only collection remains the default. See the
+Yes. The self-service portal is still under construction, while the Professional
+DUBSAR Audit is available on request as a separate, human-led engagement for an
+agreed scope such as evidence review, interpretation, remediation planning or
+preparation of a separately scoped installation. Read-only collection remains
+the default. See the
 [audit boundary](AUDIT.md) or
 [Sofiane Kotni's Malt profile](https://www.malt.fr/profile/sofianekotni).
 
@@ -330,7 +327,8 @@ installation. Read-only collection remains the default. See the
 
 Status depends on the product surface:
 
-- the automated audit portal is public under active validation;
+- the automated audit portal is coming soon, under construction and validation,
+  and not currently available;
 - the Professional DUBSAR Audit is available on request;
 - DUBSAR for Claude Code is a functional controlled private beta being
   finalized, selective and Windows-first;
@@ -351,8 +349,7 @@ require their own end-to-end proofs.
 ## Where can I follow the project?
 
 Start with [dubsar.ai](https://dubsar.ai/), the
-[public portal](https://app.dubsar.ai/audits) and the
-[DUBSAR audit method](AUDIT.md). Professional audit requests can start at
-[dubsar.ai/audit](https://dubsar.ai/audit), while selective Claude Code beta
-access is described at
+[DUBSAR audit page](https://dubsar.ai/audit) and the
+[DUBSAR audit method](AUDIT.md). Professional audit requests can start on the
+audit page, while selective Claude Code beta access is described at
 [dubsar.ai/early-access](https://dubsar.ai/early-access).

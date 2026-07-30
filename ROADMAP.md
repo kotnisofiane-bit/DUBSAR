@@ -5,7 +5,8 @@ This roadmap describes the current product direction. It is not a delivery guara
 DUBSAR is a **portal-first audit and governance product for AI agents and
 business automations** with three distinct delivery surfaces today:
 
-- the automated audit portal, public under active validation;
+- the automated audit portal, coming soon and currently under construction and
+  validation;
 - the Professional DUBSAR Audit, available on request;
 - DUBSAR for Claude Code, a functional controlled private beta being finalized,
   selective and Windows-first.
@@ -17,7 +18,7 @@ The sequence is deliberate:
 
 ```text
 clean and reconcile the foundation
-  -> strengthen the public portal end-to-end proof
+  -> build and validate the portal end-to-end
   -> validate the portal with bounded external use
   -> add continuous governance through DUBSAR Node
   -> expand connectors and optional host adapters
@@ -84,9 +85,9 @@ Exit criteria:
 
 ## 2. Strengthen portal end-to-end proof
 
-The portal is already a public entry point under active validation. Its complete
-product proof must still be performed internally with non-sensitive fixtures
-before a stronger general-availability or production-readiness claim.
+The portal is not currently available. Construction and complete product
+validation must be performed internally with non-sensitive fixtures before any
+public availability or production-readiness claim.
 
 Required journey:
 
@@ -118,10 +119,11 @@ Exit criteria:
 
 ---
 
-## 3. Controlled public portal validation
+## 3. Controlled portal validation before availability
 
-The current public portal remains within a limited active-validation boundary
-while the internal end-to-end proof is completed.
+The portal remains unavailable while construction and the internal end-to-end
+proof are completed. A controlled validation stage follows before any broader
+availability claim.
 
 Initial perimeter:
 
@@ -134,10 +136,10 @@ Initial perimeter:
 - client-side validation of findings;
 - exportable report and evidence register.
 
-The portal should not require a manually accompanied audit for every user.
-Human assistance remains optional for qualification, interpretation or a
-broader mandate. The separate Professional DUBSAR Audit is available on request
-for organizations that want that human-led engagement.
+Once opened, the portal should not require a manually accompanied audit for
+every user. Human assistance may remain optional for qualification,
+interpretation or a broader mandate. The separate Professional DUBSAR Audit is
+available on request for organizations that want that human-led engagement.
 
 Exit criteria:
 
@@ -298,7 +300,7 @@ claimed for Codex or Cursor.
 foundation reconciliation: in progress
 first deterministic rule pack: internal validation
 full portal browser E2E: not yet proven
-automated audit portal: public entry point under active validation
+automated audit portal: coming soon, under construction and validation, not available
 professional DUBSAR Audit: available on request
 DUBSAR for Claude Code: functional controlled private beta being finalized
 coding-agent beta access: selective invitation, Windows first

@@ -1,18 +1,21 @@
 # Privacy Boundary
 
-This document describes the current public-validation boundary and the privacy
-questions that must be resolved before broader production use.
+This document describes the current public-information and pre-release boundary
+and the privacy questions that must be resolved before broader production use.
 
 It is not yet a final production privacy notice.
 
 ## Current availability
 
-The DUBSAR website and audit portal are publicly accessible under active
-validation. Professional DUBSAR Audit is available on request.
+The DUBSAR marketing website is publicly accessible. The automated audit portal
+is coming soon and is not currently available for public use; development and
+validation remain in progress. Professional DUBSAR Audit is available on
+request.
 
-This public entry point is not a claim of general availability or production
-readiness for every environment. No generally available connector package,
-local Node or production desktop is announced from this repository.
+The public website provides product information and does not provide access to
+the portal. DUBSAR for coding agents remains a controlled private beta. No
+generally available connector package, local Node or production desktop is
+announced from this repository.
 
 ## Data-minimization principle
 
@@ -40,8 +43,8 @@ A production portal privacy notice must document:
 - retention periods;
 - infrastructure and subprocessors.
 
-Open registration or broader production access must not be presented as
-available until these elements match the deployed implementation.
+Registration or public portal access must not be presented as available until
+these elements match the deployed implementation.
 
 ## Audit imports
 

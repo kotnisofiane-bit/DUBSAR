@@ -47,11 +47,11 @@ This is the gap DUBSAR addresses first.
 
 ## Audit comes before orchestration
 
-DUBSAR's first product path is not to replace n8n, an automation platform or an
-agent runtime.
+DUBSAR's intended first product path is not to replace n8n, an automation
+platform or an agent runtime.
 
-It begins with a portal audit because responsible governance needs an initial
-picture of the existing system:
+It is designed to begin with a portal audit because responsible governance
+needs an initial picture of the existing system:
 
 1. define an authorized scope;
 2. collect bounded evidence;
@@ -61,6 +61,10 @@ picture of the existing system:
 6. present proposed findings and their limitations;
 7. require a human decision;
 8. preserve a traceable report.
+
+The automated portal implementing this journey is coming soon. It remains
+under development and validation and is not currently available for public
+use.
 
 This first audit can later become the foundation for continuous governance:
 policy evaluation, recurring evidence collection, controlled orchestration and
@@ -124,9 +128,9 @@ and bounded agents to do repeatable preparation work.
 
 ---
 
-## Why a portal first?
+## Why build a portal first?
 
-The portal gives non-developer users a common place to:
+The planned portal is intended to give non-developer users a common place to:
 
 - define the audit scope;
 - provide authorized sources;
@@ -143,8 +147,8 @@ prototype and roadmap direction, not the first generally available product.
 
 DUBSAR for coding agents is a distinct controlled private-beta surface, with
 Claude Code first. Codex, Cursor and similar adapters remain future directions.
-This surface is real, but it is separate from the portal and is not DUBSAR's
-primary public commercial entry point.
+This surface is real, but it is separate from the planned portal and is not a
+generally available public product.
 
 ---
 
@@ -196,11 +200,17 @@ orchestration.
 
 ## Current boundary
 
-Today, the audit portal is public under active validation. Deterministic
-controls and an API-backed audit path have internal technical evidence. The
-complete end-to-end portal journey, production connectors, continuous policy
-enforcement and local administration Node still require further implementation
-and end-user validation.
+Today, the DUBSAR marketing website and public documentation are publicly
+available. The automated audit portal is coming soon: it remains under
+development and validation and is not currently available for public use.
+Deterministic controls and an API-backed audit path have internal technical
+evidence. The complete end-to-end portal journey, production connectors,
+continuous policy enforcement and local administration Node still require
+further implementation and end-user validation.
+
+Professional DUBSAR Audit remains available on request. DUBSAR for coding
+agents remains a controlled private beta. No generally available Node
+deployment is currently claimed.
 
 DUBSAR distinguishes a prototype interface, an API proof and a real user
 journey. Public claims will follow the evidence.

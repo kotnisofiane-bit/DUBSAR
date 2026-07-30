@@ -53,6 +53,10 @@ authorized sources
 
 This baseline can later support continuous observation, policy decisions and controlled orchestration.
 
+The automated portal intended to support this journey is coming soon. It
+remains under development and validation and is not currently available for
+public use. Professional DUBSAR Audit remains available on request.
+
 ## Agents should have roles, not sovereignty
 
 DUBSAR uses specialized agent roles because different perspectives are useful.

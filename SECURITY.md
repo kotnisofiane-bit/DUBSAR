@@ -33,8 +33,8 @@ A secure exchange channel can be agreed after initial contact.
 Reports may concern:
 
 - this public documentation repository;
-- public website behavior;
-- publicly exposed DUBSAR endpoints;
+- public marketing website behavior;
+- unexpected exposure or access-control failure on a DUBSAR endpoint;
 - authentication or authorization boundaries;
 - accidental data or secret exposure;
 - published adapter staging material.
@@ -59,9 +59,9 @@ These are design requirements. They are not a claim that a public production sec
 
 ## Portal boundary
 
-The portal is publicly accessible under active validation. Before it is
-presented as production-ready, or access is broadened beyond that validation
-boundary, DUBSAR must validate:
+The automated audit portal is coming soon. It remains under development and
+validation and is not currently available for public use. Before any public
+portal access is opened, DUBSAR must validate:
 
 - registration and authentication;
 - tenant and project isolation;
