@@ -1,68 +1,182 @@
 # Status
 
-DUBSAR is an active product and professional audit system. Its two current paths have different maturity levels and must not be conflated.
+DUBSAR is an active governance and audit system with three distinct public surfaces:
+
+1. an automated audit portal;
+2. a bounded professional audit service;
+3. a private-beta product for software projects built with coding agents.
+
+They share one evidence and human-authority doctrine, but they do not have the same delivery model or maturity level.
+
+## Current status at a glance
 
 | Surface | Current status |
 |---|---|
+| Automated audit portal | Public entry point under active validation |
+| Professional DUBSAR Audit | Available on request |
 | DUBSAR for Claude Code | Functional controlled private beta being finalized |
-| External beta access | Selective, on invitation, after compatibility review |
-| Public Marketplace | Not activated or announced |
-| DUBSAR Audit | Professional service available on request |
-| Codex / Cursor adapters | Future product direction, not currently available |
-| Private Core | Proprietary, active development, not distributed here |
+| External coding-agent beta access | Selective, invitation only, Windows first |
+| Public Claude Code Marketplace | Not active or announced |
+| Continuous governance / DUBSAR Node | Separate scoped deployment path; not generally available |
+| Codex / Cursor adapters | Future direction, not currently available |
+| Private DUBSAR Core | Proprietary, under active development, not distributed here |
+
+These statuses must not be conflated.
 
 ---
 
-## Product status
+## 1. Automated audit portal
 
-DUBSAR for Claude Code combines:
+The DUBSAR portal is the current public commercial entry point.
 
-- a Claude Code plugin;
-- a local Bridge and DUBSAR Desktop runtime;
-- a protected Backend and private Core;
-- persistent Mission and workspace continuity;
+Its intended journey is:
+
+1. define a bounded perimeter;
+2. identify the automations, period and authorized sources;
+3. connect available events without inventing causality;
+4. surface inconsistencies, uncertainty and missing information;
+5. let the designated owner classify the findings;
+6. produce a report that keeps evidence, limitations and validations connected.
+
+The portal is publicly accessible and remains under active validation.
+
+The current status does not imply that:
+
+- every connector or client environment is supported;
+- every automation can be fully reconstructed;
+- an inconsistency is automatically a confirmed failure;
+- the portal produces a legal or regulatory compliance verdict;
+- the portal has autonomous authority over client systems;
+- production-grade availability has been established for every use case.
+
+The target is a clear first result with explicit coverage and human validation.
+
+[Open the audit portal](https://app.dubsar.ai/audits) · [Audit overview](https://dubsar.ai/audit)
+
+---
+
+## 2. Professional DUBSAR Audit
+
+Professional DUBSAR Audit is available on request.
+
+It is a bounded engagement operated by Sofiane with:
+
+- an agreed mandate;
+- explicitly authorized sources;
+- read-only access by default;
+- DUBSAR evidence, contradiction and decision records;
+- human classification and review;
+- a professional report and evidence register.
+
+The primary audit mandates are:
+
+- **launch readiness** — is the product genuinely ready to open to users?
+- **agent governance** — can the team explain and verify how the project was built and approved?
+
+A professional audit is not the same as an automated portal diagnostic.
+
+Each engagement requires explicit agreement on:
+
+- scope;
+- permissions;
+- sources;
+- access limitations;
+- retention;
+- timing;
+- price.
+
+No final conclusion is delivered without human review.
+
+[Professional audit method](AUDIT.md) · [Request support on Malt](https://www.malt.fr/profile/sofianekotni)
+
+---
+
+## 3. DUBSAR for coding agents
+
+DUBSAR for coding agents is a governance layer for long-running, multi-session software projects assisted by AI coding agents.
+
+Claude Code is the first integration and the current engineering focus.
+
+The current private-beta product combines:
+
+- a thin Claude Code host adapter;
+- a local Bridge;
+- DUBSAR Desktop and its local runtime;
+- a protected Backend;
+- a private DUBSAR Core;
+- persistent Mission and decision memory;
 - canonical session identity;
-- lots and execution contracts;
-- evidence boundaries and Human Gates;
+- evidence boundaries;
+- contradiction handling;
+- explicit Human Gates;
 - a human-facing cockpit.
 
 Internal Windows proofs have completed:
 
 - one real governed Claude Code session;
-- two sessions linked to the same canonical Mission;
+- two sessions linked to one canonical Mission;
 - distinct identities, processes and worktrees;
-- separated evidence and explicit conflict handling;
+- separated evidence;
+- explicit conflict handling;
 - single-use authorization behavior;
-- process control and restart reconciliation.
+- process control;
+- restart reconciliation.
 
-These results prove important technical capabilities. They do not yet prove that an external user can independently install, understand and operate the full product journey.
+These results establish important technical capabilities.
 
-The current validation target is therefore a reproducible Windows path from approved installation to Mission, governed work, evidence, Human Gate, restart and resume.
+They do not yet establish that an external user can independently install, understand and operate the complete product journey.
+
+The current validation target is a reproducible Windows path from approved installation to:
+
+```text
+Mission
+    ↓
+Governed work
+    ↓
+Evidence
+    ↓
+Human Gate
+    ↓
+Restart and resume
+```
+
+External access remains selective and invitation based.
+
+[Product surfaces](PRODUCT_SURFACES.md) · [Request beta access](https://dubsar.ai/early-access)
 
 ---
 
-## Audit-service status
+## Continuous governance and DUBSAR Node
 
-DUBSAR Audit is a professional service available on request. It is operated with a bounded mandate, authorized sources, read-only access by default and human validation.
+Continuous governance is a separate deployment path that may follow an audit when the need is established.
 
-Current audit modes:
+A DUBSAR Node is intended to apply declared controls inside an authorized client environment.
 
-- launch readiness;
-- agent governance.
+It is not automatically included with:
 
-The service can use DUBSAR with existing client sources without claiming that the client is deploying the private-beta product as an enterprise platform.
+- a portal diagnostic;
+- an audit report;
+- access to the coding-agent beta.
 
-The audit method, report framework and operator workflow have been prepared. Each real engagement still requires explicit agreement on scope, permissions, sources, retention, timing and price.
+A Node must not create its own authority. It can evaluate or apply declared rules only within an agreed perimeter and must surface a Human Gate when protected authorization is required.
 
-See [DUBSAR Audit](AUDIT.md).
+No generally available Node installation or enterprise deployment is currently claimed.
 
 ---
 
 ## Platform and integration status
 
+### Web portal
+
+Public entry point under active validation.
+
+Its availability does not change the maturity status of the installable coding-agent product.
+
 ### Windows
 
-First controlled private-beta target. Packaging and the autonomous external-tester journey are being finalized.
+First controlled private-beta target for DUBSAR for coding agents.
+
+Packaging and the autonomous external-tester journey are still being finalized.
 
 ### Linux
 
@@ -70,11 +184,11 @@ Planned for later validation. No Linux beta is currently announced.
 
 ### macOS
 
-Not currently announced. Feasibility, packaging, signing and runtime behavior must be evaluated first.
+Not currently announced. Packaging, signing and runtime behavior remain to be evaluated.
 
 ### Claude Code
 
-First product integration and current engineering focus.
+First coding-agent integration and current engineering focus.
 
 ### Codex, Cursor and other agents
 
@@ -84,11 +198,21 @@ Future host-adapter direction. No operational public support is currently claime
 
 ## Public distribution status
 
-- This repository is the intended public documentation and future Marketplace home.
-- The thin Claude Code plugin source is staged, but its final publication pin is not approved.
-- No supported public installation command is active.
-- No public product release or production deployment is claimed.
-- The repository still has a legacy GitHub name; renaming is a separate human action.
+This repository is the public documentation and distribution boundary for DUBSAR.
+
+Current distribution status:
+
+- the repository is publicly available as `kotnisofiane-bit/DUBSAR`;
+- public doctrine, architecture and bounded examples are available;
+- the thin Claude Code adapter is being prepared for controlled distribution;
+- no supported public installation command is active;
+- no public Marketplace release is active;
+- no generally available coding-agent product release is claimed;
+- the private Core is not distributed here.
+
+The repository can be referenced as public documentation.
+
+It must not be presented as proof that the coding-agent product is already generally installable or production ready.
 
 ---
 
@@ -96,13 +220,54 @@ Future host-adapter direction. No operational public support is currently claime
 
 DUBSAR is not currently presented as:
 
-- a generally available or production-ready software product;
-- an autonomous coding, merge, release or approval authority;
+- a universally supported automation platform;
+- a generally available coding-agent product;
+- an autonomous approval, merge, release or deployment authority;
+- a substitute for client technical authority;
 - a certified compliance or security system;
 - an operational Codex or Cursor integration;
 - a public release of the private Core;
 - a guarantee that an audited product is defect-free or secure.
 
-The professional audit service being available does not change these product boundaries.
+DUBSAR can support evidence organization, traceability and human-oversight documentation relevant to AI Act readiness.
 
-Any stronger product-readiness claim requires verified evidence and an explicit Human GO.
+It does not provide legal advice, issue certification or replace a qualified legal or conformity assessment.
+
+---
+
+## Promotion gates
+
+A stronger availability claim requires evidence appropriate to the surface concerned.
+
+### Automated audit portal
+
+Before a broader production-readiness claim:
+
+- critical journeys must be reproducible;
+- connector and coverage limits must be explicit;
+- findings and reports must remain reviewable;
+- errors and unavailable sources must fail visibly;
+- human validation must remain enforceable.
+
+### Professional audit
+
+Each engagement requires:
+
+- an agreed mandate;
+- explicit source authorization;
+- defined retention and permissions;
+- human review;
+- an agreed deliverable, timing and price.
+
+### Coding-agent product
+
+Before general availability:
+
+- external installation must be reproducible;
+- supported Windows versions must be explicit;
+- packaging and update behavior must be validated;
+- security and privacy boundaries must be reviewable;
+- the complete Mission-to-resume journey must be validated by external testers;
+- Marketplace publication requires an explicit Human GO.
+
+No stronger claim should be inferred from internal technical proofs alone.
