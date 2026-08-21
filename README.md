@@ -183,6 +183,13 @@ notices. See [Rights and Licensing Status](RIGHTS.md).
 2. [DUBSAR Audit](AUDIT.md)
 3. [Why DUBSAR?](WHY_DUBSAR.md)
 4. [Public skills](https://github.com/kotnisofiane-bit/dubsar-agent-skills)
+5. [Target / reference architecture documentation](https://github.com/kotnisofiane-bit/dubsar-docs)
+
+The companion
+[dubsar-docs](https://github.com/kotnisofiane-bit/dubsar-docs)
+repository is **target / reference architecture documentation**. It is not a
+supported DUBSAR installation, not a statement of general availability, and
+not proof of deployment.
 
 ### Trust
 
