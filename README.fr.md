@@ -190,6 +190,13 @@ licences et notices. Voir [Droits et statut des licences](RIGHTS.md).
 2. [Audit DUBSAR](AUDIT.fr.md)
 3. [Pourquoi DUBSAR ?](WHY_DUBSAR.md)
 4. [Skills publics](https://github.com/kotnisofiane-bit/dubsar-agent-skills)
+5. [Documentation d’architecture cible / de référence](https://github.com/kotnisofiane-bit/dubsar-docs)
+
+Le dépôt compagnon
+[dubsar-docs](https://github.com/kotnisofiane-bit/dubsar-docs)
+est une **documentation d’architecture cible / de référence**. Il ne
+constitue ni une installation prise en charge de DUBSAR, ni une disponibilité
+générale, ni une preuve de déploiement.
 
 ### Confiance
 
