@@ -34,9 +34,10 @@ A DUBSAR audit or governance case needs a persistent identity.
 That identity provides the durable context within which scope, source versions,
 executions, findings, evidence and Human Gates can be related across time.
 
-When the portal becomes available, a portal session may end and an evidence
-source may change or reconnect. The governed case should remain identifiable
-and its evidence path reproducible.
+A Personal session may end, an agent or provider may change, and an evidence
+source may reconnect. The mission should remain identifiable and its recorded
+evidence path reviewable. Memory supports continuity; it does not create
+permissions, source freshness or mission completion.
 
 ---
 

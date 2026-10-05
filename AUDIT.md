@@ -1,5 +1,10 @@
 # DUBSAR Audit
 
+> **Historical product phase — superseded.** This page records the earlier
+> portal-first audit direction. Its offers, availability statements and
+> sequencing are historical, not current product claims. Use [README](README.md),
+> [Status](STATUS.md) and [Legacy](LEGACY.md) for the current direction.
+
 The automated DUBSAR Audit portal is coming soon. It is under construction and
 validation and is not currently available. It is distinct from the Professional
 DUBSAR Audit, available on request as a bounded human-led engagement.
@@ -164,5 +169,5 @@ The portal is coming soon and remains unavailable while construction and
 validation continue. The public method and professional engagement are
 described at [dubsar.ai/audit](https://dubsar.ai/audit). Public doctrine and
 bounded local helpers are available separately in the MIT-licensed
-[dubsar-agent-skills](https://github.com/kotnisofiane-bit/dubsar-agent-skills)
+`dubsar-agent-skills` (historical name; see [Legacy](LEGACY.md))
 repository; they are not the DUBSAR product or runtime.

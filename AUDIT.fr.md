@@ -1,5 +1,10 @@
 # Audit DUBSAR
 
+> **Phase produit historique — remplacée.** Cette page conserve l’ancienne
+> direction centrée sur l’audit. Ses offres, disponibilités et priorités sont
+> historiques et ne décrivent pas le produit actuel. Voir [README](README.fr.md),
+> [État actuel](STATUS.md) et [Historique](LEGACY.md).
+
 Le portail automatisé d’Audit DUBSAR sera bientôt disponible. Il est en cours de
 construction et de validation et n’est pas disponible actuellement. Il se
 distingue de l’Audit professionnel DUBSAR, disponible sur demande sous la forme
@@ -180,5 +185,5 @@ et sa validation. La méthode publique et la prestation professionnelle sont
 décrites sur [dubsar.ai/fr/audit](https://dubsar.ai/fr/audit). La doctrine
 publique et des assistants locaux bornés sont disponibles séparément dans le
 dépôt MIT
-[dubsar-agent-skills](https://github.com/kotnisofiane-bit/dubsar-agent-skills) ;
+`dubsar-agent-skills` (nom historique ; voir [Historique](LEGACY.md)) ;
 ils ne constituent ni le produit DUBSAR ni son runtime.

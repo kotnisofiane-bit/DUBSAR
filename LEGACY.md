@@ -1,6 +1,7 @@
 # Legacy material
 
-DUBSAR is the current public product.
+DUBSAR is the current public project: a control plane for durable, governed
+agentic work, expressed through Personal and Control Plane.
 
 This repository preserves selected historical material created under the names SCRIBE and Scribe Builder. That material remains visible for engineering history, not as current product documentation.
 
@@ -20,6 +21,38 @@ Use these documents for the current DUBSAR product:
 - [`INSTALLATION.md`](INSTALLATION.md)
 
 ---
+
+## Historical audit product phase
+
+The portal-first phase presented an automated audit portal, Professional
+DUBSAR Audit and AI Act / audit readiness as the public entry path. That phase
+is superseded by the Personal / Control Plane direction.
+
+Retained pages are explicitly historical:
+
+- [Audit method — English](AUDIT.md);
+- [Audit method — French](AUDIT.fr.md);
+- the R3 record retained in [Public realignment audit](PUBLIC_REALIGNMENT_AUDIT.md);
+- earlier entries in [Changelog](CHANGELOG.md);
+- [README and social-preview artwork](brand/README.md).
+
+Their old offers, “coming soon” statements and audit-first sequencing do not
+describe current availability. Provenance, evidence coverage, read-only audit
+collection and human review remain useful lessons.
+
+## Changed public links
+
+The old GitHub path `kotnisofiane-bit/dubsar-agent-skills` now redirects to
+`kotnisofiane-bit/dubsar-memory`. It must not be labelled as a current
+public-skills collection. The actual Memory component and its technical-preview
+limits are linked under [Technical components](README.md#technical-components).
+
+The separate
+[dubsar-docs](https://github.com/kotnisofiane-bit/dubsar-docs)
+repository remains public target / reference documentation for the earlier
+portal, Gateway and audit direction. Its product-status narrative is not yet
+aligned with this root. It is neither current component source nor proof of
+a live integrated platform. No change to that repository is part of this lot.
 
 ## Historical product names
 

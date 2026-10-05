@@ -36,26 +36,15 @@ DUBSAR separates:
 - missing information from positive findings;
 - human decisions from technical credentials.
 
-## Audit comes first
+## Work must remain durable
 
-Before governing an automation continuously, understand it.
+An agent session should not own the mission. Software preserves state,
+evidence and decisions across sessions and provider changes. Bounded Judgment
+proposes a next cognitive move; explicit authority governs its effects.
 
-The first DUBSAR journey is a bounded audit:
-
-```text
-authorized sources
-→ frozen evidence
-→ deterministic controls
-→ specialized agent roles
-→ human review
-→ traceable report
-```
-
-This baseline can later support continuous observation, policy decisions and controlled orchestration.
-
-The automated portal intended to support this journey is coming soon. It
-remains under development and validation and is not currently available for
-public use. Professional DUBSAR Audit remains available on request.
+Personal and Control Plane express this common architecture. Their current
+integration status is documented in [STATUS.md](STATUS.md). The earlier
+audit-first direction is retained in [LEGACY.md](LEGACY.md).
 
 ## Agents should have roles, not sovereignty
 

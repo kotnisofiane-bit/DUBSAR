@@ -1,21 +1,28 @@
 # DUBSAR brand assets
 
-This directory contains the canonical public identity assets used by this repository.
+This directory preserves DUBSAR identity assets and historical product artwork.
+
+The mark and app icons remain identity assets. The README headers and GitHub
+social-preview SVG / PNG pairs describe the **historical portal-first audit
+phase**. Their slogans and availability claims are superseded by
+[`README.md`](../README.md) and [`STATUS.md`](../STATUS.md).
+The current README does not embed them. They must not be reused as current
+product-status artwork.
 
 | Asset | Purpose |
 |---|---|
 | `dubsar-mark.svg` | Transparent checkpoint mark for compact placements |
 | `dubsar-app-icon.svg` | Square DUBSAR identity source |
 | `dubsar-app-icon-{32,64,128,256,512,1024}.png` | Ready-to-use transparent PNG icon sizes |
-| `dubsar-readme-header.svg` | English README header |
-| `dubsar-readme-header-fr.svg` | French README header |
-| `dubsar-github-social-preview.svg` | Source artwork for repository sharing cards |
-| `dubsar-readme-header.png` | Current English README header export |
-| `dubsar-readme-header-fr.png` | Current French README header export |
-| `dubsar-github-social-preview.png` | Current repository sharing-card export |
+| `dubsar-readme-header.svg` | Historical English README header |
+| `dubsar-readme-header-fr.svg` | Historical French README header |
+| `dubsar-github-social-preview.svg` | Historical source artwork for repository sharing cards |
+| `dubsar-readme-header.png` | Historical English README header export |
+| `dubsar-readme-header-fr.png` | Historical French README header export |
+| `dubsar-github-social-preview.png` | Historical repository sharing-card export |
 
-The three PNG exports above are generated from the aligned SVG sources and
-carry the same current availability claims.
+The three PNG exports above preserve the same earlier claims as their SVG
+sources. They are retained for history, not regenerated as current artwork.
 
 ## Identity rule
 

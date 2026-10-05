@@ -27,8 +27,8 @@ They must not be interpreted as evidence of:
 - publication of private DUBSAR implementation.
 
 The earlier experiments informed DUBSAR's evidence, identity and human-authority
-doctrine. The current delivery surfaces are the automated audit portal, coming
-soon, and the Professional DUBSAR Audit, available on request.
+doctrine. The current direction is Personal and Control Plane; see the root
+documentation for the architecture and integration status.
 
 No mock or historical image in this folder should be presented as a capture of
 a currently shipped product.

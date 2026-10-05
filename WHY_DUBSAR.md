@@ -1,213 +1,63 @@
 # Why DUBSAR?
 
-DUBSAR began with a broader question than code generation:
+An agent can perform a useful task without preserving the work around it.
+A later session may inherit a plausible summary but lose the objective,
+constraints, source versions, unresolved questions or authority behind an
+action.
 
-> How can people remain in control when work is distributed across
-> automations, AI agents, tools and sessions?
+DUBSAR exists to make that work durable and governable across agents,
+tools, sessions and model providers.
 
-The first experiments focused on coding agents. They exposed a general problem
-that also exists in business automation: actions can be fast and locally
-reasonable while their origin, evidence and approval path become difficult to
-reconstruct.
+## Continuity belongs to the work
 
-DUBSAR is now being developed as an evidence-first audit and governance layer
-for business automations and AI agents.
+The mission should remain identifiable when an agent stops. Resumption needs
+more than conversation history: it needs canonical work state, relevant
+memory, evidence references and explicit decisions.
 
-[Back to the README](README.md) · [Version française](README.fr.md)
+Personal brings these responsibilities into one Desktop experience.
+Users should be able to change agents or model providers without losing the
+work itself. This remains an integration objective, not a public release.
 
----
+## Reality and judgment have different owners
 
-## Automation creates an evidence problem
+Deterministic software preserves what was recorded and validates state,
+evidence and permissions. Models interpret bounded context and propose a
+next cognitive move. Judgment has no authority.
 
-A business action may depend on:
+A persuasive explanation cannot establish source freshness, grant permission
+or prove that an external effect occurred. Software must keep observations,
+inferences, unsupported declarations and missing evidence distinguishable.
 
-- a workflow version;
-- data from one or more business systems;
-- a prompt or agent instruction;
-- a model response;
-- a retry or idempotency mechanism;
-- an approval rule;
-- a human decision.
+## Authority must be explicit
 
-The tools executing those steps may each record part of the story. Few preserve
-the whole decision path in one bounded, reviewable form.
+Prompt wording is not an authorization mechanism. For heavier workloads,
+Control Plane separates a Human / Core decision, signed permission or Task
+Lease, runtime admission, durable handoff and bounded execution.
 
-As a result, an organization can know that an action happened without being
-able to show precisely:
+This separation addresses concrete failures: agent-held provider credentials,
+self-approval, ambiguous crash recovery, duplicate executions and unsupported
+completion claims. The reference architecture defines these requirements;
+complete live qualification is not claimed.
 
-- why it happened;
-- whether it was compatible with the known business state;
-- whether the same event triggered it twice;
-- which evidence was missing;
-- whether a required human validation was actually captured.
+## Humans need a usable decision boundary
 
-This is the gap DUBSAR addresses first.
+A consequential decision needs an attributable owner, bounded scope,
+supporting evidence, visible uncertainty and a record of the effect being
+authorized. Human Gates make that decision explicit.
 
----
+An execution can succeed while the mission remains incomplete. A human
+approval can authorize an action while evidence remains partial. Neither
+event manufactures proof.
 
-## Audit comes before orchestration
+## What the earlier phases contributed
 
-DUBSAR's intended first product path is not to replace n8n, an automation
-platform or an agent runtime.
+Coding-agent experiments contributed continuity, execution identity and
+Human Gate patterns. The audit phase sharpened provenance, coverage,
+contradiction handling and the distinction between claims and evidence.
 
-It is designed to begin with a portal audit because responsible governance
-needs an initial picture of the existing system:
+Those lessons remain useful. The earlier portal-first and professional-audit
+surfaces no longer define the current product direction.
+[LEGACY.md](LEGACY.md) preserves that context.
 
-1. define an authorized scope;
-2. collect bounded evidence;
-3. freeze a reproducible snapshot;
-4. apply deterministic controls;
-5. use specialized agents only within explicit roles;
-6. present proposed findings and their limitations;
-7. require a human decision;
-8. preserve a traceable report.
-
-The automated portal implementing this journey is coming soon. It remains
-under development and validation and is not currently available for public
-use.
-
-This first audit may later help determine whether a separate continuous
-governance scope is justified. No architecture, distribution, support or
-licensing decision is selected or promised for that possible direction.
-
----
-
-## Why a deterministic Core?
-
-An agent can inspect context, explain a contradiction and propose a course of
-action. It should not be the sole authority deciding whether its own work is
-valid.
-
-The private DUBSAR Core is intended to preserve:
-
-- canonical identities and state;
-- evidence snapshots and digests;
-- deterministic control execution;
-- decision and review records;
-- explicit Human Gates;
-- the distinction between facts, inferences and unavailable evidence.
-
-This provides a stable authority boundary around probabilistic systems.
-
-**Model output is input to governance, not governance itself.**
-
----
-
-## Why Hermes roles?
-
-Hermes provides specialized agent roles within a bounded assignment. Depending
-on the audit, a role may collect, inspect, explain, challenge or summarize
-material.
-
-Those roles are useful because an audit often requires several perspectives.
-They remain non-authoritative:
-
-- they cannot rewrite the frozen evidence;
-- they cannot declare missing evidence verified;
-- they cannot approve their own conclusions;
-- they cannot bypass the deterministic Core or a Human Gate.
-
-The value is not “more agents.” The value is role separation under a stable
-control system.
-
----
-
-## Why human review?
-
-Automation evidence is often incomplete. Business meaning may depend on facts
-that no connector can observe.
-
-DUBSAR therefore treats findings as proposals until a human reviewer confirms,
-corrects or rejects them. The review must keep the evidence, scope and decision
-path linked.
-
-This does not transfer every task back to a human. It reserves human authority
-for interpretation and protected decisions while allowing deterministic checks
-and bounded agents to do repeatable preparation work.
-
----
-
-## Why build a portal first?
-
-The planned portal is intended to give non-developer users a common place to:
-
-- define the audit scope;
-- provide authorized sources;
-- inspect evidence and proposed findings;
-- record decisions;
-- retrieve a bounded report.
-
-It separates the business audit experience from the technical administration
-surface.
-
-Continuous governance or installed components may be considered later under a
-separate scope. Their architecture, data placement, distribution, support and
-licensing are undecided and not promised.
-
-Earlier coding-agent experiments helped establish the evidence and authority
-doctrine. They are now paused as a product direction and are not a current
-commercial surface, active beta or supported integration.
-
----
-
-## Why keep the Core private?
-
-Public doctrine, schemas and bounded examples can remain inspectable. The
-deterministic authority model and proprietary decision mechanisms need a
-consistent protected implementation.
-
-The private Core owns canonical governance state. This public repository
-documents the product boundary; it does not publish the private engine or a
-current integration component.
-
-Using open-source components such as Hermes does not imply that the complete
-DUBSAR product is distributed under one open-source license.
-
----
-
-## Regulatory relevance without a certification claim
-
-Governance regulations, including the EU AI Act, increase the importance of
-inventory, traceability, human oversight, evidence provenance and documented
-decisions.
-
-DUBSAR is designed to help structure technical evidence relevant to that work.
-It does not certify regulatory compliance, perform a legal conformity
-assessment, or replace legal and compliance professionals.
-
-The distinction is important: software can help collect and preserve evidence;
-it cannot make every legal conclusion automatically.
-
----
-
-## What success would look like
-
-DUBSAR succeeds if an organization can move from:
-
-> “The automation ran, but we cannot fully explain why.”
-
-to:
-
-> “Here is the bounded evidence, the deterministic control that fired, the
-> agent analysis, the human decision, and the limits of what was observed.”
-
-That is the foundation for accountable automation and, later, controlled
-orchestration.
-
----
-
-## Current boundary
-
-Today, the DUBSAR marketing website and public documentation are publicly
-available. The automated audit portal is coming soon: it remains under
-development and validation and is not currently available for public use.
-Deterministic controls and an API-backed audit path have internal technical
-evidence. The complete end-to-end portal journey and production evidence-source
-coverage still require further implementation and end-user validation.
-
-Professional DUBSAR Audit remains available on request. Earlier coding-agent
-packaging is paused and no active beta or generally available installed
-component is currently claimed.
-
-DUBSAR distinguishes a prototype interface, an API proof and a real user
-journey. Public claims will follow the evidence.
+For the current responsibility model, read [Architecture](ARCHITECTURE.md).
+For what is acquired and what remains in integration, read [Status](STATUS.md).

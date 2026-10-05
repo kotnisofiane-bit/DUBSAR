@@ -1,229 +1,161 @@
-<p align="center">
-  <img src="brand/dubsar-readme-header-fr.svg" alt="DUBSAR — Gouverner le passage de l’intention à la preuve. Conserver l’autorité humaine." width="100%" />
-</p>
-
 # DUBSAR
 
-**Auditez vos automatisations. Gouvernez ce qui agit.**
+**Un control plane pour du travail agentique durable et gouverné.**
 
-DUBSAR relie les faits, les décisions et les preuves des systèmes d’agents IA
-et des automatisations. Le système rend les incohérences visibles, conserve les
-limites de couverture et remet la validation au responsable humain désigné.
+Les agents réalisent le travail. DUBSAR conserve l’état durable des missions,
+les preuves, l’état opérationnel, le jugement borné et l’autorité explicite
+hors de l’agent lui-même. Le travail doit survivre à une fin de session, à un
+crash ou à un changement d’agent ou de fournisseur de modèle.
 
-La direction publique actuelle repose sur deux surfaces :
+> Le logiciel porte la réalité.
+> Le modèle porte le jugement.
+> Les humains conservent l’autorité sur les effets conséquents.
 
-1. un portail d’audit automatisé, en construction et bientôt disponible ;
-2. un audit professionnel DUBSAR borné, disponible sur demande.
+Ce dépôt est le **point d’entrée public canonique** de DUBSAR. Il reste une
+racine documentaire technique, sans code applicatif ni version Personal
+publiquement installable. Le développement est actif ; des tests de
+composants ne constituent ni un produit intégré ni une disponibilité générale.
 
-[Découvrir l’audit](https://dubsar.ai/fr/audit) ·
-[Skills publics](https://github.com/kotnisofiane-bit/dubsar-agent-skills) ·
-[État actuel](STATUS.md) ·
+[État actuel](STATUS.md) · [Architecture](ARCHITECTURE.md) ·
 [English version](README.md)
 
----
+## Pourquoi DUBSAR existe
 
-## Deux surfaces, une même méthode
+Une session d’agent peut produire un résultat utile tout en perdant la mission,
+ses contraintes, les preuves d’une décision ou l’autorité nécessaire pour agir.
+L’historique de conversation et les logs d’exécution ne suffisent pas à
+conserver ce travail.
 
-| Surface | Usage | Statut actuel |
-|---|---|---|
-| **Portail d’audit automatisé** | Examiner un périmètre d’automatisations, relier les événements disponibles et préparer un rapport validable | En construction et en validation ; bientôt disponible |
-| **Audit professionnel DUBSAR** | Examiner un projet ou une automatisation sous mandat, avec sources autorisées et revue humaine | Disponible sur demande |
+DUBSAR sépare ce qui est connu, proposé, autorisé et réellement observé.
+Réussite d’exécution, réussite de mission et preuve restent distinctes.
+Voir [Pourquoi DUBSAR ?](WHY_DUBSAR.md) et
+[Pourquoi pas seulement des agents ?](WHY_NOT_JUST_AGENTS.md).
 
-Le portail est destiné à préparer un premier résultat structuré. L’audit
-professionnel ajoute un mandat convenu, une analyse opérateur et une revue
-humaine. Aucune de ces surfaces n’est destinée à produire automatiquement un
-verdict juridique ou réglementaire.
+## Une architecture, deux environnements
 
-### Portail d’audit automatisé
-
-La page publique de l’audit constitue le point d’entrée produit actuel. Le
-portail lui-même n’est pas encore accessible au public.
-
-Le parcours visé est le suivant :
-
-1. définir les automatisations, la période et les sources autorisées ;
-2. relier les événements disponibles sans inventer de causalité ;
-3. signaler les incohérences, incertitudes et informations manquantes ;
-4. faire classer les constats par le responsable désigné ;
-5. produire un rapport où preuves, limites et validations restent reliées.
-
-L’autonomie ne signifie ni décision automatique, ni certification, ni
-suppression de la responsabilité humaine.
-
-[Découvrir l’audit automatisé](https://dubsar.ai/fr/audit)
-
-### Audit professionnel DUBSAR
-
-L’Audit professionnel DUBSAR est une intervention bornée, opérée par Sofiane
-avec DUBSAR. Ses principaux mandats sont la préparation au lancement et la
-gouvernance des agents.
-
-Chaque intervention commence par un accord explicite sur le périmètre, les
-sources autorisées, les permissions, les limites d’accès, la conservation, le
-calendrier, le prix et les livrables. La lecture seule est la règle par défaut.
-Les faits, inférences, contradictions, limites et décisions humaines restent
-distincts.
-
-[Comprendre la méthode](AUDIT.fr.md) ·
-[Demander un audit](https://dubsar.ai/fr/audit) ·
-[Contacter Sofiane Kotni](mailto:kotni.sofiane@dubsar.ai)
-
----
-
-## Doctrine commune
-
-Toutes les surfaces actuelles de DUBSAR suivent les mêmes principes :
-
-- seules les sources autorisées sont examinées ;
-- une affirmation n’est jamais traitée comme une preuve ;
-- les faits et les inférences restent séparés ;
-- la provenance et la version des preuves sont conservées ;
-- les contradictions et les limites restent visibles ;
-- une source absente devient une limite, pas une conformité implicite ;
-- la lecture seule est la règle par défaut ;
-- aucun agent ne peut approuver seul son propre travail ;
-- les décisions protégées restent sous autorité humaine.
-
-**Les systèmes analysent et appliquent des règles déclarées. DUBSAR conserve et
-vérifie. L’humain autorise et décide.**
+Ce schéma répartit les responsabilités ; il ne déclare pas tous les parcours
+déjà intégrés :
 
 ```text
-Sources autorisées
-    ↓
-Audit DUBSAR
-    ↓
-Preuves, incohérences et limites
-    ↓
-Validation humaine
-    ↓
-Rapport validable
+Faits / État / Preuves
+        ↓
+Logiciel déterministe
+        ↓
+Judgment borné
+        ↓
+Autorité explicite
+        ↓
+Agents / Automatisation / Outils
 ```
 
-Une gouvernance continue ou des composants installés pourront éventuellement
-être étudiés plus tard dans un périmètre distinct. Leur architecture,
-distribution, support et licence restent indécis et ne sont pas promis par
-l’audit initial.
+Les agents exécutent le travail. Le logiciel déterministe possède l’état
+canonique, les permissions et les enregistrements de preuve. Judgment propose
+le prochain mouvement cognitif justifié ; il n’a aucune autorité. Les
+politiques et Human Gates restent autoritaires pour les effets conséquents.
+Les observations d’exécution passent par une validation logicielle avant
+toute mise à jour de l’état canonique.
 
----
+### DUBSAR Personal
 
-## Skills publics
+Personal est la première expression produit du système : une expérience
+Desktop pour les missions durables. Son architecture cible actuelle est :
 
-Le dépôt distinct
-[dubsar-agent-skills](https://github.com/kotnisofiane-bit/dubsar-agent-skills)
-publie sous licence MIT une doctrine et des assistants locaux bornés pour les
-travaux d’audit et de gouvernance.
+```text
+Desktop
+├─ My Work / missions durables
+├─ Agents / Hermes
+├─ Memory
+├─ Automation
+├─ Tool Layer / Connectors
+├─ Operational Context / Evidence
+├─ Judgment
+├─ Trace Canvas
+└─ Human Gates
+```
 
-Ces skills constituent une ressource publique complémentaire. Ils ne sont
-**ni** le produit DUBSAR, **ni** le Portail, le Core privé ou un runtime ; ils
-ne donnent accès à aucun service privé et ne constituent pas une
-installation prise en charge de DUBSAR. Leur licence s’applique uniquement à
-ce dépôt.
+L’utilisateur doit pouvoir changer d’agent ou de fournisseur de modèle sans
+perdre le travail lui-même. My Work, Memory et les traces doivent se rapporter
+à la même mission et au même état de progression.
 
----
+**Statut : intégration active / développement technique.** Desktop, Trace
+Canvas, Judgment local et la continuité d’une mission entre toutes les vues
+restent en intégration. Cela n’annonce ni bêta publique, ni plateformes prises
+en charge, ni support commercial.
 
-## Travaux antérieurs sur les agents de code
+### DUBSAR Control Plane
 
-Les premières expérimentations DUBSAR ont étudié la gouvernance de projets
-assistés par des agents de code, avec notamment un paquet de préparation pour
-Claude Code. Ces travaux ont nourri la doctrine actuelle sur la preuve et
-l’autorité humaine, mais ne constituent plus une surface commerciale actuelle
-ni une bêta publique ou privée active.
+Control Plane applique le même modèle d’état, de preuves et d’autorité aux
+workloads agentiques plus lourds ou organisationnels :
 
-L’ancienne surface de Marketplace a été retirée de l’arbre actif. Ce dépôt ne
-propose aucun plugin public, runtime, accès bêta ou parcours d’installation
-pris en charge. Les décisions produit futures seront documentées lorsqu’elles
-seront définies et validées.
+```text
+Décision humaine / Core
+→ Autorisation signée / Task Lease
+→ Admission runtime
+→ Handoff durable
+→ Workload / sandbox
+→ Egress médié
+→ Gateway / Broker
+→ Evidence / Operational Context
+```
 
----
+L’agent ne possède pas les identifiants du fournisseur. L’autorisation est un
+objet validé, pas une instruction dans un prompt. L’admission et les décisions
+de replay doivent être déterministes. Un crash ne doit pas créer
+silencieusement une seconde exécution. L’egress peut être médié ; l’agent ne
+peut pas s’approuver lui-même.
 
-## AI Act
+Ces frontières décrivent l’architecture et les exigences d’intégration.
+Elles ne déclarent pas toute la stack intégrée live ou qualifiée dans chaque
+runtime réel. Voir [ARCHITECTURE.md](ARCHITECTURE.md).
 
-DUBSAR peut aider à structurer des éléments utiles à une préparation
-documentaire liée à l’AI Act :
+## Judgment
 
-- inventaire des systèmes, agents, responsables et finalités ;
-- traçabilité des sources, versions, décisions et validations ;
-- supervision humaine explicite ;
-- limites, incertitudes et informations manquantes ;
-- registres de preuves et de contradictions.
+Judgment est un policy/controller probabiliste borné. Il choisit un prochain
+mouvement cognitif dans un ensemble fermé, par exemple `consult`, `conclude`,
+`clarify`, `revise` ou `stop`. Ce n’est pas un super-agent orchestrateur.
+Le logiciel valide la proposition puis exécute uniquement les actions
+autorisées.
 
-DUBSAR ne fournit aucun conseil juridique, ne délivre aucune certification et
-ne produit aucun verdict automatique de conformité.
+Judgment ne peut ni créer une permission ou une preuve, ni déclarer une source
+fraîche, ni terminer une mission sans support, ni se donner une autorité, ni
+affirmer qu’une action a réellement réussi. Proposer `conclude` ne clôture pas
+la mission. Qwen est le candidat local actuel, pas une dépendance identitaire
+de l’architecture.
 
----
+## Ce qui existe aujourd’hui
 
-## Frontière publique et privée
+Le développement dispose de composants fonctionnels pour l’état durable du
+travail là où il est pris en charge, les contrats et validateurs déterministes,
+les frontières de preuve et les patterns Human Gate. L’automatisation et les
+contrats AgentContext / Judgment font partie du travail technique.
+L’intégration reste active.
 
-Ce dépôt constitue la frontière documentaire publique de DUBSAR. Il ne s’agit
-pas d’une distribution logicielle publique.
+[STATUS.md](STATUS.md) distingue composants acquis, intégration active et
+capacités non revendiquées. Il sépare aussi l’état technique rapporté par le
+projet de ce qu’un lecteur peut inspecter publiquement. Un test ne devient pas
+une annonce de disponibilité produit.
 
-Il peut contenir :
+## Composants techniques
 
-- la doctrine et l’architecture publiques ;
-- des exemples et diagrammes bornés ;
-- les informations publiques de sécurité, confidentialité et état de
-  distribution ;
-- des archives historiques non exécutables.
+- [DUBSAR Memory](https://github.com/kotnisofiane-bit/dubsar-memory) : preview
+  technique publique d’un moteur déterministe de mémoire projet, d’une CLI
+  et d’un Workbench en lecture seule. Son README définit son périmètre et sa
+  licence. Ce n’est ni Personal unifié ni une distribution de Control Plane.
+- Les autres dépôts seront référencés lorsque leur code et leur périmètre
+  publics seront disponibles. `dubsar-contracts` n’est pas présenté comme
+  public.
 
-Il ne publie pas :
-
-- le Portail ou toute autre implémentation produit privée ;
-- le Core propriétaire ;
-- tout composant DUBSAR actuellement installable ;
-- les politiques ou journaux internes ;
-- les données de clients ou de testeurs ;
-- les secrets, jetons ou éléments de confiance ;
-- les détails privés d’implémentation ou de topologie.
-
-Aucune licence logicielle publique n’est actuellement choisie ou accordée par
-ce dépôt. Les licences futures seront décidées séparément pour chaque composant
-avant toute distribution. Les éléments tiers restent soumis à leurs propres
-licences et notices. Voir [Droits et statut des licences](RIGHTS.md).
-
----
+Cette racine reste canonique pour le projet. Les anciennes phases audit,
+skills, Marketplace et Scribe sont indexées dans [LEGACY.md](LEGACY.md) ;
+elles ne définissent pas la disponibilité actuelle.
 
 ## Documentation
 
-### Comprendre DUBSAR
+- [Surfaces produit](PRODUCT_SURFACES.md) : Personal et Control Plane.
+- [Philosophie](DESIGN_PHILOSOPHY.md) et [Principes](PRINCIPLES.md) :
+  état, jugement et autorité.
+- [Roadmap](ROADMAP.md) : priorités d’intégration sans promesse de sortie.
+- [FAQ](FAQ.md), [Installation](INSTALLATION.md), [Sécurité](SECURITY.md),
+  [Confidentialité](PRIVACY.md) et [Droits](RIGHTS.md) : frontières publiques.
 
-1. [Site DUBSAR](https://dubsar.ai/fr/)
-2. [Audit DUBSAR](AUDIT.fr.md)
-3. [Pourquoi DUBSAR ?](WHY_DUBSAR.md)
-4. [Skills publics](https://github.com/kotnisofiane-bit/dubsar-agent-skills)
-5. [Documentation d’architecture cible / de référence](https://github.com/kotnisofiane-bit/dubsar-docs)
-
-Le dépôt compagnon
-[dubsar-docs](https://github.com/kotnisofiane-bit/dubsar-docs)
-est une **documentation d’architecture cible / de référence**. Il ne
-constitue ni une installation prise en charge de DUBSAR, ni une disponibilité
-générale, ni une preuve de déploiement.
-
-### Confiance
-
-- [Droits et statut des licences](RIGHTS.md)
-- [Installation](INSTALLATION.md)
-- [Historique Marketplace et état de distribution](MARKETPLACE.md)
-- [Sécurité](SECURITY.md)
-- [Confidentialité](PRIVACY.md)
-- [Intégrité et provenance](INTEGRITY.md)
-
-D’autres documents du dépôt peuvent décrire d’anciens travaux autour des
-agents de code, de la Marketplace ou de l’installation. Ils sont conservés
-comme contexte pendant la révision de la documentation publique et
-n’établissent pas une offre actuelle.
-
----
-
-## Créé par
-
-Créé par [**Sofiane Kotni**](https://dubsar.ai/fr/sofiane-kotni/), créateur de
-DUBSAR et auteur de *Digital Trust*.
-
-[Site DUBSAR](https://dubsar.ai/fr/) ·
-[LinkedIn](https://www.linkedin.com/in/sofiane-kotni/) ·
-[GitHub](https://github.com/kotnisofiane-bit) ·
-[Skills publics](https://github.com/kotnisofiane-bit/dubsar-agent-skills) ·
-[Digital Trust — français](https://www.amazon.fr/dp/B0H739BFJP) ·
-[Digital Trust — anglais](https://www.amazon.fr/dp/B0GZ4RH1KX) ·
-[Page auteur Amazon](https://www.amazon.fr/stores/Sofiane-KOTNI/author/B0H6NBHZTC) ·
-[Contacter Sofiane Kotni](mailto:kotni.sofiane@dubsar.ai)
+Créé par **Sofiane Kotni**.

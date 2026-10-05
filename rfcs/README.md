@@ -79,13 +79,12 @@ None of those statements should override current root documentation.
 
 The legacy RFC set does not fully specify:
 
-- the portal-first automation-audit journey;
-- evidence-source and coverage contracts;
-- deterministic automation-coherence controls;
-- human review of candidate findings;
-- report and limitation projections;
-- the current separation between the coming-soon portal and the Professional
-  DUBSAR Audit.
+- the shared Personal / Control Plane responsibility model;
+- coherent mission state across Personal views;
+- AgentContext / bounded Judgment contracts;
+- signed permissions / Task Leases and runtime admission;
+- durable handoff, workload boundaries and mediated egress;
+- current integration and qualification limits.
 
 For these topics, use the root documentation.
 

@@ -2,9 +2,22 @@
 
 All notable public repository and distribution changes will be recorded here.
 
-## 2026-07-30
+## Public realignment 01
+
+- made this root the canonical public entry point for durable, governed agentic work;
+- documented Personal and Control Plane under one state, evidence, Judgment and authority model;
+- separated component foundations, active integration and unclaimed availability;
+- reclassified the portal-first audit, professional-audit and skills positioning as historical;
+- retained Marketplace provenance, legacy RFCs and brand artwork;
+- removed the obsolete skills redirect from navigation and linked actual Memory component source;
+- published no software release, beta, installation package or private implementation.
+
+## Historical — 2026-07-30
 
 ### Portal-first public alignment
+
+This entry records an earlier product phase; it is superseded by Public
+realignment 01 above.
 
 - established the automated audit portal and Professional DUBSAR Audit as the
   two current delivery surfaces;
