@@ -1,178 +1,78 @@
 # Status
 
-DUBSAR is an active audit and governance project with two current delivery
-surfaces:
+DUBSAR is in active technical development and integration as a control plane
+for durable, governed agentic work. Personal is its first product expression;
+Control Plane applies the same architecture to heavier workloads.
 
-1. an automated audit portal;
-2. a bounded Professional DUBSAR Audit.
+This is the canonical project status as of this public realignment. The
+technical categories below reflect the project state supplied for this update.
+Private components and their qualification artifacts have not been
+independently audited through this documentation repository.
 
-They share one evidence and human-authority doctrine, but they have different
-delivery models and maturity levels.
+## Acquired / working components
 
-## Current status at a glance
+At component scope, where supported:
 
-| Surface or resource | Current status |
-|---|---|
-| Automated audit portal | Under construction and validation; coming soon, not publicly available |
-| Professional DUBSAR Audit | Available on request |
-| Public `dubsar-agent-skills` repository | MIT-licensed doctrine and bounded local helpers; available separately |
-| Continuous governance / installed DUBSAR components | Possible later; architecture, distribution, support and licensing undecided |
-| Historical coding-agent package / Claude Code Marketplace | Paused and retired from the active tree; no public package or beta |
-| Private DUBSAR Core | Proprietary, under active development, not distributed here |
+- durable mission / work state, with recorded checkpoints and resumption;
+- deterministic contracts and validators;
+- Operational Context / evidence boundaries that distinguish observations,
+  declarations, inferences and missing sources;
+- Human Gate patterns that separate proposals from protected authority;
+- automation integration work at component scope;
+- AgentContext / Judgment contracts that bound model input and proposals;
+- technical component tests and E2E qualifications where they actually exist.
 
-These statuses must not be conflated.
+These items describe technical foundations, not a fully integrated product.
+A component E2E qualification applies only to its exercised path and
+environment. It does not qualify every Personal view or Control Plane runtime.
+This root contains no executable tests or private qualification artifacts.
 
----
+The publicly inspectable component currently linked is
+[DUBSAR Memory](https://github.com/kotnisofiane-bit/dubsar-memory), a technical
+preview of durable project memory, a CLI and a read-only Workbench.
+That repository defines its own tests, limits and licence. Its memory
+contracts do not prove integrated Judgment, runtime admission or egress.
 
-## 1. Automated audit portal
+## In active integration
 
-The public [DUBSAR audit page](https://dubsar.ai/audit) is the current product
-entry point. The automated portal itself is under construction and validation
-and is not yet publicly accessible.
+- a unified Personal experience;
+- Desktop integration;
+- Trace Canvas integration;
+- the local Judgment model, with Qwen as the current candidate;
+- provider and connector breadth;
+- one coherent mission across My Work, Agents, Memory, Automation, evidence,
+  Judgment, traces and Human Gates;
+- qualification of the Control Plane execution path across admission,
+  handoff, sandbox, mediated egress and evidence collection.
 
-Its intended journey is:
+The architecture documents required boundaries; they do not declare the whole
+stack integrated live. An individual demonstration or successful test cannot
+establish the maturity of the remaining paths.
 
-1. define a bounded perimeter;
-2. identify the automations, period and authorized sources;
-3. connect available events without inventing causality;
-4. surface inconsistencies, uncertainty and missing information;
-5. let the designated owner classify the findings;
-6. produce a report that keeps evidence, limitations and validations linked.
+## Not yet claimed
 
-The current status does not imply that:
+- a public installable Personal release;
+- a public Personal beta or commercial support offer;
+- a production-ready enterprise platform;
+- general availability;
+- complete real-world runtime qualification of every Control Plane component;
+- universal connector, agent-host or operating-system support;
+- a public `dubsar-contracts` repository or distribution of the private Core.
 
-- every connector or client environment is supported;
-- every automation can be fully reconstructed;
-- an inconsistency is automatically a confirmed failure;
-- the portal produces a legal or regulatory compliance verdict;
-- the portal has autonomous authority over client systems;
-- production-grade availability has been established.
+## What would justify stronger claims
 
-The target is a clear first result with explicit coverage and human validation.
+An integration claim needs a reproducible path tied to component versions,
+the tested environment and retained results. Mission recovery, rejected
+authorization, retries, partial evidence and required Human Gates must remain
+observable. Execution success must stay separate from mission completion.
 
-[Audit overview](https://dubsar.ai/audit)
+A public release also needs an actual artifact, installation and removal
+validation, supported environments, licensing, security and privacy boundaries.
+No release date or access invitation is announced here.
 
----
+## Repository boundary
 
-## 2. Professional DUBSAR Audit
-
-Professional DUBSAR Audit is available on request as a bounded, human-led
-engagement.
-
-Each engagement requires:
-
-- an agreed mandate;
-- explicitly authorized sources;
-- read-only access by default;
-- explicit permissions and access limitations;
-- defined retention;
-- human classification and review;
-- an agreed deliverable, timing and price.
-
-The primary mandates are:
-
-- **launch readiness** — is the product genuinely ready to open to users?
-- **agent governance** — can the team explain and verify how the project was
-  built and approved?
-
-A professional audit is not the same as an automated portal diagnostic. No
-final conclusion is delivered without human review.
-
-[Professional audit method](AUDIT.md) ·
-[Request an audit](https://dubsar.ai/audit) ·
-[Contact Sofiane Kotni](mailto:kotni.sofiane@dubsar.ai)
-
----
-
-## Public skills resource
-
-The separate
-[dubsar-agent-skills](https://github.com/kotnisofiane-bit/dubsar-agent-skills)
-repository contains MIT-licensed public doctrine and bounded local helpers.
-
-It is not a third DUBSAR product surface. It does not contain or expose the
-Portal, private Core or private product implementation, and it provides no
-access to private services. Its availability must not be used as evidence that
-the DUBSAR product is installable or generally available.
-
----
-
-## Historical coding-agent context
-
-Earlier DUBSAR engineering explored project governance around coding agents and
-included a Claude Code Marketplace staging surface. That work informed the
-current doctrine, but it is paused as a product direction and is not a current
-commercial offer, public beta or supported integration.
-
-Current boundary:
-
-- the historical Marketplace manifest and vendored runtime are absent from the
-  active tree;
-- no public plugin, runtime or supported installation command is available;
-- no invitation or beta-access path is currently offered;
-- no support claim is made for Claude Code, Codex, Cursor or a specific desktop
-  operating system;
-- the historical tombstone remains only as a non-executable provenance record.
-
----
-
-## Public distribution status
-
-This repository is DUBSAR's public documentation boundary. It is not a public
-software distribution.
-
-Current distribution status:
-
-- public doctrine, architecture and bounded examples are available;
-- no supported public DUBSAR installation command is active;
-- no current installable DUBSAR component or private product implementation is
-  published here;
-- no public software licence is currently selected or granted by this
-  repository;
-- future component licensing remains deferred;
-- the private Core is not distributed here.
-
-The separate skills repository has its own MIT licence and boundary. That
-licence does not apply to this repository or to private DUBSAR components.
-
-See [Rights and Licensing Status](RIGHTS.md) and
-[Installation](INSTALLATION.md).
-
----
-
-## Claims not made
-
-DUBSAR is not currently presented as:
-
-- a universally supported automation platform;
-- a generally available self-service portal;
-- a public coding-agent product or integration;
-- an autonomous approval, merge, release or deployment authority;
-- a substitute for client technical authority;
-- a certified compliance or security system;
-- a public release of the private Core;
-- a guarantee that an audited product is defect-free, secure or compliant.
-
-DUBSAR can support evidence organization, traceability and human-oversight
-documentation relevant to AI Act readiness. It does not provide legal advice,
-issue certification or replace a qualified legal or conformity assessment.
-
----
-
-## Promotion gates
-
-Before a stronger portal availability claim:
-
-- critical browser journeys must be reproducible;
-- connector and coverage limits must be explicit;
-- findings and reports must remain reviewable;
-- errors and unavailable sources must fail visibly;
-- human validation must remain enforceable;
-- security, privacy, retention and deletion boundaries must be validated.
-
-Every professional engagement remains subject to an agreed mandate and explicit
-source authorization.
-
-Any future software distribution requires its own approved scope, provenance,
-dependency, licence, security, installation, update and removal review. No
-earlier experiment creates that approval.
+This repository is documentation only. [Installation](INSTALLATION.md) and
+[Rights](RIGHTS.md) define its distribution and licensing boundary.
+[LEGACY.md](LEGACY.md) indexes the earlier audit and coding-agent phases;
+their old availability statements are historical.

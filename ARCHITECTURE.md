@@ -1,238 +1,186 @@
 # DUBSAR Architecture
 
-This document describes the public product boundary. It deliberately omits
-private implementation details, credentials, internal policies and deployment
-topology.
-
-## Current product path
-
-DUBSAR has two current delivery surfaces:
-
-- the automated audit portal, coming soon and under construction and
-  validation;
-- the Professional DUBSAR Audit, available on request as a bounded,
-  human-led engagement.
-
-Both use the same evidence and authority boundaries.
-
-```mermaid
-flowchart LR
-    S["Authorized sources"] --> P["DUBSAR audit surface"]
-    P --> E["Bounded evidence snapshot"]
-    E --> C["Declared controls and bounded analysis"]
-    C --> F["Candidate findings and limitations"]
-    F --> H["Human review"]
-    H --> R["Traceable report"]
-```
-
-The intended sequence is:
-
-1. an authorized user defines a bounded audit scope;
-2. approved exports or connectors provide only required evidence;
-3. DUBSAR freezes the evidence scope and records provenance;
-4. declared controls evaluate explicit conditions;
-5. bounded agent roles may analyze or explain material;
-6. facts, inferences, contradictions and limitations remain distinct;
-7. a human confirms, corrects or rejects proposed findings;
-8. the report preserves evidence, decisions and scope limits.
-
-The complete portal browser journey remains under construction and validation.
-The marketing website is public, but the portal is not currently available.
-
----
-
-## Responsibility boundaries
-
-### Public website
-
-[dubsar.ai](https://dubsar.ai/) explains the product, method and limitations.
-Marketing or orientation content is not itself an audit or regulatory
-assessment.
-
-### Automated audit portal
-
-The [DUBSAR audit page](https://dubsar.ai/audit) describes the planned
-self-service audit. The intended portal supports scope definition, evidence
-intake, progress and availability states, finding review, human decisions and
-report access.
-
-The implementation, authentication model, private service topology and
-credentials are not published in this repository.
-
-### Professional DUBSAR Audit
-
-The Professional DUBSAR Audit is available on request as a separate bounded
-engagement. Scope, authorized sources, permissions, retention, deliverables,
-timing and price are agreed before work starts.
-
-The engagement remains human-led and read-only by default. It does not bypass
-evidence limitations or turn a report into legal certification.
-
-See [AUDIT.md](AUDIT.md).
-
-### Evidence boundary
-
-Every audit starts from a bounded evidence snapshot. Publicly relevant
-properties include:
-
-- source kind and authorized scope;
-- collection window and known retention limits;
-- provenance and version references;
-- completeness and unavailable reads;
-- references a finding is allowed to cite.
-
-Missing or partial evidence remains visible. It is never silently converted
-into a positive result.
-
-### Declared controls and bounded agents
-
-Declared controls produce bounded mechanical results. Agent roles may inspect,
-explain, challenge or summarize material under an explicit assignment.
-
-Agent output remains a proposal. It cannot alter the evidence boundary, create
-a human approval or promote itself to verified truth.
-
-### Private implementation boundary
-
-Private DUBSAR implementation preserves governed audit state and the declared
-authority model. Its internal component layout, source, policies, credentials
-and deployment topology are not described or distributed through this
-repository.
-
-The proprietary Core remains private.
-
-### Human review
-
-Human review is a product boundary. The reviewer must be able to understand:
-
-- the proposed finding;
-- the evidence used;
-- the declared control;
-- the scope and unavailable evidence;
-- the exact state being reviewed.
-
-The decision confirms, corrects or rejects a proposal. It does not
-retroactively make incomplete evidence complete.
-
-### Report
-
-The report is intended to preserve source provenance, findings and their
-evidence, human dispositions, contradictions, limitations and unavailable
-sources.
-
-Rendering a report is not the same as authorizing a deployment, release or
-regulated use.
-
----
-
-## First audit profile
-
-The planned initial portal path centers on **Automation Coherence**. Its current
-control families examine:
-
-1. duplicate consequences without an attributable idempotency boundary;
-2. actions incompatible with an observed business state;
-3. missing traceability, version or expected human-validation evidence within
-   the connected scope.
-
-Deterministic fixture validation exists. Complete browser end-to-end proof
-remains an active validation boundary.
-
----
-
-## Separate public skills boundary
-
-The
-[dubsar-agent-skills](https://github.com/kotnisofiane-bit/dubsar-agent-skills)
-repository publishes MIT-licensed doctrine and bounded local helpers.
-
-Those skills may help structure audit and governance work locally. They are not
-the Portal, private Core, runtime or private product
-component. They do not provide access to private services and do not represent
-a deployment of this architecture.
-
----
-
-## Possible future continuous governance
-
-Audit is the current entry point. Continuous governance or installed components
-may be considered later under a separate scope.
-
-No topology, local-versus-hosted boundary, distribution model, supported
-platform, service contract or licence is selected or promised. This document
-does not claim an ability to block arbitrary business actions in production.
-
----
-
-## Historical coding-agent context
-
-Earlier engineering explored coding-agent project governance and a Claude Code
-staging package. That work informed the current doctrine but is not a current
-product surface, active beta or supported host integration.
-
-The Marketplace staging surface is retired from the active tree. No current
-plugin, runtime, beta-access path or platform-support claim is made.
-
----
-
-## Connector independence
-
-Third-party systems remain evidence or execution surfaces rather than sources
-of DUBSAR authority.
-
-Connectors should use documented boundaries, expose bounded data, fail
-explicitly and remain replaceable. A third-party change must not silently
-change the meaning of an existing DUBSAR control.
-
----
-
-## AI Act boundary
-
-DUBSAR is designed to help document governance-relevant elements such as
-provenance, traceability, human oversight, scope and retained evidence.
-
-It does not certify AI Act compliance, replace legal analysis or issue a
-regulatory conformity verdict.
-
----
-
-## Public and private boundary
-
-This repository may publish:
-
-- product documentation;
-- public architecture and diagrams;
-- synthetic fixtures and bounded examples;
-- security, privacy and integrity information;
-- non-executable historical records.
-
-It does not publish:
-
-- the Portal or other private product implementation;
-- the proprietary Core;
-- private Backend implementation;
-- any current installable DUBSAR component;
-- internal prompts or policies;
-- confidential evidence or client data;
-- secrets, tokens or trust material;
-- production topology.
-
----
-
-## Current maturity
+DUBSAR separates durable work, observations, probabilistic judgment and
+authority. Personal and Control Plane are two environments of this common
+architecture.
+
+This is a public responsibility and reference-boundary description. It
+publishes no private implementation, internal policies, signing material or
+deployment topology. [STATUS.md](STATUS.md) defines maturity; the diagrams
+below do not assert that every path is integrated or qualified.
+
+## Common responsibility model
 
 ```text
-deterministic synthetic-fixture controls: internally validated
-recorded audit API path: internal evidence exists
-automated audit portal: coming soon, under construction and validation
-complete portal browser E2E proof: in progress
-professional DUBSAR Audit: available on request
-public skills: separate MIT-licensed companion resource
-historical coding-agent package: paused; no public package or beta
-continuous governance / installed components: possible later; architecture and distribution undecided
-private Core: proprietary, not distributed
-general production availability: not claimed
+Facts / State / Evidence
+        ↓
+Deterministic software
+        ↓
+Bounded Judgment
+        ↓
+Explicit authority
+        ↓
+Agents / Automation / Tools
 ```
 
-See [STATUS.md](STATUS.md) for the current claim boundary and
-[ROADMAP.md](ROADMAP.md) for sequencing.
+The downward path is a decision boundary. Execution returns observations to
+deterministic software for validation and state updates; it does not let the
+agent write its own authoritative account of success.
+
+| Responsibility | Owner | Boundary |
+|---|---|---|
+| Canonical mission and operational state | Deterministic software | A session, model response or UI projection cannot redefine the mission |
+| Evidence records and source status | Deterministic software | Provenance, versions, freshness, coverage and unavailable reads stay explicit |
+| Next justified cognitive move | Judgment | A proposal within a closed contract, with no execution authority |
+| Permissions and state transitions | Deterministic Core / policy | Validated authorization, independent of prompt wording |
+| Consequential effects | Human authority through policy and Human Gates | Approval is attributable and bound to the action under review |
+| Execution | Agents, automation and tools | Work occurs only inside admitted scope; results require observation |
+
+Software owns the records and validation rules. It does not make every source
+complete or every observed statement true. Missing evidence and uncertainty
+remain part of canonical context.
+
+## Durable mission state
+
+A mission must remain identifiable across sessions, handoffs and provider
+changes. Its objective, scope, constraints, current state, evidence references,
+decisions and unresolved work should be preserved by software.
+
+Conversation history can inform the mission, but cannot replace its canonical
+state. Memory carries relevant continuity; Operational Context describes what
+is known about the current situation. A generated summary cannot silently
+refresh a source or promote an old checkpoint into present success.
+
+Three outcomes remain separate:
+
+- **Execution success:** the bounded operation returned an observed result.
+- **Mission success:** the mission's acceptance conditions are supported.
+- **Proof:** attributable material supports a specific claim within its limits.
+
+None implies the other two automatically.
+
+## DUBSAR Personal
+
+Personal is the first product expression, built around a Desktop experience:
+
+```text
+Desktop
+├─ My Work / durable missions
+├─ Agents / Hermes
+├─ Memory
+├─ Automation
+├─ Tool Layer / Connectors
+├─ Operational Context / Evidence
+├─ Judgment
+├─ Trace Canvas
+└─ Human Gates
+```
+
+My Work anchors the mission. Agents execute bounded assignments; Hermes is
+part of that agent layer rather than the owner of the work. Memory preserves
+continuity. Automation and the Tool Layer expose explicit execution contracts
+and source access. Operational Context preserves observations, coverage and
+evidence references.
+
+Judgment proposes the next cognitive move. Trace Canvas is intended to project
+the recorded path, decisions and limits; rendering a trace creates neither
+evidence nor permission. Human Gates expose consequential decisions with their
+scope, evidence, limitations and expected effects.
+
+All these views should refer to one coherent mission. Users should be able to
+change agents or model providers without losing the work itself. Desktop and
+Trace Canvas integration, local Judgment and continuity across every view
+remain active work, not a public installable release.
+
+## DUBSAR Control Plane
+
+Control Plane uses the same boundaries for heavier or organizational
+workloads. The reference execution path is:
+
+```text
+Human / Core decision
+→ Signed authorization / Task Lease
+→ Runtime admission
+→ Durable handoff
+→ Workload / sandbox
+→ Mediated egress
+→ Gateway / Broker
+→ Evidence / Operational Context
+```
+
+| Boundary | Required property |
+|---|---|
+| Human / Core decision | Policy checks the requested scope; required Human Gates remain explicit |
+| Signed authorization / Task Lease | Authorization is bound to a workload and a limited scope and lifetime |
+| Runtime admission | Deterministic validation decides whether this execution may start |
+| Durable handoff | Execution identity and ownership survive interruption and recovery |
+| Workload / sandbox | The agent runs inside an admitted execution boundary |
+| Mediated egress | Outbound effects can be checked at an enforced boundary |
+| Gateway / Broker | Provider access and credentials remain outside the agent |
+| Evidence / Operational Context | Observations, failures, uncertainty and outcome references return to governed state |
+
+Authorization is not a prompt instruction. Replay and admission must be
+deterministic: a model does not decide whether a lease is valid or an
+execution is a duplicate.
+
+Crash recovery must reconcile the durable execution identity before retrying.
+A crash must not silently create a second execution. Where an external
+effect cannot be established, the state must expose uncertainty rather than
+invent successful completion or blindly repeat the effect. This requirement
+does not claim universal exactly-once execution across external providers.
+
+The agent does not own provider credentials and cannot approve itself.
+Mediated egress requires traffic to pass through the actual enforced
+boundary; a diagram or policy statement alone does not mediate a workload.
+Complete real-world qualification of every component and of the combined
+path is not claimed.
+
+## Judgment contract
+
+Judgment is a bounded probabilistic policy/controller, not a super-agent
+orchestrator. Its input is an AgentContext assembled by software from
+identified mission state, permitted context, evidence and limitations.
+
+The controller proposes one next cognitive move from a closed set, for
+example:
+
+- `consult`: request permitted context or analysis;
+- `conclude`: propose a supported conclusion for validation;
+- `clarify`: request missing information;
+- `revise`: reconsider a proposal within scope;
+- `stop`: propose stopping the cognitive path.
+
+These examples are a public vocabulary, not a published API schema. Software
+checks the contract, references and applicable authority before execution.
+Malformed or unsupported output cannot create an authorized action.
+
+Judgment cannot:
+
+- create a permission;
+- create evidence;
+- declare a source fresh;
+- declare a mission complete without supporting records;
+- grant itself authority;
+- assert that a real action succeeded.
+
+A `conclude` proposal does not close a mission. A model's confidence does
+not upgrade the evidence. Qwen is the current local candidate; providers can
+change without changing the authority model.
+
+## Human Gates and policy
+
+A Human Gate binds a decision to the actual scope, state, evidence,
+limitations and consequential effect presented for review. An agent's claim
+that approval happened is not approval.
+
+Policy can apply previously authorized rules within their scope. It cannot
+derive new human authority from a model proposal. Required protected
+boundaries stop when authorization or supporting material is missing.
+
+## Public technical source
+
+The [Technical components section](README.md#technical-components) links
+available public component source and its limits. This root does not publish
+the private Core or claim that other implementation repositories are public.
+The earlier RFCs and diagrams are historical references indexed in
+[LEGACY.md](LEGACY.md), not current contracts.

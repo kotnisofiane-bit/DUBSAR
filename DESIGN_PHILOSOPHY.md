@@ -1,133 +1,66 @@
 # Design Philosophy
 
-DUBSAR is designed around a practical question:
+DUBSAR is designed around work that survives sessions and remains accountable
+when agents, models and tools change.
 
-> How can business automations and AI agents remain understandable, governable and attributable across tools and over time?
+> The software carries reality.
+> The model carries judgment.
+> Humans retain authority over consequential effects.
 
-The answer is not to ask another agent to declare that everything is safe. It is to combine bounded evidence, deterministic controls, specialized roles and explicit human authority.
+## Preserve continuity in software
 
-## Audit before continuous governance
+The mission, its state, evidence references and decisions should outlive
+the agent. Memory should preserve relevant continuity without turning every
+conversation into authoritative knowledge.
 
-Responsible orchestration starts by understanding the existing system.
+Personal views should project one coherent mission. Trace Canvas should
+show recorded events and limits, not generate a new account of reality.
+Changing a provider should not require abandoning the work.
 
-The intended first product path therefore:
+## Bound probabilistic judgment
 
-1. defines a bounded scope;
-2. collects authorized evidence;
-3. freezes a reproducible snapshot;
-4. applies explicit controls;
-5. exposes findings and missing information;
-6. records a human disposition;
-7. preserves a traceable report.
+Judgment proposes a next cognitive move from a closed vocabulary, using
+AgentContext prepared by software. A proposal must pass deterministic
+validation before any authorized execution.
 
-The automated portal implementing this journey is coming soon. It remains
-under development and validation and is not currently available for public
-use.
+Judgment cannot create permission, evidence, freshness or completion.
+Its model can change without changing that contract.
 
-Continuous policy enforcement follows only when the audit establishes a justified and testable need.
+## Make authority concrete
 
-## Determinism and agents have different jobs
+Signed permissions / Task Leases and runtime admission belong to software
+boundaries, not prompt instructions. Human Gates bind consequential decisions
+to the scope, state, evidence and effects presented for review.
 
-Agents are useful for interpretation, exploration and explanation.
+Policy operates within authorized rules. Neither an agent nor Judgment may
+manufacture approval.
 
-Deterministic components own:
+## Keep uncertainty visible
 
-- identity and state transitions;
-- evidence digests and scope;
-- control vocabulary;
-- idempotence;
-- declared policy evaluation;
-- Human Gate enforcement;
-- stable report projection.
+Observed facts, inferences, declarations, missing evidence and unavailable
+sources remain distinct. Successful execution does not imply mission success
+or proof. A crash with an uncertain external outcome needs reconciliation,
+not an invented result or a silent duplicate execution.
 
-Model output is input to governance, not governance itself.
-Protected decisions remain attributable to the authorized human authority.
+## Fail closed at meaningful boundaries
 
-## Evidence over confidence
+A protected action stops when required authorization or evidence is absent.
+Harmless reads should remain usable within their allowed scope.
 
-Fluent explanations are useful but insufficient.
+A Gateway or Broker mediates only traffic that actually passes through its
+enforced boundary. Provider credentials should remain outside the agent.
 
-DUBSAR keeps observed facts, deterministic results, inferences, missing evidence and unavailable sources distinct. Stronger wording cannot promote an unsupported claim into a verified fact.
+## Prefer replaceable contracts
 
-## Human responsibility must be usable
+Agents, model providers and connectors evolve independently. Documented
+contracts, explicit degraded states and visible coverage limits keep that
+change from silently redefining a mission or a permission.
 
-Saying “a human remains responsible” is not enough.
+## Keep public claims tied to their scope
 
-The reviewer needs:
+A validator test, component E2E, integrated mission and qualified production
+runtime are different achievements. [STATUS.md](STATUS.md) separates them.
 
-- the finding;
-- the evidence;
-- the rule;
-- the scope;
-- the limitations;
-- the exact review state being decided.
-
-A Human Gate is therefore a bound decision surface, not a decorative checkbox.
-
-## Prefer explicit boundaries
-
-Every audit or governed action should identify:
-
-- objective;
-- owner;
-- allowed scope;
-- prohibited scope;
-- evidence requirements;
-- active Rule Pack or policy;
-- agent role boundaries;
-- Human Gate conditions;
-- expected output.
-
-Boundaries do not guarantee correctness. They make divergence reviewable.
-
-## Fail closed selectively
-
-A protected action should stop when required identity, evidence, policy or authorization is missing.
-
-Harmless reads should not become unusable through indiscriminate blocking. Fail-closed behavior must protect meaningful boundaries rather than perform security theatre.
-
-## Keep connectors replaceable
-
-n8n, Make, CRM systems, model providers and coding-agent hosts evolve independently.
-
-DUBSAR should use documented, versioned contracts and explicit degraded states. A connector change may require an adapter update; it must not change the meaning of an audit result silently.
-
-## A portal for users, local administration for operators
-
-The portal is intended to become the primary product surface for scope,
-findings, review and reports. It is coming soon and remains under development
-and validation. The public marketing website provides product information; it
-does not provide access to the portal.
-
-Continuous governance or installed components may be considered later under a
-separate scope. Their architecture, data placement, distribution, support and
-licensing remain undecided and are not promised by the current product
-direction.
-
-## Preserve the private authority boundary
-
-Public adapters, schemas and examples can remain inspectable.
-
-Canonical audit state, protected policy and proprietary deterministic mechanisms remain in the private DUBSAR Core. Open-source components in the surrounding system do not make the complete product open source.
-
-## Keep public status honest
-
-An interface, an API test, a deterministic function test, a user E2E and production readiness are different kinds of proof.
-
-Every public claim should name which boundary was actually exercised.
-
-## Developer heritage
-
-Earlier Claude Code, local-runtime and multi-session work remains useful.
-
-It contributes patterns for identity, evidence and Human Gates.
-That coding-agent path is now paused. It is retained as project heritage, not a
-current commercial surface, active beta or supported integration. The current
-delivery surfaces are the coming-soon audit portal and the Professional DUBSAR
-Audit available on request.
-
-## Summary
-
-DUBSAR is not designed to maximize autonomous activity.
-
-It is designed to make automation activity more attributable, bounded, reviewable and governable.
+The current architecture is described in [ARCHITECTURE.md](ARCHITECTURE.md).
+Earlier audit and coding-agent reasoning remains in [LEGACY.md](LEGACY.md);
+it does not decide current availability or future component licences.

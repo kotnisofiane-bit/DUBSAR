@@ -1,82 +1,39 @@
 # DUBSAR Public Review Checklist
 
-This checklist reflects the current portal-first public direction. Earlier
-coding-agent private-beta positioning is superseded and belongs only to
-historical context.
+This checklist is for Public Realignment 01. It does not reuse approvals or
+completed-check marks from the earlier portal-first lot.
 
-## 1. Current offer
+## Positioning
 
-- [x] DUBSAR is the only current public product brand.
-- [x] The automated audit portal is presented as coming soon and not yet
-  publicly available.
-- [x] The Professional DUBSAR Audit is presented as available on request.
-- [x] No coding-agent integration is presented as a current commercial surface
-  or active beta.
-- [x] Continuous governance or installed components are only possible later
-  considerations; architecture, distribution, support and licensing are
-  undecided and not promised.
+- README and its French version name durable, governed agentic work.
+- Personal and Control Plane share one state, evidence and authority model.
+- Agents execute; Judgment proposes; deterministic software validates.
+- Judgment cannot create permission, evidence, freshness or completion.
+- Policy and Human Gates remain authoritative for consequential effects.
 
-## 2. Audit claims
+## Maturity and publication
 
-- [x] Audit scope and sources are explicit and bounded.
-- [x] Read-only collection is the default.
-- [x] Facts, inferences, missing evidence and limitations remain distinct.
-- [x] Human review remains explicit.
-- [x] No automatic causality, certification or legal-compliance verdict is
-  claimed.
-- [x] API or fixture evidence is not presented as complete browser E2E proof.
+- Status distinguishes working components, active integration and unclaimed
+  availability.
+- Component tests are not described as an integrated product release.
+- No public Personal installer, beta or support offer is announced.
+- Full live Control Plane qualification and general availability are not claimed.
+- Only real public technical source is linked; `dubsar-contracts` is not
+  presented as public.
+- Rights and the retired Marketplace provenance remain intact.
 
-## 3. Public skills boundary
+## History and consistency
 
-- [x] `dubsar-agent-skills` is linked as a separate MIT-licensed repository.
-- [x] The skills are described as doctrine and bounded local helpers.
-- [x] They are not presented as the DUBSAR product, Portal, Core or private
-  implementation.
-- [x] They grant no access to private services and do not constitute a DUBSAR
-  installation.
-- [x] Their MIT licence is not extended to this repository or private
-  components.
+- Audit methods and earlier R3 claims are marked historical.
+- Marketplace, Scribe, RFCs and old brand artwork remain contextualized.
+- The obsolete skills redirect is removed from navigation.
+- Relative links and anchors resolve.
+- Remaining obsolete expressions occur only in explicit historical context.
+- Website and companion-repository contradictions are recorded in
+  [the documentation audit](../PUBLIC_REALIGNMENT_AUDIT.md).
 
-## 4. Marketplace and installation
+## Delivery boundary
 
-- [x] The historical Marketplace manifest is absent from the active tree.
-- [x] The vendored `0.11.1` runtime is absent from the active tree.
-- [x] No supported public DUBSAR installation command is active.
-- [x] A non-executable tombstone preserves the historical pin and aggregate
-  hash.
-- [x] The historical licence is preserved with the tombstone, not presented as
-  the active repository-root licence.
-- [x] `RIGHTS.md` records that no current public software licence is selected.
-- [x] Any future package requires a new component-specific decision and
-  provenance, dependency, licence, integrity, security and installation review.
-
-## 5. Public/private boundary
-
-- [x] No private Core source is published by the documentation branch.
-- [x] No Portal or other private product implementation is published by the
-  documentation branch.
-- [x] No current installable DUBSAR component is published.
-- [x] No secrets, tokens, private policies, client data or private deployment
-  topology are intentionally documented.
-- [x] Future component licensing decisions remain deferred.
-
-## 6. Repository operation
-
-- [x] The historical tombstone and `RIGHTS.md` retain their intended boundary.
-- [x] The review branch is committed and published through pull request 19.
-- [x] The final diff has been reviewed against the current public/product boundary.
-- [x] The repository owner explicitly authorized final review and merge on
-  2026-07-30.
-
-## Expected verdict
-
-```text
-public documentation: aligned for review
-portal: coming soon, not publicly available
-professional audit: available on request
-public skills: separate MIT-licensed companion resource
-active coding-agent beta: none
-supported public DUBSAR installation: none
-historical Marketplace surface: retired
-private implementation: not published
-```
+The review artifact must be a draft PR from a dedicated branch against
+`main`. This lot authorizes no merge, repository visibility change,
+other-repository mutation, website mutation or software release.

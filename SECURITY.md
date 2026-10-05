@@ -58,33 +58,32 @@ DUBSAR is designed around:
 
 These are design requirements. They are not a claim that a public production security review has been completed.
 
-## Portal boundary
+## Personal and Control Plane boundaries
 
-The automated audit portal is coming soon. It remains under development and
-validation and is not currently available for public use. Before any public
-portal access is opened, DUBSAR must validate:
+Personal is in active integration / technical development, with no public
+installable release. Control Plane's reference execution path is documented
+in [Architecture](ARCHITECTURE.md); complete live qualification is not claimed.
 
-- registration and authentication;
-- tenant and project isolation;
-- upload and connector authorization;
-- rate and abuse controls;
-- secret handling;
-- evidence retention and deletion;
-- human-decision authentication;
-- audit and administrative logging;
-- backup and recovery;
-- dependency and infrastructure review.
+Security validation must cover the actual implemented boundaries:
 
-## Possible future installed components
+- mission and workspace isolation where applicable;
+- connector scope and credential separation from agents;
+- deterministic validation of signed authorization / Task Leases;
+- admission, replay and durable handoff during failure and recovery;
+- workload / sandbox isolation and enforced mediated egress;
+- evidence provenance and visible uncertainty;
+- authenticated Human Gates bound to the intended consequential effect;
+- retention, deletion, logging and recovery;
+- dependencies, artifact integrity and update behavior.
 
-Continuous governance or installed components may be considered later only
-under a separate, explicit scope.
+These are requirements for the relevant environment, not completed
+qualification claims. A model proposal cannot supply authorization or bypass
+a required gate. A Gateway mediates only traffic actually routed through its
+enforced boundary.
 
-No local topology, credential placement, network boundary, authorization model,
-distribution channel, supported platform or licence has been selected or
-promised. Any future proposal would require its own threat model, data-flow
-review, least-privilege design, installation and update validation, and explicit
-human approval before a public claim.
+Any public distribution needs security validation for its real data flows,
+supported platforms and release artifacts. See [Status](STATUS.md) and
+[Installation](INSTALLATION.md).
 
 ## Disclosure status
 

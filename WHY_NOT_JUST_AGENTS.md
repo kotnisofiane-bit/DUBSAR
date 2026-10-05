@@ -1,115 +1,54 @@
 # Why Not Just Agents?
 
-AI agents are useful. Multi-agent systems can divide work, use tools and move quickly.
+Agents do the work. A control plane preserves the work, its evidence and the
+authority to act across those agents.
 
-DUBSAR is being built as an audit and governance layer. It can orchestrate
-bounded roles, but it does not make another model the final authority over
-those agents.
+An agent runtime can plan, use tools and retain a session. Those abilities
+alone do not establish canonical mission state, valid permissions,
+deterministic admission or proof of an external result.
 
-## Agent activity is not governance
+## More agents do not create authority
 
-A group of agents can still:
+Several agents can agree on an unsupported conclusion, repeat an action,
+inherit stale context or approve one another's output. Agreement remains
+analysis until the required software validation and authority exist.
 
-- repeat the same action;
-- use incompatible business state;
-- lose the rule or version that triggered an action;
-- cite incomplete evidence;
-- approve its own output;
-- hide disagreement behind a fluent summary;
-- become impossible to reconstruct later.
+DUBSAR assigns different responsibilities:
 
-More roles do not automatically create traceability, separation of authority or deterministic control.
+| Responsibility | Boundary |
+|---|---|
+| Agents / Hermes | Execute bounded assignments and report attributable results |
+| Deterministic software | Own canonical state, contracts, permission checks and evidence records |
+| Judgment | Propose a next justified cognitive move within a closed vocabulary |
+| Policy / Human Gates | Apply authorized rules and preserve human authority over consequential effects |
 
-## Deterministic orchestration
+Judgment is probabilistic and bounded. It cannot create evidence, source
+freshness, permission, actual execution success or mission completion.
 
-DUBSAR separates two kinds of work.
+## Continuity must outlive a session
 
-Agents are useful for:
+In Personal, My Work, Memory, evidence and Trace Canvas should remain views of
+one mission. Replacing an agent or provider should not erase the work or turn
+a generated handoff into authoritative state.
 
-- interpreting bounded material;
-- explaining a proposed finding;
-- exploring hypotheses;
-- preparing a review;
-- carrying out an explicitly authorized role.
+The unified experience is still in active integration.
 
-Deterministic components are required for:
+## Runtime controls must exist outside the prompt
 
-- identity and state transitions;
-- evidence digests and scope;
-- rule-pack selection;
-- control execution;
-- idempotence;
-- contradiction handling;
-- Human Gate enforcement;
-- report projection.
+Control Plane requires signed authorization / Task Leases, deterministic
+runtime admission, durable handoff, a workload boundary and mediated provider
+access. Provider credentials belong outside the agent.
 
-```text
-agents propose and explain
-deterministic controls preserve the rules
-the Core preserves canonical state
-humans decide protected movement
-```
+Recovery must reconcile execution identity rather than silently start a
+second execution. Egress is mediated only where an actual enforced path
+exists. The reference design is not proof that every runtime is qualified.
 
-## Why Hermes?
+## Existing tools still matter
 
-Hermes provides a flexible open agent runtime and specialized roles.
+Automation engines, coding hosts and connectors can remain execution
+surfaces. Their logs and results become bounded inputs to the work and
+evidence model; they do not become permission or mission authority merely
+because an operation returned successfully.
 
-Within DUBSAR, a Hermes role receives a closed objective, explicit evidence and a required output contract. It does not own the Mission, alter the evidence snapshot or create an authoritative decision.
-
-The value is not the role name itself. The value is the combination of:
-
-- bounded role;
-- attributable session;
-- explicit evidence;
-- deterministic control;
-- independent human review.
-
-## Why not only n8n, Make or a coding-agent host?
-
-Existing automation and agent platforms execute useful workflows. They also expose their own logs and controls.
-
-DUBSAR is intended to work across those surfaces:
-
-- compare execution with business state;
-- preserve an independent evidence snapshot;
-- apply controls that are not tied to one vendor;
-- keep human decisions and limitations visible;
-- continue governing when several automation systems coexist.
-
-DUBSAR does not need to replace every workflow engine to provide that layer.
-
-## Audit before orchestration
-
-The intended first product path is an audit.
-
-Audit establishes:
-
-- which systems and workflows exist;
-- what evidence is available;
-- where inconsistencies appear;
-- which actions are sensitive;
-- which owners and validations matter;
-- which parts are not evaluable.
-
-Only after this baseline can continuous orchestration or policy enforcement be configured responsibly.
-
-The automated portal implementing this journey is coming soon and remains
-under development and validation. It is not currently available for public
-use. Professional DUBSAR Audit remains available on request. Continuous
-governance or installed components may be considered later under a separate
-scope, but their architecture, distribution, support and licensing are
-undecided and not promised.
-
-## Human authority
-
-A human decision is not a ceremonial confirmation after the agents agree.
-
-The reviewer must see the finding, evidence, rule, scope and limitations. The decision can confirm, correct or reject the proposal.
-
-It cannot turn missing evidence into verified evidence and it cannot be manufactured by another agent.
-
-## Summary
-
-DUBSAR uses agents, but does not ask agents to be their own constitution.
-
-It combines agent capabilities with deterministic controls, evidence boundaries, private canonical state and explicit human authority.
+See [Architecture](ARCHITECTURE.md) for the model and [Status](STATUS.md) for
+the current claim boundary.

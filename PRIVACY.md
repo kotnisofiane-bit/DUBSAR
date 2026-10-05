@@ -7,19 +7,18 @@ It is not yet a final production privacy notice.
 
 ## Current availability
 
-The DUBSAR marketing website is publicly accessible. The automated audit portal
-is coming soon and is not currently available for public use; development and
-validation remain in progress. Professional DUBSAR Audit is available on
-request.
+DUBSAR Personal and Control Plane are in technical development and
+integration. No public installable Personal release, public beta or generally
+available organizational platform is announced.
 
-The public website provides product information and does not provide access to
-the portal. Earlier coding-agent packaging is paused and no active beta is
-offered. No generally available installed DUBSAR product is announced from this
-repository.
+This repository is documentation only. The website and historical audit pages
+do not establish product access. [STATUS.md](STATUS.md) is authoritative for
+current claims.
 
 ## Data-minimization principle
 
-DUBSAR should collect the smallest evidence scope required for an explicit audit mandate.
+DUBSAR should collect the smallest context and evidence scope required for an
+explicit mission or authorized operation.
 
 The intended model favors:
 
@@ -31,9 +30,10 @@ The intended model favors:
 - visible exclusions and unavailable reads;
 - synthetic fixtures for internal testing.
 
-## Portal accounts
+## Product identity and access
 
-A production portal privacy notice must document:
+For each actual Personal or Control Plane deployment, the applicable privacy
+notice must document:
 
 - account identifiers and authentication provider;
 - tenant and project membership;
@@ -43,12 +43,13 @@ A production portal privacy notice must document:
 - retention periods;
 - infrastructure and subprocessors.
 
-Registration or public portal access must not be presented as available until
-these elements match the deployed implementation.
+Public product access must not be presented as available until these elements
+match the deployed implementation. Local and organizational deployments need
+their own verified data maps.
 
-## Audit imports
+## Context and evidence imports
 
-An audit may require bounded exports from automation and business systems.
+A mission may require bounded exports from automation and business systems.
 
 Before a user submits evidence, the product must identify:
 
@@ -65,7 +66,8 @@ Raw credentials, API keys and unrestricted mailbox or conversation archives must
 
 ## Connectors
 
-Future connectors should use least-privilege access and request only the capabilities required for the selected Rule Pack.
+Connectors should use least-privilege access and request only the capabilities
+required by the authorized mission and applicable policy.
 
 Connector credentials should:
 
@@ -75,11 +77,11 @@ Connector credentials should:
 - have explicit scope and ownership;
 - be separated from human-review authority.
 
-If an installed component is ever considered, its data placement and credential
-boundary will require a separate privacy and security decision. No local
-architecture is selected or promised today.
+Personal's local data placement and Control Plane's organizational boundaries
+must be documented against their actual implementations. The target
+architecture alone does not establish retention, hosting or provider behavior.
 
-## Models and Hermes
+## Models, Hermes and Judgment
 
 Before broader production use, DUBSAR must document:
 
@@ -90,11 +92,13 @@ Before broader production use, DUBSAR must document:
 - what remains deterministic;
 - how agent outputs are separated from authoritative state.
 
-No model output should silently expand the evidence scope.
+No model output should silently expand the evidence scope. AgentContext and
+Judgment inputs must remain bounded; a local model candidate does not establish
+that every product path keeps all data local.
 
 ## Evidence and reports
 
-Audit records may include:
+Mission and operational records may include:
 
 - source references;
 - normalized facts;

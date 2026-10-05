@@ -10,27 +10,17 @@ been retired from the active repository tree. There is no supported public
 installation command, Marketplace source, plugin archive, beta-access path or
 self-service update path in this repository.
 
-This decision does not change the status of:
+The current direction is Personal and Control Plane, documented in
+[README.md](README.md) and [STATUS.md](STATUS.md). Earlier audit offers,
+Claude Code packaging and public-skills positioning are historical phases.
 
-- the public DUBSAR website and documentation;
-- the automated audit portal, which is coming soon and is not yet publicly
-  available;
-- the Professional DUBSAR Audit, available on request;
-- the separate public skills repository described below.
+## Public components
 
-Earlier Claude Code work is historical and paused as a product direction. It is
-not a current commercial surface or controlled beta.
-
-## Separate public skills
-
-The
-[dubsar-agent-skills](https://github.com/kotnisofiane-bit/dubsar-agent-skills)
-repository is a separate MIT-licensed publication of doctrine and bounded local
-helpers.
-
-It is not a Marketplace package, DUBSAR product runtime or distribution of the
-Portal, private Core or private implementation. Its licence and installation
-instructions apply only to that repository.
+Available component source is listed under
+[Technical components](README.md#technical-components). It is separate from
+this retired Marketplace surface and from an installable Personal release.
+The historical skills name and its changed destination are recorded in
+[LEGACY.md](LEGACY.md).
 
 ## Why the staging surface was retired
 
@@ -92,6 +82,6 @@ public DUBSAR Marketplace: retired from the active tree
 supported public DUBSAR installation: none
 historical staging version: 0.11.1, record only
 active coding-agent beta: none
-public skills: separate MIT-licensed companion resource
+current product direction: Personal / Control Plane in development
 future product distribution: undecided; requires a new reviewed decision
 ```
