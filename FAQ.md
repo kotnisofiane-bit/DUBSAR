@@ -25,9 +25,12 @@ See [Installation](INSTALLATION.md).
 ## Where is the technical code?
 
 [Technical components](README.md#technical-components) links available public
-source. DUBSAR Memory is a separate technical preview; it is not the unified
-Personal product. Other repositories will be linked when public source and
-scope are available. `dubsar-contracts` is not presented as public.
+source. [DUBSAR Contracts — reference](https://github.com/kotnisofiane-bit/dubsar-contracts-reference)
+is the public contracts-and-conformance repository: versioned schemas,
+deterministic validators, selected reference implementations and synthetic
+tests. It is not the private canonical `dubsar-contracts` development source,
+the full Control Plane runtime or the unified Personal product. Other
+repositories will be linked when their public source and scope are available.
 
 ## What does Judgment do?
 
