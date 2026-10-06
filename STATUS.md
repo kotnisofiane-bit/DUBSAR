@@ -27,11 +27,13 @@ A component E2E qualification applies only to its exercised path and
 environment. It does not qualify every Personal view or Control Plane runtime.
 This root contains no executable tests or private qualification artifacts.
 
-The publicly inspectable component currently linked is
-[DUBSAR Memory](https://github.com/kotnisofiane-bit/dubsar-memory), a technical
-preview of durable project memory, a CLI and a read-only Workbench.
-That repository defines its own tests, limits and licence. Its memory
-contracts do not prove integrated Judgment, runtime admission or egress.
+The publicly inspectable technical source currently linked is
+[DUBSAR Contracts — reference](https://github.com/kotnisofiane-bit/dubsar-contracts-reference),
+a contracts-and-conformance repository containing versioned schemas,
+deterministic validators, selected reference implementations and synthetic
+tests. Its own README defines what those suites prove and what they do not.
+It is not the private canonical source, an integrated Personal release or the
+complete Control Plane runtime.
 
 ## In active integration
 
@@ -57,7 +59,8 @@ establish the maturity of the remaining paths.
 - general availability;
 - complete real-world runtime qualification of every Control Plane component;
 - universal connector, agent-host or operating-system support;
-- a public `dubsar-contracts` repository or distribution of the private Core.
+- publication of the private canonical `dubsar-contracts` development
+  repository or distribution of the private Core.
 
 ## What would justify stronger claims
 

@@ -132,13 +132,15 @@ into a product-release claim.
 
 ## Technical components
 
-- [DUBSAR Memory](https://github.com/kotnisofiane-bit/dubsar-memory): public
-  technical preview of a deterministic project-memory engine, CLI and
-  read-only Workbench. Its own README defines its scope and licence. It is
-  not the unified Personal product or a Control Plane distribution.
-- Further component repositories will be linked here when their public
-  source and scope are available. `dubsar-contracts` is not presented as
-  public.
+- [DUBSAR Contracts — reference](https://github.com/kotnisofiane-bit/dubsar-contracts-reference):
+  public contracts-and-conformance source with versioned schemas,
+  deterministic validators, reference implementations and synthetic tests
+  for Operational Context, Judgment boundaries, Task Lease / S1, Broker,
+  AgentContext and Automation. It is not the private canonical source, the
+  full Control Plane runtime or an installable Personal release.
+- Further component repositories will be linked here when their public source
+  and scope are available. The private `dubsar-contracts` repository remains
+  the canonical development source for this extracted reference publication.
 
 This root remains canonical for the overall project. Earlier audit, skills,
 Marketplace and Scribe surfaces are indexed in [LEGACY.md](LEGACY.md);

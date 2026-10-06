@@ -42,10 +42,12 @@ collection and human review remain useful lessons.
 
 ## Changed public links
 
-The old GitHub path `kotnisofiane-bit/dubsar-agent-skills` now redirects to
-`kotnisofiane-bit/dubsar-memory`. It must not be labelled as a current
-public-skills collection. The actual Memory component and its technical-preview
-limits are linked under [Technical components](README.md#technical-components).
+The old GitHub path `kotnisofiane-bit/dubsar-agent-skills` redirected to
+`kotnisofiane-bit/dubsar-memory` during an earlier phase. That path must not
+be labelled as a current public-skills collection or as current public
+technical source. The current public technical source is linked under
+[Technical components](README.md#technical-components), including
+[DUBSAR Contracts — reference](https://github.com/kotnisofiane-bit/dubsar-contracts-reference).
 
 The separate
 [dubsar-docs](https://github.com/kotnisofiane-bit/dubsar-docs)

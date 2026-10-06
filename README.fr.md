@@ -137,13 +137,16 @@ une annonce de disponibilité produit.
 
 ## Composants techniques
 
-- [DUBSAR Memory](https://github.com/kotnisofiane-bit/dubsar-memory) : preview
-  technique publique d’un moteur déterministe de mémoire projet, d’une CLI
-  et d’un Workbench en lecture seule. Son README définit son périmètre et sa
-  licence. Ce n’est ni Personal unifié ni une distribution de Control Plane.
+- [DUBSAR Contracts — reference](https://github.com/kotnisofiane-bit/dubsar-contracts-reference) :
+  source publique de contrats et de conformance avec schémas versionnés,
+  validateurs déterministes, implémentations de référence et tests synthétiques
+  pour Operational Context, les frontières Judgment, Task Lease / S1, Broker,
+  AgentContext et Automation. Ce n’est ni la source canonique privée, ni le
+  runtime complet du Control Plane, ni une version Personal installable.
 - Les autres dépôts seront référencés lorsque leur code et leur périmètre
-  publics seront disponibles. `dubsar-contracts` n’est pas présenté comme
-  public.
+  publics seront disponibles. Le dépôt privé `dubsar-contracts` reste la
+  source canonique de développement dont cette publication de référence est
+  extraite.
 
 Cette racine reste canonique pour le projet. Les anciennes phases audit,
 skills, Marketplace et Scribe sont indexées dans [LEGACY.md](LEGACY.md) ;

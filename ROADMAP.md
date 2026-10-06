@@ -55,8 +55,10 @@ Component tests do not substitute for qualification of the combined path.
 ## 6. Public technical source and release decisions
 
 Link real public components from this root when their source, scope and
-limits are ready for review. No publication of `dubsar-contracts` or other
-private repositories is announced.
+limits are ready for review. [DUBSAR Contracts — reference](https://github.com/kotnisofiane-bit/dubsar-contracts-reference)
+is now the public contracts-and-conformance surface. Publication of the private
+canonical `dubsar-contracts` development repository or other private
+repositories is not announced.
 
 Any future Personal release needs an actual artifact and validated
 installation, update and removal, supported environments, licensing,
