@@ -1,23 +1,30 @@
 # DUBSAR
 
-**A control plane for durable, governed agentic work.**
+**A governance foundation for AI-agent missions.**
 
-Agents can work. DUBSAR keeps durable mission state, evidence, operational
-state, bounded judgment and explicit authority separate from the agent itself.
-The work should survive a session ending, a runtime crashing or a change of
-agent or model provider.
+DUBSAR is developing a governance foundation with a B2B priority: integrators
+and teams deploying AI agents for their clients. The aim is to retain durable
+mission state, tie actions to explicit authorisations and required human
+decisions, and retrieve execution evidence. Teams should be able to hand over
+and resume work, including when an outcome remains uncertain.
+
+Agents do the work. State, evidence, bounded Judgment and authority remain
+separate from the agent and its conversation. The work should survive a session
+ending, a runtime crashing or a change of provider.
 
 > The software carries reality.
 > The model carries judgment.
 > Humans retain authority over consequential effects.
 
 This repository is the **canonical public entry point** for DUBSAR. It is a
-technical documentation root, with no application code or installable Personal
-release. Development is active; component tests do not establish an integrated
-product or general availability.
+technical documentation root, with no application code, full-product
+distribution or public installable Personal release. The product remains in
+development; full B2B integration and validation are underway. Pilots are not
+currently open. Component tests do not establish an integrated product or
+general availability.
 
 [Current status](STATUS.md) · [Architecture](ARCHITECTURE.md) ·
-[Version française](README.fr.md)
+[Version française](README.fr.md) · [B2B overview](https://dubsar.ai/en/)
 
 ## Why it exists
 
@@ -25,11 +32,23 @@ An agent session can produce a useful result while losing the mission, its
 constraints, the evidence behind a decision or the authority to act.
 Conversation history and execution logs alone do not preserve that work.
 
-DUBSAR separates what is known, what is proposed, what is authorized and what
-actually happened. Execution success, mission success and proof are distinct.
+DUBSAR separates what is known, what is proposed, what is authorised and what
+has actually been observed. Execution success, mission success and proof are
+distinct.
+
+**Illustrative example:** an ERP acknowledges a request to create an order,
+then the workflow stops before the outcome is confirmed. That acknowledgement
+does not prove that the order was created. The team must check the effect
+before deciding whether to retry and pass on what remains uncertain.
+This scenario does not describe an available DUBSAR connector.
+
 See [Why DUBSAR?](WHY_DUBSAR.md) and [Why not just agents?](WHY_NOT_JUST_AGENTS.md).
 
 ## One architecture, two environments
+
+Personal remains the first product expression described in the architecture.
+The B2B priority retains that work and the order of the published
+[roadmap](ROADMAP.md); it announces no new technical schedule.
 
 The following is a responsibility model, not a claim that every path is
 already integrated:
@@ -82,7 +101,7 @@ commercial support.
 ### DUBSAR Control Plane
 
 Control Plane applies the same state, evidence and authority model to heavier
-or organizational agentic workloads. Its reference execution boundary is:
+or organisational agentic workloads. Its reference execution boundary is:
 
 ```text
 Human / Core decision
@@ -95,7 +114,7 @@ Human / Core decision
 → Evidence / Operational Context
 ```
 
-The design keeps provider credentials outside the agent, treats authorization
+The design keeps provider credentials outside the agent, treats authorisation
 as a validated object rather than a prompt instruction, and requires
 deterministic admission and replay decisions. Recovery after a crash must not
 silently create a second execution. Egress can be mediated; an agent cannot
@@ -110,7 +129,7 @@ every real runtime. [Architecture](ARCHITECTURE.md) details the boundaries.
 Judgment is a bounded probabilistic policy/controller. It selects a next
 cognitive move from a closed set, for example `consult`, `conclude`,
 `clarify`, `revise` or `stop`. It is not a super-agent orchestrator.
-Software validates the proposal and executes only authorized actions.
+Software validates the proposal and executes only authorised actions.
 
 Judgment cannot create permission or evidence, declare a source fresh,
 complete a mission without supporting records, grant itself authority or

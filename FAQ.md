@@ -2,18 +2,23 @@
 
 ## What is DUBSAR?
 
-A control plane for durable, governed agentic work. It separates mission
-state, evidence, bounded judgment and authority from the agent doing the work.
+A governance foundation in development, primarily for integrators and teams
+deploying AI agents for clients. It aims to connect durable mission state,
+explicit authorisations, human decisions and execution evidence so teams can
+hand over and resume work, including when outcomes remain uncertain.
+State, evidence, bounded Judgment and authority remain distinct from the agent.
 [README.md](README.md) is the canonical public entry point.
 
 ## How do Personal and Control Plane differ?
 
 Personal is the first product expression: a Desktop experience for durable
 missions. Control Plane applies the same responsibility model to heavier or
-organizational workloads, with explicit authorization, admission, handoff,
+organisational workloads, with explicit authorisation, admission, handoff,
 sandbox and mediated provider access.
 
-Both remain in technical development and integration.
+The B2B priority retains Personal and the published technical sequence.
+Both remain in technical development and integration. Full B2B validation
+is underway; pilots are not currently open.
 [Product surfaces](PRODUCT_SURFACES.md) explains their boundaries.
 
 ## Can I install Personal today?
@@ -59,11 +64,20 @@ Only the operation's bounded result has been observed. Mission completion
 requires support for the mission's acceptance conditions. Neither event
 automatically establishes proof of all surrounding claims.
 
+## Does a request acknowledgement prove that an action happened?
+
+No. For example, an ERP may acknowledge an order-creation request without
+confirming that the order exists. This is illustrative, not an available
+DUBSAR connector. The team must check the outcome before deciding whether to
+retry, retaining the uncertainty and the next decision for whoever resumes
+the mission. Receipt, the action's observed result and mission completion
+remain distinct.
+
 ## What happened to the audit, Marketplace and Scribe surfaces?
 
 They are earlier product phases, preserved in [LEGACY.md](LEGACY.md).
-Their availability statements and conceptual diagrams do not define current
-Personal or Control Plane support.
+The audit is not the current offer. Earlier availability statements and
+conceptual diagrams do not define current Personal or Control Plane support.
 
 ## Does DUBSAR certify compliance?
 

@@ -1,8 +1,16 @@
 # Status
 
-DUBSAR is in active technical development and integration as a control plane
-for durable, governed agentic work. Personal is its first product expression;
-Control Plane applies the same architecture to heavier workloads.
+DUBSAR is developing a governance foundation with a B2B priority: integrators
+and teams deploying AI agents for their clients. Durable mission state,
+explicit authorisations, human decisions and execution evidence are intended
+to support handover and resumption, including when outcomes remain uncertain.
+The [public overview](https://dubsar.ai/en/) describes that direction.
+
+The product remains in active technical development. Full B2B integration and
+validation are still underway; pilots are not currently open. Personal remains
+the first product expression, and Control Plane applies the same architecture
+to heavier workloads. This priority changes neither their boundaries nor the
+technical sequence in the [roadmap](ROADMAP.md).
 
 This is the canonical project status as of this public realignment. The
 technical categories below reflect the project state supplied for this update.
@@ -57,6 +65,7 @@ establish the maturity of the remaining paths.
 - a public Personal beta or commercial support offer;
 - a production-ready enterprise platform;
 - general availability;
+- complete B2B qualification or open pilots;
 - complete real-world runtime qualification of every Control Plane component;
 - universal connector, agent-host or operating-system support;
 - publication of the private canonical `dubsar-contracts` development
@@ -66,8 +75,10 @@ establish the maturity of the remaining paths.
 
 An integration claim needs a reproducible path tied to component versions,
 the tested environment and retained results. Mission recovery, rejected
-authorization, retries, partial evidence and required Human Gates must remain
+authorisation, retries, partial evidence and required Human Gates must remain
 observable. Execution success must stay separate from mission completion.
+An acknowledgement of a request does not establish that its intended effect
+occurred; an unresolved outcome must remain explicit for handover and recovery.
 
 A public release also needs an actual artifact, installation and removal
 validation, supported environments, licensing, security and privacy boundaries.

@@ -1,23 +1,32 @@
 # DUBSAR
 
-**Un control plane pour du travail agentique durable et gouverné.**
+**Un socle de gouvernance pour les missions d’agents IA.**
 
-Les agents réalisent le travail. DUBSAR conserve l’état durable des missions,
-les preuves, l’état opérationnel, le jugement borné et l’autorité explicite
-hors de l’agent lui-même. Le travail doit survivre à une fin de session, à un
-crash ou à un changement d’agent ou de fournisseur de modèle.
+DUBSAR développe un socle de gouvernance dont la cible prioritaire est B2B :
+les intégrateurs et les équipes qui déploient des agents IA chez leurs clients.
+L’objectif est de conserver l’état durable des missions, de relier les actions
+à des autorisations explicites et aux décisions humaines requises, et de
+retrouver les preuves d’exécution. Les équipes doivent pouvoir transmettre et
+reprendre le travail, y compris lorsqu’un résultat reste incertain.
+
+Les agents réalisent le travail. L’état, les preuves, le jugement borné et
+l’autorité restent distincts de l’agent et de sa conversation. Le travail doit
+survivre à une fin de session, à un crash ou à un changement de fournisseur.
 
 > Le logiciel porte la réalité.
 > Le modèle porte le jugement.
 > Les humains conservent l’autorité sur les effets conséquents.
 
 Ce dépôt est le **point d’entrée public canonique** de DUBSAR. Il reste une
-racine documentaire technique, sans code applicatif ni version Personal
-publiquement installable. Le développement est actif ; des tests de
-composants ne constituent ni un produit intégré ni une disponibilité générale.
+racine documentaire technique : il ne contient pas de code applicatif et ne
+distribue ni le produit complet ni une version Personal publiquement installable.
+Le produit reste en
+développement ; l’intégration et la qualification B2B complète sont en cours.
+Les pilotes ne sont pas ouverts. Des tests de composants ne constituent ni un
+produit intégré ni une disponibilité générale.
 
 [État actuel](STATUS.md) · [Architecture](ARCHITECTURE.md) ·
-[English version](README.md)
+[English version](README.md) · [Vitrine B2B](https://dubsar.ai/fr/)
 
 ## Pourquoi DUBSAR existe
 
@@ -28,10 +37,21 @@ conserver ce travail.
 
 DUBSAR sépare ce qui est connu, proposé, autorisé et réellement observé.
 Réussite d’exécution, réussite de mission et preuve restent distinctes.
+
+**Exemple illustratif :** un ERP accuse réception d’une demande de création
+de commande, puis le workflow s’interrompt avant la confirmation du résultat.
+Cet accusé ne prouve pas que la commande a été créée. L’équipe doit vérifier
+l’effet avant de décider d’une éventuelle relance et transmettre les points
+encore incertains. Ce scénario ne décrit pas un connecteur DUBSAR disponible.
+
 Voir [Pourquoi DUBSAR ?](WHY_DUBSAR.md) et
 [Pourquoi pas seulement des agents ?](WHY_NOT_JUST_AGENTS.md).
 
 ## Une architecture, deux environnements
+
+Personal reste la première expression produit décrite dans l’architecture.
+La priorité B2B conserve ce travail et l’ordre des travaux de la
+[roadmap](ROADMAP.md) ; elle n’annonce pas de nouveau calendrier technique.
 
 Ce schéma répartit les responsabilités ; il ne déclare pas tous les parcours
 déjà intégrés :

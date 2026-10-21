@@ -1,15 +1,23 @@
 # Product and Surfaces
 
-DUBSAR is a control plane for durable, governed agentic work. Personal and
-Control Plane express one architecture in two environments.
+DUBSAR is developing a governance foundation whose priority audience is
+integrators and teams deploying AI agents for clients. The intended B2B value
+is durable missions, explicit authorisations, human decisions, execution
+evidence, handover and resumption, including unresolved outcomes.
+
+Personal and Control Plane express one architecture in two environments.
+Personal remains the first product expression; the B2B priority does not
+remove it or change the technical order in the [roadmap](ROADMAP.md).
 
 | Environment | Purpose | Current boundary |
 |---|---|---|
 | DUBSAR Personal | A Desktop experience for durable individual missions | Active integration / technical development; no public installable release |
-| DUBSAR Control Plane | Govern heavier or organizational agentic workloads | Component boundaries and qualification work; full live integration not claimed |
+| DUBSAR Control Plane | Govern heavier or organisational agentic workloads | Component boundaries and qualification work; full live integration not claimed |
 
 These are product and architecture directions, not two generally available
-offers. [STATUS.md](STATUS.md) is authoritative for maturity.
+offers. The product is in development, full B2B integration and validation
+remain underway, and pilots are not currently open.
+[STATUS.md](STATUS.md) is authoritative for maturity.
 
 ## DUBSAR Personal
 
@@ -51,7 +59,7 @@ itself. Admission and replay decisions must be deterministic. Crash recovery
 must not silently create a second execution.
 
 The combined path still needs qualification in its real runtime boundaries.
-A tested component does not establish a complete organizational platform.
+A tested component does not establish a complete organisational platform.
 
 ## Shared Judgment boundary
 

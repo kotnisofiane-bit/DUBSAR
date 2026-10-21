@@ -1,9 +1,18 @@
 # Roadmap
 
-DUBSAR is being integrated as a control plane for durable, governed agentic
-work. This roadmap describes technical priorities, not promised dates,
-public access or a release schedule. [STATUS.md](STATUS.md) defines what is
-currently claimed.
+DUBSAR is developing a governance foundation, prioritising integrators and
+teams deploying AI agents for clients. This roadmap describes technical
+priorities, not promised dates, public access or a release schedule.
+[STATUS.md](STATUS.md) defines what is currently claimed: full B2B integration
+and validation are underway, and pilots are not currently open.
+
+The sequence below is retained, including the Personal and Desktop work.
+Coherent mission state and views support handover; bounded Judgment and
+connector contracts preserve the distinction between proposals and authority.
+Control Plane qualification must establish what happened across the execution
+path, including interruptions and uncertain outcomes, before stronger product
+claims. This explains how the existing work serves the B2B objective without
+reordering it or announcing a different technical schedule.
 
 ## 1. One coherent Personal mission
 
